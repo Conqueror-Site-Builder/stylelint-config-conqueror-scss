@@ -24,10 +24,12 @@
   "version": "1.0.0",
   "license": "MIT",
   "keywords": [
-    "conqueror",
     "conqueror-scss",
+    "conqueror-stylelint-scss",
     "conqueror-stylelint",
-    "conqueror-stylelint-scss"
+    "conqueror",
+    "scss",
+    "stylelint"
   ],
   "files": [
     "index.js"
