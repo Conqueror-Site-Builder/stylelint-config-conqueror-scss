@@ -1,7 +1,6 @@
 # Stylelint Conqueror Config SCSS
 
 ![ESM Only](https://img.shields.io/badge/ESM-only-gray?labelColor=fe0)
-![TypeScript Only](https://img.shields.io/badge/TypeScript-only-gray?labelColor=06f)
 ![CodeQL](https://img.shields.io/github/actions/workflow/status/Conqueror-Site-Builder/stylelint-conqueror-config-scss/codeql.yml?label=CodeQL)
 ![Test](https://img.shields.io/github/actions/workflow/status/Conqueror-Site-Builder/stylelint-conqueror-config-scss/mocha.yml?label=Test)
 ![Editorconfig](https://img.shields.io/github/actions/workflow/status/Conqueror-Site-Builder/stylelint-conqueror-config-scss/editorconfig.yml?label=Editorconfig)
