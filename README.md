@@ -1,13 +1,13 @@
-# Conqueror Config Stylelint SCSS
+# Stylelint Conqueror Config SCSS
 
 ![ESM Only](https://img.shields.io/badge/ESM-only-gray?labelColor=fe0)
 ![TypeScript Only](https://img.shields.io/badge/TypeScript-only-gray?labelColor=06f)
-![CodeQL](https://img.shields.io/github/actions/workflow/status/Conqueror-Site-Builder/config-stylelint-scss/codeql.yml?label=CodeQL)
-![Test](https://img.shields.io/github/actions/workflow/status/Conqueror-Site-Builder/config-stylelint-scss/mocha.yml?label=Test)
-![Editorconfig](https://img.shields.io/github/actions/workflow/status/Conqueror-Site-Builder/config-stylelint-scss/editorconfig.yml?label=Editorconfig)
-![Prettier](https://img.shields.io/github/actions/workflow/status/Conqueror-Site-Builder/config-stylelint-scss/prettier.yml?label=Prettier)
-![Markdown](https://img.shields.io/github/actions/workflow/status/Conqueror-Site-Builder/config-stylelint-scss/markdown.yml?label=Markdown)
-![ESLint](https://img.shields.io/github/actions/workflow/status/Conqueror-Site-Builder/config-stylelint-scss/eslint.yml?label=ESLint)
+![CodeQL](https://img.shields.io/github/actions/workflow/status/Conqueror-Site-Builder/stylelint-conqueror-config-scss/codeql.yml?label=CodeQL)
+![Test](https://img.shields.io/github/actions/workflow/status/Conqueror-Site-Builder/stylelint-conqueror-config-scss/mocha.yml?label=Test)
+![Editorconfig](https://img.shields.io/github/actions/workflow/status/Conqueror-Site-Builder/stylelint-conqueror-config-scss/editorconfig.yml?label=Editorconfig)
+![Prettier](https://img.shields.io/github/actions/workflow/status/Conqueror-Site-Builder/stylelint-conqueror-config-scss/prettier.yml?label=Prettier)
+![Markdown](https://img.shields.io/github/actions/workflow/status/Conqueror-Site-Builder/stylelint-conqueror-config-scss/markdown.yml?label=Markdown)
+![ESLint](https://img.shields.io/github/actions/workflow/status/Conqueror-Site-Builder/stylelint-conqueror-config-scss/eslint.yml?label=ESLint)
 
 ## Table of Contents
 
@@ -49,7 +49,7 @@
 
 -   **`fix:prettier`**: Runs **`Prettier`** with the **`--write`** flag.
 
-    > In the [**`prettier.yml`**](https://github.com/Conqueror-Site-Builder/config-stylelint-scss/blob/main/.github/workflows/prettier.yml)
+    > In the [**`prettier.yml`**](https://github.com/Conqueror-Site-Builder/stylelint-conqueror-config-scss/blob/main/.github/workflows/prettier.yml)
     > workflow, **`Prettier`** is run with the **`--check`** flag.
     >
     > Also run with a **`pre-commit`** hook.
@@ -57,24 +57,24 @@
 -   **`lint:editorconfig`**: Runs **`Editorconfig Checker`** and
     checks all files in the project.
 
-    > Also runs with the [**`editorconfig.yml`**](https://github.com/Conqueror-Site-Builder/config-stylelint-scss/blob/main/.github/workflows/editorconfig.yml)
+    > Also runs with the [**`editorconfig.yml`**](https://github.com/Conqueror-Site-Builder/stylelint-conqueror-config-scss/blob/main/.github/workflows/editorconfig.yml)
     > workflow.
 
 -   **`lint:markdown`**: Runs **`Remark`** with the **`--quiet`** flag and
     checks all markdown files.
 
-    > Also runs with the [**`markdown.yml`**](https://github.com/Conqueror-Site-Builder/config-stylelint-scss/blob/main/.github/workflows/markdown.yml)
+    > Also runs with the [**`markdown.yml`**](https://github.com/Conqueror-Site-Builder/stylelint-conqueror-config-scss/blob/main/.github/workflows/markdown.yml)
     > workflow.
 
 -   **`lint:ts`**: Runs **`ESLint`** with the flag **`--fix`**
     for all **TypeScript** files.
 
-    > Also runs with the [**`eslint.yml`**](https://github.com/Conqueror-Site-Builder/config-stylelint-scss/blob/main/.github/workflows/eslint.yml)
+    > Also runs with the [**`eslint.yml`**](https://github.com/Conqueror-Site-Builder/stylelint-conqueror-config-scss/blob/main/.github/workflows/eslint.yml)
     > workflow.
 
 -   **`test`**: Runs **`Mocha`** and the tests in the **specs/** folder.
 
-    > Also runs using the [**`mocha.yml`**](https://github.com/Conqueror-Site-Builder/config-stylelint-scss/blob/main/.github/workflows/mocha.yml)
+    > Also runs using the [**`mocha.yml`**](https://github.com/Conqueror-Site-Builder/stylelint-conqueror-config-scss/blob/main/.github/workflows/mocha.yml)
     > workflow.
 
 -   **`commit`**: Runs **`Commitizen`**, **`Commitlint`**, and **`Husky`** to
@@ -113,7 +113,7 @@ See also the list of [**Authors**](AUTHORS.md).
 ## Contributors
 
 If you want to improve something, you can write about it
-[**here**](https://github.com/Conqueror-Site-Builder/config-stylelint-scss/issues/new/choose).
+[**here**](https://github.com/Conqueror-Site-Builder/stylelint-conqueror-config-scss/issues/new/choose).
 
 You can also view a list of [**Contributors**](CONTRIBUTORS.md).
 
@@ -127,7 +127,7 @@ and the process for submitting **Pull Request** to us.
 
 We use [**SemVer**](https://semver.org) for versioning.
 You can see the available versions
-[**here**](https://github.com/Conqueror-Site-Builder/config-stylelint-scss/tags).
+[**here**](https://github.com/Conqueror-Site-Builder/stylelint-conqueror-config-scss/tags).
 
 ## License
 
