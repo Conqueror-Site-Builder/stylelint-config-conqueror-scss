@@ -3,9 +3,10 @@
   "exports": "./index.js",
   "scripts": {
     "init": "npm i && husky install && git submodule init && git submodule update",
-    "fix:prettier": "prettier . --write",
+    "format": "prettier . --write",
+    "lint:formatting": "prettier . --check",
     "lint:editorconfig": "editorconfig-checker",
-    "lint:markdown": "remark . --quiet",
+    "lint:md": "remark . --quiet",
     "lint:js": "eslint **/*.js --fix",
     "test": "mocha",
     "commit": "cz"

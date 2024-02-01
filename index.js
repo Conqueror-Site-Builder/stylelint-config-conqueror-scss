@@ -1,3 +1,5 @@
+// Copyright (c) 2024 Conqueror Site Builder
+
 export default {
   extends: ['stylelint-config-standard-scss'],
   plugins: [
