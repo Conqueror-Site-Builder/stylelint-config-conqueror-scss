@@ -11,16 +11,16 @@
     "test": "mocha",
     "commit": "cz"
   },
-  "homepage": "https://github.com/Conqueror-Site-Builder/stylelint-conqueror-config-scss#readme",
+  "homepage": "https://github.com/Conqueror-Site-Builder/stylelint-config-conqueror-scss#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Conqueror-Site-Builder/stylelint-conqueror-config-scss.git"
+    "url": "https://github.com/Conqueror-Site-Builder/stylelint-config-conqueror-scss.git"
   },
   "bugs": {
-    "url": "https://github.com/Conqueror-Site-Builder/stylelint-conqueror-config-scss/issues"
+    "url": "https://github.com/Conqueror-Site-Builder/stylelint-config-conqueror-scss/issues"
   },
   "author": "Conqueror Site Builder",
-  "name": "stylelint-conqueror-config-scss",
+  "name": "stylelint-config-conqueror-scss",
   "description": "Extended config for Stylelint with property sorting",
   "version": "1.0.0",
   "license": "MIT",
