@@ -4,17 +4,11 @@ export default {
     browser: true,
     es6: true,
   },
-  parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 'latest',
-    project: 'tsconfig.json',
     sourceType: 'module',
   },
-  extends: [
-    'airbnb-typescript/base',
-    'plugin:unicorn/recommended',
-    'plugin:@typescript-eslint/recommended-type-checked',
-  ],
+  extends: ['airbnb/base', 'plugin:unicorn/recommended'],
   plugins: ['import', 'unicorn'],
   rules: {
     'import/exports-last': 'error',

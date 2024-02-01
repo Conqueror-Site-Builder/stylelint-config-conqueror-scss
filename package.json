@@ -1,30 +1,54 @@
 {
   "type": "module",
+  "exports": "./index.js",
   "scripts": {
-    "init": "npm i && husky install",
+    "init": "npm i && husky install && git submodule init && git submodule update",
     "fix:prettier": "prettier . --write",
     "lint:editorconfig": "editorconfig-checker",
     "lint:markdown": "remark . --quiet",
-    "lint:ts": "eslint **/*.ts --fix",
+    "lint:js": "eslint **/*.js --fix",
     "test": "mocha",
     "commit": "cz"
+  },
+  "homepage": "https://github.com/Conqueror-Site-Builder/config-stylelint-scss#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Conqueror-Site-Builder/config-stylelint-scss.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Conqueror-Site-Builder/config-stylelint-scss/issues"
+  },
+  "author": "Conqueror Site Builder",
+  "name": "conqueror-config-stylelint-scss",
+  "description": "Extended config for Stylelint with property sorting",
+  "version": "1.0.0",
+  "license": "MIT",
+  "keywords": [
+    "conqueror",
+    "conqueror-scss",
+    "conqueror-stylelint",
+    "conqueror-stylelint-scss"
+  ],
+  "files": [
+    "index.js"
+  ],
+  "engines": {
+    "node": ">=20.11.0"
+  },
+  "dependencies": {
+    "stylelint-config-standard-scss": "*"
   },
   "devDependencies": {
     "@commitlint/cli": "*",
     "@commitlint/config-conventional": "*",
     "@semantic-release/changelog": "*",
     "@semantic-release/git": "*",
-    "@types/chai": "*",
-    "@types/mocha": "*",
-    "@types/node": "*",
-    "@typescript-eslint/eslint-plugin": "*",
-    "@typescript-eslint/parser": "*",
     "chai": "*",
     "conventional-changelog-conventionalcommits": "*",
     "cz-conventional-changelog": "*",
     "editorconfig-checker": "*",
     "eslint": "*",
-    "eslint-config-airbnb-typescript": "*",
+    "eslint-config-airbnb-base": "*",
     "eslint-plugin-import": "*",
     "eslint-plugin-unicorn": "*",
     "husky": "*",
@@ -37,7 +61,19 @@
     "remark-preset-lint-markdown-style-guide": "*",
     "remark-preset-lint-recommended": "*",
     "semantic-release": "*",
-    "ts-node": "*",
-    "typescript": "*"
+    "stylelint": "*",
+    "stylelint-high-performance-animation": "*",
+    "stylelint-order": "*",
+    "stylelint-plugin-defensive-css": "*",
+    "stylelint-plugin-logical-css": "*",
+    "stylelint-prettier": "*"
+  },
+  "peerDependencies": {
+    "stylelint": "*",
+    "stylelint-high-performance-animation": "*",
+    "stylelint-order": "*",
+    "stylelint-plugin-defensive-css": "*",
+    "stylelint-plugin-logical-css": "*",
+    "stylelint-prettier": "*"
   }
 }
