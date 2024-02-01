@@ -1,0 +1,9 @@
+{
+  "exclude": [
+    "CHANGELOG.md",
+    "config.yml",
+    "CONTRIBUTING.md",
+    "PULL_REQUEST_TEMPLATE.md",
+    "README.md"
+  ]
+}

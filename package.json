@@ -1,0 +1,43 @@
+{
+  "type": "module",
+  "scripts": {
+    "init": "npm i && husky install",
+    "fix:prettier": "prettier . --write",
+    "lint:editorconfig": "editorconfig-checker",
+    "lint:markdown": "remark . --quiet",
+    "lint:ts": "eslint **/*.ts --fix",
+    "test": "mocha",
+    "commit": "cz"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "*",
+    "@commitlint/config-conventional": "*",
+    "@semantic-release/changelog": "*",
+    "@semantic-release/git": "*",
+    "@types/chai": "*",
+    "@types/mocha": "*",
+    "@types/node": "*",
+    "@typescript-eslint/eslint-plugin": "*",
+    "@typescript-eslint/parser": "*",
+    "chai": "*",
+    "conventional-changelog-conventionalcommits": "*",
+    "cz-conventional-changelog": "*",
+    "editorconfig-checker": "*",
+    "eslint": "*",
+    "eslint-config-airbnb-typescript": "*",
+    "eslint-plugin-import": "*",
+    "eslint-plugin-unicorn": "*",
+    "husky": "*",
+    "lint-staged": "*",
+    "mocha": "*",
+    "mocha-spec-reporter-with-file-names": "*",
+    "prettier": "*",
+    "remark-cli": "*",
+    "remark-preset-lint-consistent": "*",
+    "remark-preset-lint-markdown-style-guide": "*",
+    "remark-preset-lint-recommended": "*",
+    "semantic-release": "*",
+    "ts-node": "*",
+    "typescript": "*"
+  }
+}
