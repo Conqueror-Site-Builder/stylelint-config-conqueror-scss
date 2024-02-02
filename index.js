@@ -1,4 +1,7 @@
-//* Copyright (c) 2024 Conqueror Site Builder
+// Copyright (c) 2024 Conqueror Site Builder
+
+import experimental from './utils/experimental.js';
+import nonStandard from './utils/non-standard.js';
 
 export default {
   extends: ['stylelint-config-standard-scss'],
@@ -307,7 +310,7 @@ export default {
     'order/properties-alphabetical-order': null,
     'order/properties-order': [
       [
-        //* All
+        // All
         'all',
         'page',
         'appearance',
@@ -322,7 +325,7 @@ export default {
         'orphans',
         'widows',
         'clear',
-        //* Position
+        // Position
         'float',
         'inline-start',
         'inline-end',
@@ -340,7 +343,7 @@ export default {
         'left',
         'z-index',
         'display',
-        //* Columns
+        // Columns
         'columns',
         'column-width',
         'column-count',
@@ -350,7 +353,7 @@ export default {
         'column-rule-width',
         'column-rule-style',
         'column-rule-color',
-        //* Flex
+        // Flex
         'flex',
         'flex-grow',
         'flex-shrink',
@@ -359,7 +362,7 @@ export default {
         'flex-direction',
         'flex-wrap',
         'order',
-        //* Grid
+        // Grid
         'grid',
         'grid-area',
         'grid-auto-columns',
@@ -378,30 +381,27 @@ export default {
         'gap',
         'column-gap',
         'row-gap',
-        //? https://developer.mozilla.org/en-US/docs/Web/CSS/masonry-auto-flow
-        'masonry-auto-flow',
-        //* Table
+        nonStandard.masonryAutoFlow,
+        // Table
         'border-collapse',
         'border-spacing',
         'caption-side',
         'empty-cells',
         'table-layout',
         'vertical-align',
-        //* Alignment
+        // Alignment
         'place-content',
         'place-items',
         'place-self',
         'align-content',
         'align-items',
         'align-self',
-        //? https://developer.mozilla.org/en-US/docs/Web/CSS/align-tracks
-        'align-tracks',
+        nonStandard.alignTracks,
         'justify-content',
         'justify-items',
         'justify-self',
-        //? https://developer.mozilla.org/en-US/docs/Web/CSS/justify-tracks
-        'justify-tracks',
-        //* Mask
+        nonStandard.justifyTracks,
+        // Mask
         'mask',
         'mask-border',
         'mask-border-source',
@@ -419,7 +419,7 @@ export default {
         'mask-clip',
         'mask-composite',
         'mask-type',
-        //* Overflow
+        // Overflow
         'overflow',
         'overflow-clip-margin',
         'overflow-y',
@@ -428,22 +428,22 @@ export default {
         'overflow-inline',
         'overflow-wrap',
         'overflow-anchor',
-        //* Shape
+        // Shape
         'shape-outside',
         'shape-margin',
         'shape-image-threshold',
-        //* Container
+        // Container
         'container',
         'container-name',
         'container-type',
-        //* Contain
+        // Contain
         'contain',
         'contain-intrinsic-size',
         'contain-intrinsic-block-size',
         'contain-intrinsic-inline-size',
         'contain-intrinsic-height',
         'contain-intrinsic-width',
-        //* Margin
+        // Margin
         'margin',
         'margin-trim',
         'margin-block',
@@ -456,13 +456,13 @@ export default {
         'margin-right',
         'margin-bottom',
         'margin-left',
-        //* Outline
+        // Outline
         'outline',
         'outline-width',
         'outline-style',
         'outline-color',
         'outline-offset',
-        //* Border
+        // Border
         'border',
         'border-width',
         'border-style',
@@ -533,7 +533,7 @@ export default {
         'border-image-width',
         'border-image-outset',
         'border-image-repeat',
-        //* Sizes
+        // Sizes
         'aspect-ratio',
         'box-sizing',
         'height',
@@ -552,7 +552,7 @@ export default {
         'box-decoration-break',
         'box-shadow',
 
-        //* Inner
+        // Inner
         'padding',
         'padding-block',
         'padding-block-start',
@@ -564,7 +564,7 @@ export default {
         'padding-right',
         'padding-bottom',
         'padding-left',
-        //* Fonts
+        // Fonts
         'src',
         'font',
         'font-family',
@@ -573,8 +573,7 @@ export default {
         'font-weight',
         'font-style',
         'font-display',
-        //! https://developer.mozilla.org/en-US/docs/Web/CSS/font-smooth
-        'font-smooth',
+        experimental.fontSmooth,
         'font-feature-settings',
         'font-kerning',
         'font-language-override',
@@ -594,7 +593,7 @@ export default {
         'font-variant-numeric',
         'font-variant-position',
         'font-variation-settings',
-        //* Text
+        // Text
         'text-overflow',
         'text-rendering',
         'text-indent',
@@ -606,13 +605,11 @@ export default {
         'text-wrap',
         'text-align',
         'text-align-last',
-        //? https://developer.mozilla.org/en-US/docs/Web/CSS/text-size-adjust
-        'text-size-adjust',
+        nonStandard.textSizeAdjust,
         'text-combine-upright',
 
         'text-decoration',
-        //? https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration-skip
-        'text-decoration-skip',
+        nonStandard.textDecorationSkip,
         'text-decoration-skip-ink',
         'text-decoration-thickness',
         'text-decoration-line',
@@ -626,41 +623,36 @@ export default {
 
         'text-underline-position',
         'text-underline-offset',
-        //* Typography
+        // Typography
         'direction',
         'writing-mode',
         'word-wrap',
         'word-spacing',
         'word-break',
-        //? https://developer.mozilla.org/en-US/docs/Web/CSS/initial-letter
-        'initial-letter',
-        //? https://developer.mozilla.org/en-US/docs/Web/CSS/initial-letter-align
-        'initial-letter-align',
+        nonStandard.initialLetter,
+        nonStandard.initialLetterAlign,
         'line-break',
         'line-height',
-        //? https://developer.mozilla.org/en-US/docs/Web/CSS/line-height-step
-        'line-height-step',
+        nonStandard.lineHeightStep,
         'letter-spacing',
         'white-space',
-        //? https://developer.mozilla.org/en-US/docs/Web/CSS/white-space-collapse
-        'white-space-collapse',
+        nonStandard.whiteSpaceCollapse,
         'hyphens',
         'hyphenate-character',
         'hyphenate-limit-chars',
         'tab-size',
         'hanging-punctuation',
         'ruby-position',
-        //? https://developer.mozilla.org/en-US/docs/Web/CSS/ruby-align
-        'ruby-align',
+        nonStandard.rubyAlign,
         'unicode-bidi',
         'unicode-range',
         'forced-color-adjust',
-        //* Color
+        // Color
         'color-scheme',
         'color',
         'accent-color',
         'caret-color',
-        //* SVG
+        // SVG
         'fill',
         'fill-rule',
         'fill-opacity',
@@ -672,36 +664,36 @@ export default {
         'stroke-linejoin',
         'stroke-miterlimit',
         'stroke-opacity',
-        //* Other
+        // Other
         'clip-path',
         'clip-rule',
         'color-interpolation-filters',
         'flood-color',
         'flood-opacity',
         'lighting-color',
-        //* List
+        // List
         'list-style',
         'list-style-type',
         'list-style-position',
         'list-style-image',
-        //* Marker
+        // Marker
         'marker',
         'marker-start',
         'marker-mid',
         'marker-end',
-        //* Paint
+        // Paint
         'paint-order',
-        //* Other
+        // Other
         'stop-color',
         'stop-opacity',
-        //* Offset
+        // Offset
         'offset',
         'offset-position',
         'offset-path',
         'offset-distance',
         'offset-rotate',
         'offset-anchor',
-        //* Background
+        // Background
         'background',
         'background-image',
         'background-color',
@@ -714,26 +706,23 @@ export default {
         'background-attachment',
         'background-clip',
         'background-blend-mode',
-        //* Image
+        // Image
         'object-fit',
         'object-position',
         'image-orientation',
         'image-rendering',
-        //? https://developer.mozilla.org/en-US/docs/Web/CSS/image-resolution
-        'image-resolution',
-        //* Filters
+        nonStandard.imageResolution,
+        // Filters
         'opacity',
         'visibility',
-        //? https://developer.mozilla.org/en-US/docs/Web/CSS/content-visibility
-        'content-visibility',
+        nonStandard.contentVisibility,
         'backface-visibility',
         'isolation',
         'filter',
-        //? https://developer.mozilla.org/en-US/docs/Web/CSS/overlay
-        'overlay',
+        nonStandard.overlay,
         'backdrop-filter',
         'mix-blend-mode',
-        //* Transform
+        // Transform
         'transform',
         'transform-box',
         'transform-origin',
@@ -743,15 +732,14 @@ export default {
         'rotate',
         'perspective',
         'perspective-origin',
-        //* Transition
+        // Transition
         'transition',
         'transition-property',
         'transition-duration',
         'transition-timing-function',
         'transition-delay',
-        //? https://developer.mozilla.org/en-US/docs/Web/CSS/transition-behavior
-        'transition-behavior',
-        //* Animation
+        nonStandard.transitionBehavior,
+        // Animation
         'animation',
         'animation-name',
         'animation-duration',
@@ -761,49 +749,38 @@ export default {
         'animation-direction',
         'animation-fill-mode',
         'animation-play-state',
-        //? https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timeline
-        'animation-timeline',
+        nonStandard.animationTimeline,
         'animation-composition',
-        //? https://developer.mozilla.org/en-US/docs/Web/CSS/animation-range
-        'animation-range',
-        //? https://developer.mozilla.org/en-US/docs/Web/CSS/animation-range-start
-        'animation-range-start',
-        //? https://developer.mozilla.org/en-US/docs/Web/CSS/animation-end
-        'animation-range-end',
+        nonStandard.animationRange,
+        nonStandard.animationRangeStart,
+        nonStandard.animationRangeEnd,
         'will-change',
-        //* Timeline
-        //? https://developer.mozilla.org/en-US/docs/Web/CSS/timeline-scope
-        'timeline-scope',
-        //? https://developer.mozilla.org/en-US/docs/Web/CSS/view-timeline
-        'view-timeline',
-        //? https://developer.mozilla.org/en-US/docs/Web/CSS/view-timeline-name
-        'view-timeline-name',
-        //? https://developer.mozilla.org/en-US/docs/Web/CSS/view-timeline-axis
-        'view-timeline-axis',
-        //? https://developer.mozilla.org/en-US/docs/Web/CSS/view-timeline-inset
-        'view-timeline-inset',
-        //? https://developer.mozilla.org/en-US/docs/Web/CSS/view-transition-name
-        'view-transition-name',
-        //* Other
+        // View Timeline
+        nonStandard.timelineScope,
+        nonStandard.viewTimeline,
+        nonStandard.viewTimelineName,
+        nonStandard.viewTimelineAxis,
+        nonStandard.viewTimelineInset,
+        nonStandard.viewTransitionName,
+        // Other
         'cursor',
         'pointer-events',
         'touch-action',
         'user-select',
         'user-zoom',
-        //! https://developer.mozilla.org/en-US/docs/Web/CSS/zoom
-        'zoom',
+        experimental.zoom,
         'resize',
-        //* Math
+        // Math
         'math-depth',
         'math-shift',
         'math-style',
-        //* Overscroll
+        // Overscroll
         'overscroll-behavior',
         'overscroll-behavior-y',
         'overscroll-behavior-x',
         'overscroll-behavior-block',
         'overscroll-behavior-inline',
-        //* Scroll
+        // Scroll
         'scroll-behavior',
         'scroll-margin',
         'scroll-margin-block',
@@ -830,13 +807,10 @@ export default {
         'scroll-snap-type',
         'scroll-snap-align',
         'scroll-snap-stop',
-        //? https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-timeline
-        'scroll-timeline',
-        //? https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-timeline-axis
-        'scroll-timeline-axis',
-        //? https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-timeline-name
-        'scroll-timeline-name',
-        //* Scrollbar
+        nonStandard.scrollTimeline,
+        nonStandard.scrollTimelineAxis,
+        nonStandard.scrollTimelineName,
+        // Scrollbar
         'scrollbar-width',
         'scrollbar-gutter',
         'scrollbar-color',

@@ -1,4 +1,4 @@
-# Stylelint Conqueror Config SCSS
+# Stylelint Config Conqueror SCSS
 
 ![ESM Only](https://img.shields.io/badge/ESM-only-gray?labelColor=fe0)
 ![CodeQL](https://img.shields.io/github/actions/workflow/status/Conqueror-Site-Builder/stylelint-config-conqueror-scss/codeql.yml?label=CodeQL)
@@ -11,32 +11,20 @@
 ## Table of Contents
 
 -   [Table of Contents](#table-of-contents)
-
--   [**Stop Wasting Time on Repository Build-up!**](#stop-wasting-time-on-repository-build-up)
-
 -   [Getting Started](#getting-started)
-
 -   [Features](#features)
-
 -   [Package.json scripts](#packagejson-scripts)
-
--   [If You're Building a Website](#if-youre-building-a-website)
-    -   [Conqueror](#conqueror)
-    -   [Browtest](#browtest)
-
 -   [Husky](#husky)
-
 -   [Authors](#authors)
-
 -   [Contributors](#contributors)
-
 -   [Contributing](#contributing)
-
 -   [Versioning](#versioning)
-
 -   [License](#license)
-
 -   [Acknowledgments](#acknowledgments)
+
+> \[!TIP]
+> Nice addition for [**Conqueror**](https://github.com/Conqueror-Site-Builder/conqueror)
+> or [**Conqueror Repo Template**](https://github.com/Conqueror-Site-Builder/conqueror-repo-template)!
 
 ## Getting Started
 
@@ -83,27 +71,6 @@
 
 -   **`commit`**: Runs **Commitizen**, **Commitlint**, and **Husky** to
     create commits according to **Conventional Commits** standards.
-
-## If You're Building a Website
-
-### Conqueror
-
-If you want to create a website then [**Conqueror**](https://github.com/Conqueror-Site-Builder/conqueror)
-is more suitable for you.
-
-<!-- ### ArchUI -->
-
-<!-- If you want to create a website but Conqueror is not suitable for you,
-you can use our [**ArchUI**](https://github.com/Conqueror-Site-Builder/arch-ui)
-library to style your website. -->
-
-### Browtest
-
-[**Browtest**](https://github.com/Conqueror-Site-Builder/browtest)
-is an application for testing in (**WebKit**) Safari, (**Gecko**) Firefox and
-(**Chromium**) Edge and Chrome, will allow you to quickly and easily view
-the site in all the necessary browsers, also it will be a salvation for
-those who do not have the opportunity to buy **Apple** products.
 
 ## Husky
 

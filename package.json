@@ -1,24 +1,6 @@
 {
   "type": "module",
   "exports": "./index.js",
-  "scripts": {
-    "init": "npm i && husky install && git submodule init && git submodule update",
-    "format": "prettier . --write",
-    "lint:formatting": "prettier . --check",
-    "lint:editorconfig": "editorconfig-checker",
-    "lint:md": "remark . --quiet",
-    "lint:js": "eslint **/*.js --fix",
-    "test": "mocha",
-    "commit": "cz"
-  },
-  "homepage": "https://github.com/Conqueror-Site-Builder/stylelint-config-conqueror-scss#readme",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Conqueror-Site-Builder/stylelint-config-conqueror-scss.git"
-  },
-  "bugs": {
-    "url": "https://github.com/Conqueror-Site-Builder/stylelint-config-conqueror-scss/issues"
-  },
   "author": "Conqueror Site Builder",
   "name": "stylelint-config-conqueror-scss",
   "description": "Extended config for Stylelint with property sorting",
@@ -33,8 +15,27 @@
     "scss",
     "stylelint"
   ],
+  "homepage": "https://github.com/Conqueror-Site-Builder/stylelint-config-conqueror-scss#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Conqueror-Site-Builder/stylelint-config-conqueror-scss.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Conqueror-Site-Builder/stylelint-config-conqueror-scss/issues"
+  },
+  "scripts": {
+    "init": "npm i && husky install && git submodule init && git submodule update",
+    "format": "prettier . --write",
+    "lint:formatting": "prettier . --check",
+    "lint:editorconfig": "editorconfig-checker",
+    "lint:md": "remark . --quiet",
+    "lint:js": "eslint **/*.js --fix",
+    "test": "mocha",
+    "commit": "cz"
+  },
   "files": [
-    "index.js"
+    "index.js",
+    "utils"
   ],
   "engines": {
     "node": ">=18.12.0"
@@ -50,6 +51,7 @@
     "@semantic-release/git": "*",
     "chai": "*",
     "conventional-changelog-conventionalcommits": "*",
+    "cross-env": "*",
     "cz-conventional-changelog": "*",
     "editorconfig-checker": "*",
     "eslint": "*",
