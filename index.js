@@ -49,7 +49,7 @@ export default {
       },
       {
         type: 'rule',
-        selector: '&::target-text',
+        selector: experimental.pseudoElement.targetText,
       },
       {
         type: 'rule',
@@ -79,187 +79,51 @@ export default {
         type: 'rule',
         selector: '&::file-selector-button',
       },
+      {
+        type: 'rule',
+        selector: '&::highlight',
+      },
+
+      {
+        type: 'rule',
+        selector: experimental.pseudoElement.spellingError,
+      },
+      {
+        type: 'rule',
+        selector: experimental.pseudoElement.grammarError,
+      },
+      {
+        type: 'rule',
+        selector: experimental.pseudoElement.viewTransition,
+      },
+      {
+        type: 'rule',
+        selector: experimental.pseudoElement.viewTransitionGroup,
+      },
+      {
+        type: 'rule',
+        selector: experimental.pseudoElement.viewTransitionImagePair,
+      },
+      {
+        type: 'rule',
+        selector: experimental.pseudoElement.viewTransitionNew,
+      },
+      {
+        type: 'rule',
+        selector: experimental.pseudoElement.viewTransitionOld,
+      },
       'rules',
+      //? Pseudo Classes
+      //* Document Structure
       {
         type: 'rule',
         selector: '&:root',
       },
       {
         type: 'rule',
-        selector: '&:fullscreen',
-      },
-      {
-        type: 'rule',
         selector: '&:modal',
       },
-      {
-        type: 'rule',
-        selector: '&::popover-open',
-      },
-      {
-        type: 'rule',
-        selector: '&:picture-in-picture',
-      },
-      {
-        type: 'rule',
-        selector: '&:default',
-      },
-      {
-        type: 'rule',
-        selector: '&:enabled',
-      },
-      {
-        type: 'rule',
-        selector: '&:disabled',
-      },
-      {
-        type: 'rule',
-        selector: '&:read-only',
-      },
-      {
-        type: 'rule',
-        selector: '&:checked',
-      },
-      {
-        type: 'rule',
-        selector: '&:required',
-      },
-      {
-        type: 'rule',
-        selector: '&:user-valid',
-      },
-      {
-        type: 'rule',
-        selector: '&:user-invalid',
-      },
-      {
-        type: 'rule',
-        selector: '&:in-range',
-      },
-      {
-        type: 'rule',
-        selector: '&:out-of-range',
-      },
-      {
-        type: 'rule',
-        selector: '&:autofill',
-      },
-      {
-        type: 'rule',
-        selector: '&:placeholder-shown',
-      },
-      {
-        type: 'rule',
-        selector: '&:indeterminate',
-      },
-      {
-        type: 'rule',
-        selector: '&:optional',
-      },
-      {
-        type: 'rule',
-        selector: '&:lang',
-      },
-      {
-        type: 'rule',
-        selector: '&:scope',
-      },
-      {
-        type: 'rule',
-        selector: '&:link',
-      },
-      {
-        type: 'rule',
-        selector: '&:any-link',
-      },
-      {
-        type: 'rule',
-        selector: '&:target',
-      },
-      {
-        type: 'rule',
-        selector: '&:visited',
-      },
-      {
-        type: 'rule',
-        selector: '&:right',
-      },
-      {
-        type: 'rule',
-        selector: '&:left',
-      },
-      {
-        type: 'rule',
-        selector: '&:playing',
-      },
-      {
-        type: 'rule',
-        selector: '&:paused',
-      },
-      {
-        type: 'rule',
-        selector: '&:empty',
-      },
-      {
-        type: 'rule',
-        selector: '&:only-child',
-      },
-      {
-        type: 'rule',
-        selector: '&:first-child',
-      },
-      {
-        type: 'rule',
-        selector: '&:nth-child',
-      },
-      {
-        type: 'rule',
-        selector: '&:nth-last-child',
-      },
-      {
-        type: 'rule',
-        selector: '&:last-child',
-      },
-      {
-        type: 'rule',
-        selector: '&:nth-of-type',
-      },
-      {
-        type: 'rule',
-        selector: '&:nth-last-of-type',
-      },
-      {
-        type: 'rule',
-        selector: '&:only-of-type',
-      },
-      {
-        type: 'rule',
-        selector: '&:first-of-type',
-      },
-      {
-        type: 'rule',
-        selector: '&:last-of-type',
-      },
-      {
-        type: 'rule',
-        selector: '&:focus',
-      },
-      {
-        type: 'rule',
-        selector: '&:focus-within',
-      },
-      {
-        type: 'rule',
-        selector: '&:focus-visible',
-      },
-      {
-        type: 'rule',
-        selector: '&:hover',
-      },
-      {
-        type: 'rule',
-        selector: '&:active',
-      },
+      //!
       {
         type: 'rule',
         selector: '&:where',
@@ -276,6 +140,56 @@ export default {
         type: 'rule',
         selector: '&:not',
       },
+      //!
+      {
+        type: 'rule',
+        selector: '&:placeholder-shown',
+      },
+
+      {
+        type: 'rule',
+        selector: '&:lang',
+      },
+      {
+        type: 'rule',
+        selector: '&:scope',
+      },
+      {
+        type: 'rule',
+        selector: '&:link',
+      },
+      {
+        type: 'rule',
+        selector: '&:local-link',
+      },
+      {
+        type: 'rule',
+        selector: '&:any-link',
+      },
+
+      {
+        type: 'rule',
+        selector: '&:target',
+      },
+      {
+        type: 'rule',
+        selector: experimental.pseudoClass.targetWithin,
+      },
+
+      {
+        type: 'rule',
+        selector: '&:right',
+      },
+      {
+        type: 'rule',
+        selector: '&:left',
+      },
+
+      {
+        type: 'rule',
+        selector: '&:empty',
+      },
+
       {
         type: 'rule',
         selector: '&:defined',
@@ -284,6 +198,206 @@ export default {
         type: 'rule',
         selector: '&:host',
       },
+
+      {
+        type: 'rule',
+        selector: '&:host-content',
+      },
+
+      {
+        type: 'rule',
+        selector: experimental.pseudoClass.blank,
+      },
+
+      {
+        type: 'rule',
+        selector: '&:buffering',
+      },
+      {
+        type: 'rule',
+        selector: '&:past',
+      },
+      {
+        type: 'rule',
+        selector: '&:current',
+      },
+      {
+        type: 'rule',
+        selector: '&:future',
+      },
+      //!
+      {
+        type: 'rule',
+        selector: '&:only-of-type',
+      },
+      {
+        type: 'rule',
+        selector: '&:first-of-type',
+      },
+      {
+        type: 'rule',
+        selector: '&:nth-of-type',
+      },
+      {
+        type: 'rule',
+        selector: '&:last-of-type',
+      },
+      {
+        type: 'rule',
+        selector: '&:nth-last-of-type',
+      },
+      //!
+      {
+        type: 'rule',
+        selector: '&:only-child',
+      },
+      {
+        type: 'rule',
+        selector: '&:first',
+      },
+      {
+        type: 'rule',
+        selector: '&:first-child',
+      },
+      {
+        type: 'rule',
+        selector: '&:nth-child',
+      },
+      {
+        type: 'rule',
+        selector: '&:last-child',
+      },
+      {
+        type: 'rule',
+        selector: '&:nth-last-child',
+      },
+      //* User Interaction
+      {
+        type: 'rule',
+        selector: '&:default',
+      },
+      {
+        type: 'rule',
+        selector: '&:enabled',
+      },
+      {
+        type: 'rule',
+        selector: '&:disabled',
+      },
+      {
+        type: 'rule',
+        selector: '&:hover',
+      },
+      {
+        type: 'rule',
+        selector: '&:focus',
+      },
+      {
+        type: 'rule',
+        selector: '&:focus-within',
+      },
+      {
+        type: 'rule',
+        selector: '&:focus-visible',
+      },
+      {
+        type: 'rule',
+        selector: '&:active',
+      },
+      {
+        type: 'rule',
+        selector: '&:checked',
+      },
+      {
+        type: 'rule',
+        selector: '&:visited',
+      },
+      {
+        type: 'rule',
+        selector: '&:indeterminate',
+      },
+      {
+        type: 'rule',
+        selector: '&:in-range',
+      },
+      {
+        type: 'rule',
+        selector: '&:out-of-range',
+      },
+      {
+        type: 'rule',
+        selector: '&:valid',
+      },
+      {
+        type: 'rule',
+        selector: '&:invalid',
+      },
+      {
+        type: 'rule',
+        selector: '&:user-valid',
+      },
+      {
+        type: 'rule',
+        selector: '&:user-invalid',
+      },
+      {
+        type: 'rule',
+        selector: '&:read-only',
+      },
+      {
+        type: 'rule',
+        selector: '&:read-write',
+      },
+      {
+        type: 'rule',
+        selector: '&:optional',
+      },
+      {
+        type: 'rule',
+        selector: '&:required',
+      },
+      //* Media Controls
+      {
+        type: 'rule',
+        selector: '&:popover-open',
+      },
+      {
+        type: 'rule',
+        selector: '&:fullscreen',
+      },
+      {
+        type: 'rule',
+        selector: '&:picture-in-picture',
+      },
+      {
+        type: 'rule',
+        selector: '&:autofill',
+      },
+      {
+        type: 'rule',
+        selector: '&:playing',
+      },
+      {
+        type: 'rule',
+        selector: '&:paused',
+      },
+      {
+        type: 'rule',
+        selector: '&:stalled',
+      },
+      {
+        type: 'rule',
+        selector: '&:muted',
+      },
+      {
+        type: 'rule',
+        selector: '&:volume-locked',
+      },
+      {
+        type: 'rule',
+        selector: '&:seeking',
+      },
+
       {
         type: 'rule',
         selector: '&\\[[^\\[\\]]+\\]',
@@ -381,7 +495,7 @@ export default {
         'gap',
         'column-gap',
         'row-gap',
-        nonStandard.masonryAutoFlow,
+        experimental.property.masonryAutoFlow,
         // Table
         'border-collapse',
         'border-spacing',
@@ -396,11 +510,11 @@ export default {
         'align-content',
         'align-items',
         'align-self',
-        nonStandard.alignTracks,
+        experimental.property.alignTracks,
         'justify-content',
         'justify-items',
         'justify-self',
-        nonStandard.justifyTracks,
+        experimental.property.justifyTracks,
         // Mask
         'mask',
         'mask-border',
@@ -573,7 +687,7 @@ export default {
         'font-weight',
         'font-style',
         'font-display',
-        experimental.fontSmooth,
+        nonStandard.property.fontSmooth,
         'font-feature-settings',
         'font-kerning',
         'font-language-override',
@@ -605,11 +719,11 @@ export default {
         'text-wrap',
         'text-align',
         'text-align-last',
-        nonStandard.textSizeAdjust,
+        experimental.property.textSizeAdjust,
         'text-combine-upright',
 
         'text-decoration',
-        nonStandard.textDecorationSkip,
+        experimental.property.textDecorationSkip,
         'text-decoration-skip-ink',
         'text-decoration-thickness',
         'text-decoration-line',
@@ -629,21 +743,21 @@ export default {
         'word-wrap',
         'word-spacing',
         'word-break',
-        nonStandard.initialLetter,
-        nonStandard.initialLetterAlign,
+        experimental.property.initialLetter,
+        experimental.property.initialLetterAlign,
         'line-break',
         'line-height',
-        nonStandard.lineHeightStep,
+        experimental.property.lineHeightStep,
         'letter-spacing',
         'white-space',
-        nonStandard.whiteSpaceCollapse,
+        experimental.property.whiteSpaceCollapse,
         'hyphens',
         'hyphenate-character',
         'hyphenate-limit-chars',
         'tab-size',
         'hanging-punctuation',
         'ruby-position',
-        nonStandard.rubyAlign,
+        experimental.property.rubyAlign,
         'unicode-bidi',
         'unicode-range',
         'forced-color-adjust',
@@ -711,15 +825,15 @@ export default {
         'object-position',
         'image-orientation',
         'image-rendering',
-        nonStandard.imageResolution,
+        experimental.property.imageResolution,
         // Filters
         'opacity',
         'visibility',
-        nonStandard.contentVisibility,
+        experimental.property.contentVisibility,
         'backface-visibility',
         'isolation',
         'filter',
-        nonStandard.overlay,
+        experimental.property.overlay,
         'backdrop-filter',
         'mix-blend-mode',
         // Transform
@@ -738,7 +852,7 @@ export default {
         'transition-duration',
         'transition-timing-function',
         'transition-delay',
-        nonStandard.transitionBehavior,
+        experimental.property.transitionBehavior,
         // Animation
         'animation',
         'animation-name',
@@ -749,26 +863,26 @@ export default {
         'animation-direction',
         'animation-fill-mode',
         'animation-play-state',
-        nonStandard.animationTimeline,
+        experimental.property.animationTimeline,
         'animation-composition',
-        nonStandard.animationRange,
-        nonStandard.animationRangeStart,
-        nonStandard.animationRangeEnd,
+        experimental.property.animationRange,
+        experimental.property.animationRangeStart,
+        experimental.property.animationRangeEnd,
         'will-change',
         // View Timeline
-        nonStandard.timelineScope,
-        nonStandard.viewTimeline,
-        nonStandard.viewTimelineName,
-        nonStandard.viewTimelineAxis,
-        nonStandard.viewTimelineInset,
-        nonStandard.viewTransitionName,
+        experimental.property.timelineScope,
+        experimental.property.viewTimeline,
+        experimental.property.viewTimelineName,
+        experimental.property.viewTimelineAxis,
+        experimental.property.viewTimelineInset,
+        experimental.property.viewTransitionName,
         // Other
         'cursor',
         'pointer-events',
         'touch-action',
         'user-select',
         'user-zoom',
-        experimental.zoom,
+        nonStandard.property.zoom,
         'resize',
         // Math
         'math-depth',
@@ -807,9 +921,9 @@ export default {
         'scroll-snap-type',
         'scroll-snap-align',
         'scroll-snap-stop',
-        nonStandard.scrollTimeline,
-        nonStandard.scrollTimelineAxis,
-        nonStandard.scrollTimelineName,
+        experimental.property.scrollTimeline,
+        experimental.property.scrollTimelineAxis,
+        experimental.property.scrollTimelineName,
         // Scrollbar
         'scrollbar-width',
         'scrollbar-gutter',

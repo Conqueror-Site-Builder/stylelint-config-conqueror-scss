@@ -24,7 +24,7 @@
     "url": "https://github.com/Conqueror-Site-Builder/stylelint-config-conqueror-scss/issues"
   },
   "scripts": {
-    "init": "npm i && husky install && git submodule init && git submodule update",
+    "init": "npm i && husky && git submodule init && git submodule update",
     "format": "prettier . --write",
     "lint:formatting": "prettier . --check",
     "lint:editorconfig": "editorconfig-checker",
@@ -41,7 +41,7 @@
     "node": ">=18.12.0"
   },
   "dependencies": {
-    "@eslint/eslintrc": "*",
+    "@eslint/eslintrc": "3.0.0",
     "stylelint-config-standard-scss": "*"
   },
   "devDependencies": {
