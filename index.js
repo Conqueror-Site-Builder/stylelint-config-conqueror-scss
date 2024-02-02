@@ -559,7 +559,7 @@ export default {
         'contain-intrinsic-width',
         // Margin
         'margin',
-        'margin-trim',
+        experimental.property.marginTrim,
         'margin-block',
         'margin-block-start',
         'margin-block-end',
@@ -886,7 +886,7 @@ export default {
         'resize',
         // Math
         'math-depth',
-        'math-shift',
+        experimental.property.mathShift,
         'math-style',
         // Overscroll
         'overscroll-behavior',
