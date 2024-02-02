@@ -11,6 +11,12 @@ const compat = new FlatCompat({
 });
 
 export default [
+  ...compat.extends('airbnb-base', 'plugin:unicorn/recommended'),
+  ...compat.env({
+    browser: true,
+    node: true,
+  }),
+  ...compat.plugins('import', 'unicorn'),
   ...compat.config({
     env: {
       browser: true,
