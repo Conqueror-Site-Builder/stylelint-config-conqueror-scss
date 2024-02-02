@@ -75,7 +75,7 @@
 ## Husky
 
 This repository uses **.husky** as a submodule.
-**.husky** runs `pre commit` hook and `lint commit message`.
+**.husky** runs `pre-commit` hook and `commit-msg`.
 
 ## Authors
 
