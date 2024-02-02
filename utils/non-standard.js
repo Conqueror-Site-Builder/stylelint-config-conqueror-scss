@@ -1,4 +1,4 @@
-// Copyright (c) 2024 Conqueror Site Builder
+// Copyright (c) 2024 Archoleat
 
 const nonStandard = {
   pseudoElement: {

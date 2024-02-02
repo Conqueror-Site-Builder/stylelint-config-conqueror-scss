@@ -1,27 +1,27 @@
 {
   "type": "module",
   "exports": "./index.js",
-  "author": "Conqueror Site Builder",
-  "name": "stylelint-config-conqueror-scss",
+  "author": "Archoleat",
+  "name": "stylelint-config-archoleat-scss",
   "description": "Extended config for Stylelint with property sorting",
   "version": "1.0.0",
   "license": "MIT",
   "keywords": [
-    "conqueror-scss",
-    "stylelint-config-conqueror-scss",
-    "conqueror-stylelint-scss",
-    "conqueror-stylelint",
-    "conqueror",
+    "archoleat-scss",
+    "stylelint-config-archoleat-scss",
+    "archoleat-stylelint-scss",
+    "archoleat-stylelint",
+    "archoleat",
     "scss",
     "stylelint"
   ],
-  "homepage": "https://github.com/Conqueror-Site-Builder/stylelint-config-conqueror-scss#readme",
+  "homepage": "https://github.com/Archoleat/stylelint-config-archoleat-scss#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Conqueror-Site-Builder/stylelint-config-conqueror-scss.git"
+    "url": "https://github.com/Archoleat/stylelint-config-archoleat-scss.git"
   },
   "bugs": {
-    "url": "https://github.com/Conqueror-Site-Builder/stylelint-config-conqueror-scss/issues"
+    "url": "https://github.com/Archoleat/stylelint-config-archoleat-scss/issues"
   },
   "scripts": {
     "init": "npm i && husky && git submodule init && git submodule update",

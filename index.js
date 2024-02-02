@@ -1,4 +1,4 @@
-// Copyright (c) 2024 Conqueror Site Builder
+// Copyright (c) 2024 Archoleat
 
 import experimental from './utils/experimental.js';
 import nonStandard from './utils/non-standard.js';
