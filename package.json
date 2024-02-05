@@ -2,26 +2,26 @@
   "type": "module",
   "exports": "./index.js",
   "author": "Archoleat",
-  "name": "stylelint-config-archoleat-scss",
+  "name": "@archoleat/stylelint-config-extended-scss",
   "description": "Extended config for Stylelint with property sorting",
   "version": "1.0.0",
   "license": "MIT",
   "keywords": [
     "archoleat-scss",
-    "stylelint-config-archoleat-scss",
+    "stylelint-config-extended-scss",
     "archoleat-stylelint-scss",
     "archoleat-stylelint",
     "archoleat",
     "scss",
     "stylelint"
   ],
-  "homepage": "https://github.com/Archoleat/stylelint-config-archoleat-scss#readme",
+  "homepage": "https://github.com/Archoleat/stylelint-config-extended-scss#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Archoleat/stylelint-config-archoleat-scss.git"
+    "url": "https://github.com/Archoleat/stylelint-config-extended-scss.git"
   },
   "bugs": {
-    "url": "https://github.com/Archoleat/stylelint-config-archoleat-scss/issues"
+    "url": "https://github.com/Archoleat/stylelint-config-extended-scss/issues"
   },
   "scripts": {
     "init": "npm i && husky && git submodule init && git submodule update",

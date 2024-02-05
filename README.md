@@ -2,22 +2,24 @@
 
 ![ESM Only](https://img.shields.io/badge/ESM-only-gray?labelColor=fe0)
 ![Commitlint](https://img.shields.io/github/actions/workflow/status/Archoleat/core/commitlint.yml?label=Commitlint)
-![CodeQL](https://img.shields.io/github/actions/workflow/status/Archoleat/stylelint-config-archoleat-scss/codeql.yml?label=CodeQL)
-![Test](https://img.shields.io/github/actions/workflow/status/Archoleat/stylelint-config-archoleat-scss/mocha.yml?label=Test)
-![Editorconfig](https://img.shields.io/github/actions/workflow/status/Archoleat/stylelint-config-archoleat-scss/editorconfig.yml?label=Editorconfig)
-![Prettier](https://img.shields.io/github/actions/workflow/status/Archoleat/stylelint-config-archoleat-scss/prettier.yml?label=Prettier)
-![Markdown](https://img.shields.io/github/actions/workflow/status/Archoleat/stylelint-config-archoleat-scss/markdown.yml?label=Markdown)
-![ESLint](https://img.shields.io/github/actions/workflow/status/Archoleat/stylelint-config-archoleat-scss/eslint.yml?label=ESLint)
+![CodeQL](https://img.shields.io/github/actions/workflow/status/Archoleat/stylelint-config-extended-scss/codeql.yml?label=CodeQL)
+![Test](https://img.shields.io/github/actions/workflow/status/Archoleat/stylelint-config-extended-scss/mocha.yml?label=Test)
+![Editorconfig](https://img.shields.io/github/actions/workflow/status/Archoleat/stylelint-config-extended-scss/editorconfig.yml?label=Editorconfig)
+![Prettier](https://img.shields.io/github/actions/workflow/status/Archoleat/stylelint-config-extended-scss/prettier.yml?label=Prettier)
+![Markdown](https://img.shields.io/github/actions/workflow/status/Archoleat/stylelint-config-extended-scss/markdown.yml?label=Markdown)
+![ESLint](https://img.shields.io/github/actions/workflow/status/Archoleat/stylelint-config-extended-scss/eslint.yml?label=ESLint)
 
 ## Table of Contents
 
 -   [Table of Contents](#table-of-contents)
 
--   [Getting Started](#getting-started)
-
 -   [Features](#features)
-
--   [Scripts](#scripts)
+    -   [Extends](#extends)
+    -   [Plugins](#plugins)
+    -   [Pseudo Elements and Classes](#pseudo-elements-and-classes)
+    -   [Rules](#rules)
+    -   [Naming Pattern](#naming-pattern)
+    -   [Key Points](#key-points)
 
 -   [Additions](#additions)
     -   [Husky](#husky)
@@ -39,54 +41,71 @@
 This project is built on [**Archoleat Repo Template**](https://github.com/Archoleat/archoleat-repo-template).
 
 > \[!TIP]
-> Nice addition for [**Archoleat**](https://github.com/Archoleat/archoleat)
-> or [**Archoleat Repo Template**](https://github.com/Archoleat/archoleat-repo-template)!
-
-## Getting Started
+> Nice addition for [**Archoleat**](https://github.com/Archoleat/archoleat)!
 
 ## Features
 
-## Scripts
+### Extends
 
--   **`init`**: Installs dependencies, **Husky** and update submodules.
+-   **`stylelint-config-standard-scss`**: Provides a baseline for common CSS
+    best practices and SCSS consistency.
 
--   **`format`**: Runs **Prettier** with the **`--write`** flag
-    for all files.
+### Plugins
 
--   **`lint:formatting`**: Runs **Prettier** with the **`--check`** flag
-    for all files.
+-   **`stylelint-high-performance-animation`**: Optimizes animation performance
+    by identifying potential issues and suggesting best practices.
 
-    > In the [**`prettier.yml`**](https://github.com/Archoleat/stylelint-config-archoleat-scss/blob/main/.github/workflows/prettier.yml)
-    >
-    > Also run with a **`pre-commit`** hook.
+-   **`stylelint-order`**: Enforces consistent property ordering within
+    declarations, sorting over 480+ rules to enhance readability
+    and maintainability.
 
--   **`lint:editorconfig`**: Runs **Editorconfig Checker** and
-    checks all files in the project.
+-   **`stylelint-plugin-defensive-css`**: Promotes robust CSS by identifying
+    potential vulnerabilities and cross-browser inconsistencies.
 
-    > Also runs with the [**`editorconfig.yml`**](https://github.com/Archoleat/stylelint-config-archoleat-scss/blob/main/.github/workflows/editorconfig.yml)
-    > workflow.
+-   **`stylelint-plugin-logical-css`**: Encourages the use of logical
+    properties for improved accessibility and flexibility in
+    direction-aware layouts.
 
--   **`lint:md`**: Runs **Remark** with the **`--quiet`** flag and
-    checks all **Markdown** files.
+    > future version all old properties will be remove
 
-    > Also runs with the [**`markdown.yml`**](https://github.com/Archoleat/stylelint-config-archoleat-scss/blob/main/.github/workflows/markdown.yml)
-    > workflow.
+-   **`stylelint-prettier`**: Integrates **Prettier** for
+    consistent code formatting.
 
--   **`lint:ts`**: Runs **ESLint** with the flag **`--fix`**
-    for all **TypeScript** files.
+### Pseudo Elements and Classes
 
-    > Runs with the [**`eslint.yml`**](https://github.com/Archoleat/stylelint-config-archoleat-scss/blob/main/.github/workflows/eslint.yml)
-    > workflow.
-    >
-    > Also run with a **`pre-commit`** hook.
+-   Supports **20+** pseudo elements and **65+** pseudo classes
+    for diverse styling needs.
 
--   **`test`**: Runs **Mocha** and the tests in the **specs/** folder.
+> \[!TIP]
+> Experimental and non-standard pseudo classes and
+> elements are used in the config.
 
-    > Also runs using the [**`mocha.yml`**](https://github.com/Archoleat/stylelint-config-archoleat-scss/blob/main/.github/workflows/mocha.yml)
-    > workflow.
+### Rules
 
--   **`commit`**: Runs **Commitlint** to create commits according to
-    **Conventional Commits** standards.
+-   **Over 480 properties**, covering various aspects of CSS coding
+    style, consistency, and best practices.
+
+> \[!TIP]
+> Experimental and non-standard properties are used in the config.
+
+### Naming Pattern
+
+**BEM** naming convention likely enforced, encouraging modularity,
+maintainability, and clarity in class naming.
+
+### Key Points
+
+-   Comprehensive configuration addressing performance, maintainability,
+    accessibility, and best practices.
+
+-   Leverages a solid foundation from **`stylelint-config-standard-scss`**
+    with valuable plugins.
+
+-   Enforces consistent code style and naming conventions for better
+    readability and collaboration.
+
+-   Sorts **over 480 properties** using the **`stylelint-order`** plugin for
+    enhanced clarity and maintainability.
 
 ## Additions
 
@@ -102,7 +121,7 @@ See also the list of [**Authors**](AUTHORS.md).
 ## Contributors
 
 If you want to improve something, you can write about it
-[**here**](https://github.com/Archoleat/stylelint-config-archoleat-scss/issues/new/choose).
+[**here**](https://github.com/Archoleat/stylelint-config-extended-scss/issues/new/choose).
 
 You can also view a list of [**Contributors**](CONTRIBUTORS.md).
 
@@ -116,7 +135,7 @@ and the process for submitting **Pull Request** to us.
 
 We use [**SemVer**](https://semver.org) for versioning.
 You can see the available versions
-[**here**](https://github.com/Archoleat/stylelint-config-archoleat-scss/tags).
+[**here**](https://github.com/Archoleat/stylelint-config-extended-scss/tags).
 
 ## License
 
