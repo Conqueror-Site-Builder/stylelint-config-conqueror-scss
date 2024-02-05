@@ -41,7 +41,6 @@
     "node": ">=18.12.0"
   },
   "dependencies": {
-    "@eslint/eslintrc": "*",
     "stylelint": "*",
     "stylelint-config-standard-scss": "*",
     "stylelint-high-performance-animation": "*",
@@ -57,7 +56,6 @@
     "@semantic-release/git": "*",
     "chai": "*",
     "conventional-changelog-conventionalcommits": "*",
-    "cross-env": "*",
     "cz-conventional-changelog": "*",
     "editorconfig-checker": "*",
     "eslint": "*",
