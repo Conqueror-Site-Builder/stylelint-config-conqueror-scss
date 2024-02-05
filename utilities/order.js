@@ -103,7 +103,7 @@ const propertiesOrder = {
       selector: experimental.pseudoElement.viewTransitionOld,
     },
     'rules',
-    //? Pseudo Classes
+    // ? Pseudo Classes
     //* Document Structure
     {
       type: 'rule',
