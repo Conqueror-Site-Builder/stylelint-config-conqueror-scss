@@ -3,7 +3,7 @@
 const nonStandard = {
   pseudoElement: {
     webkit: {
-      innerSPinButton: '&::-webkit-inner-spin-button',
+      innerSpinButton: '&::-webkit-inner-spin-button',
       meterBar: '&::-webkit-meter-bar',
       meterEvenLessGoodValue: '&::-webkit-meter-even-less-good-value',
       meterInnerElement: '&::-webkit-meter-inner-element',
@@ -17,16 +17,16 @@ const nonStandard = {
       searchResultsButton: '&::-webkit-search-results-button',
     },
     moz: {
-      colorSwatch: '::-moz-color-swatch',
-      listBullet: '::-moz-list-bullet',
-      listNumber: '::-moz-list-number',
-      page: '::-moz-page',
-      pageSequence: '::-moz-page-sequence',
-      progressBar: '::-moz-progress-bar',
-      rangeProgress: '::-moz-range-progress',
-      rangeThumb: '::-moz-range-thumb',
-      rangeTrack: '::-moz-range-track',
-      scrolledPageSequence: '::-moz-scrolled-page-sequence',
+      colorSwatch: '&::-moz-color-swatch',
+      listBullet: '&::-moz-list-bullet',
+      listNumber: '&::-moz-list-number',
+      page: '&::-moz-page',
+      pageSequence: '&::-moz-page-sequence',
+      progressBar: '&::-moz-progress-bar',
+      rangeProgress: '&::-moz-range-progress',
+      rangeThumb: '&::-moz-range-thumb',
+      rangeTrack: '&::-moz-range-track',
+      scrolledPageSequence: '&::-moz-scrolled-page-sequence',
     },
   },
   pseudoClass: {

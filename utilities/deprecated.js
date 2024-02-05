@@ -2,21 +2,19 @@
 
 const deprecated = {
   property: {
-    // Position
     float: 'float',
     top: 'top',
     right: 'right',
     bottom: 'bottom',
     left: 'left',
-    // Overflow
+    containIntrinsicHeight: 'contain-intrinsic-height',
+    containIntrinsicWidth: 'contain-intrinsic-width',
     overflowY: 'overflow-y',
     overflowX: 'overflow-x',
-    // Margin
     marginTop: 'margin-top',
     marginRight: 'margin-right',
     marginBottom: 'margin-bottom',
     marginLeft: 'margin-left',
-    // Border
     borderHeight: 'border-height',
     borderWidth: 'border-width',
     borderTop: 'border-top',
@@ -39,30 +37,22 @@ const deprecated = {
     borderLeftWidth: 'border-left-width',
     borderLeftStyle: 'border-left-style',
     borderLeftColor: 'border-left-color',
-    // Sizes
     height: 'height',
     minHeight: 'min-height',
     maxHeight: 'max-height',
     width: 'width',
     minWidth: 'min-width',
     maxWidth: 'max-width',
-    // Padding
     paddingTop: 'padding-top',
     paddingRight: 'padding-right',
     paddingBottom: 'padding-bottom',
     paddingLeft: 'padding-left',
-    // Contain
-    containIntrinsicHeight: 'contain-intrinsic-height',
-    containIntrinsicWidth: 'contain-intrinsic-width',
-    // Overscroll
     overscrollBehaviorY: 'overscroll-behavior-y',
     overscrollBehaviorX: 'overscroll-behavior-x',
-    // Scroll Margin
     scrollMarginTop: 'scroll-margin-top',
     scrollMarginRight: 'scroll-margin-right',
     scrollMarginBottom: 'scroll-margin-bottom',
     scrollMarginLeft: 'scroll-margin-left',
-    // Scroll Padding
     scrollPaddingTop: 'scroll-padding-top',
     scrollPaddingRight: 'scroll-padding-right',
     scrollPaddingBottom: 'scroll-padding-bottom',

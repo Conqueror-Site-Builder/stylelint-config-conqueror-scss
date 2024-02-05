@@ -30,7 +30,7 @@ for all involved. The community looks forward to your contributions.
 ## Code of Conduct
 
 This project and everyone participating in it is governed by the
-[**Stylelint Config Archoleat SCSS Code of Conduct**](https://github.com/Archoleat/stylelint-config-extended-scss/blob/main/CODE_OF_CONDUCT.md).
+[**Archoleat Stylelint Config Extended SCSS Code of Conduct**](https://github.com/Archoleat/stylelint-config-extended-scss/blob/main/CODE_OF_CONDUCT.md).
 By participating, you are expected to uphold this code.
 
 ## I Have a Question
@@ -150,8 +150,8 @@ Once it's filed:
 ### Suggesting Enhancements
 
 This section guides you through submitting an enhancement suggestion for
-**Stylelint Config Archoleat SCSS**, **including completely new features
-and minor improvements to existing functionality**.
+**Archoleat Stylelint Config Extended SCSS**, **including completely
+new features and minor improvements to existing functionality**.
 Following these guidelines will help maintainers and the community
 to understand your suggestion and find related suggestions.
 
@@ -187,13 +187,13 @@ Enhancement suggestions are tracked as [**GitHub Issues**](https://github.com/Ar
     in as many details as possible.
 
 -   **Explain why this enhancement would be useful** to most
-    **Stylelint Config Archoleat SCSS** users. You may also want to point
-    out the other projects that solved it better and which
+    **Archoleat Stylelint Config Extended SCSS** users. You may also
+    want to point out the other projects that solved it better and which
     could serve as inspiration.
 
 ### Improving The Documentation
 
-Enhancing the documentation of **Stylelint Config Archoleat SCSS** is
+Enhancing the documentation of **Archoleat Stylelint Config Extended SCSS** is
 crucial for ensuring its usability and accessibility to a wider
 audience. Comprehensive and well-structured documentation empowers
 users to effectively leverage the template's features and effectively
@@ -222,4 +222,4 @@ Enhancement suggestions are tracked as [**GitHub Issues**](https://github.com/Ar
     the suggestion.
 
 -   **Explain why this enhancement would be useful** to most
-    **Stylelint Config Archoleat SCSS** users.
+    **Archoleat Stylelint Config Extended SCSS** users.

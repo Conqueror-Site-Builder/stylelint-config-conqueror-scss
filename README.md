@@ -34,8 +34,6 @@
 
 -   [License](#license)
 
--   [Acknowledgments](#acknowledgments)
-
 ## Extended Config for Stylelint With Property Sorting
 
 This project is built on [**Archoleat Repo Template**](https://github.com/Archoleat/archoleat-repo-template).
@@ -59,6 +57,8 @@ This project is built on [**Archoleat Repo Template**](https://github.com/Archol
     declarations, sorting over 480+ rules to enhance readability
     and maintainability.
 
+    > Blocks @func() top, but blocks @func() { smth code} bottom
+
 -   **`stylelint-plugin-defensive-css`**: Promotes robust CSS by identifying
     potential vulnerabilities and cross-browser inconsistencies.
 
@@ -76,17 +76,8 @@ This project is built on [**Archoleat Repo Template**](https://github.com/Archol
 -   Supports **20+** pseudo elements and **65+** pseudo classes
     for diverse styling needs.
 
-> \[!TIP]
-> Experimental and non-standard pseudo classes and
-> elements are used in the config.
-
-### Rules
-
--   **Over 480 properties**, covering various aspects of CSS coding
-    style, consistency, and best practices.
-
-> \[!TIP]
-> Experimental and non-standard properties are used in the config.
+    > Experimental and non-standard pseudo classes and
+    > elements are used in the config.
 
 ### Naming Pattern
 
@@ -104,8 +95,10 @@ maintainability, and clarity in class naming.
 -   Enforces consistent code style and naming conventions for better
     readability and collaboration.
 
--   Sorts **over 480 properties** using the **`stylelint-order`** plugin for
+-   Sorts **over 400 properties** using the **`stylelint-order`** plugin for
     enhanced clarity and maintainability.
+
+    > Experimental and non-standard properties are used in the config.
 
 ## Additions
 
@@ -141,7 +134,3 @@ You can see the available versions
 
 This project is licensed under the MIT license - see the
 [**LICENSE**](LICENSE) for details.
-
-## Acknowledgments
-
-Thanks to everyone who takes part in the development of the project.

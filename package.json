@@ -35,7 +35,7 @@
   },
   "files": [
     "index.js",
-    "utils"
+    "utilities"
   ],
   "engines": {
     "node": ">=18.12.0"
