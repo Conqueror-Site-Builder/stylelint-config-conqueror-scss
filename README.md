@@ -59,7 +59,8 @@ This project is built on [**Archoleat Repo Template**](https://github.com/Archol
     declarations, sorting over 480+ rules to enhance readability
     and maintainability.
 
-    > Blocks @func() top, but blocks @func() { smth code} bottom
+    > If a mixin or function has no nested code, it is located at the top,
+    > otherwise it will be at the bottom.
 
 -   **`stylelint-plugin-defensive-css`**: Promotes robust CSS by identifying
     potential vulnerabilities and cross-browser inconsistencies.
@@ -68,7 +69,8 @@ This project is built on [**Archoleat Repo Template**](https://github.com/Archol
     properties for improved accessibility and flexibility in
     direction-aware layouts.
 
-    > future version all old properties will be remove
+    > In future major versions, all deprecated properties
+    > will be removed from sorting!
 
 -   **`stylelint-prettier`**: Integrates **Prettier** for
     consistent code formatting.
