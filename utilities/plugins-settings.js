@@ -1,6 +1,5 @@
-// Copyright (c) 2024 Archoleat
-
 const pluginsSettings = {
+  'gamut/color-no-out-gamut-range': true,
   'plugin/no-low-performance-animation-properties': true,
   'plugin/use-defensive-css': [
     true,

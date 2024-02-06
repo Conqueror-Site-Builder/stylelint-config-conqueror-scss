@@ -1,14 +1,13 @@
-// Copyright (c) 2024 Archoleat
-
-import CSSRules from './utilities/css-rules.js';
-import SCSSRules from './utilities/scss-rules.js';
+import CSSRules from './utilities/rules/css.js';
+import SCSSRules from './utilities/rules/scss.js';
 
 import pluginsSettings from './utilities/plugins-settings.js';
-import propertiesOrder from './utilities/order.js';
+import propertiesOrder from './utilities/properties/order.js';
 
 export default {
   extends: ['stylelint-config-standard-scss'],
   plugins: [
+    'stylelint-gamut',
     'stylelint-high-performance-animation',
     'stylelint-order',
     'stylelint-plugin-defensive-css',

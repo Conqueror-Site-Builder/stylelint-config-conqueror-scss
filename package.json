@@ -4,7 +4,7 @@
   "author": "Archoleat",
   "name": "@archoleat/stylelint-config-extended-scss",
   "description": "Extended config for Stylelint with property sorting",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "license": "MIT",
   "keywords": [
     "archoleat-scss",
@@ -43,6 +43,7 @@
   "dependencies": {
     "stylelint": "*",
     "stylelint-config-standard-scss": "*",
+    "stylelint-gamut": "*",
     "stylelint-high-performance-animation": "*",
     "stylelint-order": "*",
     "stylelint-plugin-defensive-css": "*",
@@ -76,6 +77,7 @@
   "peerDependencies": {
     "stylelint": "*",
     "stylelint-config-standard-scss": "*",
+    "stylelint-gamut": "*",
     "stylelint-high-performance-animation": "*",
     "stylelint-order": "*",
     "stylelint-plugin-defensive-css": "*",

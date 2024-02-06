@@ -1,5 +1,3 @@
-// Copyright (c) 2024 Archoleat
-
 import deprecated from './deprecated.js';
 import experimental from './experimental.js';
 import nonStandard from './non-standard.js';
