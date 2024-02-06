@@ -16,8 +16,6 @@ const deprecated = {
     marginRight: 'margin-right',
     marginBottom: 'margin-bottom',
     marginLeft: 'margin-left',
-    borderHeight: 'border-height',
-    borderWidth: 'border-width',
     borderTop: 'border-top',
     borderTopLeftRadius: 'border-top-left-radius',
     borderTopRightRadius: 'border-top-right-radius',
