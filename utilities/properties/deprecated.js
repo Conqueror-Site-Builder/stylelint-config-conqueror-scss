@@ -1,5 +1,3 @@
-// Copyright (c) 2024 Archoleat
-
 const deprecated = {
   property: {
     float: 'float',

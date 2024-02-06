@@ -1,5 +1,3 @@
-// Copyright (c) 2024 Archoleat
-
 const SCSSRules = {
   'scss/at-each-key-value-single-line': true,
   'scss/at-function-named-arguments': 'never',
