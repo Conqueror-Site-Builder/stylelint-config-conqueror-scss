@@ -3,7 +3,7 @@ newIssueWelcomeComment: >
 
 newPRWelcomeComment: >
   Thanks for opening this Pull Request!
-  Please check out our [Contributing Guidelines](https://github.com/Conqueror-Site-Builder/stylelint-config-conqueror-scss/blob/main/CONTRIBUTING.md).
+  Please check out our [Contributing Guidelines](https://github.com/Archoleat/stylelint-config-extended-scss/blob/main/CONTRIBUTING.md).
 
 firstPRMergeComment: >
   Congrats on merging your first Pull Request!
