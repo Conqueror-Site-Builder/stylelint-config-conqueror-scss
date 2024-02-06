@@ -16,6 +16,10 @@ const propertiesOrder = {
     'declarations',
     {
       type: 'rule',
+      selector: '&::selection',
+    },
+    {
+      type: 'rule',
       selector: '&::backdrop',
     },
     {
@@ -28,19 +32,7 @@ const propertiesOrder = {
     },
     {
       type: 'rule',
-      selector: '&::part',
-    },
-    {
-      type: 'rule',
-      selector: '&::slotted',
-    },
-    {
-      type: 'rule',
-      selector: '&::selection',
-    },
-    {
-      type: 'rule',
-      selector: experimental.pseudoElement.targetText,
+      selector: '&::marker',
     },
     {
       type: 'rule',
@@ -49,10 +41,6 @@ const propertiesOrder = {
     {
       type: 'rule',
       selector: '&::first-letter',
-    },
-    {
-      type: 'rule',
-      selector: '&::marker',
     },
     {
       type: 'rule',
@@ -73,6 +61,18 @@ const propertiesOrder = {
     {
       type: 'rule',
       selector: '&::highlight',
+    },
+    {
+      type: 'rule',
+      selector: '&::part',
+    },
+    {
+      type: 'rule',
+      selector: '&::slotted',
+    },
+    {
+      type: 'rule',
+      selector: experimental.pseudoElement.targetText,
     },
     {
       type: 'rule',
@@ -102,18 +102,139 @@ const propertiesOrder = {
       type: 'rule',
       selector: experimental.pseudoElement.viewTransitionOld,
     },
+    {
+      type: 'rule',
+      selector: experimental.pseudoElement.webkit.sliderRunnableTrack,
+    },
+    {
+      type: 'rule',
+      selector: experimental.pseudoElement.webkit.sliderThumb,
+    },
+    {
+      type: 'rule',
+      selector: experimental.pseudoElement.moz.focusInner,
+    },
+    {
+      type: 'rule',
+      selector: nonStandard.pseudoElement.webkit.innerSpinButton,
+    },
+    {
+      type: 'rule',
+      selector: nonStandard.pseudoElement.webkit.meterBar,
+    },
+    {
+      type: 'rule',
+      selector: nonStandard.pseudoElement.webkit.meterEvenLessGoodValue,
+    },
+    {
+      type: 'rule',
+      selector: nonStandard.pseudoElement.webkit.meterInnerElement,
+    },
+    {
+      type: 'rule',
+      selector: nonStandard.pseudoElement.webkit.meterOptimumValue,
+    },
+    {
+      type: 'rule',
+      selector: nonStandard.pseudoElement.webkit.meterSubOptimumValue,
+    },
+    {
+      type: 'rule',
+      selector: nonStandard.pseudoElement.webkit.progressBar,
+    },
+    {
+      type: 'rule',
+      selector: nonStandard.pseudoElement.webkit.progressInnerElement,
+    },
+    {
+      type: 'rule',
+      selector: nonStandard.pseudoElement.webkit.progressValue,
+    },
+    {
+      type: 'rule',
+      selector: nonStandard.pseudoElement.webkit.scrollbar,
+    },
+    {
+      type: 'rule',
+      selector: nonStandard.pseudoElement.webkit.searchResultsButton,
+    },
+    {
+      type: 'rule',
+      selector: nonStandard.pseudoElement.webkit.searchCancelButton,
+    },
+    {
+      type: 'rule',
+      selector: nonStandard.pseudoElement.moz.colorSwatch,
+    },
+    {
+      type: 'rule',
+      selector: nonStandard.pseudoElement.moz.listBullet,
+    },
+    {
+      type: 'rule',
+      selector: nonStandard.pseudoElement.moz.listNumber,
+    },
+    {
+      type: 'rule',
+      selector: nonStandard.pseudoElement.moz.page,
+    },
+    {
+      type: 'rule',
+      selector: nonStandard.pseudoElement.moz.pageSequence,
+    },
+    {
+      type: 'rule',
+      selector: nonStandard.pseudoElement.moz.pageSequence,
+    },
+    {
+      type: 'rule',
+      selector: nonStandard.pseudoElement.moz.progressBar,
+    },
+    {
+      type: 'rule',
+      selector: nonStandard.pseudoElement.moz.rangeTrack,
+    },
+    {
+      type: 'rule',
+      selector: nonStandard.pseudoElement.moz.rangeProgress,
+    },
+    {
+      type: 'rule',
+      selector: nonStandard.pseudoElement.moz.rangeThumb,
+    },
+    {
+      type: 'rule',
+      selector: nonStandard.pseudoElement.moz.scrolledPageSequence,
+    },
     'rules',
-    // ? Pseudo Classes
-    //* Document Structure
     {
       type: 'rule',
       selector: '&:root',
     },
     {
       type: 'rule',
+      selector: '&:lang',
+    },
+    {
+      type: 'rule',
+      selector: '&:scope',
+    },
+    {
+      type: 'rule',
       selector: '&:modal',
     },
-    //!
+    {
+      type: 'rule',
+      selector: '&:past',
+    },
+    {
+      type: 'rule',
+      selector: '&:current',
+    },
+    {
+      type: 'rule',
+      selector: '&:future',
+    },
     {
       type: 'rule',
       selector: '&:where',
@@ -130,19 +251,13 @@ const propertiesOrder = {
       type: 'rule',
       selector: '&:not',
     },
-    //!
     {
       type: 'rule',
-      selector: '&:placeholder-shown',
-    },
-
-    {
-      type: 'rule',
-      selector: '&:lang',
+      selector: '&:empty',
     },
     {
       type: 'rule',
-      selector: '&:scope',
+      selector: '&:target',
     },
     {
       type: 'rule',
@@ -156,16 +271,18 @@ const propertiesOrder = {
       type: 'rule',
       selector: '&:any-link',
     },
-
     {
       type: 'rule',
-      selector: '&:target',
+      selector: '&:defined',
     },
     {
       type: 'rule',
-      selector: experimental.pseudoClass.targetWithin,
+      selector: '&:buffering',
     },
-
+    {
+      type: 'rule',
+      selector: '&:placeholder-shown',
+    },
     {
       type: 'rule',
       selector: '&:right',
@@ -174,47 +291,14 @@ const propertiesOrder = {
       type: 'rule',
       selector: '&:left',
     },
-
-    {
-      type: 'rule',
-      selector: '&:empty',
-    },
-
-    {
-      type: 'rule',
-      selector: '&:defined',
-    },
     {
       type: 'rule',
       selector: '&:host',
     },
-
     {
       type: 'rule',
       selector: '&:host-content',
     },
-
-    {
-      type: 'rule',
-      selector: experimental.pseudoClass.blank,
-    },
-    {
-      type: 'rule',
-      selector: '&:buffering',
-    },
-    {
-      type: 'rule',
-      selector: '&:past',
-    },
-    {
-      type: 'rule',
-      selector: '&:current',
-    },
-    {
-      type: 'rule',
-      selector: '&:future',
-    },
-    //!
     {
       type: 'rule',
       selector: '&:only-of-type',
@@ -235,7 +319,6 @@ const propertiesOrder = {
       type: 'rule',
       selector: '&:nth-last-of-type',
     },
-    //!
     {
       type: 'rule',
       selector: '&:only-child',
@@ -260,7 +343,14 @@ const propertiesOrder = {
       type: 'rule',
       selector: '&:nth-last-child',
     },
-    //* User Interaction
+    {
+      type: 'rule',
+      selector: experimental.pseudoClass.targetWithin,
+    },
+    {
+      type: 'rule',
+      selector: experimental.pseudoClass.blank,
+    },
     {
       type: 'rule',
       selector: '&:default',
@@ -345,7 +435,6 @@ const propertiesOrder = {
       type: 'rule',
       selector: '&:required',
     },
-    //* Media Controls
     {
       type: 'rule',
       selector: '&:popover-open',
@@ -388,6 +477,62 @@ const propertiesOrder = {
     },
     {
       type: 'rule',
+      selector: nonStandard.pseudoClass.moz.broken,
+    },
+    {
+      type: 'rule',
+      selector: nonStandard.pseudoClass.moz.dragOver,
+    },
+    {
+      type: 'rule',
+      selector: nonStandard.pseudoClass.moz.firstNode,
+    },
+    {
+      type: 'rule',
+      selector: nonStandard.pseudoClass.moz.lastNode,
+    },
+    {
+      type: 'rule',
+      selector: nonStandard.pseudoClass.moz.handlerBlocked,
+    },
+    {
+      type: 'rule',
+      selector: nonStandard.pseudoClass.moz.handlerCrashed,
+    },
+    {
+      type: 'rule',
+      selector: nonStandard.pseudoClass.moz.handlerDisabled,
+    },
+    {
+      type: 'rule',
+      selector: nonStandard.pseudoClass.moz.loading,
+    },
+    {
+      type: 'rule',
+      selector: nonStandard.pseudoClass.moz.localeDir,
+    },
+    {
+      type: 'rule',
+      selector: nonStandard.pseudoClass.moz.onlyWhitespace,
+    },
+    {
+      type: 'rule',
+      selector: nonStandard.pseudoClass.moz.submitInvalid,
+    },
+    {
+      type: 'rule',
+      selector: nonStandard.pseudoClass.moz.suppressed,
+    },
+    {
+      type: 'rule',
+      selector: nonStandard.pseudoClass.moz.userDisabled,
+    },
+    {
+      type: 'rule',
+      selector: nonStandard.pseudoClass.moz.windowInactive,
+    },
+    {
+      type: 'rule',
       selector: '&\\[[^\\[\\]]+\\]',
     },
     {
@@ -412,25 +557,26 @@ const propertiesOrder = {
   'order/properties-alphabetical-order': null,
   'order/properties-order': [
     [
-      // All
       'all',
-      // Visibility
+      'page',
+      'break-before',
+      'break-inside',
+      'break-after',
+      'orphans',
+      'widows',
       'display',
       'opacity',
+      'isolation',
       'visibility',
-      experimental.property.contentVisibility,
       'backface-visibility',
       'appearance',
-      // Cursor
+      experimental.property.contentVisibility,
       'cursor',
-      // Content
       'content',
       'quotes',
-      // Counter
       'counter-increment',
       'counter-set',
       'counter-reset',
-      // Position
       'position',
       'inset',
       'inset-block',
@@ -441,11 +587,11 @@ const propertiesOrder = {
       'inset-inline-end',
       'z-index',
       deprecated.property.float,
+      deprecated.property.clear,
       deprecated.property.top,
       deprecated.property.right,
       deprecated.property.bottom,
       deprecated.property.left,
-      // Columns
       'columns',
       'column-width',
       'column-count',
@@ -455,7 +601,6 @@ const propertiesOrder = {
       'column-rule-width',
       'column-rule-style',
       'column-rule-color',
-      // Flex
       'flex',
       'flex-grow',
       'flex-shrink',
@@ -464,7 +609,6 @@ const propertiesOrder = {
       'flex-direction',
       'flex-wrap',
       'order',
-      // Grid
       'grid',
       'grid-area',
       'grid-template',
@@ -484,72 +628,63 @@ const propertiesOrder = {
       'column-gap',
       'row-gap',
       experimental.property.masonryAutoFlow,
-      // Table
       'table-layout',
       'border-spacing',
       'border-collapse',
       'empty-cells',
       'vertical-align',
       'caption-side',
-      // Alignment
       'place-content',
       'place-items',
       'place-self',
       'align-content',
       'align-items',
       'align-self',
-      experimental.property.alignTracks,
       'justify-content',
       'justify-items',
       'justify-self',
+      experimental.property.alignTracks,
       experimental.property.justifyTracks,
-      // Container
       'container',
       'container-name',
       'container-type',
-      // Contain
       'contain',
       'contain-intrinsic-size',
       'contain-intrinsic-block-size',
       'contain-intrinsic-inline-size',
       deprecated.property.containIntrinsicHeight,
       deprecated.property.containIntrinsicWidth,
-      // Overflow
       'overflow',
       'overflow-clip-margin',
       'overflow-block',
       'overflow-inline',
-      deprecated.property.overflowY,
-      deprecated.property.overflowX,
       'overflow-wrap',
       'overflow-anchor',
-      // Offset
+      deprecated.property.overflowY,
+      deprecated.property.overflowX,
       'offset',
       'offset-position',
       'offset-path',
       'offset-distance',
       'offset-rotate',
       'offset-anchor',
-      // Outline
       'outline',
       'outline-width',
       'outline-style',
       'outline-color',
       'outline-offset',
-      // Margin
       'margin',
-      experimental.property.marginTrim,
       'margin-block',
       'margin-block-start',
       'margin-block-end',
       'margin-inline',
       'margin-inline-start',
       'margin-inline-end',
+      experimental.property.marginTrim,
       deprecated.property.marginTop,
       deprecated.property.marginRight,
       deprecated.property.marginBottom,
       deprecated.property.marginLeft,
-      // Border
       'border',
       'border-style',
       'border-color',
@@ -582,6 +717,12 @@ const propertiesOrder = {
       'border-inline-end-width',
       'border-inline-end-style',
       'border-inline-end-color',
+      'border-image',
+      'border-image-source',
+      'border-image-slice',
+      'border-image-width',
+      'border-image-outset',
+      'border-image-repeat',
       deprecated.property.borderHeight,
       deprecated.property.borderWidth,
       deprecated.property.borderTop,
@@ -604,14 +745,9 @@ const propertiesOrder = {
       deprecated.property.borderLeftWidth,
       deprecated.property.borderLeftStyle,
       deprecated.property.borderLeftColor,
-      'border-image',
-      'border-image-source',
-      'border-image-slice',
-      'border-image-width',
-      'border-image-outset',
-      'border-image-repeat',
-      // Sizes
       'box-sizing',
+      'box-decoration-break',
+      'box-shadow',
       'aspect-ratio',
       'block-size',
       'min-block-size',
@@ -625,7 +761,6 @@ const propertiesOrder = {
       deprecated.property.width,
       deprecated.property.minWidth,
       deprecated.property.maxWidth,
-      // Padding
       'padding',
       'padding-block',
       'padding-block-start',
@@ -637,11 +772,9 @@ const propertiesOrder = {
       deprecated.property.paddingRight,
       deprecated.property.paddingBottom,
       deprecated.property.paddingLeft,
-      // Shape
       'shape-outside',
       'shape-margin',
       'shape-image-threshold',
-      // Mask
       'mask',
       'mask-border',
       'mask-border-source',
@@ -659,7 +792,54 @@ const propertiesOrder = {
       'mask-clip',
       'mask-composite',
       'mask-type',
-      // Fonts
+      'direction',
+      'writing-mode',
+      'tab-size',
+      'white-space',
+      'word-wrap',
+      'word-spacing',
+      'word-break',
+      'letter-spacing',
+      'line-break',
+      'line-height',
+      'ruby-position',
+      'hyphens',
+      'hyphenate-character',
+      'hyphenate-limit-chars',
+      'hanging-punctuation',
+      'unicode-bidi',
+      'unicode-range',
+      experimental.property.whiteSpaceCollapse,
+      experimental.property.initialLetter,
+      experimental.property.initialLetterAlign,
+      experimental.property.lineHeightStep,
+      experimental.property.rubyAlign,
+      'text-overflow',
+      'text-rendering',
+      'text-indent',
+      'text-justify',
+      'text-orientation',
+      'text-shadow',
+      'text-transform',
+      'text-anchor',
+      'text-wrap',
+      'text-align',
+      'text-align-last',
+      'text-combine-upright',
+      'text-decoration',
+      'text-decoration-skip-ink',
+      'text-decoration-thickness',
+      'text-decoration-line',
+      'text-decoration-style',
+      'text-decoration-color',
+      'text-emphasis',
+      'text-emphasis-position',
+      'text-emphasis-style',
+      'text-emphasis-color',
+      'text-underline-position',
+      'text-underline-offset',
+      experimental.property.textSizeAdjust,
+      experimental.property.textDecorationSkip,
       'src',
       'font',
       'font-family',
@@ -668,7 +848,6 @@ const propertiesOrder = {
       'font-weight',
       'font-style',
       'font-display',
-      nonStandard.property.fontSmooth,
       'font-feature-settings',
       'font-kerning',
       'font-language-override',
@@ -688,63 +867,12 @@ const propertiesOrder = {
       'font-variant-numeric',
       'font-variant-position',
       'font-variation-settings',
-      // Text
-      'text-overflow',
-      'text-rendering',
-      'text-indent',
-      'text-justify',
-      'text-orientation',
-      'text-shadow',
-      'text-transform',
-      'text-anchor',
-      'text-wrap',
-      'text-align',
-      'text-align-last',
-      experimental.property.textSizeAdjust,
-      'text-combine-upright',
-      'text-decoration',
-      experimental.property.textDecorationSkip,
-      'text-decoration-skip-ink',
-      'text-decoration-thickness',
-      'text-decoration-line',
-      'text-decoration-style',
-      'text-decoration-color',
-      'text-emphasis',
-      'text-emphasis-position',
-      'text-emphasis-style',
-      'text-emphasis-color',
-      'text-underline-position',
-      'text-underline-offset',
-      // Typography
-      'direction',
-      'writing-mode',
-      'tab-size',
-      'white-space',
-      experimental.property.whiteSpaceCollapse,
-      'word-wrap',
-      'word-spacing',
-      'word-break',
-      experimental.property.initialLetter,
-      experimental.property.initialLetterAlign,
-      'letter-spacing',
-      'line-break',
-      'line-height',
-      experimental.property.lineHeightStep,
-      'ruby-position',
-      experimental.property.rubyAlign,
-      'hyphens',
-      'hyphenate-character',
-      'hyphenate-limit-chars',
-      'hanging-punctuation',
-      'unicode-bidi',
-      'unicode-range',
-      // Image
+      nonStandard.property.fontSmooth,
       'object-fit',
       'object-position',
       'image-orientation',
       'image-rendering',
       experimental.property.imageResolution,
-      // Background
       'background',
       'background-image',
       'background-color',
@@ -757,17 +885,15 @@ const propertiesOrder = {
       'background-attachment',
       'background-clip',
       'background-blend-mode',
-      // Color
       'color-scheme',
       'accent-color',
       'color',
       'caret-color',
       'forced-color-adjust',
       'print-color-adjust',
-      // SVG
       'fill',
       'stroke',
-      // Transform
+      'paint-order',
       'transform',
       'transform-box',
       'transform-origin',
@@ -777,14 +903,12 @@ const propertiesOrder = {
       'rotate',
       'perspective',
       'perspective-origin',
-      // Transition
       'transition',
       'transition-property',
       'transition-duration',
       'transition-timing-function',
       'transition-delay',
       experimental.property.transitionBehavior,
-      // Animation
       'animation',
       'animation-name',
       'animation-duration',
@@ -795,70 +919,44 @@ const propertiesOrder = {
       'animation-fill-mode',
       'animation-play-state',
       'animation-composition',
+      'will-change',
       experimental.property.animationTimeline,
       experimental.property.animationRange,
       experimental.property.animationRangeStart,
       experimental.property.animationRangeEnd,
-      'will-change',
-      // List
       'list-style',
       'list-style-type',
       'list-style-position',
       'list-style-image',
-
-      //! Other
-      'isolation',
-      'box-decoration-break',
-      'box-shadow',
-      'paint-order',
-      'page',
-
-      // Break
-      'break-before',
-      'break-inside',
-      'break-after',
-
-      'orphans',
-      'widows',
-      'clear',
-
-      // User Actions
       'pointer-events',
       'touch-action',
       'user-select',
       'user-zoom',
-      // Actions
-      nonStandard.property.zoom,
       'resize',
-      // Filters
+      nonStandard.property.zoom,
       'filter',
       'backdrop-filter',
       'clip-path',
       'mix-blend-mode',
       experimental.property.overlay,
-      // Marker
       'marker',
       'marker-start',
       'marker-mid',
       'marker-end',
-      // Math
       'math-depth',
-      experimental.property.mathShift,
       'math-style',
-      // View Timeline
+      experimental.property.mathShift,
       experimental.property.timelineScope,
       experimental.property.viewTimeline,
       experimental.property.viewTimelineName,
       experimental.property.viewTimelineAxis,
       experimental.property.viewTimelineInset,
       experimental.property.viewTransitionName,
-      // Overscroll
       'overscroll-behavior',
       'overscroll-behavior-block',
       'overscroll-behavior-inline',
       deprecated.property.overscrollBehaviorY,
       deprecated.property.overscrollBehaviorX,
-      // Scroll
       'scroll-behavior',
       'scroll-margin',
       'scroll-margin-block',
@@ -874,6 +972,12 @@ const propertiesOrder = {
       'scroll-padding-inline',
       'scroll-padding-inline-start',
       'scroll-padding-inline-end',
+      'scroll-snap-type',
+      'scroll-snap-align',
+      'scroll-snap-stop',
+      experimental.property.scrollTimeline,
+      experimental.property.scrollTimelineAxis,
+      experimental.property.scrollTimelineName,
       deprecated.property.scrollMarginTop,
       deprecated.property.scrollMarginRight,
       deprecated.property.scrollMarginBottom,
@@ -882,13 +986,6 @@ const propertiesOrder = {
       deprecated.property.scrollPaddingRight,
       deprecated.property.scrollPaddingBottom,
       deprecated.property.scrollPaddingLeft,
-      'scroll-snap-type',
-      'scroll-snap-align',
-      'scroll-snap-stop',
-      experimental.property.scrollTimeline,
-      experimental.property.scrollTimelineAxis,
-      experimental.property.scrollTimelineName,
-      // Scrollbar
       'scrollbar-gutter',
       'scrollbar-width',
       'scrollbar-color',

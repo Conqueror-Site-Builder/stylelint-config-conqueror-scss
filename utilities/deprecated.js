@@ -3,6 +3,7 @@
 const deprecated = {
   property: {
     float: 'float',
+    clear: 'clear',
     top: 'top',
     right: 'right',
     bottom: 'bottom',

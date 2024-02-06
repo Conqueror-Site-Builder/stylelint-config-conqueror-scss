@@ -7,14 +7,13 @@ const CSSRules = {
   'function-url-no-scheme-relative': true,
   'keyframe-selector-notation': 'percentage',
   'max-nesting-depth': [
-    // ?
     4,
     {
       ignore: ['blockless-at-rules'],
     },
   ],
   'media-feature-name-value-no-unknown': true,
-  'no-descending-specificity': null, // ?
+  'no-descending-specificity': null,
   'no-unknown-animations': true,
   'selector-class-pattern': [
     '^[a-z][a-z0-9]*(-[a-z0-9]+)*(__[a-z0-9]+(-[a-z0-9]+)*)?(--[a-z0-9]+(-[a-z0-9]+)*)?$',
