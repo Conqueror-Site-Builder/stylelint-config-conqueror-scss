@@ -7,13 +7,23 @@
   "version": "1.2.1",
   "license": "MIT",
   "keywords": [
+    "archoleat-config-scss",
+    "archoleat-config-stylelint",
     "archoleat-scss",
-    "stylelint-config-extended-scss",
     "archoleat-stylelint-scss",
     "archoleat-stylelint",
     "archoleat",
+    "stylelint-config-extended-scss",
     "scss",
-    "stylelint"
+    "stylelint",
+    "stylelint-config-standard-scss",
+    "stylelint-config",
+    "stylelint-gamut",
+    "stylelint-high-performance-animation",
+    "stylelint-order",
+    "stylelint-plugin-defensive-css",
+    "stylelint-plugin-logical-css",
+    "stylelint-prettier"
   ],
   "homepage": "https://github.com/Archoleat/stylelint-config-extended-scss#readme",
   "repository": {

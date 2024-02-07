@@ -11,7 +11,7 @@
 ![Markdown](https://img.shields.io/github/actions/workflow/status/Archoleat/stylelint-config-extended-scss/markdown.yml?label=Markdown)
 ![ESLint](https://img.shields.io/github/actions/workflow/status/Archoleat/stylelint-config-extended-scss/eslint.yml?label=ESLint)
 
-> Extended Config for Stylelint With Property Sorting
+> Extended Shareable Config for Stylelint With Property Sorting
 
 ## Table of Contents
 
@@ -23,7 +23,7 @@
 ## This Config
 
 -   Extends the [**`stylelint-config-standard-scss`** shared config](https://github.com/stylelint-scss/stylelint-config-standard-scss)
-    and configures its rules for **SCSS**.
+    and configures it's rules for **SCSS**.
 
 -   **BEM** naming convention likely enforced, encouraging modularity,
     maintainability, and clarity in class naming.
@@ -36,7 +36,7 @@
 -   Sorts **over 400 properties** using the **`stylelint-order`** plugin for
     enhanced clarity and maintainability.
 
--   **`stylelint-plugin-logical-css`** replace some properties
+-   **`stylelint-plugin-logical-css`** replace properties
     with logical alternatives.
 
 -   **`stylelint-high-performance-animation`** enhances your animations.
