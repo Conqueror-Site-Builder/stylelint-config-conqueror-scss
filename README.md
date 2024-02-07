@@ -50,13 +50,14 @@
 
 ## Installation
 
-```bash
+```shell
 npm i -D @archoleat/stylelint-config-extended-scss
 ```
 
 ## Usage
 
 ```js
+// stylelint.config.js
 export default {
   extends: '@archoleat/stylelint-config-extended-scss',
 };
