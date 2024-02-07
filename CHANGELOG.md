@@ -1,5 +1,7 @@
 # Changelog
 
+## [1.2.2](https://github.com/Archoleat/stylelint-config-extended-scss/compare/v1.2.1...v1.2.2) (2024-02-07)
+
 ## 1.2.0 (2024-02-06)
 
 
