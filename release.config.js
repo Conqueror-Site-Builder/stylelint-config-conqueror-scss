@@ -60,17 +60,10 @@ export default {
       {
         presetConfig: {
           types: [
-            { type: 'feat', section: 'Features' },
-            { type: 'fix', section: 'Bug Fixes' },
             { type: 'refactor', section: 'Code Refactoring' },
-            { type: 'perf', section: 'Performance Improvements' },
-            { type: 'revert', section: 'Reverts' },
             { type: 'docs', section: 'Documentation' },
             { type: 'style', section: 'Styles' },
             { type: 'test', section: 'Tests' },
-            { type: 'build', section: 'Build System', hidden: true },
-            { type: 'chore', section: 'Miscellaneous Chores', hidden: true },
-            { type: 'ci', section: 'Continuous Integration', hidden: true },
           ],
         },
         writerOpts: {
@@ -84,7 +77,12 @@ export default {
         changelogTitle: '# Changelog',
       },
     ],
-    '@semantic-release/git',
+    [
+      '@semantic-release/git',
+      {
+        assets: ['package.json'],
+      },
+    ],
     '@semantic-release/github',
   ],
   preset: 'conventionalcommits',

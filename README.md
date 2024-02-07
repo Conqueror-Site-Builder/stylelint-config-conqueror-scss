@@ -31,6 +31,8 @@
 -   Experimental and non-standard pseudo classes, pseudo elements and properties
     are used in the config.
 
+    > Don't worry, it doesn't have any side effects of any kind.
+
 -   Sorts **over 400 properties** using the **`stylelint-order`** plugin for
     enhanced clarity and maintainability.
 
@@ -38,6 +40,9 @@
     with logical alternatives.
 
 -   **`stylelint-high-performance-animation`** enhances your animations.
+
+-   **`stylelint-plugin-defensive-css`** for enforcing defensive **CSS**
+    best practices.
 
 -   **`stylelint-gamut`** throw warning if color goes out of **sRGB**
     color space and is not wrapped in **`@media (color-gamut: p3) {}`**

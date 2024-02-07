@@ -1,4 +1,8 @@
-const pluginsSettings = {
+import propertiesOrder from './properties/order.js';
+
+const plugins = {
+  'prettier/prettier': true,
+  ...propertiesOrder,
   'gamut/color-no-out-gamut-range': true,
   'plugin/no-low-performance-animation-properties': true,
   'plugin/use-defensive-css': [
@@ -9,6 +13,7 @@ const pluginsSettings = {
       'custom-property-fallbacks': true,
       'flex-wrapping': true,
       'scroll-chaining': true,
+      'scrollbar-gutter': true,
       'vendor-prefix-grouping': true,
     },
   ],
@@ -16,4 +21,4 @@ const pluginsSettings = {
   'plugin/use-logical-units': true,
 };
 
-export default pluginsSettings;
+export default plugins;
