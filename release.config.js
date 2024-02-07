@@ -77,14 +77,9 @@ export default {
         changelogTitle: '# Changelog',
       },
     ],
-    [
-      '@semantic-release/git',
-      {
-        assets: ['package.json'],
-      },
-    ],
-    '@semantic-release/npm',
+    '@semantic-release/git',
     '@semantic-release/github',
+    '@semantic-release/npm',
   ],
   preset: 'conventionalcommits',
 };
