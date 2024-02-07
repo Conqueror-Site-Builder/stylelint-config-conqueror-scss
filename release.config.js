@@ -83,6 +83,7 @@ export default {
         assets: ['package.json'],
       },
     ],
+    '@semantic-release/npm',
     '@semantic-release/github',
   ],
   preset: 'conventionalcommits',
