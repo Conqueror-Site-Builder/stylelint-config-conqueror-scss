@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.2.3](https://github.com/Archoleat/stylelint-config-extended-scss/compare/v1.2.2...v1.2.3) (2024-02-07)
+
+
+### Bug Fixes
+
+* `release.config.js` ([071d770](https://github.com/Archoleat/stylelint-config-extended-scss/commit/071d770b78685fb72a94886a095419083b911d67))
+* `release.config.js` ([#27](https://github.com/Archoleat/stylelint-config-extended-scss/issues/27)) ([06ff620](https://github.com/Archoleat/stylelint-config-extended-scss/commit/06ff6203c448aed9760e95a257413911626ec1a3))
+
 ## [1.2.2](https://github.com/Archoleat/stylelint-config-extended-scss/compare/v1.2.1...v1.2.2) (2024-02-07)
 
 ## 1.2.0 (2024-02-06)
