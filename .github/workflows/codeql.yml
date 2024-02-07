@@ -28,7 +28,7 @@ jobs:
       fail-fast: false
       matrix:
         language:
-          - typescript
+          - javascript
 
     steps:
       - name: Checkout Repository
