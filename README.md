@@ -33,18 +33,20 @@
 
     > Don't worry, it doesn't have any side effects of any kind.
 
--   Sorts **over 400 properties** using the **`stylelint-order`** plugin for
-    enhanced clarity and maintainability.
+-   [**`stylelint-order`**](https://github.com/hudochenkov/stylelint-order)
+    sorts **over 400 properties** for enhanced clarity and maintainability.
 
--   **`stylelint-plugin-logical-css`** replace properties
-    with logical alternatives.
+-   [**`stylelint-plugin-logical-css`**](https://github.com/yuschick/stylelint-plugin-logical-css)
+    replace properties with logical alternatives.
 
--   **`stylelint-high-performance-animation`** enhances your animations.
+-   [**`stylelint-high-performance-animation`**](https://github.com/kristerkari/stylelint-high-performance-animation)
+    enhances your animations.
 
--   **`stylelint-plugin-defensive-css`** for enforcing defensive **CSS**
-    best practices.
+-   [**`stylelint-plugin-defensive-css`**](https://github.com/yuschick/stylelint-plugin-defensive-css)
+    for enforcing defensive **CSS** best practices.
 
--   **`stylelint-gamut`** throw warning if color goes out of **sRGB**
+-   [**`stylelint-gamut`**](https://github.com/fpetrakov/stylelint-gamut)
+    throw warning if color goes out of **sRGB**
     color space and is not wrapped in **`@media (color-gamut: p3) {}`**
     or **`@media (color-gamut: rec2020) {}`**
 
