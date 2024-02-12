@@ -2,6 +2,7 @@ import REGEXP from '../regexps.js';
 
 const CSSRules = {
   'color-named': 'never',
+  'declaration-empty-line-before': null,
   'declaration-no-important': true,
   'font-weight-notation': 'numeric',
   'function-url-no-scheme-relative': true,
