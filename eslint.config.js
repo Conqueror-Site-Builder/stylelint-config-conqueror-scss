@@ -32,15 +32,16 @@ export default [
       unicornPlugin,
     },
     rules: {
-      'no-underscore-dangle': 'warn',
       'import/exports-last': 'error',
+      'import/extensions': 'warn',
       'import/group-exports': 'warn',
       'import/no-commonjs': 'error',
       'import/no-namespace': 'error',
       'import/no-unassigned-import': 'error',
-      'unicorn/no-unused-properties': 'error',
       'unicorn/no-null': 'warn',
+      'unicorn/no-unused-properties': 'error',
       'unicorn/string-content': 'error',
+      'no-underscore-dangle': 'warn',
     },
   },
 ];
