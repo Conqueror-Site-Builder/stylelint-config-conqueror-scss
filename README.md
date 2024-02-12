@@ -36,6 +36,8 @@
 -   [**`stylelint-order`**](https://github.com/hudochenkov/stylelint-order)
     sorts **over 400 properties** for enhanced clarity and maintainability.
 
+    > Properties are grouped into logical groups and separated by a space.
+
 -   [**`stylelint-plugin-logical-css`**](https://github.com/yuschick/stylelint-plugin-logical-css)
     replace properties with logical alternatives.
 
