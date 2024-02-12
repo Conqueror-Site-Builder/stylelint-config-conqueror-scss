@@ -1,5 +1,23 @@
 # Changelog
 
+## [1.2.4](https://github.com/Archoleat/stylelint-config-extended-scss/compare/v1.2.3...v1.2.4) (2024-02-12)
+
+
+### Code Refactoring
+
+* **order:** grouped properties ([bc9a373](https://github.com/Archoleat/stylelint-config-extended-scss/commit/bc9a373c1a8c7cc3ea0a62e0ecced81feb851710))
+* **order:** grouped properties ([#36](https://github.com/Archoleat/stylelint-config-extended-scss/issues/36)) ([1850e70](https://github.com/Archoleat/stylelint-config-extended-scss/commit/1850e7093effe107f7bc18cb98c889e9506efef5))
+
+
+### Documentation
+
+* **readme:** add links for plugins ([9cafdbe](https://github.com/Archoleat/stylelint-config-extended-scss/commit/9cafdbefe99a8b5dd2ba6a473cf8c9f2f19db4db))
+* **readme:** add links for plugins ([#31](https://github.com/Archoleat/stylelint-config-extended-scss/issues/31)) ([260d472](https://github.com/Archoleat/stylelint-config-extended-scss/commit/260d4727178f30e533b766b17bc0b0cdb0d7b072))
+* **readme:** small changes ([a0da37d](https://github.com/Archoleat/stylelint-config-extended-scss/commit/a0da37d56ac879c2377f8bd0b83e43993ae40633))
+* **readme:** small changes ([#28](https://github.com/Archoleat/stylelint-config-extended-scss/issues/28)) ([bb3405c](https://github.com/Archoleat/stylelint-config-extended-scss/commit/bb3405c9158e4aefe59a21c9bff5ab53abcee136))
+* small changes ([ff5fba3](https://github.com/Archoleat/stylelint-config-extended-scss/commit/ff5fba339505600f473fa48039b39f72134f4a59))
+* small changes ([#32](https://github.com/Archoleat/stylelint-config-extended-scss/issues/32)) ([5046b27](https://github.com/Archoleat/stylelint-config-extended-scss/commit/5046b277983757de08168c56f5dae9f07c203a8d))
+
 ## [1.2.3](https://github.com/Archoleat/stylelint-config-extended-scss/compare/v1.2.2...v1.2.3) (2024-02-07)
 
 
