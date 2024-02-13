@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.2.6](https://github.com/Archoleat/stylelint-config-extended-scss/compare/v1.2.5...v1.2.6) (2024-02-13)
+
+
+### Code Refactoring
+
+* **structure:** rename folders ([698e429](https://github.com/Archoleat/stylelint-config-extended-scss/commit/698e4290a4c28112d1122fe709ed7e26885d5c45))
+* **structure:** rename folders ([#40](https://github.com/Archoleat/stylelint-config-extended-scss/issues/40)) ([44e9bb1](https://github.com/Archoleat/stylelint-config-extended-scss/commit/44e9bb14228b16fbcc32e46426180f98625f67d0))
+
 ## [1.2.5](https://github.com/Archoleat/stylelint-config-extended-scss/compare/v1.2.4...v1.2.5) (2024-02-12)
 
 
