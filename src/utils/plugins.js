@@ -1,4 +1,4 @@
-import propertiesOrder from './properties/order.js';
+import propertiesOrder from '../properties/order.js';
 
 const plugins = {
   'prettier/prettier': true,
