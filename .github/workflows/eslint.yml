@@ -10,12 +10,12 @@ on:
     branches:
       - main
     paths:
-      - '**/*.js'
+      - 'src/**/*.js'
   push:
     branches:
       - main
     paths:
-      - '**/*.js'
+      - 'src/**/*.js'
 
 jobs:
   eslint:
