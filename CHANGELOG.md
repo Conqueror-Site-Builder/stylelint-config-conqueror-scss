@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.2.7](https://github.com/Archoleat/stylelint-config-extended-scss/compare/v1.2.6...v1.2.7) (2024-02-13)
+
+
+### Bug Fixes
+
+* **package:** add correct paths ([0da85bc](https://github.com/Archoleat/stylelint-config-extended-scss/commit/0da85bc65ee371c8566996c458d1e50d3fda38bb))
+* **package:** add correct paths ([#41](https://github.com/Archoleat/stylelint-config-extended-scss/issues/41)) ([5621f04](https://github.com/Archoleat/stylelint-config-extended-scss/commit/5621f0447beea9f60f0098513aa49a3165d16705))
+
 ## [1.2.6](https://github.com/Archoleat/stylelint-config-extended-scss/compare/v1.2.5...v1.2.6) (2024-02-13)
 
 
