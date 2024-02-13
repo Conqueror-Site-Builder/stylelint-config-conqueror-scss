@@ -1,4 +1,4 @@
-import REGEXP from '../regexps.js';
+import REGEXP from '../utils/regexps.js';
 
 const CSSRules = {
   'color-named': 'never',
