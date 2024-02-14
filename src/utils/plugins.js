@@ -4,7 +4,15 @@ const plugins = {
   'prettier/prettier': true,
   ...propertiesOrder,
   'gamut/color-no-out-gamut-range': true,
+  'plugin/declaration-block-no-ignored-properties': true,
   'plugin/no-low-performance-animation-properties': true,
+  'plugin/no-unsupported-browser-features': [
+    true,
+    {
+      severity: 'warning',
+    },
+  ],
+  'plugin/stylelint-group-selectors': true,
   'plugin/use-defensive-css': [
     true,
     {
