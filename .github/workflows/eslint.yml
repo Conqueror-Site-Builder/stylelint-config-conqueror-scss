@@ -10,11 +10,13 @@ on:
     branches:
       - main
     paths:
+      - 'specs/**/*.js'
       - 'src/**/*.js'
   push:
     branches:
       - main
     paths:
+      - 'specs/**/*.js'
       - 'src/**/*.js'
 
 jobs:
