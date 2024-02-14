@@ -10,12 +10,14 @@ on:
     branches:
       - main
     paths:
-      - 'src/**/*.js'
+      - specs/**/*.spec.js
+      - src/**/*.js
   push:
     branches:
       - main
     paths:
-      - 'src/**/*.js'
+      - specs/**/*.spec.js
+      - src/**/*.js
 
 jobs:
   mocha:

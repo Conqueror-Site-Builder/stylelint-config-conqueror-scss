@@ -58,6 +58,7 @@
     "stylelint": "*"
   },
   "dependencies": {
+    "stylelint": "*",
     "stylelint-config-standard-scss": "*",
     "stylelint-declaration-block-no-ignored-properties": "*",
     "stylelint-gamut": "*",
@@ -67,8 +68,7 @@
     "stylelint-order": "*",
     "stylelint-plugin-defensive-css": "*",
     "stylelint-plugin-logical-css": "*",
-    "stylelint-prettier": "*",
-    "stylelint": "*"
+    "stylelint-prettier": "*"
   },
   "devDependencies": {
     "@commitlint/cli": "*",
