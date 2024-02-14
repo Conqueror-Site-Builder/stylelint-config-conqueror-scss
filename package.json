@@ -18,8 +18,11 @@
     "stylelint",
     "stylelint-config-standard-scss",
     "stylelint-config",
+    "stylelint-declaration-block-no-ignored-properties",
     "stylelint-gamut",
+    "stylelint-group-selectors",
     "stylelint-high-performance-animation",
+    "stylelint-no-unsupported-browser-features",
     "stylelint-order",
     "stylelint-plugin-defensive-css",
     "stylelint-plugin-logical-css",
@@ -44,21 +47,28 @@
     "commit": "cz"
   },
   "files": [
+    ".browserslistrc",
     "src"
   ],
   "engines": {
     "node": ">=20.11.0",
     "npm": ">=10.4.0"
   },
+  "peerDependencies": {
+    "stylelint": "*"
+  },
   "dependencies": {
-    "stylelint": "*",
     "stylelint-config-standard-scss": "*",
+    "stylelint-declaration-block-no-ignored-properties": "*",
     "stylelint-gamut": "*",
+    "stylelint-group-selectors": "*",
     "stylelint-high-performance-animation": "*",
+    "stylelint-no-unsupported-browser-features": "*",
     "stylelint-order": "*",
     "stylelint-plugin-defensive-css": "*",
     "stylelint-plugin-logical-css": "*",
-    "stylelint-prettier": "*"
+    "stylelint-prettier": "*",
+    "stylelint": "*"
   },
   "devDependencies": {
     "@commitlint/cli": "*",
@@ -83,8 +93,5 @@
     "remark-preset-lint-markdown-style-guide": "*",
     "remark-preset-lint-recommended": "*",
     "semantic-release": "*"
-  },
-  "peerDependencies": {
-    "stylelint": "*"
   }
 }
