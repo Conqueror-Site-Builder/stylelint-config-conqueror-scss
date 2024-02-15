@@ -17,7 +17,7 @@ const CSSRules = {
   'no-descending-specificity': null,
   'no-unknown-animations': true,
   'selector-class-pattern': [
-    `^${REGEXP.BEM_BLOCK}*${REGEXP.BEM_ELEMENT}?${REGEXP.BEM_MODIFIER}?$`,
+    `^${REGEXP.BEM.BLOCK}*${REGEXP.BEM.ELEMENT}?${REGEXP.BEM.MODIFIER}?$`,
     {
       message: 'Expected class name to be bem',
     },

@@ -1,8 +1,16 @@
 const PATTERN = '[a-z0-9]';
 const REGEXP = {
-  BEM_BLOCK: `[a-z]${PATTERN}*(-${PATTERN}+)`,
-  BEM_ELEMENT: `(__${PATTERN}+(-${PATTERN}+)*)`,
-  BEM_MODIFIER: `(--${PATTERN}+(-${PATTERN}+)*)`,
+  BEM: {
+    BLOCK: `[a-z]${PATTERN}*(-${PATTERN}+)`,
+    ELEMENT: `(__${PATTERN}+(-${PATTERN}+)*)`,
+    MODIFIER: `(--${PATTERN}+(-${PATTERN}+)*)`,
+  },
+  NESTED: {
+    ATTRIBUTE: '&\\[[^\\[\\]]+\\]',
+    CLASS: '&\\..+',
+    MODIFIER: '&--.+',
+    '.* &': '',
+  },
 };
 
 export default REGEXP;
