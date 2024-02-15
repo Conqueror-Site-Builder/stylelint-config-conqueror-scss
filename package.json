@@ -38,17 +38,19 @@
   },
   "scripts": {
     "init": "npm i && husky && git submodule init && git submodule update",
-    "format": "prettier . --write",
+    "build": "rollup -c rollup.config.js",
+    "test": "mocha",
+    "release": "semantic-release",
     "lint:formatting": "prettier . --check",
     "lint:editorconfig": "editorconfig-checker",
     "lint:md": "remark . --quiet",
     "lint:js": "eslint src/**/*.js --fix",
-    "test": "mocha",
+    "format": "prettier . --write",
     "commit": "cz"
   },
   "files": [
     ".browserslistrc",
-    "src"
+    "dist"
   ],
   "engines": {
     "node": ">=20.11.0",
@@ -73,6 +75,7 @@
   "devDependencies": {
     "@commitlint/cli": "*",
     "@commitlint/config-conventional": "*",
+    "@rollup/plugin-terser": "*",
     "@semantic-release/changelog": "*",
     "@semantic-release/git": "*",
     "chai": "*",
@@ -92,6 +95,7 @@
     "remark-preset-lint-consistent": "*",
     "remark-preset-lint-markdown-style-guide": "*",
     "remark-preset-lint-recommended": "*",
+    "rollup": "*",
     "semantic-release": "*"
   }
 }
