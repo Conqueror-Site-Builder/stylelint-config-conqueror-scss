@@ -9,10 +9,10 @@ export default {
   plugins: [
     terser({
       ecma: 2015,
-      mangle: { toplevel: true },
       compress: {
         toplevel: true,
       },
+      mangle: { toplevel: true },
       output: { quote_style: 1 },
     }),
   ],
