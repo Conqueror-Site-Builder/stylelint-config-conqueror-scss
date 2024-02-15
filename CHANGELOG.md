@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.4.0](https://github.com/Archoleat/stylelint-config-extended-scss/compare/v1.3.0...v1.4.0) (2024-02-15)
+
+
+### Features
+
+* add `rollup` for build ([#50](https://github.com/Archoleat/stylelint-config-extended-scss/issues/50)) ([489d516](https://github.com/Archoleat/stylelint-config-extended-scss/commit/489d5165c05ad1d74738712394030b9fb0d203e2))
+
+
+### Documentation
+
+* move to `.github` repo ([66536fc](https://github.com/Archoleat/stylelint-config-extended-scss/commit/66536fc390ce9cdd6bb24cd8d77eb5c3ed17d4a5))
+* move to `.github` repo ([#48](https://github.com/Archoleat/stylelint-config-extended-scss/issues/48)) ([f69437d](https://github.com/Archoleat/stylelint-config-extended-scss/commit/f69437d064ce6ae0232f4dc8166cbbc7aef8bc9f))
+
 ## [1.3.0](https://github.com/Archoleat/stylelint-config-extended-scss/compare/v1.2.7...v1.3.0) (2024-02-14)
 
 
