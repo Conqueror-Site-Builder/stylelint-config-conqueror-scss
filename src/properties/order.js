@@ -14,20 +14,20 @@ const propertiesOrder = {
     'dollar-variables',
     createAtRule('include', false),
     'declarations',
-    createRule('&::selection'),
-    createRule('&::backdrop'),
-    createRule('&::before'),
-    createRule('&::after'),
-    createRule('&::marker'),
-    createRule('&::first-line'),
-    createRule('&::first-letter'),
-    createRule('&::cue'),
-    createRule('&::cue-region'),
-    createRule('&::placeholder'),
-    createRule('&::file-selector-button'),
-    createRule('&::highlight'),
-    createRule('&::part'),
-    createRule('&::slotted'),
+    createRule('::selection'),
+    createRule('::backdrop'),
+    createRule('::before'),
+    createRule('::after'),
+    createRule('::marker'),
+    createRule('::first-line'),
+    createRule('::first-letter'),
+    createRule('::cue'),
+    createRule('::cue-region'),
+    createRule('::placeholder'),
+    createRule('::file-selector-button'),
+    createRule('::highlight'),
+    createRule('::part'),
+    createRule('::slotted'),
     createRule(experimental.pseudo.element.targetText),
     createRule(experimental.pseudo.element.spellingError),
     createRule(experimental.pseudo.element.grammarError),
@@ -62,73 +62,73 @@ const propertiesOrder = {
     createRule(nonStandard.pseudo.element.moz.rangeProgress),
     createRule(nonStandard.pseudo.element.moz.rangeThumb),
     createRule(nonStandard.pseudo.element.moz.scrolledPageSequence),
-    createRule('&:root'),
-    createRule('&:lang'),
-    createRule('&:scope'),
-    createRule('&:modal'),
-    createRule('&:past'),
-    createRule('&:current'),
-    createRule('&:future'),
-    createRule('&:where'),
-    createRule('&:is'),
-    createRule('&:has'),
-    createRule('&:not'),
-    createRule('&:empty'),
-    createRule('&:target'),
-    createRule('&:link'),
-    createRule('&:local-link'),
-    createRule('&:any-link'),
-    createRule('&:defined'),
-    createRule('&:buffering'),
-    createRule('&:placeholder-shown'),
-    createRule('&:right'),
-    createRule('&:left'),
-    createRule('&:host'),
-    createRule('&:host-content'),
-    createRule('&:only-of-type'),
-    createRule('&:first-of-type'),
-    createRule('&:nth-of-type'),
-    createRule('&:last-of-type'),
-    createRule('&:nth-last-of-type'),
-    createRule('&:only-child'),
-    createRule('&:first'),
-    createRule('&:first-child'),
-    createRule('&:nth-child'),
-    createRule('&:last-child'),
-    createRule('&:nth-last-child'),
+    createRule(':root'),
+    createRule(':lang'),
+    createRule(':scope'),
+    createRule(':modal'),
+    createRule(':past'),
+    createRule(':current'),
+    createRule(':future'),
+    createRule(':where'),
+    createRule(':is'),
+    createRule(':has'),
+    createRule(':not'),
+    createRule(':empty'),
+    createRule(':target'),
+    createRule(':link'),
+    createRule(':local-link'),
+    createRule(':any-link'),
+    createRule(':defined'),
+    createRule(':buffering'),
+    createRule(':placeholder-shown'),
+    createRule(':right'),
+    createRule(':left'),
+    createRule(':host'),
+    createRule(':host-content'),
+    createRule(':only-of-type'),
+    createRule(':first-of-type'),
+    createRule(':nth-of-type'),
+    createRule(':last-of-type'),
+    createRule(':nth-last-of-type'),
+    createRule(':only-child'),
+    createRule(':first'),
+    createRule(':first-child'),
+    createRule(':nth-child'),
+    createRule(':last-child'),
+    createRule(':nth-last-child'),
     createRule(experimental.pseudo.class.targetWithin),
     createRule(experimental.pseudo.class.blank),
-    createRule('&:default'),
-    createRule('&:enabled'),
-    createRule('&:disabled'),
-    createRule('&:hover'),
-    createRule('&:focus'),
-    createRule('&:focus-within'),
-    createRule('&:focus-visible'),
-    createRule('&:active'),
-    createRule('&:checked'),
-    createRule('&:visited'),
-    createRule('&:indeterminate'),
-    createRule('&:in-range'),
-    createRule('&:out-of-range'),
-    createRule('&:valid'),
-    createRule('&:invalid'),
-    createRule('&:user-valid'),
-    createRule('&:user-invalid'),
-    createRule('&:read-only'),
-    createRule('&:read-write'),
-    createRule('&:optional'),
-    createRule('&:required'),
-    createRule('&:popover-open'),
-    createRule('&:fullscreen'),
-    createRule('&:picture-in-picture'),
-    createRule('&:autofill'),
-    createRule('&:playing'),
-    createRule('&:paused'),
-    createRule('&:stalled'),
-    createRule('&:muted'),
-    createRule('&:volume-locked'),
-    createRule('&:seeking'),
+    createRule(':default'),
+    createRule(':enabled'),
+    createRule(':disabled'),
+    createRule(':hover'),
+    createRule(':focus'),
+    createRule(':focus-within'),
+    createRule(':focus-visible'),
+    createRule(':active'),
+    createRule(':checked'),
+    createRule(':visited'),
+    createRule(':indeterminate'),
+    createRule(':in-range'),
+    createRule(':out-of-range'),
+    createRule(':valid'),
+    createRule(':invalid'),
+    createRule(':user-valid'),
+    createRule(':user-invalid'),
+    createRule(':read-only'),
+    createRule(':read-write'),
+    createRule(':optional'),
+    createRule(':required'),
+    createRule(':popover-open'),
+    createRule(':fullscreen'),
+    createRule(':picture-in-picture'),
+    createRule(':autofill'),
+    createRule(':playing'),
+    createRule(':paused'),
+    createRule(':stalled'),
+    createRule(':muted'),
+    createRule(':volume-locked'),
+    createRule(':seeking'),
     createRule(nonStandard.pseudo.class.moz.broken),
     createRule(nonStandard.pseudo.class.moz.dragOver),
     createRule(nonStandard.pseudo.class.moz.firstNode),
@@ -146,48 +146,47 @@ const propertiesOrder = {
     createRule(REGEXP.NESTED.ATTRIBUTE),
     createRule(REGEXP.NESTED.CLASS),
     createRule(REGEXP.NESTED.MODIFIER),
-    createRule('.* &'),
     'rules',
     createAtRule('include', true),
     'at-rules',
   ],
   'order/properties-order': [
     [
-      createLogicalGroup('all', ['all', 'page']),
-      createLogicalGroup('print', [
+      createLogicalGroup('All', ['all', 'page']),
+      createLogicalGroup('Print', [
         'break-before',
         'break-inside',
         'break-after',
         'orphans',
         'widows',
       ]),
-      createLogicalGroup('actions', [
+      createLogicalGroup('Actions', [
         'cursor',
         'pointer-events',
         'touch-action',
         'resize',
         nonStandard.property.zoom,
       ]),
-      createLogicalGroup('user actions', ['user-select', 'user-zoom']),
-      createLogicalGroup('content', ['content', 'quotes']),
-      createLogicalGroup('counter', [
+      createLogicalGroup('User Actions', ['user-select', 'user-zoom']),
+      createLogicalGroup('Content', ['content', 'quotes']),
+      createLogicalGroup('Counter', [
         'counter-increment',
         'counter-set',
         'counter-reset',
       ]),
-      createLogicalGroup('list', [
+      createLogicalGroup('List', [
         'list-style',
         'list-style-type',
         'list-style-position',
         'list-style-image',
       ]),
-      createLogicalGroup('marker', [
+      createLogicalGroup('Marker', [
         'marker',
         'marker-start',
         'marker-mid',
         'marker-end',
       ]),
-      createLogicalGroup('display', [
+      createLogicalGroup('Display', [
         'display',
         'opacity',
         'isolation',
@@ -196,7 +195,7 @@ const propertiesOrder = {
         'appearance',
         experimental.property.contentVisibility,
       ]),
-      createLogicalGroup('position', [
+      createLogicalGroup('Position', [
         'position',
         deprecated.property.float,
         deprecated.property.clear,
@@ -219,19 +218,19 @@ const propertiesOrder = {
         deprecated.property.left,
         'z-index',
       ]),
-      createLogicalGroup('outline', [
+      createLogicalGroup('Outline', [
         'outline',
         'outline-width',
         'outline-style',
         'outline-color',
         'outline-offset',
       ]),
-      createLogicalGroup('shape', [
+      createLogicalGroup('Shape', [
         'shape-outside',
         'shape-margin',
         'shape-image-threshold',
       ]),
-      createLogicalGroup('mask', [
+      createLogicalGroup('Mask', [
         'mask',
         'mask-border',
         'mask-border-source',
@@ -250,7 +249,7 @@ const propertiesOrder = {
         'mask-mode',
         'mask-composite',
       ]),
-      createLogicalGroup('margin', [
+      createLogicalGroup('Margin', [
         'margin',
         'margin-block',
         'margin-block-start',
@@ -264,7 +263,7 @@ const propertiesOrder = {
         deprecated.property.margin.left,
         experimental.property.marginTrim,
       ]),
-      createLogicalGroup('border', [
+      createLogicalGroup('Border', [
         'border',
         'border-width',
         'border-style',
@@ -325,18 +324,18 @@ const propertiesOrder = {
         'border-image-outset',
         'border-image-repeat',
       ]),
-      createLogicalGroup('box', [
+      createLogicalGroup('Box', [
         'box-sizing',
         'box-decoration-break',
         'box-shadow',
       ]),
-      createLogicalGroup('object', ['object-fit', 'object-position']),
+      createLogicalGroup('Object', ['object-fit', 'object-position']),
       createLogicalGroup('container', [
         'container',
         'container-name',
         'container-type',
       ]),
-      createLogicalGroup('contain', [
+      createLogicalGroup('Contain', [
         'contain',
         'contain-intrinsic-size',
         'contain-intrinsic-block-size',
@@ -344,7 +343,7 @@ const propertiesOrder = {
         deprecated.property.contain.intrinsic.height,
         deprecated.property.contain.intrinsic.width,
       ]),
-      createLogicalGroup('dimensions', [
+      createLogicalGroup('Dimensions', [
         'aspect-ratio',
         'block-size',
         'min-block-size',
@@ -359,7 +358,7 @@ const propertiesOrder = {
         deprecated.property.min.width,
         deprecated.property.max.width,
       ]),
-      createLogicalGroup('padding', [
+      createLogicalGroup('Padding', [
         'padding',
         'padding-block',
         'padding-block-start',
@@ -372,7 +371,7 @@ const propertiesOrder = {
         deprecated.property.padding.bottom,
         deprecated.property.padding.left,
       ]),
-      createLogicalGroup('overflow', [
+      createLogicalGroup('Overflow', [
         'overflow',
         'overflow-clip-margin',
         'overflow-block',
@@ -382,14 +381,14 @@ const propertiesOrder = {
         'overflow-wrap',
         'overflow-anchor',
       ]),
-      createLogicalGroup('overscroll', [
+      createLogicalGroup('Overscroll', [
         'overscroll-behavior',
         'overscroll-behavior-block',
         'overscroll-behavior-inline',
         deprecated.property.overscroll.behavior.y,
         deprecated.property.overscroll.behavior.x,
       ]),
-      createLogicalGroup('scroll', [
+      createLogicalGroup('Scroll', [
         'scroll-margin',
         'scroll-margin-block',
         'scroll-margin-block-start',
@@ -420,12 +419,12 @@ const propertiesOrder = {
         experimental.property.scroll.timelineName,
         experimental.property.scroll.timelineAxis,
       ]),
-      createLogicalGroup('scrollbar', [
+      createLogicalGroup('Scrollbar', [
         'scrollbar-gutter',
         'scrollbar-width',
         'scrollbar-color',
       ]),
-      createLogicalGroup('columns', [
+      createLogicalGroup('Columns', [
         'columns',
         'column-width',
         'column-count',
@@ -436,7 +435,7 @@ const propertiesOrder = {
         'column-rule-style',
         'column-rule-color',
       ]),
-      createLogicalGroup('grid', [
+      createLogicalGroup('Grid', [
         'grid',
         'grid-area',
         'grid-template',
@@ -457,7 +456,7 @@ const propertiesOrder = {
         'row-gap',
         experimental.property.masonryAutoFlow,
       ]),
-      createLogicalGroup('flex', [
+      createLogicalGroup('Flex', [
         'flex',
         'flex-grow',
         'flex-shrink',
@@ -467,7 +466,7 @@ const propertiesOrder = {
         'flex-wrap',
         'order',
       ]),
-      createLogicalGroup('table', [
+      createLogicalGroup('Table', [
         'table-layout',
         'border-spacing',
         'border-collapse',
@@ -475,7 +474,7 @@ const propertiesOrder = {
         'vertical-align',
         'caption-side',
       ]),
-      createLogicalGroup('alignment', [
+      createLogicalGroup('Alignment', [
         'place-content',
         'place-items',
         'place-self',
@@ -488,12 +487,12 @@ const propertiesOrder = {
         'justify-items',
         'justify-self',
       ]),
-      createLogicalGroup('image', [
+      createLogicalGroup('Image', [
         'image-orientation',
         'image-rendering',
         experimental.property.imageResolution,
       ]),
-      createLogicalGroup('typography', [
+      createLogicalGroup('Typography', [
         'unicode-bidi',
         'unicode-range',
         'tab-size',
@@ -517,7 +516,7 @@ const propertiesOrder = {
         'hyphenate-limit-chars',
         'hanging-punctuation',
       ]),
-      createLogicalGroup('text', [
+      createLogicalGroup('Text', [
         'text-overflow',
         'text-rendering',
         'text-indent',
@@ -545,7 +544,7 @@ const propertiesOrder = {
         'text-underline-position',
         'text-underline-offset',
       ]),
-      createLogicalGroup('font', [
+      createLogicalGroup('Font', [
         'src',
         'font',
         'font-family',
@@ -575,13 +574,13 @@ const propertiesOrder = {
         'font-variant-alternates',
         'font-variation-settings',
       ]),
-      createLogicalGroup('math', [
+      createLogicalGroup('Math', [
         'math-depth',
         experimental.property.mathShift,
         'math-style',
       ]),
-      createLogicalGroup('svg', ['fill', 'stroke', 'paint-order']),
-      createLogicalGroup('color', [
+      createLogicalGroup('SVG', ['fill', 'stroke', 'paint-order']),
+      createLogicalGroup('Color', [
         'color-scheme',
         'accent-color',
         'color',
@@ -589,7 +588,7 @@ const propertiesOrder = {
         'forced-color-adjust',
         'print-color-adjust',
       ]),
-      createLogicalGroup('background', [
+      createLogicalGroup('Background', [
         'background',
         'background-image',
         'background-color',
@@ -603,14 +602,14 @@ const propertiesOrder = {
         'background-clip',
         'background-blend-mode',
       ]),
-      createLogicalGroup('filter', [
+      createLogicalGroup('Filter', [
         experimental.property.overlay,
         'filter',
         'backdrop-filter',
         'mix-blend-mode',
         'clip-path',
       ]),
-      createLogicalGroup('transform', [
+      createLogicalGroup('Transform', [
         'transform',
         'transform-origin',
         'transform-box',
@@ -622,7 +621,7 @@ const propertiesOrder = {
         'perspective',
         'perspective-origin',
       ]),
-      createLogicalGroup('transition', [
+      createLogicalGroup('Transition', [
         'transition',
         'transition-property',
         'transition-duration',
@@ -630,7 +629,7 @@ const propertiesOrder = {
         'transition-delay',
         experimental.property.transitionBehavior,
       ]),
-      createLogicalGroup('animation', [
+      createLogicalGroup('Animation', [
         'animation',
         'animation-name',
         'animation-duration',
@@ -647,7 +646,7 @@ const propertiesOrder = {
         experimental.property.animation.rangeStart,
         experimental.property.animation.rangeEnd,
       ]),
-      createLogicalGroup('view timeline', [
+      createLogicalGroup('View Timeline', [
         experimental.property.view.timeline,
         experimental.property.view.timelineName,
         experimental.property.view.timelineAxis,

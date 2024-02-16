@@ -6,10 +6,9 @@ const REGEXP = {
     MODIFIER: `(--${PATTERN}+(-${PATTERN}+)*)`,
   },
   NESTED: {
-    ATTRIBUTE: /&\[[^\[\]]+\]/,
-    CLASS: /&\..+/,
-    MODIFIER: /&--.+/,
-    '.* &': '',
+    ATTRIBUTE: '\\[[^\\[\\]]+\\]',
+    CLASS: '\\..+',
+    MODIFIER: '--.+',
   },
 };
 

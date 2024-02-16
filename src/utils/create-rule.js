@@ -1,6 +1,6 @@
 const createRule = (selector) => {
   return {
-    selector,
+    selector: `&${selector}`,
     type: 'rule',
   };
 };
