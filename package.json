@@ -37,7 +37,7 @@
     "url": "https://github.com/Archoleat/stylelint-config-extended-scss/issues"
   },
   "scripts": {
-    "init": "npm i && husky && git submodule init && git submodule update",
+    "init": "pnpm install && husky && git submodule init && git submodule update",
     "build": "rollup -c rollup.config.js",
     "test": "mocha",
     "release": "semantic-release",
@@ -53,8 +53,12 @@
     "dist"
   ],
   "engines": {
-    "node": ">=20.11.0",
-    "npm": ">=10.4.0"
+    "node": ">=20.11.1",
+    "pnpm": ">=8.15.3"
+  },
+  "volta": {
+    "node": "20.11.1",
+    "pnpm": "8.15.3"
   },
   "peerDependencies": {
     "stylelint": "*"
