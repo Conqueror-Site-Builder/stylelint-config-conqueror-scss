@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.0](https://github.com/Archoleat/stylelint-config-extended-scss/compare/v1.4.1...v1.5.0) (2024-02-16)
+
+
+### Features
+
+* add functions `creators` ([#52](https://github.com/Archoleat/stylelint-config-extended-scss/issues/52)) ([397483d](https://github.com/Archoleat/stylelint-config-extended-scss/commit/397483db5414a52a8c11d86ee6f1d978abde55e0))
+
 ## [1.4.1](https://github.com/Archoleat/stylelint-config-extended-scss/compare/v1.4.0...v1.4.1) (2024-02-16)
 
 
