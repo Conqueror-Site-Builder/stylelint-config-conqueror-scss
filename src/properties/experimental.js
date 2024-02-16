@@ -1,30 +1,32 @@
 const experimental = {
-  pseudoElement: {
-    grammarError: '&::grammar-error',
-    spellingError: '&::spelling-error',
-    targetText: '&::target-text',
-    viewTransition: '&::view-transition',
-    view: {
-      transition: {
-        group: '&::view-transition-group',
-        imagePair: '&::view-transition-image-pair',
-        new: '&::view-transition-new',
-        old: '&::view-transition-old',
+  pseudo: {
+    element: {
+      grammarError: '&::grammar-error',
+      spellingError: '&::spelling-error',
+      targetText: '&::target-text',
+      viewTransition: '&::view-transition',
+      view: {
+        transition: {
+          group: '&::view-transition-group',
+          imagePair: '&::view-transition-image-pair',
+          new: '&::view-transition-new',
+          old: '&::view-transition-old',
+        },
+      },
+      moz: {
+        focusInner: '&::-moz-focus-inner',
+      },
+      webkit: {
+        slider: {
+          runnableTrack: '&::-webkit-slider-runnable-track',
+          thumb: '&::-webkit-slider-thumb',
+        },
       },
     },
-    moz: {
-      focusInner: '&::-moz-focus-inner',
+    class: {
+      blank: '&:blank',
+      targetWithin: '&:target-within',
     },
-    webkit: {
-      slider: {
-        runnableTrack: '&::-webkit-slider-runnable-track',
-        thumb: '&::-webkit-slider-thumb',
-      },
-    },
-  },
-  pseudoClass: {
-    blank: '&:blank',
-    targetWithin: '&:target-within',
   },
   property: {
     contentVisibility: 'content-visibility',

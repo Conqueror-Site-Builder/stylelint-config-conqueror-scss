@@ -75,7 +75,6 @@
   "devDependencies": {
     "@commitlint/cli": "*",
     "@commitlint/config-conventional": "*",
-    "@rollup/plugin-terser": "*",
     "@semantic-release/changelog": "*",
     "@semantic-release/git": "*",
     "chai": "*",
@@ -96,6 +95,7 @@
     "remark-preset-lint-markdown-style-guide": "*",
     "remark-preset-lint-recommended": "*",
     "rollup": "*",
+    "rollup-plugin-esbuild": "*",
     "semantic-release": "*"
   }
 }

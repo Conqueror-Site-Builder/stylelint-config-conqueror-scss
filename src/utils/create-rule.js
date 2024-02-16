@@ -1,7 +1,7 @@
 const createRule = (selector) => {
   return {
     selector,
-    
+    type: 'rule'
   };
 };
 
