@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.1](https://github.com/Archoleat/stylelint-config-extended-scss/compare/v1.4.0...v1.4.1) (2024-02-16)
+
+
+### Bug Fixes
+
+* add correct path to `package.json` ([#51](https://github.com/Archoleat/stylelint-config-extended-scss/issues/51)) ([8387b25](https://github.com/Archoleat/stylelint-config-extended-scss/commit/8387b25ab6d24cf7078d52a099786e032d164755))
+
 ## [1.4.0](https://github.com/Archoleat/stylelint-config-extended-scss/compare/v1.3.0...v1.4.0) (2024-02-15)
 
 
