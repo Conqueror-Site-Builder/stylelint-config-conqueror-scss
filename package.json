@@ -1,10 +1,10 @@
 {
   "type": "module",
-  "exports": "./src/index.js",
+  "exports": "./dist/index.js",
   "author": "Archoleat",
   "name": "@archoleat/stylelint-config-extended-scss",
   "description": "Extended config for Stylelint with property sorting",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "license": "MIT",
   "keywords": [
     "archoleat-config-scss",
