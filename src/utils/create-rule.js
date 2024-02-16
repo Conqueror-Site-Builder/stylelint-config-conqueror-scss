@@ -1,8 +1,6 @@
-const createRule = (selector) => {
-  return {
-    selector: `&${selector}`,
-    type: 'rule',
-  };
-};
+const createRule = (selector) => ({
+  selector: `&${selector}`,
+  type: 'rule',
+});
 
 export default createRule;
