@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.1](https://github.com/Archoleat/stylelint-config-extended-scss/compare/v1.5.0...v1.5.1) (2024-02-16)
+
+
+### Bug Fixes
+
+* **deps-dev:** update ([#53](https://github.com/Archoleat/stylelint-config-extended-scss/issues/53)) ([c0fcd56](https://github.com/Archoleat/stylelint-config-extended-scss/commit/c0fcd56bf15198d721d11c01f69030b16f88bbda))
+
 ## [1.5.0](https://github.com/Archoleat/stylelint-config-extended-scss/compare/v1.4.1...v1.5.0) (2024-02-16)
 
 
