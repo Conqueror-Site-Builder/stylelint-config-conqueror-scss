@@ -1,5 +1,4 @@
-const namedArguments = ['always', { ignore: ['single-argument'] }]
-
+const namedArguments = ['always', { ignore: ['single-argument'] }];
 const SCSSRules = {
   'scss/at-each-key-value-single-line': true,
   'scss/at-function-named-arguments': namedArguments,
