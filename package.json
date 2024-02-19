@@ -34,7 +34,7 @@
     "url": "https://github.com/Archoleat/stylelint-config-extended-scss.git"
   },
   "bugs": {
-    "url": "https://github.com/Archoleat/stylelint-config-extended-scss/issues"
+    "url": "https://github.com/Archoleat/stylelint-config-extended-scss/issues/new/choose"
   },
   "scripts": {
     "init": "pnpm i && husky && git submodule init && git submodule update",
