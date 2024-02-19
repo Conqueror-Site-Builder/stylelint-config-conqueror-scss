@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.5.2](https://github.com/Archoleat/stylelint-config-extended-scss/compare/v1.5.1...v1.5.2) (2024-02-19)
+
+
+### Bug Fixes
+
+* add regex for parent nested selector ([#58](https://github.com/Archoleat/stylelint-config-extended-scss/issues/58)) ([3d928b7](https://github.com/Archoleat/stylelint-config-extended-scss/commit/3d928b7672bd0e3442c9931846afd56d8dba6767))
+
+
+### Documentation
+
+* **readme:** add `pnpm` and `yarn` ([#57](https://github.com/Archoleat/stylelint-config-extended-scss/issues/57)) ([a0a5097](https://github.com/Archoleat/stylelint-config-extended-scss/commit/a0a5097387adb18e9faeb63d04cf34dd8db14010))
+
 ## [1.5.1](https://github.com/Archoleat/stylelint-config-extended-scss/compare/v1.5.0...v1.5.1) (2024-02-16)
 
 
