@@ -55,6 +55,9 @@ devDependencies:
   chai:
     specifier: ^5.1.0
     version: 5.1.0
+  commitlint:
+    specifier: ^18.6.1
+    version: 18.6.1(@types/node@20.11.19)(typescript@5.3.3)
   conventional-changelog-conventionalcommits:
     specifier: ^7.0.2
     version: 7.0.2
@@ -1764,6 +1767,18 @@ packages:
       minimist: 1.2.7
       strip-bom: 4.0.0
       strip-json-comments: 3.1.1
+    transitivePeerDependencies:
+      - '@types/node'
+      - typescript
+    dev: true
+
+  /commitlint@18.6.1(@types/node@20.11.19)(typescript@5.3.3):
+    resolution: {integrity: sha512-I10mj1OmBCrPUHItRqeCEj0uxCdWxL15sCfS1Poq8av2FcX/KvRoiH8jTNG0cVDA2ns7IftugTAM+nLvOavLsw==}
+    engines: {node: '>=v18'}
+    hasBin: true
+    dependencies:
+      '@commitlint/cli': 18.6.1(@types/node@20.11.19)(typescript@5.3.3)
+      '@commitlint/types': 18.6.1
     transitivePeerDependencies:
       - '@types/node'
       - typescript
