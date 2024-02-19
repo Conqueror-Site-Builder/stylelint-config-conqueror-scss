@@ -89,7 +89,7 @@ pnpm i -D @archoleat/stylelint-config-extended-scss
 
 ```shell
 # yarn
-yarn add -D @archoleat/stylelint-config-extended-scss
+yarn add --dev @archoleat/stylelint-config-extended-scss
 ```
 
 ## Usage
