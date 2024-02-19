@@ -20,7 +20,7 @@ const CSSRules = {
   'selector-class-pattern': [
     `^${REGEXP.BEM.BLOCK}*${REGEXP.BEM.ELEMENT}?${REGEXP.BEM.MODIFIER}?$`,
     {
-      message: 'Expected lowercase class name by BEM (block__elem--modifier)',
+      message: 'Expected lowercase class name by BEM (block__element--modifier)',
     },
   ],
   'selector-max-combinators': 4,
