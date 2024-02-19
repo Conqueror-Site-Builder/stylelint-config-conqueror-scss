@@ -83,8 +83,19 @@
 
 ## Installation
 
+With npm
 ```shell
 npm i -D @archoleat/stylelint-config-extended-scss
+```
+
+pnpm
+```shell
+pnpm i -D @archoleat/stylelint-config-extended-scss
+```
+
+or yarn
+```shell
+yarn add -D @archoleat/stylelint-config-extended-scss
 ```
 
 ## Usage
