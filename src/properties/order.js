@@ -146,6 +146,7 @@ const propertiesOrder = {
     createRule(REGEXP.NESTED.ATTRIBUTE),
     createRule(REGEXP.NESTED.CLASS),
     createRule(REGEXP.NESTED.MODIFIER),
+    createRule(REGEXP.NESTED.PARENT),
     'rules',
     createAtRule('include', true),
     'at-rules',

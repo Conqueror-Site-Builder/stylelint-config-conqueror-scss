@@ -9,6 +9,9 @@ const REGEXP = {
     ATTRIBUTE: '\\[[^\\[\\]]+\\]',
     CLASS: '\\..+',
     MODIFIER: '--.+',
+    // The '?' is used to define the '&' sign at the beginning,
+    // which is added in createRule()
+    PARENT: '?.* &',
   },
 };
 
