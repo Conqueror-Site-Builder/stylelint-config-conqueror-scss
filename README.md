@@ -77,35 +77,41 @@
 
 ## Installation
 
-With **npm**
 ```shell
+# npm
 npm i -D @archoleat/stylelint-config-extended-scss
 ```
 
-**pnpm**
 ```shell
+# pnpm
 pnpm i -D @archoleat/stylelint-config-extended-scss
 ```
 
-or **yarn**
 ```shell
+# yarn
 yarn add -D @archoleat/stylelint-config-extended-scss
 ```
 
 ## Usage
 
-```json
-"extends": "@archoleat/stylelint-config-extended-scss"
+```js
+// stylelint.config.js
+export default {
+  extends: '@archoleat/stylelint-config-extended-scss',
+};
 ```
 
 ### Extending the Config
 
-```json
-"extends": "@archoleat/stylelint-config-extended-scss",
-"rules": {
-  "selector-max-compound-selectors": 4,
-  "value-no-vendor-prefix": false
-}
+```js
+// stylelint.config.js
+export default {
+  extends: '@archoleat/stylelint-config-extended-scss',
+  rules: {
+    'selector-max-compound-selectors': 4,
+    'value-no-vendor-prefix': false,
+  },
+};
 ```
 
 ## Rules
