@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.3](https://github.com/Archoleat/stylelint-config-extended-scss/compare/v1.5.2...v1.5.3) (2024-02-20)
+
+
+### Code Refactoring
+
+* **rules:** add new rules ([#61](https://github.com/Archoleat/stylelint-config-extended-scss/issues/61)) ([921fecc](https://github.com/Archoleat/stylelint-config-extended-scss/commit/921fecc164439c7178441b7224c2c1028d7961ca))
+
 ## [1.5.2](https://github.com/Archoleat/stylelint-config-extended-scss/compare/v1.5.1...v1.5.2) (2024-02-19)
 
 
