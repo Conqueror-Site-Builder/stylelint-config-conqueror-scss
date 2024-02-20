@@ -63,7 +63,7 @@
 -   [`stylelint-order`](https://github.com/hudochenkov/stylelint-order):
     Sorts **over 400 properties** for enhanced clarity and maintainability.
 
-    > Properties are grouped into logical groups and separated by a space.
+    > Properties are logically grouped and separated by a space.
 
 -   [`stylelint-plugin-defensive-css`](https://github.com/yuschick/stylelint-plugin-defensive-css):
     Enforcing defensive **CSS** best practices.
