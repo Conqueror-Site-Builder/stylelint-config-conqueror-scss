@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.5.4](https://github.com/Archoleat/stylelint-config-extended-scss/compare/v1.5.3...v1.5.4) (2024-02-20)
+
+
+### Code Refactoring
+
+* add tests for `creators` ([#66](https://github.com/Archoleat/stylelint-config-extended-scss/issues/66)) ([9ba3e9e](https://github.com/Archoleat/stylelint-config-extended-scss/commit/9ba3e9e28721fc0dcdeb5f00ee3a61c1b1319751))
+
+
+### Documentation
+
+* add format ([#64](https://github.com/Archoleat/stylelint-config-extended-scss/issues/64)) ([c7d4fd4](https://github.com/Archoleat/stylelint-config-extended-scss/commit/c7d4fd49e7104420a8d87ae1bf85ee53f688debe))
+* **readme:** rewrite list ([#62](https://github.com/Archoleat/stylelint-config-extended-scss/issues/62)) ([002e6c8](https://github.com/Archoleat/stylelint-config-extended-scss/commit/002e6c8993a80df06cf172dddb96125e75f5331d))
+* **readme:** rewrite text ([#63](https://github.com/Archoleat/stylelint-config-extended-scss/issues/63)) ([46d27fb](https://github.com/Archoleat/stylelint-config-extended-scss/commit/46d27fb5c6c8899982b3abaa2a279fb0e4a2e855))
+
 ## [1.5.3](https://github.com/Archoleat/stylelint-config-extended-scss/compare/v1.5.2...v1.5.3) (2024-02-20)
 
 
