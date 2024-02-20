@@ -4,9 +4,9 @@ import nonStandard from './non-standard.js';
 
 import REGEXP from '../utils/regexps.js';
 
-import createLogicalGroup from '../utils/create-logical-group.js';
-import createAtRule from '../utils/create-at-rule.js';
-import createRule from '../utils/create-rule.js';
+import createLogicalGroup from '../creators/logical-group.js';
+import createAtRule from '../creators/at-rule.js';
+import createRule from '../creators/rule.js';
 
 const propertiesOrder = {
   'order/order': [
