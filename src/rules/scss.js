@@ -1,7 +1,8 @@
+const namedArguments = ['always', { ignore: ['single-argument'] }];
 const SCSSRules = {
   'scss/at-each-key-value-single-line': true,
-  'scss/at-function-named-arguments': 'never',
-  'scss/at-mixin-named-arguments': 'never',
+  'scss/at-function-named-arguments': namedArguments,
+  'scss/at-mixin-named-arguments': namedArguments,
   'scss/at-root-no-redundant': true,
   'scss/at-use-no-redundant-alias': true,
   'scss/comment-no-loud': true,
