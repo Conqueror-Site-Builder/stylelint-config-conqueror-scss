@@ -5,7 +5,7 @@ export default defineConfig({
   plugins: [minify()],
   input: 'src/index.js',
   output: {
-    file: 'dist/index.js',
+    dir: 'dist',
     format: 'es',
   },
 });
