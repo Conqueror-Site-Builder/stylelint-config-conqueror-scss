@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import { describe, it } from 'mocha';
 
-import REGEXP from '../../src/utils/regexps.js';
+import REGEXP from '../../src/utils/regexps.ts';
 
 describe('Nested Selectors Pattern', () => {
   it('nested (String, [&[attribute]])', () => {

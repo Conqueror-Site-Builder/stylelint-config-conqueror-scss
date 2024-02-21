@@ -26,8 +26,8 @@ const nonStandard = {
         page: '::-moz-page',
         pageSequence: '::-moz-page-sequence',
         progressBar: '::-moz-progress-bar',
+        scrolledPageSequence: '::-moz-scrolled-page-sequence',
         list: {
-          scrolledPageSequence: '::-moz-scrolled-page-sequence',
           bullet: '::-moz-list-bullet',
           number: '::-moz-list-number',
         },

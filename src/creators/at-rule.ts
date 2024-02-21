@@ -1,4 +1,4 @@
-const createAtRule = (name, hasBlock) => ({
+const createAtRule = (name: string, hasBlock: boolean) => ({
   name,
   hasBlock,
   type: 'at-rule',

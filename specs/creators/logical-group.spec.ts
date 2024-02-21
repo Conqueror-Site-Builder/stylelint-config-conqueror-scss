@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import { describe, it } from 'mocha';
 
-import createLogicalGroup from '../../src/creators/logical-group.js';
+import createLogicalGroup from '../../src/creators/logical-group.ts';
 
 describe('Create Logical Group', () => {
   it('create an object with args (groupName: String, properties: Array)', () => {

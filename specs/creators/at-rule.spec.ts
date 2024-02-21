@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import { describe, it } from 'mocha';
 
-import createAtRule from '../../src/creators/at-rule.js';
+import createAtRule from '../../src/creators/at-rule.ts';
 
 describe('Create At Rule', () => {
   it('create an object with args (name: String, hasBlock: true)', () => {

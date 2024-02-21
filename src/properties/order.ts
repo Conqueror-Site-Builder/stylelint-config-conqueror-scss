@@ -1,12 +1,12 @@
-import deprecated from './deprecated.js';
-import experimental from './experimental.js';
-import nonStandard from './non-standard.js';
+import deprecated from './deprecated.ts';
+import experimental from './experimental.ts';
+import nonStandard from './non-standard.ts';
 
-import REGEXP from '../utils/regexps.js';
+import REGEXP from '../utils/regexps.ts';
 
-import createLogicalGroup from '../creators/logical-group.js';
-import createAtRule from '../creators/at-rule.js';
-import createRule from '../creators/rule.js';
+import createLogicalGroup from '../creators/logical-group.ts';
+import createAtRule from '../creators/at-rule.ts';
+import createRule from '../creators/rule.ts';
 
 const propertiesOrder = {
   'order/order': [
@@ -58,9 +58,9 @@ const propertiesOrder = {
     createRule(nonStandard.pseudo.element.moz.pageSequence),
     createRule(nonStandard.pseudo.element.moz.pageSequence),
     createRule(nonStandard.pseudo.element.moz.progressBar),
-    createRule(nonStandard.pseudo.element.moz.rangeTrack),
-    createRule(nonStandard.pseudo.element.moz.rangeProgress),
-    createRule(nonStandard.pseudo.element.moz.rangeThumb),
+    createRule(nonStandard.pseudo.element.moz.range.track),
+    createRule(nonStandard.pseudo.element.moz.range.progress),
+    createRule(nonStandard.pseudo.element.moz.range.thumb),
     createRule(nonStandard.pseudo.element.moz.scrolledPageSequence),
     createRule(':root'),
     createRule(':lang'),
