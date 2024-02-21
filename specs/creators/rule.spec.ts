@@ -21,22 +21,19 @@ describe('Create Rule', () => {
     expect(rule(':pseudo-class')).to.have.property('selector', '&:pseudo-class');
   });
 
-  it('create an object with args (selector: RegExp, [\\[[^\\[\\]]+\\]])', () => {
-    expect(rule('\\[[^\\[\\]]+\\]')).to.have.property(
-      'selector',
-      '&\\[[^\\[\\]]+\\]',
-    );
+  it('create an object with args (selector: RegExp, [?\\[(.*)\\]])', () => {
+    expect(rule('?\\[(.*)\\]')).to.have.property('selector', '&?\\[(.*)\\]');
   });
 
-  it('create an object with args (selector: RegExp, [\\..+])', () => {
-    expect(rule('\\..+')).to.have.property('selector', '&\\..+');
+  it('create an object with args (selector: RegExp, [?\\.(.*)])', () => {
+    expect(rule('?\\.(.*)')).to.have.property('selector', '&?\\.(.*)');
   });
 
-  it('create an object with args (selector: RegExp, [--.+])', () => {
-    expect(rule('--.+')).to.have.property('selector', '&--.+');
+  it('create an object with args (selector: RegExp, [--])', () => {
+    expect(rule('--')).to.have.property('selector', '&--');
   });
 
-  it('create an object with args (selector: RegExp, [?.* &])', () => {
-    expect(rule('?.* &')).to.have.property('selector', '&?.* &');
+  it('create an object with args (selector: RegExp, [__])', () => {
+    expect(rule('__')).to.have.property('selector', '&__');
   });
 });
