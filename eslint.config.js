@@ -42,7 +42,6 @@ export default [
       },
     },
     rules: {
-      'no-underscore-dangle': 'error',
       'import/exports-last': 'error',
       'import/extensions': ['error', { ts: 'always' }],
       'import/group-exports': 'error',

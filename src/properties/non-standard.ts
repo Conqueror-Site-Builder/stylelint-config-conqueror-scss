@@ -6,10 +6,12 @@ const nonStandard = {
         scrollbar: '::-webkit-scrollbar',
         meter: {
           bar: '::-webkit-meter-bar',
-          evenLessGoodValue: '::-webkit-meter-even-less-good-value',
           innerElement: '::-webkit-meter-inner-element',
-          optimumValue: '::-webkit-meter-optimum-value',
-          subOptimumValue: '::-webkit-meter-suboptimum-value',
+          value: {
+            evenLessGood: '::-webkit-meter-even-less-good-value',
+            optimum: '::-webkit-meter-optimum-value',
+            subOptimum: '::-webkit-meter-suboptimum-value',
+          },
         },
         progress: {
           bar: '::-webkit-progress-bar',
@@ -17,8 +19,10 @@ const nonStandard = {
           value: '::-webkit-progress-value',
         },
         search: {
-          cancelButton: '::-webkit-search-cancel-button',
-          resultsButton: '::-webkit-search-results-button',
+          button: {
+            cancel: '::-webkit-search-cancel-button',
+            results: '::-webkit-search-results-button',
+          },
         },
       },
       moz: {
@@ -42,8 +46,6 @@ const nonStandard = {
       moz: {
         broken: ':-moz-broken',
         dragOver: ':-moz-drag-over',
-        firstNode: ':-moz-first-node',
-        lastNode: ':-moz-last-node',
         loading: ':-moz-loading',
         localeDir: ':-moz-locale-dir',
         onlyWhitespace: ':-moz-only-whitespace',
@@ -55,6 +57,10 @@ const nonStandard = {
           blocked: ':-moz-handler-blocked',
           crashed: ':-moz-handler-crashed',
           disabled: ':-moz-handler-disabled',
+        },
+        node: {
+          first: ':-moz-first-node',
+          last: ':-moz-last-node',
         },
       },
     },

@@ -6,10 +6,12 @@ const deprecated = {
     right: 'right',
     bottom: 'bottom',
     left: 'left',
+
     borderTop: 'border-top',
     borderRight: 'border-right',
     borderBottom: 'border-bottom',
     borderLeft: 'border-left',
+
     height: 'height',
     width: 'width',
     margin: {

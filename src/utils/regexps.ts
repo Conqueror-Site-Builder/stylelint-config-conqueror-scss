@@ -12,6 +12,9 @@ const REGEXP = {
     // The '?' is used to define the '&' sign at the beginning,
     // which is added in createRule()
     PARENT: '?.* &',
+
+    ELEMENT: '__+',
+    CLS: '\\..+',
   },
 };
 
