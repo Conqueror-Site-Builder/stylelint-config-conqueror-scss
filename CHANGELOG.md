@@ -1,5 +1,16 @@
 # Changelog
 
+## [1.5.5](https://github.com/Archoleat/stylelint-config-extended-scss/compare/v1.5.4...v1.5.5) (2024-02-21)
+
+
+### ⚠ BREAKING CHANGES
+
+* migrate to `ts` (#73)
+
+### Code Refactoring
+
+* migrate to `ts` ([#73](https://github.com/Archoleat/stylelint-config-extended-scss/issues/73)) ([4c31597](https://github.com/Archoleat/stylelint-config-extended-scss/commit/4c31597ff78bc54f085e0fcceba2d461eba84bc0))
+
 ## [1.5.4](https://github.com/Archoleat/stylelint-config-extended-scss/compare/v1.5.3...v1.5.4) (2024-02-20)
 
 
