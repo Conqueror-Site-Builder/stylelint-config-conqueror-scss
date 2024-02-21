@@ -58,9 +58,6 @@
 -   [`stylelint-high-performance-animation`](https://github.com/kristerkari/stylelint-high-performance-animation):
     Enhances your animations.
 
--   [`stylelint-no-unsupported-browser-features`](https://github.com/ismay/stylelint-no-unsupported-browser-features):
-    Disallow features that aren't supported by your target browser audience.
-
 -   [`stylelint-order`](https://github.com/hudochenkov/stylelint-order):
     Sorts **over 400 properties** for enhanced clarity and maintainability.
 
