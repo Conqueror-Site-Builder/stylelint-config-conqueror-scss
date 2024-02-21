@@ -1,5 +1,24 @@
 # Changelog
 
+## [1.5.6](https://github.com/Archoleat/stylelint-config-extended-scss/compare/v1.5.5...v1.5.6) (2024-02-21)
+
+
+### Bug Fixes
+
+* **package:** `exports` ([#74](https://github.com/Archoleat/stylelint-config-extended-scss/issues/74)) ([981f920](https://github.com/Archoleat/stylelint-config-extended-scss/commit/981f920eb2875d8ef56e011b8a2c04bff1dd2283))
+* `regex`s ([#75](https://github.com/Archoleat/stylelint-config-extended-scss/issues/75)) ([75ba25c](https://github.com/Archoleat/stylelint-config-extended-scss/commit/75ba25c1a1fc8a3532baafcca081c739d13f599f))
+
+## [1.5.5](https://github.com/Archoleat/stylelint-config-extended-scss/compare/v1.5.4...v1.5.5) (2024-02-21)
+
+
+### ⚠ BREAKING CHANGES
+
+* migrate to `ts` (#73)
+
+### Code Refactoring
+
+* migrate to `ts` ([#73](https://github.com/Archoleat/stylelint-config-extended-scss/issues/73)) ([4c31597](https://github.com/Archoleat/stylelint-config-extended-scss/commit/4c31597ff78bc54f085e0fcceba2d461eba84bc0))
+
 ## [1.5.4](https://github.com/Archoleat/stylelint-config-extended-scss/compare/v1.5.3...v1.5.4) (2024-02-20)
 
 
@@ -155,8 +174,8 @@
 * **name:** change name ([ae63081](https://github.com/Archoleat/stylelint-config-extended-scss/commit/ae63081bda6023fd346c140c7636d63d39eef0f0))
 * **name:** change name ([#11](https://github.com/Archoleat/stylelint-config-extended-scss/issues/11)) ([88e2386](https://github.com/Archoleat/stylelint-config-extended-scss/commit/88e2386260b90d7351da52be3ddf88fa9cbbf313))
 * **name:** change org name ([1edeaef](https://github.com/Archoleat/stylelint-config-extended-scss/commit/1edeaef04d07d0a790edc906edbc94c906ed7273))
-* **order.js:** remove unused rules ([dd06240](https://github.com/Archoleat/stylelint-config-extended-scss/commit/dd062406702970b86c771c1f19c17c361b32aae8))
-* **order.js:** remove unused rules ([#17](https://github.com/Archoleat/stylelint-config-extended-scss/issues/17)) ([cd8f8e5](https://github.com/Archoleat/stylelint-config-extended-scss/commit/cd8f8e5248716f214c62cc33346d8a036ec4b1e9))
+* **order.ts:** remove unused rules ([dd06240](https://github.com/Archoleat/stylelint-config-extended-scss/commit/dd062406702970b86c771c1f19c17c361b32aae8))
+* **order.ts:** remove unused rules ([#17](https://github.com/Archoleat/stylelint-config-extended-scss/issues/17)) ([cd8f8e5](https://github.com/Archoleat/stylelint-config-extended-scss/commit/cd8f8e5248716f214c62cc33346d8a036ec4b1e9))
 * **package:** add new keywords ([ac1fbdf](https://github.com/Archoleat/stylelint-config-extended-scss/commit/ac1fbdf4b57bd435fc981e20ce30d065ecd57f5a))
 * **package:** add new keywords ([#8](https://github.com/Archoleat/stylelint-config-extended-scss/issues/8)) ([c0eccb6](https://github.com/Archoleat/stylelint-config-extended-scss/commit/c0eccb61e027b5c3563307272afd1e491c4d6602))
 * **package:** change engine version ([d078aaf](https://github.com/Archoleat/stylelint-config-extended-scss/commit/d078aafcc1522a45d9eb706978dbace301f719d0))

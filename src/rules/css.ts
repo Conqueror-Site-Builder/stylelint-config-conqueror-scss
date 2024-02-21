@@ -1,4 +1,4 @@
-import REGEXP from '../utils/regexps.js';
+import REGEXP from '../utils/regexps.ts';
 
 const CSSRules = {
   'at-rule-disallowed-list': ['debug'],

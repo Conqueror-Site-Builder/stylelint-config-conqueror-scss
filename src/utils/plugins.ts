@@ -1,7 +1,6 @@
-import propertiesOrder from '../properties/order.js';
+import propertiesOrder from '../properties/order.ts';
 
 const plugins = {
-  'prettier/prettier': true,
   'gamut/color-no-out-gamut-range': true,
   'plugin/stylelint-group-selectors': true,
   'plugin/declaration-block-no-ignored-properties': true,

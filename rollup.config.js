@@ -1,10 +1,12 @@
+import { defineConfig } from 'rollup';
 import { minify } from 'rollup-plugin-esbuild';
+import typescript from '@rollup/plugin-typescript';
 
-export default {
-  plugins: [minify()],
-  input: 'src/index.js',
+export default defineConfig({
+  plugins: [typescript(), minify()],
+  input: 'src/index.ts',
   output: {
-    file: 'dist/index.js',
+    dir: 'dist',
     format: 'es',
   },
-};
+});

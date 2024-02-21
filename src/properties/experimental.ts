@@ -1,10 +1,12 @@
 const experimental = {
   pseudo: {
     element: {
-      grammarError: '::grammar-error',
-      spellingError: '::spelling-error',
       targetText: '::target-text',
       viewTransition: '::view-transition',
+      error: {
+        grammar: '::grammar-error',
+        spelling: '::spelling-error',
+      },
       view: {
         transition: {
           group: '::view-transition-group',
@@ -31,8 +33,6 @@ const experimental = {
   property: {
     contentVisibility: 'content-visibility',
     masonryAutoFlow: 'masonry-auto-flow',
-    alignTracks: 'align-tracks',
-    justifyTracks: 'justify-tracks',
     marginTrim: 'margin-trim',
     imageResolution: 'image-resolution',
     lineHeightStep: 'line-height-step',
@@ -50,6 +50,10 @@ const experimental = {
     text: {
       sizeAdjust: 'text-size-adjust',
       decorationSkip: 'text-decoration-skip',
+    },
+    tracks: {
+      align: 'align-tracks',
+      justify: 'justify-tracks',
     },
     initial: {
       letter: 'initial-letter',
