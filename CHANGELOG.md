@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.5.6](https://github.com/Archoleat/stylelint-config-extended-scss/compare/v1.5.5...v1.5.6) (2024-02-21)
+
+
+### Bug Fixes
+
+* **package:** `exports` ([#74](https://github.com/Archoleat/stylelint-config-extended-scss/issues/74)) ([981f920](https://github.com/Archoleat/stylelint-config-extended-scss/commit/981f920eb2875d8ef56e011b8a2c04bff1dd2283))
+* `regex`s ([#75](https://github.com/Archoleat/stylelint-config-extended-scss/issues/75)) ([75ba25c](https://github.com/Archoleat/stylelint-config-extended-scss/commit/75ba25c1a1fc8a3532baafcca081c739d13f599f))
+
 ## [1.5.5](https://github.com/Archoleat/stylelint-config-extended-scss/compare/v1.5.4...v1.5.5) (2024-02-21)
 
 
