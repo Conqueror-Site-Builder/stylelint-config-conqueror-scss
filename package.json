@@ -67,6 +67,7 @@
     "stylelint": "^14.0.0 || ^15.0.0 || ^16.0.0"
   },
   "dependencies": {
+    "prettier": "^3.2.5",
     "stylelint": "^16.2.1",
     "stylelint-config-standard-scss": "^13.0.0",
     "stylelint-declaration-block-no-ignored-properties": "^2.8.0",
