@@ -1,8 +1,8 @@
 {
   "type": "module",
   "exports": {
-    "./*": "./commitlint.config.ts",
-    "./dist/index.js": "./dist/index.js"
+    ".": "./dist/index.js",
+    "./*": "./commitlint.config.ts"
   },
   "author": "Archoleat",
   "name": "@archoleat/stylelint-config-extended-scss",
