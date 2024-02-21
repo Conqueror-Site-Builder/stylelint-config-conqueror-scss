@@ -50,6 +50,9 @@ jobs:
       - name: Build
         run: pnpm run build
 
+      - name: Remove TS Build Info
+        run: rm -rf dist/tsconfig.tsbuildinfo
+
       - name: Create Release
         env:
           GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}

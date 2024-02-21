@@ -10,14 +10,14 @@ on:
     branches:
       - main
     paths:
-      - specs/**/*.spec.js
-      - src/**/*.js
+      - specs/**/*.spec.ts
+      - src/**/*.ts
   push:
     branches:
       - main
     paths:
-      - specs/**/*.spec.js
-      - src/**/*.js
+      - specs/**/*.spec.ts
+      - src/**/*.ts
 
 jobs:
   eslint:
@@ -47,4 +47,4 @@ jobs:
         run: pnpm i
 
       - name: Lint
-        run: pnpm run lint:js
+        run: pnpm run lint:ts

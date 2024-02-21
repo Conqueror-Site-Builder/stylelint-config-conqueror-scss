@@ -1,10 +1,10 @@
-import CSSRules from './rules/css.js';
-import SCSSRules from './rules/scss.js';
+import CSSRules from './rules/css.ts';
+import SCSSRules from './rules/scss.ts';
 
-import plugins from './utils/plugins.js';
+import plugins from './utils/plugins.ts';
 
 export default {
-  extends: ['stylelint-config-standard-scss'],
+  extends: ['stylelint-config-standard-scss', 'stylelint-prettier/recommended'],
   plugins: [
     'stylelint-declaration-block-no-ignored-properties',
     'stylelint-gamut',
@@ -14,7 +14,6 @@ export default {
     'stylelint-order',
     'stylelint-plugin-defensive-css',
     'stylelint-plugin-logical-css',
-    'stylelint-prettier',
   ],
   rules: {
     ...plugins,

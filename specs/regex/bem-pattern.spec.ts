@@ -1,10 +1,12 @@
 import { expect } from 'chai';
 import { describe, it } from 'mocha';
 
-import CSSRules from '../../src/rules/css.js';
+import CSSRules from '../../src/rules/css.ts';
 
 describe('BEM Class Pattern', () => {
-  const BEMClassPattern = new RegExp(CSSRules['selector-class-pattern'][0]);
+  const BEMClassPattern = new RegExp(
+    CSSRules['selector-class-pattern'][0] as string,
+  );
 
   it('block (String, [block])', () => {
     expect('block').to.match(BEMClassPattern);

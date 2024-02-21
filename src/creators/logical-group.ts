@@ -1,4 +1,4 @@
-const createLogicalGroup = (groupName, properties) => ({
+const createLogicalGroup = (groupName: string, properties: any[]) => ({
   groupName,
   properties,
   emptyLineBefore: 'always',

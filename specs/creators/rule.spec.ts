@@ -1,10 +1,10 @@
 import { expect } from 'chai';
 import { describe, it } from 'mocha';
 
-import createRule from '../../src/creators/rule.js';
+import createRule from '../../src/creators/rule.ts';
 
 describe('Create Rule', () => {
-  let rule;
+  let rule: any;
 
   beforeEach(() => {
     rule = createRule;

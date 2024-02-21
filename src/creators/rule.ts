@@ -1,4 +1,4 @@
-const createRule = (selector) => ({
+const createRule = (selector: string) => ({
   selector: `&${selector}`,
   type: 'rule',
 });
