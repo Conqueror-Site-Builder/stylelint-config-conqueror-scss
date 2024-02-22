@@ -4,7 +4,7 @@
 ![NPM Downloads](https://img.shields.io/npm/dm/%40archoleat%2Fstylelint-config-extended-scss)
 ![CodeQL](https://img.shields.io/github/actions/workflow/status/Archoleat/stylelint-config-extended-scss/codeql.yaml?label=CodeQL)
 ![Test](https://img.shields.io/github/actions/workflow/status/Archoleat/stylelint-config-extended-scss/mocha.yaml?label=Test)
-![Commitlint](https://img.shields.io/github/actions/workflow/status/Archoleat/core/commitlint.yaml?label=Commitlint)
+![Commitlint](https://img.shields.io/github/actions/workflow/status/Archoleat/stylelint-config-extended-scss/commitlint.yaml?label=Commitlint)
 ![Editorconfig](https://img.shields.io/github/actions/workflow/status/Archoleat/stylelint-config-extended-scss/editorconfig.yaml?label=Editorconfig)
 ![Prettier](https://img.shields.io/github/actions/workflow/status/Archoleat/stylelint-config-extended-scss/prettier.yaml?label=Prettier)
 ![ESLint](https://img.shields.io/github/actions/workflow/status/Archoleat/stylelint-config-extended-scss/eslint.yaml?label=ESLint)
@@ -44,8 +44,6 @@
     Disallow property values that are ignored due to another
     property value in the same rule.
 
-    > Use `.browserslistrc`.
-
 -   [`stylelint-gamut`](https://github.com/fpetrakov/stylelint-gamut):
     Throw warning if color goes out of **sRGB**
     color space and is not wrapped in `@media (color-gamut: p3) {}`
@@ -57,9 +55,6 @@
 
 -   [`stylelint-high-performance-animation`](https://github.com/kristerkari/stylelint-high-performance-animation):
     Enhances your animations.
-
--   [`stylelint-no-unsupported-browser-features`](https://github.com/ismay/stylelint-no-unsupported-browser-features):
-    Disallow features that aren't supported by your target browser audience.
 
 -   [`stylelint-order`](https://github.com/hudochenkov/stylelint-order):
     Sorts **over 400 properties** for enhanced clarity and maintainability.

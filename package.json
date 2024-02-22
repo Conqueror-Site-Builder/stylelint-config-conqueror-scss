@@ -4,10 +4,11 @@
     ".": "./dist/index.js",
     "./*": "./commitlint.config.ts"
   },
+  "types": "index.d.ts",
   "author": "Archoleat",
   "name": "@archoleat/stylelint-config-extended-scss",
   "description": "Extended config for Stylelint with property sorting",
-  "version": "1.5.6",
+  "version": "1.5.8",
   "license": "MIT",
   "keywords": [
     "archoleat-config-scss",
@@ -25,7 +26,6 @@
     "stylelint-gamut",
     "stylelint-group-selectors",
     "stylelint-high-performance-animation",
-    "stylelint-no-unsupported-browser-features",
     "stylelint-order",
     "stylelint-plugin-defensive-css",
     "stylelint-plugin-logical-css",
@@ -40,10 +40,10 @@
     "url": "https://github.com/Archoleat/stylelint-config-extended-scss/issues/new/choose"
   },
   "scripts": {
-    "init": "pnpm i && husky && git submodule init && git submodule update",
-    "build": "rollup -c rollup.config.js",
+    "init": "pnpm i && husky && git submodule update",
+    "build": "rollup -c",
     "test": "mocha",
-    "test:coverage": "nyc mocha",
+    "test:coverage": "nyc pnpm test",
     "release": "semantic-release",
     "lint:formatting": "prettier . --check",
     "lint:editorconfig": "editorconfig-checker",
@@ -52,10 +52,6 @@
     "prettify": "prettier . --write",
     "commit": "cz"
   },
-  "files": [
-    ".browserslistrc",
-    "dist"
-  ],
   "engines": {
     "node": ">=20.11.0",
     "pnpm": ">=8.15.3"
@@ -75,7 +71,6 @@
     "stylelint-gamut": "^1.3.4",
     "stylelint-group-selectors": "^1.0.10",
     "stylelint-high-performance-animation": "^1.10.0",
-    "stylelint-no-unsupported-browser-features": "^8.0.1",
     "stylelint-order": "^6.0.4",
     "stylelint-plugin-defensive-css": "^1.0.2",
     "stylelint-plugin-logical-css": "^1.0.0",
@@ -85,6 +80,7 @@
     "@commitlint/cli": "^18.6.1",
     "@commitlint/config-conventional": "^18.6.2",
     "@commitlint/types": "^18.6.1",
+    "@istanbuljs/nyc-config-typescript": "^1.0.2",
     "@rollup/plugin-typescript": "^11.1.6",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
@@ -114,6 +110,7 @@
     "remark-preset-lint-markdown-style-guide": "^5.1.3",
     "remark-preset-lint-recommended": "^6.1.3",
     "rollup": "^4.12.0",
+    "rollup-plugin-dts": "^6.1.0",
     "rollup-plugin-esbuild": "^6.1.1",
     "semantic-release": "^23.0.2",
     "ts-node": "^10.9.2",

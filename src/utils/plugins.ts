@@ -5,12 +5,6 @@ const plugins = {
   'plugin/stylelint-group-selectors': true,
   'plugin/declaration-block-no-ignored-properties': true,
   'plugin/no-low-performance-animation-properties': true,
-  'plugin/no-unsupported-browser-features': [
-    true,
-    {
-      severity: 'warning',
-    },
-  ],
   'plugin/use-defensive-css': [
     true,
     {

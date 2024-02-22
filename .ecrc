@@ -1,5 +1,6 @@
 {
   "exclude": [
+    "specs",
     "CHANGELOG.md",
     "CONTRIBUTING.md",
     "package.json",
