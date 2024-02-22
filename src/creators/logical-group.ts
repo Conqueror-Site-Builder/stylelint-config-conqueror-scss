@@ -1,6 +1,6 @@
 /**
- * The function `createLogicalGroup` creates a logical group with specified
- * properties and formatting rules.
+ * The asynchronous function `createLogicalGroup` creates a logical group
+ * with specified properties and formatting rules.
  * @param {string} groupName - The `groupName` parameter is a string that
  * represents the name of the logical group being created.
  * @param {any[]} properties - The `properties` parameter in the
@@ -9,7 +9,7 @@
  * with the specified `groupName`. These properties can be of any type or
  * structure, depending on your specific use case.
  */
-const createLogicalGroup = (groupName: string, properties: any[]) => ({
+const createLogicalGroup = async (groupName: string, properties: any[]) => ({
   groupName,
   properties,
   emptyLineBefore: 'always',

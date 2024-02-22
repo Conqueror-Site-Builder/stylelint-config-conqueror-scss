@@ -18,7 +18,7 @@
     "noUnusedParameters": true,
     "outDir": "dist",
     "strict": true,
-    "target": "ES6",
+    "target": "ESNext",
     "types": ["chai", "mocha"]
   },
   "include": ["src"]
