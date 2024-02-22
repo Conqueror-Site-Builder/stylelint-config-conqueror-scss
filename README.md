@@ -4,7 +4,7 @@
 ![NPM Downloads](https://img.shields.io/npm/dm/%40archoleat%2Fstylelint-config-extended-scss)
 ![CodeQL](https://img.shields.io/github/actions/workflow/status/Archoleat/stylelint-config-extended-scss/codeql.yaml?label=CodeQL)
 ![Test](https://img.shields.io/github/actions/workflow/status/Archoleat/stylelint-config-extended-scss/mocha.yaml?label=Test)
-![Commitlint](https://img.shields.io/github/actions/workflow/status/Archoleat/core/commitlint.yaml?label=Commitlint)
+![Commitlint](https://img.shields.io/github/actions/workflow/status/Archoleat/stylelint-config-extended-scss/commitlint.yaml?label=Commitlint)
 ![Editorconfig](https://img.shields.io/github/actions/workflow/status/Archoleat/stylelint-config-extended-scss/editorconfig.yaml?label=Editorconfig)
 ![Prettier](https://img.shields.io/github/actions/workflow/status/Archoleat/stylelint-config-extended-scss/prettier.yaml?label=Prettier)
 ![ESLint](https://img.shields.io/github/actions/workflow/status/Archoleat/stylelint-config-extended-scss/eslint.yaml?label=ESLint)
