@@ -1,20 +1,27 @@
 import { expect } from 'chai';
-import { describe, it } from 'mocha';
+import { describe, beforeEach, it } from 'mocha';
 
 import createAtRule from '../../src/creators/at-rule.ts';
 
 describe('Create At Rule', () => {
-  it('create an object with args (name: String, hasBlock: true)', () => {
-    const rule = createAtRule('test-rule', true);
+  let atRule: any;
 
-    expect(rule).to.have.property('name', 'test-rule');
-    expect(rule).to.have.property('hasBlock', true);
+  beforeEach(() => {
+    const addAtRule = async (name: string, hasBlock: boolean) => {
+      return createAtRule(name, hasBlock).then((argument) => {
+        expect(argument.name).to.equal(name);
+        expect(argument.hasBlock).to.equal(hasBlock);
+      });
+    };
+
+    atRule = addAtRule;
   });
 
-  it('create an object with args (name: String, hasBlock: false)', () => {
-    const rule = createAtRule('test-rule', false);
+  it('create an object with args (name: String, hasBlock: true)', async () => {
+    return atRule('test-rule', true);
+  });
 
-    expect(rule).to.have.property('name', 'test-rule');
-    expect(rule).to.have.property('hasBlock', false);
+  it('create an object with args (name: String, hasBlock: false)', async () => {
+    return atRule('test-rule', false);
   });
 });
