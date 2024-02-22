@@ -39,7 +39,7 @@
     "url": "https://github.com/Archoleat/stylelint-config-extended-scss/issues/new/choose"
   },
   "scripts": {
-    "init": "pnpm i && husky && git submodule init && git submodule update",
+    "init": "pnpm i && husky && git submodule update",
     "build": "rollup -c rollup.config.js",
     "test": "mocha",
     "release": "semantic-release",
