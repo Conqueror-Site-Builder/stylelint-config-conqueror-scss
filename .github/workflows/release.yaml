@@ -48,7 +48,7 @@ jobs:
         run: pnpm i
 
       - name: Build
-        run: pnpm run build
+        run: pnpm build
 
       - name: Remove TS Build Info
         run: rm -rf dist/tsconfig.tsbuildinfo
@@ -57,4 +57,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: pnpm run release
+        run: pnpm release
