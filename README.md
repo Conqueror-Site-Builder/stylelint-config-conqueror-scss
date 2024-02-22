@@ -44,8 +44,6 @@
     Disallow property values that are ignored due to another
     property value in the same rule.
 
-    > Use `.browserslistrc`.
-
 -   [`stylelint-gamut`](https://github.com/fpetrakov/stylelint-gamut):
     Throw warning if color goes out of **sRGB**
     color space and is not wrapped in `@media (color-gamut: p3) {}`
