@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.8](https://github.com/Archoleat/stylelint-config-extended-scss/compare/v1.5.7...v1.5.8) (2024-02-22)
+
+
+### Code Refactoring
+
+* add `async/await` ([#79](https://github.com/Archoleat/stylelint-config-extended-scss/issues/79)) ([805a81f](https://github.com/Archoleat/stylelint-config-extended-scss/commit/805a81fe7f23855a89740538773a0d6ff1fec7cd))
+
 ## [1.5.7](https://github.com/Archoleat/stylelint-config-extended-scss/compare/v1.5.6...v1.5.7) (2024-02-22)
 
 
