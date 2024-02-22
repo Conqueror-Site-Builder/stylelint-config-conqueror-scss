@@ -1,7 +1,7 @@
 {
   "type": "module",
   "exports": {
-    ".": "./dist/index.js",
+    ".": "./index.js",
     "./*": "./commitlint.config.ts"
   },
   "types": "index.d.ts",
