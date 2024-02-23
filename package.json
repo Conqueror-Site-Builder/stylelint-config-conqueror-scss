@@ -6,6 +6,7 @@
   },
   "types": "index.d.ts",
   "author": "Archoleat",
+  "email": "archoleat@gmail.com",
   "name": "@archoleat/stylelint-config-extended-scss",
   "description": "Extended config for Stylelint with property sorting",
   "version": "1.5.8",
