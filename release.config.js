@@ -42,12 +42,12 @@ export default {
             release: 'patch',
           },
           {
-            type: 'style',
-            release: 'patch',
+            type: 'spec',
+            release: false,
           },
           {
-            type: 'test',
-            release: false,
+            type: 'style',
+            release: 'patch',
           },
         ],
         parserOpts: {
@@ -66,7 +66,6 @@ export default {
             { type: 'perf', section: 'Performance Improvements' },
             { type: 'revert', section: 'Reverts' },
             { type: 'docs', section: 'Documentation' },
-            { type: 'style', section: 'Styles' },
           ],
         },
         writerOpts: {
