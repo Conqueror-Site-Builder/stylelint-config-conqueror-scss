@@ -25,6 +25,10 @@
 -   [Usage](#usage)
     -   [Extending the Config](#extending-the-config)
 
+-   [Remove the Space Between Logical Groups](#remove-the-space-between-logical-groups)
+    -   [Before](#before)
+    -   [After](#after)
+
 -   [Rules](#rules)
     -   [CSS](#css)
     -   [SCSS](#scss)
@@ -108,6 +112,45 @@ export default {
     'value-no-vendor-prefix': false,
   },
 };
+```
+
+## Remove the Space Between Logical Groups
+
+If you don't like spaces between logical groups,
+you can easily disable this behavior:
+
+```js
+// stylelint.config.js
+export default {
+  extends: '@archoleat/stylelint-config-extended-scss',
+  rules: {
+      'declaration-empty-line-before': null,
+  },
+};
+```
+
+### Before
+
+```scss
+.popup {
+  pointer-events: none;
+
+  opacity: 0;
+
+  position: fixed;
+  inset: 0;
+}
+```
+
+### After
+
+```scss
+.popup {
+  pointer-events: none;
+  opacity: 0;
+  position: fixed;
+  inset: 0;
+}
 ```
 
 ## Rules
