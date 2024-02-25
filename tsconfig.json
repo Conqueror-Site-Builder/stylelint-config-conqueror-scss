@@ -20,8 +20,7 @@
     "outDir": "dist",
     "skipLibCheck": true,
     "strict": true,
-    "target": "ESNext",
-    "types": ["chai", "mocha"]
+    "target": "ESNext"
   },
   "include": ["src"]
 }
