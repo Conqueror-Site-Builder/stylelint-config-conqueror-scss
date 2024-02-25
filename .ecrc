@@ -1,9 +1,7 @@
 {
   "exclude": [
-    "specs",
     "CHANGELOG.md",
     "CONTRIBUTING.md",
-    "package.json",
     "pnpm-lock.yaml",
     "README.md"
   ]

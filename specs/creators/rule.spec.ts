@@ -17,27 +17,27 @@ describe('Create Rule', () => {
     rule = addRule;
   });
 
-  it('create an object with args (selector: String, [::pseudo-element])', async () => {
+  it('create an object with argument (::pseudo-element)', async () => {
     return rule('::pseudo-element');
   });
 
-  it('create an object with args (selector: String, [:pseudo-class])', async () => {
+  it('create an object with argument (:pseudo-class)', async () => {
     return rule(':pseudo-class');
   });
 
-  it('create an object with args (selector: RegExp, [?\\[(.*)\\]])', async () => {
+  it('create an object with argument (?\\[(.*)\\])', async () => {
     return rule('?\\[(.*)\\]');
   });
 
-  it('create an object with args (selector: RegExp, [?\\.(.*)])', async () => {
+  it('create an object with argument (?\\.(.*))', async () => {
     return rule('?\\.(.*)');
   });
 
-  it('create an object with args (selector: RegExp, [--])', async () => {
+  it('create an object with argument (--)', async () => {
     return rule('--');
   });
 
-  it('create an object with args (selector: RegExp, [__])', async () => {
+  it('create an object with argument (__)', async () => {
     return rule('__');
   });
 });
