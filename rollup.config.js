@@ -9,7 +9,7 @@ const declarationFile = 'index.d.ts';
 
 export default defineConfig([
   {
-    plugins: [typescript(), minify()],
+    plugins: [typescript({ outputToFilesystem: true }), minify()],
     input: 'src/index.ts',
     output: {
       file: 'index.js',
