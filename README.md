@@ -124,7 +124,7 @@ you can easily disable this behavior:
 export default {
   extends: '@archoleat/stylelint-config-extended-scss',
   rules: {
-      'declaration-empty-line-before': null,
+    'declaration-empty-line-before': null,
   },
 };
 ```
