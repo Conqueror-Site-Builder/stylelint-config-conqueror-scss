@@ -8,63 +8,63 @@ describe('BEM Class Pattern', () => {
     CSSRules['selector-class-pattern'][0] as string,
   );
 
-  it('block (String, [block])', () => {
+  it('block (block)', () => {
     expect('block').to.match(BEMClassPattern);
   });
 
-  it('block (String, [block-name])', () => {
+  it('block (block-name)', () => {
     expect('block-name').to.match(BEMClassPattern);
   });
 
-  it('block with modifier (String, [block--modifier])', () => {
+  it('block, modifier (block--modifier)', () => {
     expect('block--modifier').to.match(BEMClassPattern);
   });
 
-  it('block with modifier (String, [block-name--modifier-name])', () => {
+  it('block, modifier (block-name--modifier-name)', () => {
     expect('block-name--modifier-name').to.match(BEMClassPattern);
   });
 
-  it('block with modifier (String, [block-name--modifier])', () => {
+  it('block, modifier (block-name--modifier)', () => {
     expect('block-name--modifier').to.match(BEMClassPattern);
   });
 
-  it('block with modifier (String, [block--modifier-name])', () => {
+  it('block, modifier (block--modifier-name)', () => {
     expect('block--modifier-name').to.match(BEMClassPattern);
   });
 
-  it('block and element (String, [block__element])', () => {
+  it('block, element (block__element)', () => {
     expect('block__element').to.match(BEMClassPattern);
   });
 
-  it('block and element (String, [block-name__element-name])', () => {
+  it('block, element (block-name__element-name)', () => {
     expect('block-name__element-name').to.match(BEMClassPattern);
   });
 
-  it('block and element (String, [block-name__element])', () => {
+  it('block, element (block-name__element)', () => {
     expect('block-name__element').to.match(BEMClassPattern);
   });
 
-  it('block and element (String, [block__element-name])', () => {
+  it('block, element (block__element-name)', () => {
     expect('block__element-name').to.match(BEMClassPattern);
   });
 
-  it('block and element with modifier (String, [block__element--modifier])', () => {
+  it('block, element, modifier (block__element--modifier)', () => {
     expect('block__element--modifier').to.match(BEMClassPattern);
   });
 
-  it('block and element with modifier (String, [block-name__element-name--modifier-name])', () => {
+  it('block, element, modifier (block-name__element-name--modifier-name)', () => {
     expect('block-name__element-name--modifier-name').to.match(BEMClassPattern);
   });
 
-  it('block and element with modifier (String, [block-name__element-name--modifier])', () => {
+  it('block, element, modifier (block-name__element-name--modifier)', () => {
     expect('block-name__element-name--modifier').to.match(BEMClassPattern);
   });
 
-  it('block and element with modifier (String, [block-name__element--modifier-name])', () => {
+  it('block, element, modifier (block-name__element--modifier-name)', () => {
     expect('block-name__element--modifier-name').to.match(BEMClassPattern);
   });
 
-  it('block and element with modifier (String, [block__element-name--modifier-name])', () => {
+  it('block, element, modifier (block__element-name--modifier-name)', () => {
     expect('block__element-name--modifier-name').to.match(BEMClassPattern);
   });
 });
