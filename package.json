@@ -38,20 +38,21 @@
     "url": "https://github.com/Archoleat/stylelint-config-extended-scss.git"
   },
   "bugs": {
-    "url": "https://github.com/Archoleat/stylelint-config-extended-scss/issues/new/choose"
+    "url": "https://github.com/Archoleat/stylelint-config-extended-scss/issues"
   },
   "scripts": {
     "init": "pnpm i && husky && git submodule update",
-    "build": "rollup -c",
+    "build": "rollup -c && pnpm clear",
     "test": "mocha",
-    "test:coverage": "nyc pnpm test",
+    "test:coverage": "nyc pnpm test && pnpm clear",
     "release": "semantic-release",
     "lint:formatting": "prettier . --check",
     "lint:editorconfig": "editorconfig-checker",
     "lint:md": "remark . --quiet",
     "lint:ts": "eslint src/**/*.ts --fix",
     "prettify": "prettier . --write",
-    "commit": "cz"
+    "commit": "cz",
+    "clear": "rm -rf .nyc_report .rollup.cache dist"
   },
   "engines": {
     "node": ">=20.11.0",

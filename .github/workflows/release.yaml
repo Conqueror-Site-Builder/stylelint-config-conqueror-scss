@@ -50,9 +50,6 @@ jobs:
       - name: Build
         run: pnpm build
 
-      - name: Remove Dist
-        run: rm -rf dist
-
       - name: Prettify Types
         run: pnpm prettier index.d.ts --write
 
