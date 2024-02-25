@@ -4,7 +4,7 @@ import { describe, it } from 'mocha';
 import createLogicalGroup from '../../src/creators/logical-group.ts';
 
 describe('Create Logical Group', () => {
-  it('create an object with args (groupName: String, properties: Array)', async () => {
+  it('create an object with args (groupName: String, properties: [])', async () => {
     const properties = ['display', 'z-index'];
 
     return createLogicalGroup('Test Group Name', properties).then((argument) => {
