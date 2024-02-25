@@ -42,7 +42,7 @@
   },
   "scripts": {
     "init": "pnpm i && husky && git submodule update",
-    "build": "rollup -c",
+    "build": "rollup -c && rm -rf .rollup.cache dist",
     "test": "mocha",
     "release": "semantic-release",
     "lint:formatting": "prettier . --check",
