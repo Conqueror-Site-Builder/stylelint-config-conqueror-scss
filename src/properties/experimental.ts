@@ -1,4 +1,4 @@
-const experimental = {
+export default {
   pseudo: {
     element: {
       targetText: '::target-text',
@@ -74,5 +74,3 @@ const experimental = {
     },
   },
 };
-
-export default experimental;

@@ -1,4 +1,4 @@
-const nonStandard = {
+export default {
   pseudo: {
     element: {
       webkit: {
@@ -70,5 +70,3 @@ const nonStandard = {
     zoom: 'zoom',
   },
 };
-
-export default nonStandard;

@@ -1,6 +1,6 @@
 import propertiesOrder from '../properties/order.ts';
 
-const plugins = {
+export default {
   'gamut/color-no-out-gamut-range': true,
   'plugin/stylelint-group-selectors': true,
   'plugin/declaration-block-no-ignored-properties': true,
@@ -21,5 +21,3 @@ const plugins = {
   'plugin/use-logical-units': true,
   ...propertiesOrder,
 };
-
-export default plugins;
