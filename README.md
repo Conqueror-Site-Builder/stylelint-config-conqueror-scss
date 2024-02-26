@@ -114,10 +114,10 @@ export default {
 };
 ```
 
-## Remove the Space Between Logical Groups
+## Add the Space Between Logical Groups
 
-If you don't like spaces between logical groups,
-you can easily disable this behavior:
+If you want to add spaces between logical groups,
+add this rule to your **Stylelint** config:
 
 ```js
 // stylelint.config.js
@@ -134,9 +134,7 @@ export default {
 ```scss
 .popup {
   pointer-events: none;
-
   opacity: 0;
-
   position: fixed;
   inset: 0;
 }
@@ -147,7 +145,9 @@ export default {
 ```scss
 .popup {
   pointer-events: none;
+
   opacity: 0;
+
   position: fixed;
   inset: 0;
 }
