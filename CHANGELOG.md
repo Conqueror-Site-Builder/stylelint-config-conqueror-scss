@@ -1,5 +1,39 @@
 # Changelog
 
+## [1.6.0](https://github.com/Archoleat/stylelint-config-extended-scss/compare/v1.5.8...v1.6.0) (2024-02-26)
+
+
+### Features
+
+* add `rollup-plugin-dts` ([#80](https://github.com/Archoleat/stylelint-config-extended-scss/issues/80)) ([089e05b](https://github.com/Archoleat/stylelint-config-extended-scss/commit/089e05b7e3df0f8a3020e8bda5289369d4887888))
+
+
+### Bug Fixes
+
+* **package:** change path to `index.js` ([#81](https://github.com/Archoleat/stylelint-config-extended-scss/issues/81)) ([5706b8d](https://github.com/Archoleat/stylelint-config-extended-scss/commit/5706b8d5a5c3cf9af59bc5d7c69ee253a7502340))
+
+
+### Code Refactoring
+
+* **rollup:** add `outputToFileSystem` ([#89](https://github.com/Archoleat/stylelint-config-extended-scss/issues/89)) ([d494c1d](https://github.com/Archoleat/stylelint-config-extended-scss/commit/d494c1d75e77cfe14b79492990add68ff63bdf44))
+* **script:** add `rm -rf` in build ([#87](https://github.com/Archoleat/stylelint-config-extended-scss/issues/87)) ([d58d918](https://github.com/Archoleat/stylelint-config-extended-scss/commit/d58d91851b1284816a2e720b2581d6f9ae31d568))
+* **release.config:** add `spec` instead `test` ([#95](https://github.com/Archoleat/stylelint-config-extended-scss/issues/95)) ([a25a156](https://github.com/Archoleat/stylelint-config-extended-scss/commit/a25a156a05522f6263c074c8781be61c7ec8bf54))
+* **package:** add email ([#82](https://github.com/Archoleat/stylelint-config-extended-scss/issues/82)) ([3d32253](https://github.com/Archoleat/stylelint-config-extended-scss/commit/3d322530193113e78aad27d6b036d01a83c1d70d))
+* **ts:** add only `export default` ([#97](https://github.com/Archoleat/stylelint-config-extended-scss/issues/97)) ([3f37eab](https://github.com/Archoleat/stylelint-config-extended-scss/commit/3f37eab27fbfd4c5794d4fb46bd0bdd3c339b0c8))
+* **eslint:** add resolve ([#86](https://github.com/Archoleat/stylelint-config-extended-scss/issues/86)) ([193d19d](https://github.com/Archoleat/stylelint-config-extended-scss/commit/193d19d7b99f2dd310fb953a4dfe5455c3c570ed))
+* **gitignore:** remove `dist` amd `.rollup.cache` ([#90](https://github.com/Archoleat/stylelint-config-extended-scss/issues/90)) ([b45f614](https://github.com/Archoleat/stylelint-config-extended-scss/commit/b45f614f36d9f327c99fb6d945ed7983f3d213a5))
+* **package:** remove `new/choose` ([#93](https://github.com/Archoleat/stylelint-config-extended-scss/issues/93)) ([caaac5a](https://github.com/Archoleat/stylelint-config-extended-scss/commit/caaac5aafa030bf300c8c1d144ac5e53c4de27a1))
+* **eslint:** remove comments ([#96](https://github.com/Archoleat/stylelint-config-extended-scss/issues/96)) ([f9177b2](https://github.com/Archoleat/stylelint-config-extended-scss/commit/f9177b24101608d5a111a07b7f0bf3863e1d924b))
+* **tsconfig:** remove extra `types` ([#88](https://github.com/Archoleat/stylelint-config-extended-scss/issues/88)) ([0b7f2f7](https://github.com/Archoleat/stylelint-config-extended-scss/commit/0b7f2f78491ea0c6a3543adef2a4a81683d24029))
+
+
+### Documentation
+
+* **readme:** add new section ([#85](https://github.com/Archoleat/stylelint-config-extended-scss/issues/85)) ([843b632](https://github.com/Archoleat/stylelint-config-extended-scss/commit/843b6329470a5dedde1e95dc408257a47e751c0f))
+* **contributing:** move to `.github` ([#83](https://github.com/Archoleat/stylelint-config-extended-scss/issues/83)) ([2bce260](https://github.com/Archoleat/stylelint-config-extended-scss/commit/2bce26091e4d3b38c732e668e2f2175ff419d326))
+* **readme:** remove space in code block ([#91](https://github.com/Archoleat/stylelint-config-extended-scss/issues/91)) ([745f167](https://github.com/Archoleat/stylelint-config-extended-scss/commit/745f167edd9afd0eb8cf7a0b305a4d0c8f69c742))
+* **contributing:** revert ([#84](https://github.com/Archoleat/stylelint-config-extended-scss/issues/84)) ([e08aa09](https://github.com/Archoleat/stylelint-config-extended-scss/commit/e08aa0955140e7937d5c678e61f62ca9cbf42c62))
+
 ## [1.5.8](https://github.com/Archoleat/stylelint-config-extended-scss/compare/v1.5.7...v1.5.8) (2024-02-22)
 
 
