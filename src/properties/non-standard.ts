@@ -66,7 +66,7 @@ export default {
     },
   },
   property: {
-    fontSmooth: 'font-smooth',
+    font: { smooth: 'font-smooth' },
     zoom: 'zoom',
   },
 };
