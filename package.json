@@ -52,6 +52,9 @@
     "prettify": "prettier . --write",
     "commit": "cz"
   },
+  "files": [
+    "index.js"
+  ],
   "engines": {
     "node": ">=20.11.0",
     "pnpm": ">=8.15.3"

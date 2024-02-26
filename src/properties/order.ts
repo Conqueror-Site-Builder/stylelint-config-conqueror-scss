@@ -572,7 +572,7 @@ export default {
         'font-palette',
         'font-kerning',
         'font-stretch',
-        nonStandardProperty.fontSmooth,
+        nonStandardProperty.font.smooth,
         'font-optical-sizing',
         'font-language-override',
         'font-feature-settings',
