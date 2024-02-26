@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.3](https://github.com/Archoleat/stylelint-config-extended-scss/compare/v1.6.2...v1.6.3) (2024-02-26)
+
+
+### Code Refactoring
+
+* **logical-group:** add correct type ([#102](https://github.com/Archoleat/stylelint-config-extended-scss/issues/102)) ([7403d83](https://github.com/Archoleat/stylelint-config-extended-scss/commit/7403d83f6f7f78565f4482d003b3141c942f511f))
+
 ## [1.6.2](https://github.com/Archoleat/stylelint-config-extended-scss/compare/v1.6.1...v1.6.2) (2024-02-26)
 
 
