@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.6.2](https://github.com/Archoleat/stylelint-config-extended-scss/compare/v1.6.1...v1.6.2) (2024-02-26)
+
+
+### Bug Fixes
+
+* **package:** add `index.d.ts` ([#99](https://github.com/Archoleat/stylelint-config-extended-scss/issues/99)) ([86b6d56](https://github.com/Archoleat/stylelint-config-extended-scss/commit/86b6d56d7a8b1e7bac28bacf92d52523787c1bb3))
+* **rules:** remove `declaration-empty-line-before` ([#101](https://github.com/Archoleat/stylelint-config-extended-scss/issues/101)) ([de3b228](https://github.com/Archoleat/stylelint-config-extended-scss/commit/de3b22864801214edddacc01eecf5b8d210c9d0c))
+
+
+### Code Refactoring
+
+* **package:** `pnpm` latest version ([#100](https://github.com/Archoleat/stylelint-config-extended-scss/issues/100)) ([600b46e](https://github.com/Archoleat/stylelint-config-extended-scss/commit/600b46e3835a85efe6f8e33ecd58d58614c3f203))
+
 ## [1.6.1](https://github.com/Archoleat/stylelint-config-extended-scss/compare/v1.6.0...v1.6.1) (2024-02-26)
 
 
