@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.1](https://github.com/Archoleat/stylelint-config-extended-scss/compare/v1.6.0...v1.6.1) (2024-02-26)
+
+
+### Bug Fixes
+
+* **package:** add files ([#98](https://github.com/Archoleat/stylelint-config-extended-scss/issues/98)) ([acd165b](https://github.com/Archoleat/stylelint-config-extended-scss/commit/acd165b941b40d6a8fd447a34daaf5b01d658110))
+
 ## [1.6.0](https://github.com/Archoleat/stylelint-config-extended-scss/compare/v1.5.8...v1.6.0) (2024-02-26)
 
 
