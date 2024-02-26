@@ -3,7 +3,6 @@ import REGEXP from '../utils/regexps.ts';
 export default {
   'at-rule-disallowed-list': ['debug'],
   'color-named': 'never',
-  'declaration-empty-line-before': null,
   'declaration-no-important': true,
   'font-weight-notation': 'numeric',
   'function-url-no-scheme-relative': true,
