@@ -1,5 +1,6 @@
 const namedArguments = ['always', { ignore: ['single-argument'] }];
-const SCSSRules = {
+
+export default {
   'scss/at-each-key-value-single-line': true,
   'scss/at-function-named-arguments': namedArguments,
   'scss/at-mixin-named-arguments': namedArguments,
@@ -19,5 +20,3 @@ const SCSSRules = {
   'scss/property-no-unknown': true,
   'scss/selector-no-redundant-nesting-selector': true,
 };
-
-export default SCSSRules;

@@ -21,7 +21,7 @@ const deprecatedProperty = deprecated.property;
 const experimentalProperty = experimental.property;
 const nonStandardProperty = nonStandard.property;
 
-const propertiesOrder = {
+export default {
   'order/order': [
     'custom-properties',
     'dollar-variables',
@@ -675,5 +675,3 @@ const propertiesOrder = {
     },
   ],
 };
-
-export default propertiesOrder;

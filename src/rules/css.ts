@@ -1,6 +1,6 @@
 import REGEXP from '../utils/regexps.ts';
 
-const CSSRules = {
+export default {
   'at-rule-disallowed-list': ['debug'],
   'color-named': 'never',
   'declaration-empty-line-before': null,
@@ -35,5 +35,3 @@ const CSSRules = {
     },
   ],
 };
-
-export default CSSRules;
