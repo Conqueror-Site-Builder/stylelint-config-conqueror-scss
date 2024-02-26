@@ -53,6 +53,7 @@
     "commit": "cz"
   },
   "files": [
+    "index.d.ts",
     "index.js"
   ],
   "engines": {
