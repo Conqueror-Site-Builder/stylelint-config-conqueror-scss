@@ -12,8 +12,6 @@
 ![ESM Only](https://img.shields.io/badge/ESM-only-gray?labelColor=fe0)
 ![TS Only](https://img.shields.io/badge/TS-only-gray?labelColor=06f)
 
-> Extended Shareable Config for Stylelint With Property Sorting
-
 ## Table of Contents
 
 -   [This Config](#this-config)
@@ -169,7 +167,8 @@ This is a list of the lints turned on in this configuration, and what they do.
 
 -   [`value-keyword-case`](https://stylelint.io/user-guide/rules/value-keyword-case):
     Lowercase for keywords values.
-    Ignore `text-rendering`.
+
+    > Ignore: `text-rendering`.
 
 #### Color
 
@@ -186,11 +185,6 @@ This is a list of the lints turned on in this configuration, and what they do.
 -   [`no-descending-specificity`](https://stylelint.io/user-guide/rules/no-descending-specificity):
     Rule disabled.
 
-#### Empty Lines
-
--   [`declaration-empty-line-before`](https://stylelint.io/user-guide/rules/declaration-empty-line-before):
-    The rule is disabled for `stylelint-order` to work correctly.
-
 #### Function
 
 -   [`function-url-no-scheme-relative`](https://stylelint.io/user-guide/rules/function-url-no-scheme-relative):
@@ -200,7 +194,8 @@ This is a list of the lints turned on in this configuration, and what they do.
 
 -   [`max-nesting-depth`](https://stylelint.io/user-guide/rules/max-nesting-depth):
     Limit the allowed nesting depth to `3`.
-    Ignore: `'blockless-at-rules'`.
+
+    > Ignore: `'blockless-at-rules'`.
 
 -   [`selector-max-combinators`](https://stylelint.io/user-guide/rules/selector-max-combinators):
     Limit the allowed combinators to `4`.
@@ -247,11 +242,13 @@ This is a list of the lints turned on in this configuration, and what they do.
 
 -   [`scss/at-function-named-arguments`](https://github.com/stylelint-scss/stylelint-scss/tree/master/src/rules/at-function-named-arguments):
     Require named parameters in **SCSS** function call rule.
-    Ignore `single-argument`.
+
+    > Ignore: `single-argument`.
 
 -   [`scss/at-mixin-named-arguments`](https://github.com/stylelint-scss/stylelint-scss/tree/master/src/rules/at-mixin-named-arguments):
     Require named parameters in **at-mixin** call rule.
-    Ignore `single-argument`.
+
+    > Ignore: `single-argument`.
 
 -   [`scss/at-root-no-redundant`](https://github.com/stylelint-scss/stylelint-scss/tree/master/src/rules/at-root-no-redundant):
     Disallow redundant `@at-root` rule.
@@ -277,6 +274,12 @@ This is a list of the lints turned on in this configuration, and what they do.
     Prevents the use of non-numeric values in dimensions.
 
 #### Dollar Variable
+
+-   [`scss/dollar-variable-empty-line-after`](https://github.com/stylelint-scss/stylelint-scss/tree/master/src/rules/scss/dollar-variable-empty-line-after):
+    Require a newline after the `$`-variable declaration.
+
+    > Expect: `last-nested`, `before-comment`, `before-dollar-variable`.
+    > Ignore: `before-comment`, `inside-single-line-block`.
 
 -   [`scss/dollar-variable-colon-newline-after`](https://github.com/stylelint-scss/stylelint-scss/tree/master/src/rules/dollar-variable-colon-newline-after):
     Require a newline after the colon in `$`-variable declarations.
