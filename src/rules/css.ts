@@ -1,4 +1,4 @@
-import REGEXP from '../utils/regexps.ts';
+import regex from '../utils/regexps.ts';
 
 export default {
   'at-rule-disallowed-list': ['debug'],
@@ -17,7 +17,7 @@ export default {
   'no-descending-specificity': null,
   'no-unknown-animations': true,
   'selector-class-pattern': [
-    `^${REGEXP.BEM.BLOCK}*${REGEXP.BEM.ELEMENT}?${REGEXP.BEM.MODIFIER}?$`,
+    `^${regex.BEM.BLOCK}*${regex.BEM.ELEMENT}?${regex.BEM.MODIFIER}?$`,
     {
       message: 'Expected lowercase class name by BEM (block__element--modifier)',
     },
