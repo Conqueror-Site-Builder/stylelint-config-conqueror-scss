@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.6.4](https://github.com/Archoleat/stylelint-config-extended-scss/compare/v1.6.3...v1.6.4) (2024-02-27)
+
+
+### Code Refactoring
+
+* **regex:** rename `regex` import ([#106](https://github.com/Archoleat/stylelint-config-extended-scss/issues/106)) ([167d113](https://github.com/Archoleat/stylelint-config-extended-scss/commit/167d113d13936928a984a4e98a58774b7c2ee6fd))
+
+
+### Documentation
+
+* **readme:** rewrite list of rules ([#103](https://github.com/Archoleat/stylelint-config-extended-scss/issues/103)) ([eae1d7a](https://github.com/Archoleat/stylelint-config-extended-scss/commit/eae1d7a6d90dc6a9d8b618e898238106181b0e49))
+
 ## [1.6.3](https://github.com/Archoleat/stylelint-config-extended-scss/compare/v1.6.2...v1.6.3) (2024-02-26)
 
 
