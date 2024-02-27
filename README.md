@@ -279,6 +279,7 @@ This is a list of the lints turned on in this configuration, and what they do.
     Require a newline after the `$`-variable declaration.
 
     > Expect: `last-nested`, `before-comment`, `before-dollar-variable`.
+    >
     > Ignore: `before-comment`, `inside-single-line-block`.
 
 -   [`scss/dollar-variable-colon-newline-after`](https://github.com/stylelint-scss/stylelint-scss/tree/master/src/rules/dollar-variable-colon-newline-after):
