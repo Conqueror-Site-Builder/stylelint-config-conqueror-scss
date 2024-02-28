@@ -32,13 +32,13 @@
     "stylelint-plugin-logical-css",
     "stylelint-prettier"
   ],
-  "homepage": "https://github.com/Archoleat/stylelint-config-extended-scss#readme",
+  "homepage": "https://github.com/archoleat/stylelint-config-extended-scss#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Archoleat/stylelint-config-extended-scss.git"
+    "url": "https://github.com/archoleat/stylelint-config-extended-scss.git"
   },
   "bugs": {
-    "url": "https://github.com/Archoleat/stylelint-config-extended-scss/issues"
+    "url": "https://github.com/archoleat/stylelint-config-extended-scss/issues"
   },
   "scripts": {
     "init": "pnpm i && husky && git submodule update",
