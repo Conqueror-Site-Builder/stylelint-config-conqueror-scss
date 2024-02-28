@@ -2,13 +2,13 @@
 
 ![NPM Version](https://img.shields.io/npm/v/%40archoleat%2Fstylelint-config-extended-scss)
 ![NPM Downloads](https://img.shields.io/npm/dm/%40archoleat%2Fstylelint-config-extended-scss)
-![CodeQL](https://img.shields.io/github/actions/workflow/status/Archoleat/stylelint-config-extended-scss/codeql.yaml?label=CodeQL)
-![Test](https://img.shields.io/github/actions/workflow/status/Archoleat/stylelint-config-extended-scss/mocha.yaml?label=Test)
-![Commitlint](https://img.shields.io/github/actions/workflow/status/Archoleat/stylelint-config-extended-scss/commitlint.yaml?label=Commitlint)
-![Editorconfig](https://img.shields.io/github/actions/workflow/status/Archoleat/stylelint-config-extended-scss/editorconfig.yaml?label=Editorconfig)
-![Prettier](https://img.shields.io/github/actions/workflow/status/Archoleat/stylelint-config-extended-scss/prettier.yaml?label=Prettier)
-![ESLint](https://img.shields.io/github/actions/workflow/status/Archoleat/stylelint-config-extended-scss/eslint.yaml?label=ESLint)
-![Markdown](https://img.shields.io/github/actions/workflow/status/Archoleat/stylelint-config-extended-scss/markdown.yaml?label=Markdown)
+![CodeQL](https://img.shields.io/github/actions/workflow/status/archoleat/stylelint-config-extended-scss/codeql.yaml?label=CodeQL)
+![Test](https://img.shields.io/github/actions/workflow/status/archoleat/stylelint-config-extended-scss/mocha.yaml?label=Test)
+![Commitlint](https://img.shields.io/github/actions/workflow/status/archoleat/stylelint-config-extended-scss/commitlint.yaml?label=Commitlint)
+![Editorconfig](https://img.shields.io/github/actions/workflow/status/archoleat/stylelint-config-extended-scss/editorconfig.yaml?label=Editorconfig)
+![Prettier](https://img.shields.io/github/actions/workflow/status/archoleat/stylelint-config-extended-scss/prettier.yaml?label=Prettier)
+![ESLint](https://img.shields.io/github/actions/workflow/status/archoleat/stylelint-config-extended-scss/eslint.yaml?label=ESLint)
+![Markdown](https://img.shields.io/github/actions/workflow/status/archoleat/stylelint-config-extended-scss/markdown.yaml?label=Markdown)
 ![ESM Only](https://img.shields.io/badge/ESM-only-gray?labelColor=fe0)
 ![TS Only](https://img.shields.io/badge/TS-only-gray?labelColor=06f)
 
@@ -333,5 +333,4 @@ This is a list of the lints turned on in this configuration, and what they do.
 
 ## License
 
-This project is licensed under the MIT license - see the
-[**LICENSE**](LICENSE) for details.
+This project is licensed under the [**MIT license**](LICENSE).
