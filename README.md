@@ -31,6 +31,8 @@
     -   [CSS](#css)
     -   [SCSS](#scss)
 
+-   [Contributing](#contributing)
+
 -   [License](#license)
 
 ## This Config
@@ -330,6 +332,11 @@ This is a list of the lints turned on in this configuration, and what they do.
 -   [`scss/property-no-unknown`](https://github.com/stylelint-scss/stylelint-scss/tree/master/src/rules/property-no-unknown):
     Disallow unknown properties.
     Should be used instead of **Stylelint**'s `property-no-unknown`.
+
+## Contributing
+
+Please read [**CONTRIBUTING**](https://github.com/archoleat/.github/blob/main/CONTRIBUTING.md)
+to start contributing.
 
 ## License
 
