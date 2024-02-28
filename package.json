@@ -42,7 +42,7 @@
   },
   "scripts": {
     "init": "pnpm i && husky && git submodule update",
-    "build": "rollup -c && pnpm clear",
+    "build": "rollup -c",
     "test": "mocha",
     "release": "semantic-release",
     "lint:formatting": "prettier . --check",
@@ -50,8 +50,7 @@
     "lint:md": "remark . --quiet",
     "lint:ts": "eslint src/**/*.ts --fix",
     "prettify": "prettier . --write",
-    "commit": "cz",
-    "clear": "rm -rf .rollup.cache dist"
+    "commit": "cz"
   },
   "files": [
     "index.d.ts",
