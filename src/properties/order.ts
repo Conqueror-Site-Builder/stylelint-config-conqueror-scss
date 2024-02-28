@@ -1,4 +1,4 @@
-import REGEXP from '../utils/regexps.ts';
+import regex from '../utils/regexps.ts';
 
 import deprecated from './deprecated.ts';
 import experimental from './experimental.ts';
@@ -21,7 +21,7 @@ const deprecatedProperty = deprecated.property;
 const experimentalProperty = experimental.property;
 const nonStandardProperty = nonStandard.property;
 
-const propertiesOrder = {
+export default {
   'order/order': [
     'custom-properties',
     'dollar-variables',
@@ -156,12 +156,12 @@ const propertiesOrder = {
     await createRule(nonStandardPseudoClassMozilla.suppressed),
     await createRule(nonStandardPseudoClassMozilla.userDisabled),
     await createRule(nonStandardPseudoClassMozilla.windowInactive),
-    await createRule(REGEXP.NESTED.ATTRIBUTE),
-    await createRule(REGEXP.NESTED.CLASS),
-    await createRule(REGEXP.NESTED.MODIFIER),
-    await createRule(REGEXP.NESTED.ELEMENT),
-    await createRule(REGEXP.CHILD.ATTRIBUTE),
-    await createRule(REGEXP.CHILD.CLASS),
+    await createRule(regex.NESTED.ATTRIBUTE),
+    await createRule(regex.NESTED.CLASS),
+    await createRule(regex.NESTED.MODIFIER),
+    await createRule(regex.NESTED.ELEMENT),
+    await createRule(regex.CHILD.ATTRIBUTE),
+    await createRule(regex.CHILD.CLASS),
     'rules',
     await createAtRule('include', true),
     'at-rules',
@@ -572,7 +572,7 @@ const propertiesOrder = {
         'font-palette',
         'font-kerning',
         'font-stretch',
-        nonStandardProperty.fontSmooth,
+        nonStandardProperty.font.smooth,
         'font-optical-sizing',
         'font-language-override',
         'font-feature-settings',
@@ -675,5 +675,3 @@ const propertiesOrder = {
     },
   ],
 };
-
-export default propertiesOrder;

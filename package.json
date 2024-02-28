@@ -9,7 +9,7 @@
   "email": "archoleat@gmail.com",
   "name": "@archoleat/stylelint-config-extended-scss",
   "description": "Extended config for Stylelint with property sorting",
-  "version": "1.5.8",
+  "version": "1.6.4",
   "license": "MIT",
   "keywords": [
     "archoleat-config-scss",
@@ -32,17 +32,17 @@
     "stylelint-plugin-logical-css",
     "stylelint-prettier"
   ],
-  "homepage": "https://github.com/Archoleat/stylelint-config-extended-scss#readme",
+  "homepage": "https://github.com/archoleat/stylelint-config-extended-scss#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Archoleat/stylelint-config-extended-scss.git"
+    "url": "https://github.com/archoleat/stylelint-config-extended-scss.git"
   },
   "bugs": {
-    "url": "https://github.com/Archoleat/stylelint-config-extended-scss/issues"
+    "url": "https://github.com/archoleat/stylelint-config-extended-scss/issues"
   },
   "scripts": {
     "init": "pnpm i && husky && git submodule update",
-    "build": "rollup -c && pnpm clear",
+    "build": "rollup -c",
     "test": "mocha",
     "test:coverage": "nyc pnpm test && pnpm clear",
     "release": "semantic-release",
@@ -51,16 +51,19 @@
     "lint:md": "remark . --quiet",
     "lint:ts": "eslint src/**/*.ts --fix",
     "prettify": "prettier . --write",
-    "commit": "cz",
-    "clear": "rm -rf .nyc_report .rollup.cache dist"
+    "commit": "cz"
   },
+  "files": [
+    "index.d.ts",
+    "index.js"
+  ],
   "engines": {
     "node": ">=20.11.0",
-    "pnpm": ">=8.15.3"
+    "pnpm": ">=8.15.4"
   },
   "volta": {
     "node": "20.11.0",
-    "pnpm": "8.15.3"
+    "pnpm": "8.15.4"
   },
   "peerDependencies": {
     "stylelint": "^14.0.0 || ^15.0.0 || ^16.0.0"
@@ -86,15 +89,15 @@
     "@rollup/plugin-typescript": "^11.1.6",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
-    "@types/chai": "^4.3.11",
+    "@types/chai": "^4.3.12",
     "@types/mocha": "^10.0.6",
-    "@typescript-eslint/eslint-plugin": "^7.0.2",
-    "@typescript-eslint/parser": "^7.0.2",
+    "@typescript-eslint/eslint-plugin": "^7.1.0",
+    "@typescript-eslint/parser": "^7.1.0",
     "chai": "^5.1.0",
     "conventional-changelog-conventionalcommits": "^7.0.2",
     "cz-conventional-changelog": "^3.3.0",
     "editorconfig-checker": "^5.1.4",
-    "eslint": "^8.56.0",
+    "eslint": "^8.57.0",
     "eslint-config-airbnb-typescript": "^17.1.0",
     "eslint-import-resolver-typescript": "^3.6.1",
     "eslint-plugin-import": "^2.29.1",

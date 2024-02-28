@@ -1,4 +1,4 @@
-const nonStandard = {
+export default {
   pseudo: {
     element: {
       webkit: {
@@ -66,9 +66,7 @@ const nonStandard = {
     },
   },
   property: {
-    fontSmooth: 'font-smooth',
+    font: { smooth: 'font-smooth' },
     zoom: 'zoom',
   },
 };
-
-export default nonStandard;

@@ -5,7 +5,8 @@ const ATTRIBUTE = '?\\[(.*)\\]';
 const CLASS = '?\\.(.*)';
 const MODIFIER = '--';
 const ELEMENT = '__';
-const REGEXP = {
+
+export default {
   BEM: {
     BLOCK: `[a-z]${PATTERN}*(-${PATTERN}+)`,
     ELEMENT: `(${ELEMENT}${PATTERN}+(-${PATTERN}+)*)`,
@@ -23,4 +24,4 @@ const REGEXP = {
   },
 };
 
-export default REGEXP;
+// export default REGEXP;

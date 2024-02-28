@@ -1,9 +1,8 @@
-import REGEXP from '../utils/regexps.ts';
+import regex from '../utils/regexps.ts';
 
-const CSSRules = {
+export default {
   'at-rule-disallowed-list': ['debug'],
   'color-named': 'never',
-  'declaration-empty-line-before': null,
   'declaration-no-important': true,
   'font-weight-notation': 'numeric',
   'function-url-no-scheme-relative': true,
@@ -18,7 +17,7 @@ const CSSRules = {
   'no-descending-specificity': null,
   'no-unknown-animations': true,
   'selector-class-pattern': [
-    `^${REGEXP.BEM.BLOCK}*${REGEXP.BEM.ELEMENT}?${REGEXP.BEM.MODIFIER}?$`,
+    `^${regex.BEM.BLOCK}*${regex.BEM.ELEMENT}?${regex.BEM.MODIFIER}?$`,
     {
       message: 'Expected lowercase class name by BEM (block__element--modifier)',
     },
@@ -35,5 +34,3 @@ const CSSRules = {
     },
   ],
 };
-
-export default CSSRules;
