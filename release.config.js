@@ -47,7 +47,7 @@ export default {
           },
           {
             type: 'style',
-            release: 'patch',
+            release: false,
           },
         ],
         parserOpts: {
