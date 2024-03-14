@@ -1,5 +1,24 @@
 # Changelog
 
+## [1.6.5](https://github.com/archoleat/stylelint-config-extended-scss/compare/v1.6.4...v1.6.5) (2024-03-14)
+
+
+### Bug Fixes
+
+* **regex:** change name ([#113](https://github.com/archoleat/stylelint-config-extended-scss/issues/113)) ([f8e04c9](https://github.com/archoleat/stylelint-config-extended-scss/commit/f8e04c9b1611b051893852148fd8122e7f060120))
+
+
+### Code Refactoring
+
+* **package:** remove `clear` script ([#109](https://github.com/archoleat/stylelint-config-extended-scss/issues/109)) ([17082d4](https://github.com/archoleat/stylelint-config-extended-scss/commit/17082d48d9c497082ca8ba14fdd01263fbe26c37))
+* small changes ([#112](https://github.com/archoleat/stylelint-config-extended-scss/issues/112)) ([d45fece](https://github.com/archoleat/stylelint-config-extended-scss/commit/d45fece0a0d869f1f7eecae6cd6b0ae8cffaced0))
+
+
+### Documentation
+
+* **readme:** add link to `contributing` ([#110](https://github.com/archoleat/stylelint-config-extended-scss/issues/110)) ([7338e90](https://github.com/archoleat/stylelint-config-extended-scss/commit/7338e90ba4f52beda3517dc636f507a361783102))
+* **readme:** add space in blockquote ([#107](https://github.com/archoleat/stylelint-config-extended-scss/issues/107)) ([7039363](https://github.com/archoleat/stylelint-config-extended-scss/commit/70393636900dc7c682e6f373702f753956015802))
+
 ## [1.6.4](https://github.com/archoleat/stylelint-config-extended-scss/compare/v1.6.3...v1.6.4) (2024-02-27)
 
 
