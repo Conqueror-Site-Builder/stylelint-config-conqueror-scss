@@ -31,6 +31,8 @@
     -   [CSS](#css)
     -   [SCSS](#scss)
 
+-   [Troubleshooting](#troubleshooting)
+
 -   [Contributing](#contributing)
 
 -   [License](#license)
@@ -332,6 +334,15 @@ This is a list of the lints turned on in this configuration, and what they do.
 -   [`scss/property-no-unknown`](https://github.com/stylelint-scss/stylelint-scss/tree/master/src/rules/property-no-unknown):
     Disallow unknown properties.
     Should be used instead of **Stylelint**'s `property-no-unknown`.
+
+## Troubleshooting
+
+If you are using **npm** you may get an error related to these plugins:
+
+-   `typescript-eslint/eslint-plugin`.
+-   `typescript-eslint/parser`.
+
+To fix this you can switch to **pnpm**(recommended) or install version `6.0.0`.
 
 ## Contributing
 

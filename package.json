@@ -18,9 +18,8 @@
     "archoleat-stylelint-scss",
     "archoleat-stylelint",
     "archoleat",
-    "stylelint-config-extended-scss",
     "scss",
-    "stylelint",
+    "stylelint-config-extended-scss",
     "stylelint-config-standard-scss",
     "stylelint-config",
     "stylelint-declaration-block-no-ignored-properties",
@@ -30,12 +29,13 @@
     "stylelint-order",
     "stylelint-plugin-defensive-css",
     "stylelint-plugin-logical-css",
-    "stylelint-prettier"
+    "stylelint-prettier",
+    "stylelint"
   ],
   "homepage": "https://github.com/archoleat/stylelint-config-extended-scss#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/archoleat/stylelint-config-extended-scss.git"
+    "url": "git+https://github.com/archoleat/stylelint-config-extended-scss.git"
   },
   "bugs": {
     "url": "https://github.com/archoleat/stylelint-config-extended-scss/issues"
