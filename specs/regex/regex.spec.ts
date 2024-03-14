@@ -1,14 +1,14 @@
 import { expect } from 'chai';
 import { describe, it } from 'mocha';
 
-import REGEXP from '../../src/utils/regexps.ts';
+import regex from '../../src/utils/regexps.ts';
 
 describe('Nested Selectors Pattern', () => {
-  const NESTED_ATTRIBUTE = REGEXP.NESTED.ATTRIBUTE;
-  const NESTED_CLASS = REGEXP.NESTED.CLASS;
-  const NESTED_MODIFIER = REGEXP.NESTED.MODIFIER;
-  const CHILD_ATTRIBUTE = REGEXP.CHILD.ATTRIBUTE;
-  const CHILD_CLASS = REGEXP.CHILD.CLASS;
+  const NESTED_ATTRIBUTE = regex.nested.ATTRIBUTE_PATTERN;
+  const NESTED_CLASS = regex.nested.CLASS_PATTERN;
+  const NESTED_MODIFIER = regex.nested.MODIFIER_PATTERN;
+  const CHILD_ATTRIBUTE = regex.child.ATTRIBUTE_PATTERN;
+  const CHILD_CLASS = regex.child.CLASS_PATTERN;
 
   it('nested (&[attribute)', () => {
     expect('&[attribute]').to.match(new RegExp(`&${NESTED_ATTRIBUTE}`));

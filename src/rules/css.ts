@@ -17,7 +17,7 @@ export default {
   'no-descending-specificity': null,
   'no-unknown-animations': true,
   'selector-class-pattern': [
-    `^${regex.BEM.BLOCK_PATTERN}*${regex.BEM.ELEMENT_PATTERN}?${regex.BEM.MODIFIER_PATTERN}?$`,
+    `^${regex.bem.BLOCK_PATTERN}*${regex.bem.ELEMENT_PATTERN}?${regex.bem.MODIFIER_PATTERN}?$`,
     {
       message: 'Expected lowercase class name by BEM (block__element--modifier)',
     },
