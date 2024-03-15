@@ -8,8 +8,8 @@ describe('Create Logical Group', () => {
     const properties = ['display', 'z-index'];
 
     return createLogicalGroup('Test Group Name', properties).then((argument) => {
-      expect(argument.groupName).to.equal('Test Group Name');
-      expect(argument.properties).to.equal(properties);
+      expect(argument.groupName).equal('Test Group Name');
+      expect(argument.properties).equal(properties);
     });
   });
 });
