@@ -1,100 +1,100 @@
 import { expect } from 'chai';
 import { describe, it } from 'mocha';
 
-import REGEXP from '../../src/utils/regexps.ts';
+import regex from '../../src/utils/regexps.ts';
 
 describe('Nested Selectors Pattern', () => {
-  const NESTED_ATTRIBUTE = REGEXP.NESTED.ATTRIBUTE;
-  const NESTED_CLASS = REGEXP.NESTED.CLASS;
-  const NESTED_MODIFIER = REGEXP.NESTED.MODIFIER;
-  const CHILD_ATTRIBUTE = REGEXP.CHILD.ATTRIBUTE;
-  const CHILD_CLASS = REGEXP.CHILD.CLASS;
+  const NESTED_ATTRIBUTE = regex.nested.ATTRIBUTE_PATTERN;
+  const NESTED_CLASS = regex.nested.CLASS_PATTERN;
+  const NESTED_MODIFIER = regex.nested.MODIFIER_PATTERN;
+  const CHILD_ATTRIBUTE = regex.child.ATTRIBUTE_PATTERN;
+  const CHILD_CLASS = regex.child.CLASS_PATTERN;
 
   it('nested (&[attribute)', () => {
-    expect('&[attribute]').to.match(new RegExp(`&${NESTED_ATTRIBUTE}`));
+    expect('&[attribute]').match(new RegExp(`&${NESTED_ATTRIBUTE}`));
   });
 
   it('nested (&[attribute] {})', () => {
-    expect('&[attribute] {}').to.match(new RegExp(`&${NESTED_ATTRIBUTE}`));
+    expect('&[attribute] {}').match(new RegExp(`&${NESTED_ATTRIBUTE}`));
   });
 
   it('nested (&[attribute=value])', () => {
-    expect('&[attribute=value]').to.match(new RegExp(`&${NESTED_ATTRIBUTE}`));
+    expect('&[attribute=value]').match(new RegExp(`&${NESTED_ATTRIBUTE}`));
   });
 
   it('nested (&[attribute*=value])', () => {
-    expect('&[attribute*=value]').to.match(new RegExp(`&${NESTED_ATTRIBUTE}`));
+    expect('&[attribute*=value]').match(new RegExp(`&${NESTED_ATTRIBUTE}`));
   });
 
   it('nested (&[attribute=value] {})', () => {
-    expect('&[attribute=value] {}').to.match(new RegExp(`&${NESTED_ATTRIBUTE}`));
+    expect('&[attribute=value] {}').match(new RegExp(`&${NESTED_ATTRIBUTE}`));
   });
 
   it('nested (&[attribute*=value] {})', () => {
-    expect('&[attribute*=value] {}').to.match(new RegExp(`&${NESTED_ATTRIBUTE}`));
+    expect('&[attribute*=value] {}').match(new RegExp(`&${NESTED_ATTRIBUTE}`));
   });
 
   it('nested (&[attribute="value"])', () => {
-    expect("&[attribute='value']").to.match(new RegExp(`&${NESTED_ATTRIBUTE}`));
+    expect("&[attribute='value']").match(new RegExp(`&${NESTED_ATTRIBUTE}`));
   });
 
   it('nested (&[attribute*="value"])', () => {
-    expect("&[attribute*='value']").to.match(new RegExp(`&${NESTED_ATTRIBUTE}`));
+    expect("&[attribute*='value']").match(new RegExp(`&${NESTED_ATTRIBUTE}`));
   });
 
   it('nested (&[attribute="value"] {})', () => {
-    expect("&[attribute='value'] {}").to.match(new RegExp(`&${NESTED_ATTRIBUTE}`));
+    expect("&[attribute='value'] {}").match(new RegExp(`&${NESTED_ATTRIBUTE}`));
   });
 
   it('nested (&[attribute*="value"] {})', () => {
-    expect("&[attribute*='value'] {}").to.match(new RegExp(`&${NESTED_ATTRIBUTE}`));
+    expect("&[attribute*='value'] {}").match(new RegExp(`&${NESTED_ATTRIBUTE}`));
   });
 
   it("nested (&[attribute='value'])", () => {
-    expect("&[attribute='value']").to.match(new RegExp(`&${NESTED_ATTRIBUTE}`));
+    expect("&[attribute='value']").match(new RegExp(`&${NESTED_ATTRIBUTE}`));
   });
 
   it("nested (&[attribute*='value'])", () => {
-    expect("&[attribute*='value']").to.match(new RegExp(`&${NESTED_ATTRIBUTE}`));
+    expect("&[attribute*='value']").match(new RegExp(`&${NESTED_ATTRIBUTE}`));
   });
 
   it("nested (&[attribute='value'] {})", () => {
-    expect("&[attribute='value'] {}").to.match(new RegExp(`&${NESTED_ATTRIBUTE}`));
+    expect("&[attribute='value'] {}").match(new RegExp(`&${NESTED_ATTRIBUTE}`));
   });
 
   it("nested (&[attribute*='value'] {})", () => {
-    expect("&[attribute*='value'] {}").to.match(new RegExp(`&${NESTED_ATTRIBUTE}`));
+    expect("&[attribute*='value'] {}").match(new RegExp(`&${NESTED_ATTRIBUTE}`));
   });
 
   it('nested (&.class)', () => {
-    expect('&.class').to.match(new RegExp(`&${NESTED_CLASS}`));
+    expect('&.class').match(new RegExp(`&${NESTED_CLASS}`));
   });
 
   it('nested (&.class {})', () => {
-    expect('&.class {}').to.match(new RegExp(`&${NESTED_CLASS}`));
+    expect('&.class {}').match(new RegExp(`&${NESTED_CLASS}`));
   });
 
   it('nested (&--modifier)', () => {
-    expect('&--modifier').to.match(new RegExp(`&${NESTED_MODIFIER}`));
+    expect('&--modifier').match(new RegExp(`&${NESTED_MODIFIER}`));
   });
 
   it('nested (&--modifier {})', () => {
-    expect('&--modifier {}').to.match(new RegExp(`&${NESTED_MODIFIER}`));
+    expect('&--modifier {}').match(new RegExp(`&${NESTED_MODIFIER}`));
   });
 
   it('child ([attribute] &)', () => {
-    expect('[attribute] &').to.match(new RegExp(`&${CHILD_ATTRIBUTE}`));
+    expect('[attribute] &').match(new RegExp(`&${CHILD_ATTRIBUTE}`));
   });
 
   it('child ([attribute] & {})', () => {
-    expect('[attribute] & {}').to.match(new RegExp(`&${CHILD_ATTRIBUTE}`));
+    expect('[attribute] & {}').match(new RegExp(`&${CHILD_ATTRIBUTE}`));
   });
 
   it('child (.class &)', () => {
-    expect('.class &').to.match(new RegExp(`&${CHILD_CLASS}`));
+    expect('.class &').match(new RegExp(`&${CHILD_CLASS}`));
   });
 
   it('child (.class & {})', () => {
-    expect('.class & {}').to.match(new RegExp(`&${CHILD_CLASS}`));
+    expect('.class & {}').match(new RegExp(`&${CHILD_CLASS}`));
   });
 });
