@@ -11,90 +11,90 @@ describe('Nested Selectors Pattern', () => {
   const CHILD_CLASS = regex.child.CLASS_PATTERN;
 
   it('nested (&[attribute)', () => {
-    expect('&[attribute]').to.match(new RegExp(`&${NESTED_ATTRIBUTE}`));
+    expect('&[attribute]').match(new RegExp(`&${NESTED_ATTRIBUTE}`));
   });
 
   it('nested (&[attribute] {})', () => {
-    expect('&[attribute] {}').to.match(new RegExp(`&${NESTED_ATTRIBUTE}`));
+    expect('&[attribute] {}').match(new RegExp(`&${NESTED_ATTRIBUTE}`));
   });
 
   it('nested (&[attribute=value])', () => {
-    expect('&[attribute=value]').to.match(new RegExp(`&${NESTED_ATTRIBUTE}`));
+    expect('&[attribute=value]').match(new RegExp(`&${NESTED_ATTRIBUTE}`));
   });
 
   it('nested (&[attribute*=value])', () => {
-    expect('&[attribute*=value]').to.match(new RegExp(`&${NESTED_ATTRIBUTE}`));
+    expect('&[attribute*=value]').match(new RegExp(`&${NESTED_ATTRIBUTE}`));
   });
 
   it('nested (&[attribute=value] {})', () => {
-    expect('&[attribute=value] {}').to.match(new RegExp(`&${NESTED_ATTRIBUTE}`));
+    expect('&[attribute=value] {}').match(new RegExp(`&${NESTED_ATTRIBUTE}`));
   });
 
   it('nested (&[attribute*=value] {})', () => {
-    expect('&[attribute*=value] {}').to.match(new RegExp(`&${NESTED_ATTRIBUTE}`));
+    expect('&[attribute*=value] {}').match(new RegExp(`&${NESTED_ATTRIBUTE}`));
   });
 
   it('nested (&[attribute="value"])', () => {
-    expect("&[attribute='value']").to.match(new RegExp(`&${NESTED_ATTRIBUTE}`));
+    expect("&[attribute='value']").match(new RegExp(`&${NESTED_ATTRIBUTE}`));
   });
 
   it('nested (&[attribute*="value"])', () => {
-    expect("&[attribute*='value']").to.match(new RegExp(`&${NESTED_ATTRIBUTE}`));
+    expect("&[attribute*='value']").match(new RegExp(`&${NESTED_ATTRIBUTE}`));
   });
 
   it('nested (&[attribute="value"] {})', () => {
-    expect("&[attribute='value'] {}").to.match(new RegExp(`&${NESTED_ATTRIBUTE}`));
+    expect("&[attribute='value'] {}").match(new RegExp(`&${NESTED_ATTRIBUTE}`));
   });
 
   it('nested (&[attribute*="value"] {})', () => {
-    expect("&[attribute*='value'] {}").to.match(new RegExp(`&${NESTED_ATTRIBUTE}`));
+    expect("&[attribute*='value'] {}").match(new RegExp(`&${NESTED_ATTRIBUTE}`));
   });
 
   it("nested (&[attribute='value'])", () => {
-    expect("&[attribute='value']").to.match(new RegExp(`&${NESTED_ATTRIBUTE}`));
+    expect("&[attribute='value']").match(new RegExp(`&${NESTED_ATTRIBUTE}`));
   });
 
   it("nested (&[attribute*='value'])", () => {
-    expect("&[attribute*='value']").to.match(new RegExp(`&${NESTED_ATTRIBUTE}`));
+    expect("&[attribute*='value']").match(new RegExp(`&${NESTED_ATTRIBUTE}`));
   });
 
   it("nested (&[attribute='value'] {})", () => {
-    expect("&[attribute='value'] {}").to.match(new RegExp(`&${NESTED_ATTRIBUTE}`));
+    expect("&[attribute='value'] {}").match(new RegExp(`&${NESTED_ATTRIBUTE}`));
   });
 
   it("nested (&[attribute*='value'] {})", () => {
-    expect("&[attribute*='value'] {}").to.match(new RegExp(`&${NESTED_ATTRIBUTE}`));
+    expect("&[attribute*='value'] {}").match(new RegExp(`&${NESTED_ATTRIBUTE}`));
   });
 
   it('nested (&.class)', () => {
-    expect('&.class').to.match(new RegExp(`&${NESTED_CLASS}`));
+    expect('&.class').match(new RegExp(`&${NESTED_CLASS}`));
   });
 
   it('nested (&.class {})', () => {
-    expect('&.class {}').to.match(new RegExp(`&${NESTED_CLASS}`));
+    expect('&.class {}').match(new RegExp(`&${NESTED_CLASS}`));
   });
 
   it('nested (&--modifier)', () => {
-    expect('&--modifier').to.match(new RegExp(`&${NESTED_MODIFIER}`));
+    expect('&--modifier').match(new RegExp(`&${NESTED_MODIFIER}`));
   });
 
   it('nested (&--modifier {})', () => {
-    expect('&--modifier {}').to.match(new RegExp(`&${NESTED_MODIFIER}`));
+    expect('&--modifier {}').match(new RegExp(`&${NESTED_MODIFIER}`));
   });
 
   it('child ([attribute] &)', () => {
-    expect('[attribute] &').to.match(new RegExp(`&${CHILD_ATTRIBUTE}`));
+    expect('[attribute] &').match(new RegExp(`&${CHILD_ATTRIBUTE}`));
   });
 
   it('child ([attribute] & {})', () => {
-    expect('[attribute] & {}').to.match(new RegExp(`&${CHILD_ATTRIBUTE}`));
+    expect('[attribute] & {}').match(new RegExp(`&${CHILD_ATTRIBUTE}`));
   });
 
   it('child (.class &)', () => {
-    expect('.class &').to.match(new RegExp(`&${CHILD_CLASS}`));
+    expect('.class &').match(new RegExp(`&${CHILD_CLASS}`));
   });
 
   it('child (.class & {})', () => {
-    expect('.class & {}').to.match(new RegExp(`&${CHILD_CLASS}`));
+    expect('.class & {}').match(new RegExp(`&${CHILD_CLASS}`));
   });
 });
