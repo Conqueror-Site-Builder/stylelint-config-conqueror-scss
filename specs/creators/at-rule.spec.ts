@@ -11,6 +11,7 @@ describe('Create At Rule', () => {
       return createAtRule(name, hasBlock).then((argument) => {
         expect(argument.name).to.equal(name);
         expect(argument.hasBlock).to.equal(hasBlock);
+        expect(argument.type).to.equal('at-rule');
       });
     };
 
