@@ -9,8 +9,8 @@ describe('Create At Rule', () => {
   beforeEach(() => {
     const addAtRule = async (name: string, hasBlock: boolean) => {
       return createAtRule(name, hasBlock).then((argument) => {
-        expect(argument.name).to.equal(name);
-        expect(argument.hasBlock).to.equal(hasBlock);
+        expect(argument.name).equal(name);
+        expect(argument.hasBlock).equal(hasBlock);
       });
     };
 
