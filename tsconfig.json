@@ -12,15 +12,17 @@
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
     "noErrorTruncation": true,
+    "noImplicitAny": true,
     "noImplicitReturns": true,
     "noPropertyAccessFromIndexSignature": true,
     "noUncheckedIndexedAccess": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "outDir": "dist",
+    "outDir": "",
     "skipLibCheck": true,
     "strict": true,
-    "target": "ESNext"
+    "target": "ESNext",
+    "types": ["chai", "mocha"]
   },
   "include": ["src"]
 }
