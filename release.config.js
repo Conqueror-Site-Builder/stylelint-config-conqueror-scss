@@ -1,4 +1,6 @@
-export default {
+import { defineConfig } from '@archoleat/semantic-release-define-config';
+
+export default defineConfig({
   branches: ['main'],
   plugins: [
     [
@@ -84,4 +86,4 @@ export default {
     '@semantic-release/github',
   ],
   preset: 'conventionalcommits',
-};
+});
