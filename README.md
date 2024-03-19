@@ -3,7 +3,7 @@
 ![NPM Version](https://img.shields.io/npm/v/%40archoleat%2Fstylelint-config-extended-scss)
 ![NPM Downloads](https://img.shields.io/npm/dm/%40archoleat%2Fstylelint-config-extended-scss)
 ![CodeQL](https://img.shields.io/github/actions/workflow/status/archoleat/stylelint-config-extended-scss/codeql.yaml?label=CodeQL)
-![Test](https://img.shields.io/github/actions/workflow/status/archoleat/stylelint-config-extended-scss/mocha.yaml?label=Test)
+![Test](https://img.shields.io/github/actions/workflow/status/archoleat/stylelint-config-extended-scss/test.yaml?label=Test)
 ![Commitlint](https://img.shields.io/github/actions/workflow/status/archoleat/stylelint-config-extended-scss/commitlint.yaml?label=Commitlint)
 ![Editorconfig](https://img.shields.io/github/actions/workflow/status/archoleat/stylelint-config-extended-scss/editorconfig.yaml?label=Editorconfig)
 ![Prettier](https://img.shields.io/github/actions/workflow/status/archoleat/stylelint-config-extended-scss/prettier.yaml?label=Prettier)
@@ -79,13 +79,13 @@
 ## Installation
 
 ```shell
-# npm
-npm i -D @archoleat/stylelint-config-extended-scss
+# pnpm
+pnpm i -D @archoleat/stylelint-config-extended-scss
 ```
 
 ```shell
-# pnpm
-pnpm i -D @archoleat/stylelint-config-extended-scss
+# npm
+npm i -D @archoleat/stylelint-config-extended-scss
 ```
 
 ```shell
@@ -335,6 +335,9 @@ This is a list of the lints turned on in this configuration, and what they do.
     Should be used instead of **Stylelint**'s `property-no-unknown`.
 
 ## Troubleshooting
+
+> \[!WARNING]
+> Developers Only.
 
 If you are using **npm**, you may get a `peerDependency` error
 that is related to these plugins:
