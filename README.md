@@ -43,6 +43,9 @@
 -   Extends the [`stylelint-config-standard-scss` shared config](https://github.com/stylelint-scss/stylelint-config-standard-scss)
     and configures it's rules for **SCSS**.
 
+-   [`stylelint-prettier/recommended`](https://github.com/prettier/stylelint-prettier):
+    Runs **Prettier** to format **SCSS** code.
+
 ### Plugins
 
 -   [`stylelint-declaration-block-no-ignored-properties`](https://github.com/kristerkari/stylelint-declaration-block-no-ignored-properties):
@@ -72,10 +75,6 @@
 -   [`stylelint-plugin-logical-css`](https://github.com/yuschick/stylelint-plugin-logical-css):
     Replace properties with logical alternatives.
 
--   [`stylelint-prettier`](https://github.com/prettier/stylelint-prettier):
-    Runs **Prettier** as a **Stylelint** rule and reports
-    differences as individual **Stylelint** issues.
-
 ## Installation
 
 ```shell
@@ -95,24 +94,46 @@ yarn add -D @archoleat/stylelint-config-extended-scss
 
 ## Usage
 
+> \[!TIP]
+> We recommend setting `stylelint-define-config` for property suggestions.
+>
+> ```shell
+> # pnpm
+> pnpm i -D stylelint-define-config
+> ```
+>
+> ```shell
+> # npm
+> npm i -D stylelint-define-config
+> ```
+>
+> ```shell
+> # yarn
+> yarn add -D stylelint-define-config
+> ```
+
 ```js
 // stylelint.config.js
-export default {
+import { defineConfig } from 'stylelint-define-config';
+
+export default defineConfig({
   extends: '@archoleat/stylelint-config-extended-scss',
-};
+});
 ```
 
 ### Extending the Config
 
 ```js
 // stylelint.config.js
-export default {
+import { defineConfig } from 'stylelint-define-config';
+
+export default defineConfig({
   extends: '@archoleat/stylelint-config-extended-scss',
   rules: {
     'selector-max-compound-selectors': 4,
     'value-no-vendor-prefix': false,
   },
-};
+});
 ```
 
 ## Add the Space Between Logical Groups
@@ -122,12 +143,14 @@ add this rule to your **Stylelint** config:
 
 ```js
 // stylelint.config.js
-export default {
+import { defineConfig } from 'stylelint-define-config';
+
+export default defineConfig({
   extends: '@archoleat/stylelint-config-extended-scss',
   rules: {
     'declaration-empty-line-before': null,
   },
-};
+});
 ```
 
 ### Before
