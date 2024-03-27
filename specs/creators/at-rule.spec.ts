@@ -17,11 +17,11 @@ describe('Create At Rule', () => {
     atRule = addAtRule;
   });
 
-  test('create an object with args (name: String, hasBlock: true)', async () => {
+  test('create an object with (name: String, hasBlock: true)', async () => {
     return atRule('test-rule', true);
   });
 
-  test('create an object with args (name: String, hasBlock: false)', async () => {
+  test('create an object with (name: String, hasBlock: false)', async () => {
     return atRule('test-rule', false);
   });
 });
