@@ -9,35 +9,35 @@ dependencies:
     specifier: ^3.2.5
     version: 3.2.5
   stylelint:
-    specifier: ^16.2.1
-    version: 16.2.1(typescript@5.4.3)
+    specifier: ^16.3.0
+    version: 16.3.0(typescript@5.4.3)
   stylelint-config-standard-scss:
     specifier: ^13.0.0
-    version: 13.0.0(postcss@8.4.38)(stylelint@16.2.1)
+    version: 13.0.0(postcss@8.4.38)(stylelint@16.3.0)
   stylelint-declaration-block-no-ignored-properties:
     specifier: ^2.8.0
-    version: 2.8.0(stylelint@16.2.1)
+    version: 2.8.0(stylelint@16.3.0)
   stylelint-gamut:
     specifier: ^1.3.4
-    version: 1.3.4(stylelint@16.2.1)
+    version: 1.3.4(stylelint@16.3.0)
   stylelint-group-selectors:
     specifier: ^1.0.10
-    version: 1.0.10(stylelint@16.2.1)
+    version: 1.0.10(stylelint@16.3.0)
   stylelint-high-performance-animation:
     specifier: ^1.10.0
-    version: 1.10.0(stylelint@16.2.1)
+    version: 1.10.0(stylelint@16.3.0)
   stylelint-order:
     specifier: ^6.0.4
-    version: 6.0.4(stylelint@16.2.1)
+    version: 6.0.4(stylelint@16.3.0)
   stylelint-plugin-defensive-css:
     specifier: ^1.0.3
-    version: 1.0.3(stylelint@16.2.1)
+    version: 1.0.3(stylelint@16.3.0)
   stylelint-plugin-logical-css:
     specifier: ^1.2.0
-    version: 1.2.0(stylelint@16.2.1)
+    version: 1.2.0(stylelint@16.3.0)
   stylelint-prettier:
     specifier: ^5.0.0
-    version: 5.0.0(prettier@3.2.5)(stylelint@16.2.1)
+    version: 5.0.0(prettier@3.2.5)(stylelint@16.3.0)
 
 devDependencies:
   '@archoleat/commitlint-define-config':
@@ -57,10 +57,10 @@ devDependencies:
     version: 11.1.6(rollup@4.13.0)(typescript@5.4.3)
   '@semantic-release/changelog':
     specifier: ^6.0.3
-    version: 6.0.3(semantic-release@23.0.5)
+    version: 6.0.3(semantic-release@23.0.6)
   '@semantic-release/git':
     specifier: ^10.0.1
-    version: 10.0.1(semantic-release@23.0.5)
+    version: 10.0.1(semantic-release@23.0.6)
   '@typescript-eslint/eslint-plugin':
     specifier: ^7.3.1
     version: 7.3.1(@typescript-eslint/parser@7.3.1)(eslint@8.57.0)(typescript@5.4.3)
@@ -128,8 +128,8 @@ devDependencies:
     specifier: ^6.1.1
     version: 6.1.1(esbuild@0.20.2)(rollup@4.13.0)
   semantic-release:
-    specifier: ^23.0.5
-    version: 23.0.5(typescript@5.4.3)
+    specifier: ^23.0.6
+    version: 23.0.6(typescript@5.4.3)
   typescript:
     specifier: ^5.4.3
     version: 5.4.3
@@ -418,6 +418,10 @@ packages:
       postcss-selector-parser: ^6.0.13
     dependencies:
       postcss-selector-parser: 6.0.16
+    dev: false
+
+  /@dual-bundle/import-meta-resolve@4.0.0:
+    resolution: {integrity: sha512-ZKXyJeFAzcpKM2kk8ipoGIPUqx9BX52omTGnfwjJvxOCaZTM2wtDK7zN0aIgPRbT9XYAlha0HtmZ+XKteuh0Gw==}
     dev: false
 
   /@esbuild/aix-ppc64@0.20.2:
@@ -1046,7 +1050,7 @@ packages:
     dev: true
     optional: true
 
-  /@semantic-release/changelog@6.0.3(semantic-release@23.0.5):
+  /@semantic-release/changelog@6.0.3(semantic-release@23.0.6):
     resolution: {integrity: sha512-dZuR5qByyfe3Y03TpmCvAxCyTnp7r5XwtHRf/8vD9EAn4ZWbavUX8adMtXYzE86EVh0gyLA7lm5yW4IV30XUag==}
     engines: {node: '>=14.17'}
     peerDependencies:
@@ -1056,10 +1060,10 @@ packages:
       aggregate-error: 3.1.0
       fs-extra: 11.2.0
       lodash: 4.17.21
-      semantic-release: 23.0.5(typescript@5.4.3)
+      semantic-release: 23.0.6(typescript@5.4.3)
     dev: true
 
-  /@semantic-release/commit-analyzer@12.0.0(semantic-release@23.0.5):
+  /@semantic-release/commit-analyzer@12.0.0(semantic-release@23.0.6):
     resolution: {integrity: sha512-qG+md5gdes+xa8zP7lIo1fWE17zRdO8yMCaxh9lyL65TQleoSv8WHHOqRURfghTytUh+NpkSyBprQ5hrkxOKVQ==}
     engines: {node: '>=20.8.1'}
     peerDependencies:
@@ -1072,7 +1076,7 @@ packages:
       import-from-esm: 1.3.3
       lodash-es: 4.17.21
       micromatch: 4.0.5
-      semantic-release: 23.0.5(typescript@5.4.3)
+      semantic-release: 23.0.6(typescript@5.4.3)
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -1087,7 +1091,7 @@ packages:
     engines: {node: '>=18'}
     dev: true
 
-  /@semantic-release/git@10.0.1(semantic-release@23.0.5):
+  /@semantic-release/git@10.0.1(semantic-release@23.0.6):
     resolution: {integrity: sha512-eWrx5KguUcU2wUPaO6sfvZI0wPafUKAMNC18aXY4EnNcrZL86dEmpNVnC9uMpGZkmZJ9EfCVJBQx4pV4EMGT1w==}
     engines: {node: '>=14.17'}
     peerDependencies:
@@ -1101,12 +1105,12 @@ packages:
       lodash: 4.17.21
       micromatch: 4.0.5
       p-reduce: 2.1.0
-      semantic-release: 23.0.5(typescript@5.4.3)
+      semantic-release: 23.0.6(typescript@5.4.3)
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  /@semantic-release/github@10.0.2(semantic-release@23.0.5):
+  /@semantic-release/github@10.0.2(semantic-release@23.0.6):
     resolution: {integrity: sha512-SP5ihhv/uQa8vPuWKmbJrrzfv8lRUkDFC6qwgaWoorrflN1DEW0IGCa9w/PxUp8Ad3dbvXZPmpXdGiP3eyTzhg==}
     engines: {node: '>=20.8.1'}
     peerDependencies:
@@ -1127,13 +1131,13 @@ packages:
       lodash-es: 4.17.21
       mime: 4.0.1
       p-filter: 4.1.0
-      semantic-release: 23.0.5(typescript@5.4.3)
+      semantic-release: 23.0.6(typescript@5.4.3)
       url-join: 5.0.0
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  /@semantic-release/npm@12.0.0(semantic-release@23.0.5):
+  /@semantic-release/npm@12.0.0(semantic-release@23.0.6):
     resolution: {integrity: sha512-72TVYQCH9NvVsO/y13eF8vE4bNnfls518+4KcFwJUKi7AtA/ZXoNgSg9gTTfw5eMZMkiH0izUrpGXgZE/cSQhA==}
     engines: {node: '>=20.8.1'}
     peerDependencies:
@@ -1150,14 +1154,14 @@ packages:
       rc: 1.2.8
       read-pkg: 9.0.1
       registry-auth-token: 5.0.2
-      semantic-release: 23.0.5(typescript@5.4.3)
+      semantic-release: 23.0.6(typescript@5.4.3)
       semver: 7.6.0
       tempy: 3.1.0
     dev: true
 
-  /@semantic-release/release-notes-generator@12.1.0(semantic-release@23.0.5):
-    resolution: {integrity: sha512-g6M9AjUKAZUZnxaJZnouNBeDNTCUrJ5Ltj+VJ60gJeDaRRahcHsry9HW8yKrnKkKNkx5lbWiEP1FPMqVNQz8Kg==}
-    engines: {node: ^18.17 || >=20.6.1}
+  /@semantic-release/release-notes-generator@13.0.0(semantic-release@23.0.6):
+    resolution: {integrity: sha512-LEeZWb340keMYuREMyxrODPXJJ0JOL8D/mCl74B4LdzbxhtXV2LrPN2QBEcGJrlQhoqLO0RhxQb6masHytKw+A==}
+    engines: {node: '>=20.8.1'}
     peerDependencies:
       semantic-release: '>=20.1.0'
     dependencies:
@@ -1171,7 +1175,7 @@ packages:
       into-stream: 7.0.0
       lodash-es: 4.17.21
       read-pkg-up: 11.0.0
-      semantic-release: 23.0.5(typescript@5.4.3)
+      semantic-release: 23.0.6(typescript@5.4.3)
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -1567,11 +1571,9 @@ packages:
       type-fest: 0.21.3
     dev: true
 
-  /ansi-escapes@6.2.0:
-    resolution: {integrity: sha512-kzRaCqXnpzWs+3z5ABPQiVke+iq0KXkHo8xiWV4RPTi5Yli0l97BEQuhXV1s7+aSU/fu1kUuxgS4MsQ0fRuygw==}
+  /ansi-escapes@6.2.1:
+    resolution: {integrity: sha512-4nJ3yixlEthEJ9Rk4vPcdBRkZvQZlYyu8j4/Mqz5sgIkddmEnH2Yj2ZrnP9S3tQOvSNRUIgVNF/1yPpRAGNRig==}
     engines: {node: '>=14.16'}
-    dependencies:
-      type-fest: 3.13.1
     dev: true
 
   /ansi-regex@5.0.1:
@@ -4031,6 +4033,10 @@ packages:
     resolution: {integrity: sha512-Ne7wqW7/9Cz54PDt4I3tcV+hAyat8ypyOGzYRJQfdxnnjeWsTxt1cy8pjvvKeI5kfXuyvULyeeAvwvvtAX3ayQ==}
     dev: false
 
+  /known-css-properties@0.30.0:
+    resolution: {integrity: sha512-VSWXYUnsPu9+WYKkfmJyLKtIvaRJi1kXUqVmBACORXZQxT5oZDsoZ2vQP+bQFDnWtpI/4eq3MLoRMjI2fnLzTQ==}
+    dev: false
+
   /levn@0.4.1:
     resolution: {integrity: sha512-+bT2uH4E5LGE7h/n3evcS/sQlJXCpIp6ym8OWJ5eV6+67Dsql/LaaT7qJBAt2rzfoa/5QBGBhxDix1dMt2kQKQ==}
     engines: {node: '>= 0.8.0'}
@@ -4217,7 +4223,7 @@ packages:
     resolution: {integrity: sha512-niTvB4gqvtof056rRIrTZvjNYE4rCUzO6X/X+kYjd7WFxXeJ0NwEFnRxX6ehkvv3jTwrXnNdtAak5XYZuIyPFw==}
     engines: {node: '>=18'}
     dependencies:
-      ansi-escapes: 6.2.0
+      ansi-escapes: 6.2.1
       cli-cursor: 4.0.0
       slice-ansi: 7.1.0
       strip-ansi: 7.1.0
@@ -4284,7 +4290,7 @@ packages:
     peerDependencies:
       marked: '>=1 <13'
     dependencies:
-      ansi-escapes: 6.2.0
+      ansi-escapes: 6.2.1
       chalk: 5.3.0
       cli-highlight: 2.1.11
       cli-table3: 0.6.4
@@ -5312,7 +5318,7 @@ packages:
     dependencies:
       '@babel/code-frame': 7.24.2
       index-to-position: 0.1.2
-      type-fest: 4.13.1
+      type-fest: 4.14.0
     dev: true
 
   /parse-passwd@1.0.0:
@@ -5567,7 +5573,7 @@ packages:
     dependencies:
       find-up-simple: 1.0.0
       read-pkg: 9.0.1
-      type-fest: 4.13.1
+      type-fest: 4.14.0
     dev: true
 
   /read-pkg-up@7.0.1:
@@ -5596,7 +5602,7 @@ packages:
       '@types/normalize-package-data': 2.4.4
       normalize-package-data: 6.0.0
       parse-json: 8.1.0
-      type-fest: 4.13.1
+      type-fest: 4.14.0
       unicorn-magic: 0.1.0
     dev: true
 
@@ -6510,16 +6516,16 @@ packages:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
     dev: true
 
-  /semantic-release@23.0.5(typescript@5.4.3):
-    resolution: {integrity: sha512-4eZG/vRTV8E7rw5oHPv2Fht5qx6ITemE/b1vzG42ayYVcffJqXYy40nP4bHEPWX1/kleJWWrlPVDt1hSYVlpKQ==}
+  /semantic-release@23.0.6(typescript@5.4.3):
+    resolution: {integrity: sha512-/r62F4PNhJZhyZYMobcpcACGwpFNQyaVcSmqZQXG50GMbHSBVZQLCvwafqxO1lDQKVgmGmyCEtOVYzwvzvyhVw==}
     engines: {node: '>=20.8.1'}
     hasBin: true
     dependencies:
-      '@semantic-release/commit-analyzer': 12.0.0(semantic-release@23.0.5)
+      '@semantic-release/commit-analyzer': 12.0.0(semantic-release@23.0.6)
       '@semantic-release/error': 4.0.0
-      '@semantic-release/github': 10.0.2(semantic-release@23.0.5)
-      '@semantic-release/npm': 12.0.0(semantic-release@23.0.5)
-      '@semantic-release/release-notes-generator': 12.1.0(semantic-release@23.0.5)
+      '@semantic-release/github': 10.0.2(semantic-release@23.0.6)
+      '@semantic-release/npm': 12.0.0(semantic-release@23.0.6)
+      '@semantic-release/release-notes-generator': 13.0.0(semantic-release@23.0.6)
       aggregate-error: 5.0.0
       cosmiconfig: 9.0.0(typescript@5.4.3)
       debug: 4.3.4
@@ -6880,7 +6886,7 @@ packages:
       js-tokens: 8.0.3
     dev: true
 
-  /stylelint-config-recommended-scss@14.0.0(postcss@8.4.38)(stylelint@16.2.1):
+  /stylelint-config-recommended-scss@14.0.0(postcss@8.4.38)(stylelint@16.3.0):
     resolution: {integrity: sha512-HDvpoOAQ1RpF+sPbDOT2Q2/YrBDEJDnUymmVmZ7mMCeNiFSdhRdyGEimBkz06wsN+HaFwUh249gDR+I9JR7Onw==}
     engines: {node: '>=18.12.0'}
     peerDependencies:
@@ -6892,21 +6898,21 @@ packages:
     dependencies:
       postcss: 8.4.38
       postcss-scss: 4.0.9(postcss@8.4.38)
-      stylelint: 16.2.1(typescript@5.4.3)
-      stylelint-config-recommended: 14.0.0(stylelint@16.2.1)
-      stylelint-scss: 6.2.1(stylelint@16.2.1)
+      stylelint: 16.3.0(typescript@5.4.3)
+      stylelint-config-recommended: 14.0.0(stylelint@16.3.0)
+      stylelint-scss: 6.2.1(stylelint@16.3.0)
     dev: false
 
-  /stylelint-config-recommended@14.0.0(stylelint@16.2.1):
+  /stylelint-config-recommended@14.0.0(stylelint@16.3.0):
     resolution: {integrity: sha512-jSkx290CglS8StmrLp2TxAppIajzIBZKYm3IxT89Kg6fGlxbPiTiyH9PS5YUuVAFwaJLl1ikiXX0QWjI0jmgZQ==}
     engines: {node: '>=18.12.0'}
     peerDependencies:
       stylelint: ^16.0.0
     dependencies:
-      stylelint: 16.2.1(typescript@5.4.3)
+      stylelint: 16.3.0(typescript@5.4.3)
     dev: false
 
-  /stylelint-config-standard-scss@13.0.0(postcss@8.4.38)(stylelint@16.2.1):
+  /stylelint-config-standard-scss@13.0.0(postcss@8.4.38)(stylelint@16.3.0):
     resolution: {integrity: sha512-WaLvkP689qSYUpJQPCo30TFJSSc3VzvvoWnrgp+7PpVby5o8fRUY1cZcP0sePZfjrFl9T8caGhcKg0GO34VDiQ==}
     engines: {node: '>=18.12.0'}
     peerDependencies:
@@ -6917,88 +6923,88 @@ packages:
         optional: true
     dependencies:
       postcss: 8.4.38
-      stylelint: 16.2.1(typescript@5.4.3)
-      stylelint-config-recommended-scss: 14.0.0(postcss@8.4.38)(stylelint@16.2.1)
-      stylelint-config-standard: 36.0.0(stylelint@16.2.1)
+      stylelint: 16.3.0(typescript@5.4.3)
+      stylelint-config-recommended-scss: 14.0.0(postcss@8.4.38)(stylelint@16.3.0)
+      stylelint-config-standard: 36.0.0(stylelint@16.3.0)
     dev: false
 
-  /stylelint-config-standard@36.0.0(stylelint@16.2.1):
+  /stylelint-config-standard@36.0.0(stylelint@16.3.0):
     resolution: {integrity: sha512-3Kjyq4d62bYFp/Aq8PMKDwlgUyPU4nacXsjDLWJdNPRUgpuxALu1KnlAHIj36cdtxViVhXexZij65yM0uNIHug==}
     engines: {node: '>=18.12.0'}
     peerDependencies:
       stylelint: ^16.1.0
     dependencies:
-      stylelint: 16.2.1(typescript@5.4.3)
-      stylelint-config-recommended: 14.0.0(stylelint@16.2.1)
+      stylelint: 16.3.0(typescript@5.4.3)
+      stylelint-config-recommended: 14.0.0(stylelint@16.3.0)
     dev: false
 
-  /stylelint-declaration-block-no-ignored-properties@2.8.0(stylelint@16.2.1):
+  /stylelint-declaration-block-no-ignored-properties@2.8.0(stylelint@16.3.0):
     resolution: {integrity: sha512-Ws8Cav7Y+SPN0JsV407LrnNXWOrqGjxShf+37GBtnU/C58Syve9c0+I/xpLcFOosST3ternykn3Lp77f3ITnFw==}
     engines: {node: '>=6'}
     peerDependencies:
       stylelint: ^7.0.0 || ^8.0.0 || ^9.0.0 || ^10.0.0 || ^11.0.0 || ^12.0.0 || ^13.0.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
     dependencies:
-      stylelint: 16.2.1(typescript@5.4.3)
+      stylelint: 16.3.0(typescript@5.4.3)
     dev: false
 
-  /stylelint-gamut@1.3.4(stylelint@16.2.1):
+  /stylelint-gamut@1.3.4(stylelint@16.3.0):
     resolution: {integrity: sha512-mN/8BRPNGlKwf/lGrR9JjW9Abm6e7lCn7fiq4M6a4RxDCU/R6lSUI65R6cdo5BV14qf3GmrqNBAjmSujBVrHoA==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
       stylelint: ^14.0.0 || ^15.0.0 || ^16.0.0
     dependencies:
       colorjs.io: 0.4.5
-      stylelint: 16.2.1(typescript@5.4.3)
+      stylelint: 16.3.0(typescript@5.4.3)
     dev: false
 
-  /stylelint-group-selectors@1.0.10(stylelint@16.2.1):
+  /stylelint-group-selectors@1.0.10(stylelint@16.3.0):
     resolution: {integrity: sha512-t0FbKdKZFlbb2VFZ1cfU0+TUHlrPz0ORIuFCse1rVCvfYF0H75k4rRj544b1Lz6GTbdI3o1Yivotk8i8T6TvOA==}
     peerDependencies:
       stylelint: '>=14.9.1'
     dependencies:
       md5: 2.3.0
       postcss: 8.4.38
-      stylelint: 16.2.1(typescript@5.4.3)
+      stylelint: 16.3.0(typescript@5.4.3)
     dev: false
 
-  /stylelint-high-performance-animation@1.10.0(stylelint@16.2.1):
+  /stylelint-high-performance-animation@1.10.0(stylelint@16.3.0):
     resolution: {integrity: sha512-YzNI+E6taN8pwgaM0INazRg4tw23VA17KNMKUVdOeohpnpSyJLBnLVT9NkRcaCFLodK/67smS5VZK+Qe4Ohrvw==}
     peerDependencies:
       stylelint: ^7.0.0 || ^8.0.0 || ^9.0.0 || ^10.0.0 || ^11.0.0 || ^12.0.0 || ^13.0.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
     dependencies:
       postcss-value-parser: 4.2.0
-      stylelint: 16.2.1(typescript@5.4.3)
+      stylelint: 16.3.0(typescript@5.4.3)
     dev: false
 
-  /stylelint-order@6.0.4(stylelint@16.2.1):
+  /stylelint-order@6.0.4(stylelint@16.3.0):
     resolution: {integrity: sha512-0UuKo4+s1hgQ/uAxlYU4h0o0HS4NiQDud0NAUNI0aa8FJdmYHA5ZZTFHiV5FpmE3071e9pZx5j0QpVJW5zOCUA==}
     peerDependencies:
       stylelint: ^14.0.0 || ^15.0.0 || ^16.0.1
     dependencies:
       postcss: 8.4.38
       postcss-sorting: 8.0.2(postcss@8.4.38)
-      stylelint: 16.2.1(typescript@5.4.3)
+      stylelint: 16.3.0(typescript@5.4.3)
     dev: false
 
-  /stylelint-plugin-defensive-css@1.0.3(stylelint@16.2.1):
+  /stylelint-plugin-defensive-css@1.0.3(stylelint@16.3.0):
     resolution: {integrity: sha512-3P6o01qhBGn/EC5DzRCPllsOtg3A1u40BS+s0HP86sHv2kUiIk9CmWGekWOmfplYJYvFlSY4HyhLhl1VuDWbBg==}
     engines: {node: '>=18.12.0'}
     peerDependencies:
       stylelint: ^14.0.0 || ^15.0.0 || ^16.0.0
     dependencies:
-      stylelint: 16.2.1(typescript@5.4.3)
+      stylelint: 16.3.0(typescript@5.4.3)
     dev: false
 
-  /stylelint-plugin-logical-css@1.2.0(stylelint@16.2.1):
+  /stylelint-plugin-logical-css@1.2.0(stylelint@16.3.0):
     resolution: {integrity: sha512-WSyG6LhUyrw+Qqu1qDbAtnkG1eqdI1eQG80MWhFGM0hj8veiJD8Z8Trgmo8dUaxBOQosAF7z081PXFqZhKymNg==}
     engines: {node: '>=18.12.0'}
     peerDependencies:
       stylelint: ^14.0.0 || ^15.0.0 || ^16.0.0
     dependencies:
-      stylelint: 16.2.1(typescript@5.4.3)
+      stylelint: 16.3.0(typescript@5.4.3)
     dev: false
 
-  /stylelint-prettier@5.0.0(prettier@3.2.5)(stylelint@16.2.1):
+  /stylelint-prettier@5.0.0(prettier@3.2.5)(stylelint@16.3.0):
     resolution: {integrity: sha512-RHfSlRJIsaVg5Br94gZVdWlz/rBTyQzZflNE6dXvSxt/GthWMY3gEHsWZEBaVGg7GM+XrtVSp4RznFlB7i0oyw==}
     engines: {node: '>=18.12.0'}
     peerDependencies:
@@ -7007,10 +7013,10 @@ packages:
     dependencies:
       prettier: 3.2.5
       prettier-linter-helpers: 1.0.0
-      stylelint: 16.2.1(typescript@5.4.3)
+      stylelint: 16.3.0(typescript@5.4.3)
     dev: false
 
-  /stylelint-scss@6.2.1(stylelint@16.2.1):
+  /stylelint-scss@6.2.1(stylelint@16.3.0):
     resolution: {integrity: sha512-ZoGLbVb1keZYRVGQlhB8G6sZOoNqw61whzzzGFWp05N12ErqLFfBv3JPrXiMLZaW98sBS7K/vUQhRnvUj4vwdw==}
     engines: {node: '>=18.12.0'}
     peerDependencies:
@@ -7021,11 +7027,11 @@ packages:
       postcss-resolve-nested-selector: 0.1.1
       postcss-selector-parser: 6.0.16
       postcss-value-parser: 4.2.0
-      stylelint: 16.2.1(typescript@5.4.3)
+      stylelint: 16.3.0(typescript@5.4.3)
     dev: false
 
-  /stylelint@16.2.1(typescript@5.4.3):
-    resolution: {integrity: sha512-SfIMGFK+4n7XVAyv50CpVfcGYWG4v41y6xG7PqOgQSY8M/PgdK0SQbjWFblxjJZlN9jNq879mB4BCZHJRIJ1hA==}
+  /stylelint@16.3.0(typescript@5.4.3):
+    resolution: {integrity: sha512-hqC6xNTbQ5HRGQXfIW4HwXcx09raIFz4W4XFbraeqWqYRVVY/ibYvI0dsu0ORMQY8re2bpDdCAeIa2cm+QJ4Sw==}
     engines: {node: '>=18.12.0'}
     hasBin: true
     dependencies:
@@ -7033,6 +7039,7 @@ packages:
       '@csstools/css-tokenizer': 2.2.4
       '@csstools/media-query-list-parser': 2.1.9(@csstools/css-parser-algorithms@2.6.1)(@csstools/css-tokenizer@2.2.4)
       '@csstools/selector-specificity': 3.0.2(postcss-selector-parser@6.0.16)
+      '@dual-bundle/import-meta-resolve': 4.0.0
       balanced-match: 2.0.0
       colord: 2.9.3
       cosmiconfig: 9.0.0(typescript@5.4.3)
@@ -7049,7 +7056,7 @@ packages:
       ignore: 5.3.1
       imurmurhash: 0.1.4
       is-plain-object: 5.0.0
-      known-css-properties: 0.29.0
+      known-css-properties: 0.30.0
       mathml-tag-names: 2.1.3
       meow: 13.2.0
       micromatch: 4.0.5
@@ -7288,8 +7295,8 @@ packages:
     engines: {node: '>=14.16'}
     dev: true
 
-  /type-fest@4.13.1:
-    resolution: {integrity: sha512-ASMgM+Vf2cLwDMt1KXSkMUDSYCxtckDJs8zsaVF/mYteIsiARKCVtyXtcK38mIKbLTctZP8v6GMqdNaeI3fo7g==}
+  /type-fest@4.14.0:
+    resolution: {integrity: sha512-on5/Cw89wwqGZQu+yWO0gGMGu8VNxsaW9SB2HE8yJjllEk7IDTwnSN1dUVldYILhYPN5HzD7WAaw2cc/jBfn0Q==}
     engines: {node: '>=16'}
     dev: true
 
@@ -7695,7 +7702,7 @@ packages:
       debug: 4.3.4
       pathe: 1.1.2
       picocolors: 1.0.0
-      vite: 5.2.4(@types/node@20.11.30)
+      vite: 5.2.6(@types/node@20.11.30)
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -7707,8 +7714,8 @@ packages:
       - terser
     dev: true
 
-  /vite@5.2.4(@types/node@20.11.30):
-    resolution: {integrity: sha512-vjFghvHWidBTinu5TCymJk/lRHlR5ljqB83yugr0HA1xspUPdOZHqbqDLnZ8f9/jINrtFHTCYYyIUi+o+Q5iyg==}
+  /vite@5.2.6(@types/node@20.11.30):
+    resolution: {integrity: sha512-FPtnxFlSIKYjZ2eosBQamz4CbyrTizbZ3hnGJlh/wMtCrlp1Hah6AzBLjGI5I2urTfNnpovpHdrL6YRuBOPnCA==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
     peerDependencies:
@@ -7786,7 +7793,7 @@ packages:
       strip-literal: 2.0.0
       tinybench: 2.6.0
       tinypool: 0.8.2
-      vite: 5.2.4(@types/node@20.11.30)
+      vite: 5.2.6(@types/node@20.11.30)
       vite-node: 1.4.0(@types/node@20.11.30)
       why-is-node-running: 2.2.2
     transitivePeerDependencies:
