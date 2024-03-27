@@ -16,27 +16,27 @@ describe('Create Rule', () => {
     rule = addRule;
   });
 
-  test('create an object with argument (::pseudo-element)', async () => {
+  test('create an object with (::pseudo-element)', async () => {
     return rule('::pseudo-element');
   });
 
-  test('create an object with argument (:pseudo-class)', async () => {
+  test('create an object with (:pseudo-class)', async () => {
     return rule(':pseudo-class');
   });
 
-  test('create an object with argument (?\\[(.*)\\])', async () => {
+  test('create an object with (?\\[(.*)\\])', async () => {
     return rule('?\\[(.*)\\]');
   });
 
-  test('create an object with argument (?\\.(.*))', async () => {
+  test('create an object with (?\\.(.*))', async () => {
     return rule('?\\.(.*)');
   });
 
-  test('create an object with argument (--)', async () => {
+  test('create an object with (--)', async () => {
     return rule('--');
   });
 
-  test('create an object with argument (__)', async () => {
+  test('create an object with (__)', async () => {
     return rule('__');
   });
 });
