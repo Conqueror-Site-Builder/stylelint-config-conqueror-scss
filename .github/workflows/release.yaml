@@ -50,9 +50,6 @@ jobs:
       - name: Build
         run: pnpm build
 
-      - name: Prettify Types
-        run: pnpm prettier index.d.ts --write
-
       - name: Create Release
         env:
           GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}
