@@ -1,12 +1,12 @@
-import regex from '../utils/regexps.ts';
+import { regex } from '../utils/regexps.ts';
 
-import deprecated from './deprecated.ts';
-import experimental from './experimental.ts';
-import nonStandard from './non-standard.ts';
+import { deprecated } from './deprecated.ts';
+import { experimental } from './experimental.ts';
+import { nonStandard } from './non-standard.ts';
 
-import createAtRule from '../creators/at-rule.ts';
-import createLogicalGroup from '../creators/logical-group.ts';
-import createRule from '../creators/rule.ts';
+import { createAtRule } from '../creators/at-rule.ts';
+import { createLogicalGroup } from '../creators/logical-group.ts';
+import { createRule } from '../creators/rule.ts';
 
 const experimentPseudoElement = experimental.pseudo.element;
 const experimentPseudoElementMozilla = experimental.pseudo.element.moz;
@@ -21,7 +21,7 @@ const deprecatedProperty = deprecated.property;
 const experimentalProperty = experimental.property;
 const nonStandardProperty = nonStandard.property;
 
-export default {
+const propertiesOrder = {
   'order/order': [
     'custom-properties',
     'dollar-variables',
@@ -675,3 +675,5 @@ export default {
     },
   ],
 };
+
+export { propertiesOrder };

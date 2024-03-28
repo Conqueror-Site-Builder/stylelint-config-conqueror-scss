@@ -1,4 +1,4 @@
-export default {
+const deprecated = {
   property: {
     float: 'float',
     clear: 'clear',
@@ -84,3 +84,5 @@ export default {
     },
   },
 };
+
+export { deprecated };

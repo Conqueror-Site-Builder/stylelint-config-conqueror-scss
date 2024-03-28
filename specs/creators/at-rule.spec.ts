@@ -1,6 +1,6 @@
 import { beforeEach, describe, expect, test } from 'vitest';
 
-import createAtRule from '../../src/creators/at-rule.ts';
+import { createAtRule } from '../../src/creators/at-rule.ts';
 
 describe('Create At Rule', () => {
   let atRule: Function;

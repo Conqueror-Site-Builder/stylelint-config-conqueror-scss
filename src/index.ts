@@ -1,7 +1,7 @@
-import CSSRules from './rules/css.ts';
-import SCSSRules from './rules/scss.ts';
+import { CSSRules } from './rules/css.ts';
+import { SCSSRules } from './rules/scss.ts';
 
-import plugins from './utils/plugins.ts';
+import { plugins } from './utils/plugins.ts';
 
 export default {
   extends: ['stylelint-config-standard-scss', 'stylelint-prettier/recommended'],

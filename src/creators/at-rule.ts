@@ -10,8 +10,10 @@
  * will have a block of nested rules or declarations inside it. If `hasBlock`
  * is `true`, it means that the at-rule will have a block.
  */
-export default async (name: string, hasBlock: boolean) => ({
+const createAtRule = async (name: string, hasBlock: boolean) => ({
   name,
   hasBlock,
   type: 'at-rule',
 });
+
+export { createAtRule };

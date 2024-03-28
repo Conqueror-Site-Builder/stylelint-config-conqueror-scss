@@ -1,6 +1,6 @@
-import regex from '../utils/regexps.ts';
+import { regex } from '../utils/regexps.ts';
 
-export default {
+const CSSRules = {
   'at-rule-disallowed-list': ['debug'],
   'color-named': 'never',
   'declaration-no-important': true,
@@ -34,3 +34,5 @@ export default {
     },
   ],
 };
+
+export { CSSRules };

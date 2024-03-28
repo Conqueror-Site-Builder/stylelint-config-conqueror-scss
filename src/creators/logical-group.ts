@@ -11,10 +11,12 @@
  * with the specified `groupName`. These properties can be of any type or
  * structure, depending on your specific use case.
  */
-export default async (groupName: string, properties: string[]) => ({
+const createLogicalGroup = async (groupName: string, properties: string[]) => ({
   groupName,
   properties,
   emptyLineBefore: 'always',
   noEmptyLineBetween: true,
   order: 'flexible',
 });
+
+export { createLogicalGroup };
