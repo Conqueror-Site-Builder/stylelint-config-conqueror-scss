@@ -6,7 +6,9 @@
  * function is a string that
  * represents the CSS selector for which a rule is being created.
  */
-export default async (selector: string) => ({
+const createRule = async (selector: string) => ({
   selector: `&${selector}`,
   type: 'rule',
 });
+
+export { createRule };

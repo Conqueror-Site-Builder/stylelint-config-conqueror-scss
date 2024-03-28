@@ -1,6 +1,6 @@
 import { beforeEach, describe, expect, test } from 'vitest';
 
-import createRule from '../../src/creators/rule.ts';
+import { createRule } from '../../src/creators/rule.ts';
 
 describe('Create Rule', () => {
   let rule: Function;
