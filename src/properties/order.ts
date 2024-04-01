@@ -8,9 +8,9 @@ import { createAtRule } from '../creators/at-rule.ts';
 import { createLogicalGroup } from '../creators/logical-group.ts';
 import { createRule } from '../creators/rule.ts';
 
-const experimentPseudoElement = experimental.pseudo.element;
-const experimentPseudoElementMozilla = experimental.pseudo.element.moz;
-const experimentPseudoElementWebkit = experimental.pseudo.element.webkit;
+const experimentalPseudoElement = experimental.pseudo.element;
+const experimentalPseudoElementMozilla = experimental.pseudo.element.moz;
+const experimentalPseudoElementWebkit = experimental.pseudo.element.webkit;
 const nonStandardPseudoElementMozilla = nonStandard.pseudo.element.moz;
 const nonStandardPseudoElementWebkit = nonStandard.pseudo.element.webkit;
 
@@ -41,17 +41,17 @@ const propertiesOrder = {
     await createRule('::highlight'),
     await createRule('::part'),
     await createRule('::slotted'),
-    await createRule(experimentPseudoElement.targetText),
-    await createRule(experimentPseudoElement.error.spelling),
-    await createRule(experimentPseudoElement.error.grammar),
-    await createRule(experimentPseudoElement.viewTransition),
-    await createRule(experimentPseudoElement.view.transition.group),
-    await createRule(experimentPseudoElement.view.transition.imagePair),
-    await createRule(experimentPseudoElement.view.transition.new),
-    await createRule(experimentPseudoElement.view.transition.old),
-    await createRule(experimentPseudoElementWebkit.slider.runnableTrack),
-    await createRule(experimentPseudoElementWebkit.slider.thumb),
-    await createRule(experimentPseudoElementMozilla.focusInner),
+    await createRule(experimentalPseudoElement.targetText),
+    await createRule(experimentalPseudoElement.error.spelling),
+    await createRule(experimentalPseudoElement.error.grammar),
+    await createRule(experimentalPseudoElement.viewTransition),
+    await createRule(experimentalPseudoElement.view.transition.group),
+    await createRule(experimentalPseudoElement.view.transition.imagePair),
+    await createRule(experimentalPseudoElement.view.transition.new),
+    await createRule(experimentalPseudoElement.view.transition.old),
+    await createRule(experimentalPseudoElementWebkit.slider.runnableTrack),
+    await createRule(experimentalPseudoElementWebkit.slider.thumb),
+    await createRule(experimentalPseudoElementMozilla.focusInner),
     await createRule(nonStandardPseudoElementWebkit.innerSpinButton),
     await createRule(nonStandardPseudoElementWebkit.meter.bar),
     await createRule(nonStandardPseudoElementWebkit.meter.value.evenLessGood),
