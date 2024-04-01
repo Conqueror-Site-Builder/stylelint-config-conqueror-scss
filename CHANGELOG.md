@@ -1,5 +1,33 @@
 # Changelog
 
+## [1.6.6](https://github.com/archoleat/stylelint-config-extended-scss/compare/v1.6.5...v1.6.6) (2024-04-01)
+
+
+### Code Refactoring
+
+* **eslint:** add `defineConfig` ([#115](https://github.com/archoleat/stylelint-config-extended-scss/issues/115)) ([dc61efe](https://github.com/archoleat/stylelint-config-extended-scss/commit/dc61efeffcdbdac2ccd4eee2a8390c963e2da71c))
+* **release.config:** add `defineConfig` ([#128](https://github.com/archoleat/stylelint-config-extended-scss/issues/128)) ([6b0a188](https://github.com/archoleat/stylelint-config-extended-scss/commit/6b0a1887808c23e728a80f7003d43af37d282648))
+* **commitlint:** add `defineConfig` ([#136](https://github.com/archoleat/stylelint-config-extended-scss/issues/136)) ([102b9cf](https://github.com/archoleat/stylelint-config-extended-scss/commit/102b9cf8c414e0bcd4f3707302cbe9e90497dfb2))
+* **tsconfig:** add new option ([#116](https://github.com/archoleat/stylelint-config-extended-scss/issues/116)) ([e7a6d72](https://github.com/archoleat/stylelint-config-extended-scss/commit/e7a6d72b305ed59e5d5dd1e00301c48d2f414730))
+* change `export` type ([#146](https://github.com/archoleat/stylelint-config-extended-scss/issues/146)) ([d9cf847](https://github.com/archoleat/stylelint-config-extended-scss/commit/d9cf847f55c98e5747705fc970b918cbbdef4ca8))
+* **rollup:** remove `declarationFile` const ([#117](https://github.com/archoleat/stylelint-config-extended-scss/issues/117)) ([2f4f19d](https://github.com/archoleat/stylelint-config-extended-scss/commit/2f4f19df2d3e24ec9687afee683ed759a7bc6264))
+* **types:** remove `index.d.ts` generation ([#137](https://github.com/archoleat/stylelint-config-extended-scss/issues/137)) ([239c6bc](https://github.com/archoleat/stylelint-config-extended-scss/commit/239c6bc1e72fc37fac2ec4c7393287adbc813dab))
+* **tsconfig:** remove unused option ([#132](https://github.com/archoleat/stylelint-config-extended-scss/issues/132)) ([9444acb](https://github.com/archoleat/stylelint-config-extended-scss/commit/9444acbaf586c76d3ca9e6cd9d168c164ed1ee53))
+* **order:** rename `const`'s ([#149](https://github.com/archoleat/stylelint-config-extended-scss/issues/149)) ([274ef26](https://github.com/archoleat/stylelint-config-extended-scss/commit/274ef268c85c10e62b1f5e2a7f36aaeb0bffbb2b))
+* **eslint:** sort alphabetically ([#131](https://github.com/archoleat/stylelint-config-extended-scss/issues/131)) ([653f126](https://github.com/archoleat/stylelint-config-extended-scss/commit/653f126113800a62a32f2e32e5d07aab7b7470d1))
+
+
+### Reverts
+
+* **nyc:** remove ([#120](https://github.com/archoleat/stylelint-config-extended-scss/issues/120)) ([2919268](https://github.com/archoleat/stylelint-config-extended-scss/commit/29192688fc894c1b90475506f24909b59a1479dc))
+
+
+### Documentation
+
+* **readme:** change link to workflow ([#133](https://github.com/archoleat/stylelint-config-extended-scss/issues/133)) ([812225c](https://github.com/archoleat/stylelint-config-extended-scss/commit/812225c49d84cf48355a8a390e98878fcc976aac))
+* **readme:** remove `troubleshooting` ([#142](https://github.com/archoleat/stylelint-config-extended-scss/issues/142)) ([8cbfbcb](https://github.com/archoleat/stylelint-config-extended-scss/commit/8cbfbcb7e04c89cd511b7e8d048430935278870d))
+* **readme:** rewrite text ([#118](https://github.com/archoleat/stylelint-config-extended-scss/issues/118)) ([5bf26e0](https://github.com/archoleat/stylelint-config-extended-scss/commit/5bf26e0c2ca56d3a4d3d96514bf720e416d81c3d))
+
 ## [1.6.5](https://github.com/archoleat/stylelint-config-extended-scss/compare/v1.6.4...v1.6.5) (2024-03-14)
 
 

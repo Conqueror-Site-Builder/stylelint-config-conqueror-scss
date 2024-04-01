@@ -1,7 +1,7 @@
 {
   "name": "@archoleat/stylelint-config-extended-scss",
   "description": "Extended config for Stylelint with property sorting",
-  "version": "1.6.5",
+  "version": "1.6.6",
   "license": "MIT",
   "author": {
     "email": "archoleat@gmail.com",
