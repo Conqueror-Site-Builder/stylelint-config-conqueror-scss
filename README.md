@@ -14,24 +14,11 @@
 ## Table of Contents
 
 -   [This Config](#this-config)
-    -   [Extends](#extends)
-    -   [Plugins](#plugins)
-
 -   [Installation](#installation)
-
 -   [Usage](#usage)
-    -   [Extending the Config](#extending-the-config)
-
 -   [Remove the Space Between Logical Groups](#remove-the-space-between-logical-groups)
-    -   [Before](#before)
-    -   [After](#after)
-
 -   [Rules](#rules)
-    -   [CSS](#css)
-    -   [SCSS](#scss)
-
 -   [Contributing](#contributing)
-
 -   [License](#license)
 
 ## This Config
