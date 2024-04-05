@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.6.7](https://github.com/archoleat/stylelint-config-extended-scss/compare/v1.6.6...v1.6.7) (2024-04-05)
+
+
+### Code Refactoring
+
+* **eslint:** add `ecmaVersion` and `sourceType` ([#156](https://github.com/archoleat/stylelint-config-extended-scss/issues/156)) ([108971c](https://github.com/archoleat/stylelint-config-extended-scss/commit/108971cf467d9e03d69a70d42007f5c6af066dec))
+* **eslint:** add `extend` ([#153](https://github.com/archoleat/stylelint-config-extended-scss/issues/153)) ([9935948](https://github.com/archoleat/stylelint-config-extended-scss/commit/9935948d9377b07c4f7e463cb08a068c96d5115e))
+* **husky:** remove submodule ([#150](https://github.com/archoleat/stylelint-config-extended-scss/issues/150)) ([bc49d54](https://github.com/archoleat/stylelint-config-extended-scss/commit/bc49d542e7759aad629debadad58f88babc4f5f4))
+
+
+### Documentation
+
+* **readme:** remove `h3` titles from ToC ([#154](https://github.com/archoleat/stylelint-config-extended-scss/issues/154)) ([390d901](https://github.com/archoleat/stylelint-config-extended-scss/commit/390d90113ea802ed44e5e1b5183ce1b087aded11))
+
 ## [1.6.6](https://github.com/archoleat/stylelint-config-extended-scss/compare/v1.6.5...v1.6.6) (2024-04-01)
 
 
