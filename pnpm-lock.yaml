@@ -42,7 +42,7 @@ dependencies:
 devDependencies:
   '@archoleat/commitlint-define-config':
     specifier: ^1.0.2
-    version: 1.0.2
+    version: 1.0.4
   '@archoleat/eslint-flat-compatibility':
     specifier: ^1.1.0
     version: 1.1.0
@@ -158,8 +158,8 @@ packages:
       '@jridgewell/trace-mapping': 0.3.25
     dev: true
 
-  /@archoleat/commitlint-define-config@1.0.2:
-    resolution: {integrity: sha512-FC+8nTz/WLegD04VIf97B0ZeNgkG0Pail6WNHnZucrZ1rRYNlQ2P9ykugCbbQf8Wd1zYJnrxQ6ue21zY9Fduog==}
+  /@archoleat/commitlint-define-config@1.0.4:
+    resolution: {integrity: sha512-YBqeNLyjfDG5Ai6MFrcN/t8Ln5eTA5UQgQUjWlaTsXJBmGd5G5njo7oFtQraOdPWGau5u6NO72+h6WXbiSedMw==}
     engines: {node: '>=20.0.0', npm: '>=10.0.0', pnpm: '>=8.0.0'}
     dependencies:
       '@commitlint/types': 19.0.3
@@ -2240,6 +2240,7 @@ packages:
   /cosmiconfig-typescript-loader@5.0.0(@types/node@20.12.3)(cosmiconfig@9.0.0)(typescript@5.4.3):
     resolution: {integrity: sha512-+8cK7jRAReYkMwMiG+bxhcNKiHJDM6bR9FD/nGBXOWdMLuYawjF5cGrtLilJ+LGd3ZjCXnJjR5DkfWPoIVlqJA==}
     engines: {node: '>=v16'}
+    requiresBuild: true
     peerDependencies:
       '@types/node': '*'
       cosmiconfig: '>=8.2'
@@ -4293,6 +4294,7 @@ packages:
 
   /lodash.mergewith@4.6.2:
     resolution: {integrity: sha512-GK3g5RPZWTRSeLSpgP8Xhra+pnjBC56q9FZYe1d5RN3TJ35dbkGy3YqBSMbyCrlbi+CM9Z3Jk5yTL7RCsqboyQ==}
+    requiresBuild: true
     dev: true
 
   /lodash.snakecase@4.1.1:
@@ -4309,6 +4311,7 @@ packages:
 
   /lodash.uniq@4.5.0:
     resolution: {integrity: sha512-xfBaXQd9ryd9dlSDvnvI0lvxfLJlYAZzXomUYzLKtUeOQvOP5piqAWuGtrhWeqaXK9hhoM/iyJc5AV+XfsX3HQ==}
+    requiresBuild: true
     dev: true
 
   /lodash.uniqby@4.7.0:
