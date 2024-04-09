@@ -1,4 +1,4 @@
-import { describe, expect, test } from 'vitest';
+import { describe, expect, test as spec } from 'vitest';
 
 import { regex } from '../../src/utils/regexps.ts';
 
@@ -9,91 +9,91 @@ describe('Nested Selectors Pattern', () => {
   const CHILD_ATTRIBUTE = regex.child.ATTRIBUTE_PATTERN;
   const CHILD_CLASS = regex.child.CLASS_PATTERN;
 
-  test('nested (&[attribute)', () => {
+  spec('nested (&[attribute)', () => {
     expect('&[attribute]').match(new RegExp(`&${NESTED_ATTRIBUTE}`));
   });
 
-  test('nested (&[attribute] {})', () => {
+  spec('nested (&[attribute] {})', () => {
     expect('&[attribute] {}').match(new RegExp(`&${NESTED_ATTRIBUTE}`));
   });
 
-  test('nested (&[attribute=value])', () => {
+  spec('nested (&[attribute=value])', () => {
     expect('&[attribute=value]').match(new RegExp(`&${NESTED_ATTRIBUTE}`));
   });
 
-  test('nested (&[attribute*=value])', () => {
+  spec('nested (&[attribute*=value])', () => {
     expect('&[attribute*=value]').match(new RegExp(`&${NESTED_ATTRIBUTE}`));
   });
 
-  test('nested (&[attribute=value] {})', () => {
+  spec('nested (&[attribute=value] {})', () => {
     expect('&[attribute=value] {}').match(new RegExp(`&${NESTED_ATTRIBUTE}`));
   });
 
-  test('nested (&[attribute*=value] {})', () => {
+  spec('nested (&[attribute*=value] {})', () => {
     expect('&[attribute*=value] {}').match(new RegExp(`&${NESTED_ATTRIBUTE}`));
   });
 
-  test('nested (&[attribute="value"])', () => {
+  spec('nested (&[attribute="value"])', () => {
     expect("&[attribute='value']").match(new RegExp(`&${NESTED_ATTRIBUTE}`));
   });
 
-  test('nested (&[attribute*="value"])', () => {
+  spec('nested (&[attribute*="value"])', () => {
     expect("&[attribute*='value']").match(new RegExp(`&${NESTED_ATTRIBUTE}`));
   });
 
-  test('nested (&[attribute="value"] {})', () => {
+  spec('nested (&[attribute="value"] {})', () => {
     expect("&[attribute='value'] {}").match(new RegExp(`&${NESTED_ATTRIBUTE}`));
   });
 
-  test('nested (&[attribute*="value"] {})', () => {
+  spec('nested (&[attribute*="value"] {})', () => {
     expect("&[attribute*='value'] {}").match(new RegExp(`&${NESTED_ATTRIBUTE}`));
   });
 
-  test("nested (&[attribute='value'])", () => {
+  spec("nested (&[attribute='value'])", () => {
     expect("&[attribute='value']").match(new RegExp(`&${NESTED_ATTRIBUTE}`));
   });
 
-  test("nested (&[attribute*='value'])", () => {
+  spec("nested (&[attribute*='value'])", () => {
     expect("&[attribute*='value']").match(new RegExp(`&${NESTED_ATTRIBUTE}`));
   });
 
-  test("nested (&[attribute='value'] {})", () => {
+  spec("nested (&[attribute='value'] {})", () => {
     expect("&[attribute='value'] {}").match(new RegExp(`&${NESTED_ATTRIBUTE}`));
   });
 
-  test("nested (&[attribute*='value'] {})", () => {
+  spec("nested (&[attribute*='value'] {})", () => {
     expect("&[attribute*='value'] {}").match(new RegExp(`&${NESTED_ATTRIBUTE}`));
   });
 
-  test('nested (&.class)', () => {
+  spec('nested (&.class)', () => {
     expect('&.class').match(new RegExp(`&${NESTED_CLASS}`));
   });
 
-  test('nested (&.class {})', () => {
+  spec('nested (&.class {})', () => {
     expect('&.class {}').match(new RegExp(`&${NESTED_CLASS}`));
   });
 
-  test('nested (&--modifier)', () => {
+  spec('nested (&--modifier)', () => {
     expect('&--modifier').match(new RegExp(`&${NESTED_MODIFIER}`));
   });
 
-  test('nested (&--modifier {})', () => {
+  spec('nested (&--modifier {})', () => {
     expect('&--modifier {}').match(new RegExp(`&${NESTED_MODIFIER}`));
   });
 
-  test('child ([attribute] &)', () => {
+  spec('child ([attribute] &)', () => {
     expect('[attribute] &').match(new RegExp(`&${CHILD_ATTRIBUTE}`));
   });
 
-  test('child ([attribute] & {})', () => {
+  spec('child ([attribute] & {})', () => {
     expect('[attribute] & {}').match(new RegExp(`&${CHILD_ATTRIBUTE}`));
   });
 
-  test('child (.class &)', () => {
+  spec('child (.class &)', () => {
     expect('.class &').match(new RegExp(`&${CHILD_CLASS}`));
   });
 
-  test('child (.class & {})', () => {
+  spec('child (.class & {})', () => {
     expect('.class & {}').match(new RegExp(`&${CHILD_CLASS}`));
   });
 });

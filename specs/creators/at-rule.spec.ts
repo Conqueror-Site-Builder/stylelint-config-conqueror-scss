@@ -1,4 +1,4 @@
-import { beforeEach, describe, expect, test } from 'vitest';
+import { beforeEach, describe, expect, test as spec } from 'vitest';
 
 import { createAtRule } from '../../src/creators/at-rule.ts';
 
@@ -17,11 +17,11 @@ describe('Create At Rule', () => {
     atRule = addAtRule;
   });
 
-  test('create an object with (name: String, hasBlock: true)', async () => {
+  spec('create an object with (name: String, hasBlock: true)', async () => {
     return atRule('test-rule', true);
   });
 
-  test('create an object with (name: String, hasBlock: false)', async () => {
+  spec('create an object with (name: String, hasBlock: false)', async () => {
     return atRule('test-rule', false);
   });
 });
