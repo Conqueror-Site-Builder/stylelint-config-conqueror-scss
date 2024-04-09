@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.8](https://github.com/archoleat/stylelint-config-extended-scss/compare/v1.6.7...v1.6.8) (2024-04-09)
+
+
+### Code Refactoring
+
+* **eslint:** rename unicorn import ([#165](https://github.com/archoleat/stylelint-config-extended-scss/issues/165)) ([251388b](https://github.com/archoleat/stylelint-config-extended-scss/commit/251388bf3f3d285bd159fa0bcb36ca9a2b21c554))
+
 ## [1.6.7](https://github.com/archoleat/stylelint-config-extended-scss/compare/v1.6.6...v1.6.7) (2024-04-05)
 
 
