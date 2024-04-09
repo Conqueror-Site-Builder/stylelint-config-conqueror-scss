@@ -1,4 +1,4 @@
-import { beforeEach, describe, expect, test } from 'vitest';
+import { beforeEach, describe, expect, test as spec } from 'vitest';
 
 import { createRule } from '../../src/creators/rule.ts';
 
@@ -16,27 +16,27 @@ describe('Create Rule', () => {
     rule = addRule;
   });
 
-  test('create an object with (::pseudo-element)', async () => {
+  spec('create an object with (::pseudo-element)', async () => {
     return rule('::pseudo-element');
   });
 
-  test('create an object with (:pseudo-class)', async () => {
+  spec('create an object with (:pseudo-class)', async () => {
     return rule(':pseudo-class');
   });
 
-  test('create an object with (?\\[(.*)\\])', async () => {
+  spec('create an object with (?\\[(.*)\\])', async () => {
     return rule('?\\[(.*)\\]');
   });
 
-  test('create an object with (?\\.(.*))', async () => {
+  spec('create an object with (?\\.(.*))', async () => {
     return rule('?\\.(.*)');
   });
 
-  test('create an object with (--)', async () => {
+  spec('create an object with (--)', async () => {
     return rule('--');
   });
 
-  test('create an object with (__)', async () => {
+  spec('create an object with (__)', async () => {
     return rule('__');
   });
 });

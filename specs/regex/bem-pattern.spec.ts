@@ -1,4 +1,4 @@
-import { describe, expect, test } from 'vitest';
+import { describe, expect, test as spec } from 'vitest';
 
 import { CSSRules } from '../../src/rules/css.ts';
 
@@ -7,83 +7,83 @@ describe('BEM Class Pattern', () => {
     CSSRules['selector-class-pattern'][0] as string,
   );
 
-  test('block (block)', () => {
+  spec('block (block)', () => {
     expect('block').match(BEMClassPattern);
   });
 
-  test('block (block-name)', () => {
+  spec('block (block-name)', () => {
     expect('block-name').match(BEMClassPattern);
   });
 
-  test('block (block-name-123)', () => {
+  spec('block (block-name-123)', () => {
     expect('block-name-123').match(BEMClassPattern);
   });
 
-  test('block, modifier (block--modifier)', () => {
+  spec('block, modifier (block--modifier)', () => {
     expect('block--modifier').match(BEMClassPattern);
   });
 
-  test('block, modifier (block-name--modifier-name)', () => {
+  spec('block, modifier (block-name--modifier-name)', () => {
     expect('block-name--modifier-name').match(BEMClassPattern);
   });
 
-  test('block, modifier (block-name--modifier)', () => {
+  spec('block, modifier (block-name--modifier)', () => {
     expect('block-name--modifier').match(BEMClassPattern);
   });
 
-  test('block, modifier (block--modifier-name)', () => {
+  spec('block, modifier (block--modifier-name)', () => {
     expect('block--modifier-name').match(BEMClassPattern);
   });
 
-  test('block, element (block__element)', () => {
+  spec('block, element (block__element)', () => {
     expect('block__element').match(BEMClassPattern);
   });
 
-  test('block, element (block-name__element-name)', () => {
+  spec('block, element (block-name__element-name)', () => {
     expect('block-name__element-name').match(BEMClassPattern);
   });
 
-  test('block, element (block-name__element)', () => {
+  spec('block, element (block-name__element)', () => {
     expect('block-name__element').match(BEMClassPattern);
   });
 
-  test('block, element (block__element-name)', () => {
+  spec('block, element (block__element-name)', () => {
     expect('block__element-name').match(BEMClassPattern);
   });
 
-  test('block, element, modifier (block__element--modifier)', () => {
+  spec('block, element, modifier (block__element--modifier)', () => {
     expect('block__element--modifier').match(BEMClassPattern);
   });
 
-  test('block, element, modifier (block-name__element-name--modifier-name)', () => {
+  spec('block, element, modifier (block-name__element-name--modifier-name)', () => {
     expect('block-name__element-name--modifier-name').match(BEMClassPattern);
   });
 
-  test('block, element, modifier (block-name__element-name--modifier)', () => {
+  spec('block, element, modifier (block-name__element-name--modifier)', () => {
     expect('block-name__element-name--modifier').match(BEMClassPattern);
   });
 
-  test('block, element, modifier (block-name__element--modifier-name)', () => {
+  spec('block, element, modifier (block-name__element--modifier-name)', () => {
     expect('block-name__element--modifier-name').match(BEMClassPattern);
   });
 
-  test('block, element, modifier (block__element-name--modifier-name)', () => {
+  spec('block, element, modifier (block__element-name--modifier-name)', () => {
     expect('block__element-name--modifier-name').match(BEMClassPattern);
   });
 
-  test('block, element, modifier (block__element_modifier)', () => {
+  spec('block, element, modifier (block__element_modifier)', () => {
     expect('block__element_modifier').not.match(BEMClassPattern);
   });
 
-  test('block (Block)', () => {
+  spec('block (Block)', () => {
     expect('Block').not.match(BEMClassPattern);
   });
 
-  test('block (BlockElement)', () => {
+  spec('block (BlockElement)', () => {
     expect('BlockElement').not.match(BEMClassPattern);
   });
 
-  test('block (123)', () => {
+  spec('block (123)', () => {
     expect('123').not.match(BEMClassPattern);
   });
 });
