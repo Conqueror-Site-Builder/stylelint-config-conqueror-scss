@@ -1,9 +1,9 @@
-import { describe, expect, test } from 'vitest';
+import { describe, expect, test as spec } from 'vitest';
 
 import { createLogicalGroup } from '../../src/creators/logical-group.ts';
 
 describe('Create Logical Group', () => {
-  test('create an object with (groupName: String, properties: [])', async () => {
+  spec('create an object with (groupName: String, properties: [])', async () => {
     const properties = ['display', 'z-index'];
 
     return createLogicalGroup('Test Group Name', properties).then((argument) => {
