@@ -45,7 +45,7 @@ devDependencies:
     version: 1.0.6
   '@archoleat/eslint-flat-compatibility':
     specifier: ^1.1.5
-    version: 1.1.5
+    version: 1.1.6
   '@archoleat/semantic-release-define-config':
     specifier: ^1.1.3
     version: 1.1.3
@@ -165,8 +165,8 @@ packages:
       '@commitlint/types': 19.0.3
     dev: true
 
-  /@archoleat/eslint-flat-compatibility@1.1.5:
-    resolution: {integrity: sha512-0rbDFz15BN8vXSVt3uGueRjqwnHg31B+iditdZtLuz9GPk/RXNXoPQ3CO3U23zzbqmGVgbbPMz5OfkPrdPWoRw==}
+  /@archoleat/eslint-flat-compatibility@1.1.6:
+    resolution: {integrity: sha512-gu8PQv6hWh2DEm2FONtAPDvv1odZXCADshCyvouYzFNscEgMLW0zwbfv6d6pAlsk7uY9+V05R/tz0qv0Sy4mzg==}
     engines: {node: '>=20.0.0', npm: '>=10.0.0', pnpm: '>=8.0.0'}
     dependencies:
       '@eslint/eslintrc': 3.0.2
