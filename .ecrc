@@ -1,7 +1,6 @@
 {
   "exclude": [
     "CHANGELOG.md",
-    "css.ts",
     "pnpm-lock.yaml",
     "README.md",
     "regexps.ts"
