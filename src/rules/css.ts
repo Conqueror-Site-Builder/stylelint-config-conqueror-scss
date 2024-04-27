@@ -2,8 +2,8 @@ import { messages } from '../utils/messages.ts';
 import { regex } from '../utils/regexps.ts';
 
 const BLOCK = regex.bem.BLOCK_PATTERN;
-const ELEMENT = regex.bem.BLOCK_PATTERN;
-const MODIFIER = regex.bem.BLOCK_PATTERN;
+const ELEMENT = regex.bem.ELEMENT_PATTERN;
+const MODIFIER = regex.bem.MODIFIER_PATTERN;
 
 const CSSRules = {
   'at-rule-disallowed-list': ['debug'],
