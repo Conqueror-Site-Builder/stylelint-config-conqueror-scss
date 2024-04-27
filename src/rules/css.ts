@@ -1,4 +1,9 @@
+import { messages } from '../utils/messages.ts';
 import { regex } from '../utils/regexps.ts';
+
+const BLOCK = regex.bem.BLOCK_PATTERN;
+const ELEMENT = regex.bem.ELEMENT_PATTERN;
+const MODIFIER = regex.bem.MODIFIER_PATTERN;
 
 const CSSRules = {
   'at-rule-disallowed-list': ['debug'],
@@ -17,9 +22,9 @@ const CSSRules = {
   'no-descending-specificity': null,
   'no-unknown-animations': true,
   'selector-class-pattern': [
-    `^${regex.bem.BLOCK_PATTERN}*${regex.bem.ELEMENT_PATTERN}?${regex.bem.MODIFIER_PATTERN}?$`,
+    `^${BLOCK}*${ELEMENT}?${MODIFIER}?$`,
     {
-      message: 'Expected lowercase class name by BEM (block__element--modifier)',
+      message: messages.BEM_PATTERN,
     },
   ],
   'selector-max-combinators': 4,
