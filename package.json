@@ -61,7 +61,7 @@
     "release": "semantic-release",
     "lint:formatting": "prettier . --check",
     "lint:editorconfig": "editorconfig-checker",
-    "lint:md": "remark . --quiet",
+    "lint:md": "remark . --quiet --frail",
     "lint:ts": "eslint src/**/*.ts --fix",
     "prettify": "prettier . --write",
     "commit": "cz"
@@ -104,6 +104,7 @@
     "eslint-import-resolver-typescript": "^3.6.1",
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-unicorn": "^53.0.0",
+    "git-pull-run": "^1.4.0",
     "globals": "^15.2.0",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.2",
