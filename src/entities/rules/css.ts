@@ -1,5 +1,4 @@
-import { messages } from '../../shared/messages.ts';
-import { regex } from '../../shared/regexps.ts';
+import { messages, regex } from '#shared/index.ts';
 
 const BLOCK = regex.bem.BLOCK_PATTERN;
 const ELEMENT = regex.bem.ELEMENT_PATTERN;

@@ -1,13 +1,13 @@
 import { beforeEach, describe, expect, test as spec } from 'vitest';
 
-import { createAtRule } from '../../src/creators/at-rule.ts';
+import { createAtRule } from '#features/index.ts';
 
 describe('Create At Rule', () => {
   let atRule: Function;
 
   beforeEach(() => {
     const addAtRule = async (name: string, hasBlock: boolean) => {
-      return createAtRule(name, hasBlock).then((argument) => {
+      return createAtRule({ name, hasBlock }).then((argument) => {
         expect(argument.name).equal(name);
         expect(argument.hasBlock).equal(hasBlock);
         expect(argument.type).equal('at-rule');

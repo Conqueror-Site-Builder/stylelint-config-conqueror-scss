@@ -1,8 +1,6 @@
-import { regex } from '../../shared/regexps.ts';
+import { regex } from '#shared/index.ts';
 
-import { createAtRule } from '../../features/at-rule/at-rule.ts';
-import { createLogicalGroup } from '../../features/logical-group/logical-group.ts';
-import { createRule } from '../../features/rule/rule.ts';
+import { createAtRule, createLogicalGroup, createRule } from '#features/index.ts';
 
 import { deprecated } from './deprecated.ts';
 import { experimental } from './experimental.ts';
