@@ -13,6 +13,6 @@
     "strict": true
   },
   "exclude": ["specs"],
-  "extends": "./tsconfig.node.json",
+  "extends": ["./tsconfig.node.json"],
   "include": ["src"]
 }
