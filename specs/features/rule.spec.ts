@@ -1,7 +1,7 @@
 import { beforeEach, describe, expect, test as spec } from 'vitest';
 
 import { createRule } from '#features/index.ts';
-import { type Props } from '#features/rule/props.ts';
+import type { Props } from '#features/rule/props.d.ts';
 
 describe('Create Rule', () => {
   let rule: Function;

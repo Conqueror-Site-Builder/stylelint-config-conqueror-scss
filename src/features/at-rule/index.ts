@@ -1,4 +1,4 @@
-import { type Props } from './props.ts';
+import type { Props } from './props.d.ts';
 
 /**
  * The asynchronous `createAtRule` function in TypeScript creates an object
