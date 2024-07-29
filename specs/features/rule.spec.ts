@@ -1,12 +1,15 @@
 import { beforeEach, describe, expect, test as spec } from 'vitest';
 
 import { createRule } from '#features/index.ts';
+import { type Props } from '#features/rule/props.ts';
 
 describe('Create Rule', () => {
   let rule: Function;
 
   beforeEach(() => {
-    const addRule = async (selector: string) => {
+    const addRule = async (props: Props) => {
+      const { selector } = props;
+
       return createRule({ selector }).then((argument) => {
         expect(argument.selector).equal(`&${selector}`);
         expect(argument.type).equal('rule');
