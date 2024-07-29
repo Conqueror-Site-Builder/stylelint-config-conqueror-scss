@@ -48,9 +48,14 @@
   },
   "type": "module",
   "imports": {
+    "#at-rule": "./src/features/at-rule/index.ts",
     "#entities/*": "./src/entities/*",
-    "#features/*": "./src/features/*",
-    "#shared/*": "./src/shared/*"
+    "#features": "./src/features/index.ts",
+    "#logical-group": "./src/features/logical-group/index.ts",
+    "#order": "./src/entities/properties/order.ts",
+    "#rule": "./src/features/rule/index.ts",
+    "#rules": "./src/entities/rules/index.ts",
+    "#shared": "./src/shared/index.ts"
   },
   "exports": {
     ".": "./index.js"

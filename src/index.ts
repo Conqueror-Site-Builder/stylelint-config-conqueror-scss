@@ -1,4 +1,4 @@
-import { CSSRules, SCSSRules } from '#entities/rules/index.ts';
+import { CSSRules, SCSSRules } from '#rules';
 import { plugins } from '#entities/plugins.ts';
 
 export default {

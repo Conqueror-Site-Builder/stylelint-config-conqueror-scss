@@ -1,3 +1,3 @@
-export { createAtRule } from './at-rule/index.ts';
-export { createLogicalGroup } from './logical-group/index.ts';
-export { createRule } from './rule/index.ts';
+export { createAtRule } from '#at-rule';
+export { createLogicalGroup } from '#logical-group';
+export { createRule } from '#rule';
