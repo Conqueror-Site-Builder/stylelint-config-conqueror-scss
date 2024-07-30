@@ -1,8 +1,8 @@
-import { messages, patterns } from '#shared';
+import { messages, regex } from '#shared';
 
-const BLOCK = patterns.bem.BLOCK_PATTERN;
-const ELEMENT = patterns.bem.ELEMENT_PATTERN;
-const MODIFIER = patterns.bem.MODIFIER_PATTERN;
+const BLOCK = regex.bem.BLOCK_REGEX;
+const ELEMENT = regex.bem.ELEMENT_REGEX;
+const MODIFIER = regex.bem.MODIFIER_REGEX;
 
 const CSSRules = {
   'at-rule-disallowed-list': ['debug'],
@@ -23,7 +23,7 @@ const CSSRules = {
   'selector-class-pattern': [
     `^${BLOCK}*${ELEMENT}?${MODIFIER}?$`,
     {
-      message: messages.BEM_PATTERN,
+      message: messages.BEM_REGEX,
     },
   ],
   'selector-max-combinators': 4,

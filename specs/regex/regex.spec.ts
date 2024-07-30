@@ -1,13 +1,13 @@
 import { describe, expect, test as spec } from 'vitest';
 
-import { patterns } from '#shared';
+import { regex } from '#shared';
 
-describe('Nested Selectors Pattern', () => {
-  const NESTED_ATTRIBUTE = patterns.nested.ATTRIBUTE_PATTERN;
-  const NESTED_CLASS = patterns.nested.CLASS_PATTERN;
-  const NESTED_MODIFIER = patterns.nested.MODIFIER_PATTERN;
-  const CHILD_ATTRIBUTE = patterns.child.ATTRIBUTE_PATTERN;
-  const CHILD_CLASS = patterns.child.CLASS_PATTERN;
+describe('Nested Selectors Regex', () => {
+  const NESTED_ATTRIBUTE = regex.nested.ATTRIBUTE_REGEX;
+  const NESTED_CLASS = regex.nested.CLASS_REGEX;
+  const NESTED_MODIFIER = regex.nested.MODIFIER_REGEX;
+  const CHILD_ATTRIBUTE = regex.child.ATTRIBUTE_REGEX;
+  const CHILD_CLASS = regex.child.CLASS_REGEX;
 
   spec('nested (&[attribute)', async () => {
     expect('&[attribute]').match(new RegExp(`&${NESTED_ATTRIBUTE}`));

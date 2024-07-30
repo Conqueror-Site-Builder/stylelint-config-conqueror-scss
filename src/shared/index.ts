@@ -1,2 +1,2 @@
 export { messages } from './messages.ts';
-export { patterns } from './patterns.ts';
+export { regex } from './regex.ts';

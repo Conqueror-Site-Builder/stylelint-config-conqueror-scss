@@ -1,5 +1,5 @@
 const messages = {
-  BEM_PATTERN: 'Expected lowercase class name by BEM (block__element--modifier)',
+  BEM_REGEX: 'Expected lowercase class name by BEM (block__element--modifier)',
 };
 
 export { messages };
