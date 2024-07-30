@@ -1,4 +1,4 @@
-import type { Props } from './props.d.ts';
+import type { Parameters } from './parameters.d.ts';
 
 /**
  * The asynchronous function `createRule` in TypeScript creates
@@ -9,8 +9,8 @@ import type { Props } from './props.d.ts';
  * represents the CSS selector for which a rule is being created.
  */
 
-const createRule = async (props: Props) => {
-  const { selector } = props;
+const createRule = async (parameters: Parameters) => {
+  const { selector } = parameters;
 
   return {
     selector: `&${selector}`,

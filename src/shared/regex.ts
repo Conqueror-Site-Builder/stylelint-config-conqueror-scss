@@ -1,6 +1,6 @@
 const SYMBOLS_PATTERN = '[a-z0-9]';
-const ATTRIBUTE_PATTERN = '?\\[(.*)\\]';
-const CLASS_PATTERN = '?\\.(.*)';
+const ATTRIBUTE_PATTERN = String.raw`?\[(.*)\]`;
+const CLASS_PATTERN = String.raw`?\.(.*)`;
 const MODIFIER_PATTERN = '--';
 const ELEMENT_PATTERN = '__';
 

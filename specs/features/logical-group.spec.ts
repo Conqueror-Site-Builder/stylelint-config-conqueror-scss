@@ -1,18 +1,18 @@
 import { describe, expect, test as spec } from 'vitest';
 
-import { createLogicalGroup } from '#features/index.ts';
+import { createLogicalGroup } from '#features';
 
 describe('Create Logical Group', () => {
   spec('create an object with (groupName: String, properties: [])', async () => {
     const properties = ['display', 'z-index'];
 
     return createLogicalGroup({ groupName: 'Test Group Name', properties }).then(
-      (argument) => {
-        expect(argument.groupName).equal('Test Group Name');
-        expect(argument.properties).equal(properties);
-        expect(argument.emptyLineBefore).equal('always');
-        expect(argument.noEmptyLineBetween).equal(true);
-        expect(argument.order).equal('flexible');
+      (parameter) => {
+        expect(parameter.groupName).equal('Test Group Name');
+        expect(parameter.properties).equal(properties);
+        expect(parameter.emptyLineBefore).equal('always');
+        expect(parameter.noEmptyLineBetween).equal(true);
+        expect(parameter.order).equal('flexible');
       },
     );
   });

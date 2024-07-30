@@ -1,6 +1,6 @@
-type Props = {
+type Parameters = {
   groupName: string;
   properties: string[];
 };
 
-export { Props };
+export { Parameters };

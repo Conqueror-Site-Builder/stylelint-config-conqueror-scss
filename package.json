@@ -48,11 +48,13 @@
   },
   "type": "module",
   "imports": {
+    "#at-rule-parameters": "./src/features/at-rule/parameters.d.ts",
     "#at-rule": "./src/features/at-rule/index.ts",
-    "#entities/*": "./src/entities/*",
     "#features": "./src/features/index.ts",
     "#logical-group": "./src/features/logical-group/index.ts",
     "#order": "./src/entities/properties/order.ts",
+    "#plugins": "./src/entities/plugins.ts",
+    "#rule-parameters": "./src/features/rule/parameters.d.ts",
     "#rule": "./src/features/rule/index.ts",
     "#rules": "./src/entities/rules/index.ts",
     "#shared": "./src/shared/index.ts"
@@ -108,7 +110,7 @@
     "conventional-changelog-conventionalcommits": "^8.0.0",
     "cz-conventional-changelog": "^3.3.0",
     "editorconfig-checker": "^5.1.8",
-    "eslint": "^9.8.0",
+    "eslint": "^8.57.0",
     "eslint-config-airbnb-typescript": "^18.0.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-define-config": "^2.1.0",

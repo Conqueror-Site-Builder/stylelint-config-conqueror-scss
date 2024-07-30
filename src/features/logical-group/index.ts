@@ -1,4 +1,4 @@
-import type { Props } from './props.d.ts';
+import type { Parameters } from './parameters.d.ts';
 
 /**
  * The asynchronous function `createLogicalGroup` creates a logical group
@@ -14,8 +14,8 @@ import type { Props } from './props.d.ts';
  * structure, depending on your specific use case.
  */
 
-const createLogicalGroup = async (props: Props) => {
-  const { groupName, properties } = props;
+const createLogicalGroup = async (parameters: Parameters) => {
+  const { groupName, properties } = parameters;
 
   return {
     groupName,

@@ -1,4 +1,4 @@
-import type { Props } from './props.d.ts';
+import type { Parameters } from './parameters.d.ts';
 
 /**
  * The asynchronous `createAtRule` function in TypeScript creates an object
@@ -13,8 +13,8 @@ import type { Props } from './props.d.ts';
  * is `true`, it means that the at-rule will have a block.
  */
 
-const createAtRule = async (props: Props) => {
-  const { name, hasBlock } = props;
+const createAtRule = async (parameters: Parameters) => {
+  const { name, hasBlock } = parameters;
 
   return {
     name,
