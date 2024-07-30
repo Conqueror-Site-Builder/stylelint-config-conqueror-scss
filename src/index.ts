@@ -1,5 +1,5 @@
 import { CSSRules, SCSSRules } from '#rules';
-import { plugins } from '#plugins';
+import { plugins } from '#entities';
 
 export default {
   extends: ['stylelint-config-standard-scss', 'stylelint-prettier/recommended'],

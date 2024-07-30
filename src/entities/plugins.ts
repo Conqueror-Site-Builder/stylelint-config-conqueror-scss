@@ -1,4 +1,4 @@
-import { propertiesOrder } from '#order';
+import { propertiesOrder } from '#properties';
 
 const plugins = {
   'gamut/color-no-out-gamut-range': true,
