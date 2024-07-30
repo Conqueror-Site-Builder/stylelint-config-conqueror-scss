@@ -8,6 +8,7 @@ pnpm-lock.yaml
 # *rc
 .czrc
 .ecrc
+.npmrc
 
 # configs
 .editorconfig
