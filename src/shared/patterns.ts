@@ -4,7 +4,7 @@ const CLASS_PATTERN = String.raw`?\.(.*)`;
 const MODIFIER_PATTERN = '--';
 const ELEMENT_PATTERN = '__';
 
-const regex = {
+const patterns = {
   bem: {
     BLOCK_PATTERN: `[a-z]${SYMBOLS_PATTERN}*(-${SYMBOLS_PATTERN}+)`,
     ELEMENT_PATTERN: `(${ELEMENT_PATTERN}${SYMBOLS_PATTERN}+(-${SYMBOLS_PATTERN}+)*)`,
@@ -22,4 +22,4 @@ const regex = {
   },
 };
 
-export { regex };
+export { patterns };

@@ -1,4 +1,4 @@
-import { regex } from '#shared';
+import { patterns } from '#shared';
 
 import { createAtRule, createLogicalGroup, createRule } from '#features';
 
@@ -174,12 +174,12 @@ const propertiesOrder = {
     await createRule({ selector: nonStandardPseudoClassMozilla.suppressed }),
     await createRule({ selector: nonStandardPseudoClassMozilla.userDisabled }),
     await createRule({ selector: nonStandardPseudoClassMozilla.windowInactive }),
-    await createRule({ selector: regex.nested.ATTRIBUTE_PATTERN }),
-    await createRule({ selector: regex.nested.CLASS_PATTERN }),
-    await createRule({ selector: regex.nested.MODIFIER_PATTERN }),
-    await createRule({ selector: regex.nested.ELEMENT_PATTERN }),
-    await createRule({ selector: regex.child.ATTRIBUTE_PATTERN }),
-    await createRule({ selector: regex.child.CLASS_PATTERN }),
+    await createRule({ selector: patterns.nested.ATTRIBUTE_PATTERN }),
+    await createRule({ selector: patterns.nested.CLASS_PATTERN }),
+    await createRule({ selector: patterns.nested.MODIFIER_PATTERN }),
+    await createRule({ selector: patterns.nested.ELEMENT_PATTERN }),
+    await createRule({ selector: patterns.child.ATTRIBUTE_PATTERN }),
+    await createRule({ selector: patterns.child.CLASS_PATTERN }),
     'rules',
     await createAtRule({ name: 'include', hasBlock: true }),
     'at-rules',

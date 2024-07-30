@@ -1,8 +1,8 @@
-import { messages, regex } from '#shared';
+import { messages, patterns } from '#shared';
 
-const BLOCK = regex.bem.BLOCK_PATTERN;
-const ELEMENT = regex.bem.ELEMENT_PATTERN;
-const MODIFIER = regex.bem.MODIFIER_PATTERN;
+const BLOCK = patterns.bem.BLOCK_PATTERN;
+const ELEMENT = patterns.bem.ELEMENT_PATTERN;
+const MODIFIER = patterns.bem.MODIFIER_PATTERN;
 
 const CSSRules = {
   'at-rule-disallowed-list': ['debug'],
