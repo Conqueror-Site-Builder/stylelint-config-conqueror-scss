@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@archoleat/reglib':
-        specifier: ^1.0.2
-        version: 1.0.2
+        specifier: ^1.1.0
+        version: 1.1.0
       prettier:
         specifier: ^3.3.3
         version: 3.3.3
@@ -168,8 +168,8 @@ packages:
     resolution: {integrity: sha512-gu8PQv6hWh2DEm2FONtAPDvv1odZXCADshCyvouYzFNscEgMLW0zwbfv6d6pAlsk7uY9+V05R/tz0qv0Sy4mzg==}
     engines: {node: '>=20.0.0', npm: '>=10.0.0', pnpm: '>=8.0.0'}
 
-  '@archoleat/reglib@1.0.2':
-    resolution: {integrity: sha512-oa51ZXuY3fZ9j0u87CZaeCMDpXH+3wW6k6nbsdGd45EqEffhnXvKWrQkUCZ+5b/3rledurnOYpLTHhXcWMuiXQ==}
+  '@archoleat/reglib@1.1.0':
+    resolution: {integrity: sha512-gftkFlwZ4yiEZLF1+9l3EZtVqLBOQ5dXV3T9AJ0yfLmfAfraJrimbmNuLzvGhlLCu5iNKXs4siXZJC2DnHemDw==}
     engines: {node: '>=20.0.0', pnpm: '>=9.0.0'}
 
   '@archoleat/semantic-release-define-config@1.1.7':
@@ -4281,7 +4281,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@archoleat/reglib@1.0.2': {}
+  '@archoleat/reglib@1.1.0': {}
 
   '@archoleat/semantic-release-define-config@1.1.7(semantic-release@24.0.0(typescript@5.5.4))':
     dependencies:
