@@ -52,8 +52,8 @@ importers:
         specifier: ^1.1.6
         version: 1.1.6
       '@archoleat/semantic-release-define-config':
-        specifier: ^1.1.7
-        version: 1.1.7(semantic-release@24.0.0(typescript@5.5.4))
+        specifier: ^1.1.8
+        version: 1.1.8(semantic-release@24.0.0(typescript@5.5.4))
       '@commitlint/cli':
         specifier: ^19.3.0
         version: 19.3.0(@types/node@22.0.0)(typescript@5.5.4)
@@ -172,8 +172,8 @@ packages:
     resolution: {integrity: sha512-gftkFlwZ4yiEZLF1+9l3EZtVqLBOQ5dXV3T9AJ0yfLmfAfraJrimbmNuLzvGhlLCu5iNKXs4siXZJC2DnHemDw==}
     engines: {node: '>=20.0.0', pnpm: '>=9.0.0'}
 
-  '@archoleat/semantic-release-define-config@1.1.7':
-    resolution: {integrity: sha512-THko3h8y1N49GibhbJiiJ4ZaGvgsUBf/ZrOSCElM/qtc/4cjOi8KqCYI7xVrM4e19WPwYEFXxUcSSJFWlhhANQ==}
+  '@archoleat/semantic-release-define-config@1.1.8':
+    resolution: {integrity: sha512-/Ht+Ds517toYhBMLSgwVX6LbD9OHMin2b8DUFc3UTu3mSu5yj8JQY4Vw8Uy4/msDiQQhURVfF5a9Icre7YHjdA==}
     engines: {node: '>=20.0.0', pnpm: '>=9.0.0'}
     peerDependencies:
       semantic-release: ^23.0.0 || ^24.0.0
@@ -4283,7 +4283,7 @@ snapshots:
 
   '@archoleat/reglib@1.1.0': {}
 
-  '@archoleat/semantic-release-define-config@1.1.7(semantic-release@24.0.0(typescript@5.5.4))':
+  '@archoleat/semantic-release-define-config@1.1.8(semantic-release@24.0.0(typescript@5.5.4))':
     dependencies:
       semantic-release: 24.0.0(typescript@5.5.4)
 
