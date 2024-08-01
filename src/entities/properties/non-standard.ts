@@ -31,6 +31,7 @@ const nonStandard = {
         pageSequence: '::-moz-page-sequence',
         progressBar: '::-moz-progress-bar',
         scrolledPageSequence: '::-moz-scrolled-page-sequence',
+        meterBar: '::-moz-meter-bar',
         list: {
           bullet: '::-moz-list-bullet',
           number: '::-moz-list-number',
@@ -54,9 +55,9 @@ const nonStandard = {
         userDisabled: ':-moz-user-disabled',
         windowInactive: ':-moz-window-inactive',
         handler: {
+          disabled: ':-moz-handler-disabled',
           blocked: ':-moz-handler-blocked',
           crashed: ':-moz-handler-crashed',
-          disabled: ':-moz-handler-disabled',
         },
         node: {
           first: ':-moz-first-node',

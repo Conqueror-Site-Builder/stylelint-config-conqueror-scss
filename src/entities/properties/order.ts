@@ -4,7 +4,9 @@ import { createAtRule, createLogicalGroup, createRule } from '#features';
 
 import { deprecated } from './deprecated.ts';
 import { experimental } from './experimental.ts';
+import { limitedAvailability } from './limited-availability.ts';
 import { nonStandard } from './non-standard.ts';
+import { warning } from './warning.ts';
 
 const experimentalPseudoElement = experimental.pseudo.element;
 const experimentalPseudoElementMozilla = experimental.pseudo.element.moz;
@@ -17,7 +19,9 @@ const nonStandardPseudoClassMozilla = nonStandard.pseudo.class.moz;
 
 const deprecatedProperty = deprecated.property;
 const experimentalProperty = experimental.property;
+const limitedAvailabilityProperty = limitedAvailability.property;
 const nonStandardProperty = nonStandard.property;
+const warningProperty = warning.property;
 
 const propertiesOrder = {
   'order/order': [
@@ -47,8 +51,8 @@ const propertiesOrder = {
     await createRule({
       selector: experimentalPseudoElement.view.transition.imagePair,
     }),
-    await createRule({ selector: experimentalPseudoElement.view.transition.new }),
     await createRule({ selector: experimentalPseudoElement.view.transition.old }),
+    await createRule({ selector: experimentalPseudoElement.view.transition.new }),
     await createRule({
       selector: experimentalPseudoElementWebkit.slider.runnableTrack,
     }),
@@ -80,6 +84,7 @@ const propertiesOrder = {
     await createRule({
       selector: nonStandardPseudoElementWebkit.search.button.cancel,
     }),
+    await createRule({ selector: nonStandardPseudoElementMozilla.meterBar }),
     await createRule({ selector: nonStandardPseudoElementMozilla.colorSwatch }),
     await createRule({ selector: nonStandardPseudoElementMozilla.list.bullet }),
     await createRule({ selector: nonStandardPseudoElementMozilla.list.number }),
@@ -160,13 +165,15 @@ const propertiesOrder = {
     await createRule({ selector: ':muted' }),
     await createRule({ selector: ':volume-locked' }),
     await createRule({ selector: ':seeking' }),
+    await createRule({ selector: ':dir' }),
+    await createRule({ selector: experimentalPseudoClass.state }),
     await createRule({ selector: nonStandardPseudoClassMozilla.broken }),
     await createRule({ selector: nonStandardPseudoClassMozilla.dragOver }),
     await createRule({ selector: nonStandardPseudoClassMozilla.node.first }),
     await createRule({ selector: nonStandardPseudoClassMozilla.node.last }),
+    await createRule({ selector: nonStandardPseudoClassMozilla.handler.disabled }),
     await createRule({ selector: nonStandardPseudoClassMozilla.handler.blocked }),
     await createRule({ selector: nonStandardPseudoClassMozilla.handler.crashed }),
-    await createRule({ selector: nonStandardPseudoClassMozilla.handler.disabled }),
     await createRule({ selector: nonStandardPseudoClassMozilla.loading }),
     await createRule({ selector: nonStandardPseudoClassMozilla.localeDir }),
     await createRule({ selector: nonStandardPseudoClassMozilla.onlyWhitespace }),
@@ -193,6 +200,9 @@ const propertiesOrder = {
           'break-before',
           'break-inside',
           'break-after',
+          warningProperty.page.break.before,
+          warningProperty.page.break.inside,
+          warningProperty.page.break.after,
           'orphans',
           'widows',
         ],
@@ -217,7 +227,7 @@ const propertiesOrder = {
       }),
       await createLogicalGroup({
         groupName: 'Counter',
-        properties: ['counter-increment', 'counter-set', 'counter-reset'],
+        properties: ['counter-set', 'counter-increment', 'counter-reset'],
       }),
       await createLogicalGroup({
         groupName: 'List',
@@ -248,6 +258,11 @@ const propertiesOrder = {
         groupName: 'Position',
         properties: [
           'position',
+          experimentalProperty.position.anchor,
+          experimentalProperty.position.visibility,
+          experimentalProperty.position.try,
+          experimentalProperty.position.tryOrder,
+          experimentalProperty.position.tryFallbacks,
           deprecatedProperty.float,
           deprecatedProperty.clear,
           'offset',
@@ -256,7 +271,12 @@ const propertiesOrder = {
           'offset-distance',
           'offset-rotate',
           'offset-anchor',
+          deprecatedProperty.cy,
+          deprecatedProperty.cx,
+          deprecatedProperty.ry,
+          deprecatedProperty.rx,
           'inset',
+          experimentalProperty.inset.area,
           'inset-block',
           'inset-block-start',
           'inset-block-end',
@@ -411,7 +431,7 @@ const propertiesOrder = {
         ],
       }),
       await createLogicalGroup({
-        groupName: 'Dimensions',
+        groupName: 'Size',
         properties: [
           'aspect-ratio',
           'block-size',
@@ -420,6 +440,8 @@ const propertiesOrder = {
           'inline-size',
           'min-inline-size',
           'max-inline-size',
+          experimentalProperty.fieldSizing,
+          deprecatedProperty.r,
           deprecatedProperty.height,
           deprecatedProperty.min.height,
           deprecatedProperty.max.height,
@@ -510,8 +532,8 @@ const propertiesOrder = {
         properties: [
           'columns',
           'column-width',
-          'column-count',
           'column-fill',
+          'column-count',
           'column-span',
           'column-rule',
           'column-rule-width',
@@ -597,7 +619,7 @@ const propertiesOrder = {
           'unicode-bidi',
           'unicode-range',
           'tab-size',
-          'direction',
+          warningProperty.direction,
           'writing-mode',
           'white-space',
           experimentalProperty.whiteSpaceCollapse,
@@ -607,7 +629,7 @@ const propertiesOrder = {
           'line-height',
           experimentalProperty.lineHeightStep,
           'word-spacing',
-          'word-wrap',
+          deprecatedProperty.wordWrap,
           'word-break',
           experimentalProperty.initial.letter,
           experimentalProperty.initial.letterAlign,
@@ -630,6 +652,9 @@ const propertiesOrder = {
           'text-transform',
           'text-anchor',
           'text-wrap',
+          experimentalProperty.text.wrapMode,
+          experimentalProperty.text.wrapStyle,
+          experimentalProperty.text.spacingTrim,
           'text-align',
           'text-align-last',
           experimentalProperty.text.sizeAdjust,
@@ -668,6 +693,7 @@ const propertiesOrder = {
           'font-language-override',
           'font-feature-settings',
           'font-synthesis',
+          limitedAvailabilityProperty.font.synthesisPosition,
           'font-synthesis-weight',
           'font-synthesis-style',
           'font-synthesis-small-caps',
@@ -696,6 +722,7 @@ const propertiesOrder = {
           'color-scheme',
           'accent-color',
           'color',
+          'color-interpolation',
           'caret-color',
           'forced-color-adjust',
           'print-color-adjust',
@@ -751,7 +778,7 @@ const propertiesOrder = {
           'transition-duration',
           'transition-timing-function',
           'transition-delay',
-          experimentalProperty.transitionBehavior,
+          limitedAvailabilityProperty.transitionBehavior,
         ],
       }),
       await createLogicalGroup({
