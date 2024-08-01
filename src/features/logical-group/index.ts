@@ -1,3 +1,5 @@
+import type { Parameters } from './parameters.d.ts';
+
 /**
  * The asynchronous function `createLogicalGroup` creates a logical group
  * with specified properties and formatting rules.
@@ -11,12 +13,17 @@
  * with the specified `groupName`. These properties can be of any type or
  * structure, depending on your specific use case.
  */
-const createLogicalGroup = async (groupName: string, properties: string[]) => ({
-  groupName,
-  properties,
-  emptyLineBefore: 'always',
-  noEmptyLineBetween: true,
-  order: 'flexible',
-});
+
+const createLogicalGroup = async (parameters: Parameters) => {
+  const { groupName, properties } = parameters;
+
+  return {
+    groupName,
+    properties,
+    emptyLineBefore: 'always',
+    noEmptyLineBetween: true,
+    order: 'flexible',
+  };
+};
 
 export { createLogicalGroup };

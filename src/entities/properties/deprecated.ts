@@ -2,6 +2,11 @@ const deprecated = {
   property: {
     float: 'float',
     clear: 'clear',
+    r: 'r',
+    cx: 'cx',
+    cy: 'cy',
+    rx: 'rx',
+    ry: 'ry',
     top: 'top',
     right: 'right',
     bottom: 'bottom',
@@ -12,6 +17,7 @@ const deprecated = {
     borderLeft: 'border-left',
     height: 'height',
     width: 'width',
+    wordWrap: 'word-wrap',
     margin: {
       top: 'margin-top',
       right: 'margin-right',

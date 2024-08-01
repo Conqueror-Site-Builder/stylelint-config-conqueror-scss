@@ -8,6 +8,7 @@ pnpm-lock.yaml
 # *rc
 .czrc
 .ecrc
+.npmrc
 
 # configs
 .editorconfig
@@ -16,3 +17,4 @@ pnpm-lock.yaml
 # ignores
 .gitignore
 .prettierignore
+.remarkignore

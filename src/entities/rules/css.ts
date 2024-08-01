@@ -1,9 +1,10 @@
-import { messages } from '../utils/messages.ts';
-import { regex } from '../utils/regexps.ts';
+import { selectors } from '@archoleat/reglib';
 
-const BLOCK = regex.bem.BLOCK_PATTERN;
-const ELEMENT = regex.bem.ELEMENT_PATTERN;
-const MODIFIER = regex.bem.MODIFIER_PATTERN;
+import { messages } from '#shared';
+
+const BLOCK = selectors.bem.BLOCK_REGEX;
+const ELEMENT = selectors.bem.ELEMENT_REGEX;
+const MODIFIER = selectors.bem.MODIFIER_REGEX;
 
 const CSSRules = {
   'at-rule-disallowed-list': ['debug'],
@@ -24,7 +25,7 @@ const CSSRules = {
   'selector-class-pattern': [
     `^${BLOCK}*${ELEMENT}?${MODIFIER}?$`,
     {
-      message: messages.BEM_PATTERN,
+      message: messages.bem,
     },
   ],
   'selector-max-combinators': 4,

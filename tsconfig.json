@@ -1,26 +1,18 @@
 {
   "compilerOptions": {
-    "allowImportingTsExtensions": true,
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
-    "composite": true,
     "disableReferencedProjectLoad": true,
-    "emitDeclarationOnly": true,
     "exactOptionalPropertyTypes": true,
-    "lib": ["ESNext"],
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
     "noImplicitAny": true,
     "noImplicitReturns": true,
     "noPropertyAccessFromIndexSignature": true,
     "noUncheckedIndexedAccess": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "outDir": "",
-    "skipLibCheck": true,
-    "strict": true,
-    "target": "ESNext",
-    "types": ["vitest"]
+    "strict": true
   },
-  "include": ["src/**/*.ts"]
+  "exclude": ["specs"],
+  "extends": ["./tsconfig.node.json"],
+  "include": ["src"]
 }

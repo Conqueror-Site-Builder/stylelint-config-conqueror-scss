@@ -1,3 +1,5 @@
+import type { Parameters } from './parameters.d.ts';
+
 /**
  * The asynchronous `createAtRule` function in TypeScript creates an object
  * representing an at-rule with a specified name and block presence.
@@ -10,10 +12,15 @@
  * will have a block of nested rules or declarations inside it. If `hasBlock`
  * is `true`, it means that the at-rule will have a block.
  */
-const createAtRule = async (name: string, hasBlock: boolean) => ({
-  name,
-  hasBlock,
-  type: 'at-rule',
-});
+
+const createAtRule = async (parameters: Parameters) => {
+  const { name, hasBlock } = parameters;
+
+  return {
+    name,
+    hasBlock,
+    type: 'at-rule',
+  };
+};
 
 export { createAtRule };
