@@ -17,12 +17,9 @@
     "url": "https://github.com/archoleat/stylelint-config-extended-scss/issues"
   },
   "keywords": [
-    "archoleat-config-scss",
-    "archoleat-config-stylelint",
-    "archoleat-scss",
-    "archoleat-stylelint-scss",
-    "archoleat-stylelint",
+    "archoleat-stylelint-config-extended-scss",
     "archoleat",
+    "plugin",
     "scss",
     "stylelint-config-extended-scss",
     "stylelint-config-standard-scss",

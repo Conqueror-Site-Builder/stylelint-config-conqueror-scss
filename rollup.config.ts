@@ -10,6 +10,7 @@ const indexFile = `${fileName}.ts`;
 
 export default defineConfig([
   {
+    external: ['@archoleat/reglib'],
     plugins: [typescript(), minify()],
     input: `${sourceFolder}/${indexFile}`,
     output: {
