@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.6.12](https://github.com/archoleat/stylelint-config-extended-scss/compare/v1.6.11...v1.6.12) (2024-08-05)
+
+### Code Refactoring
+
+* small changes ([#226](https://github.com/archoleat/stylelint-config-extended-scss/issues/226)) ([de6fcf9](https://github.com/archoleat/stylelint-config-extended-scss/commit/de6fcf942904e47a4639ecc74f69ab7bebd23336))
+
 ## [1.6.11](https://github.com/archoleat/stylelint-config-extended-scss/compare/v1.6.10...v1.6.11) (2024-08-03)
 
 ### Code Refactoring
