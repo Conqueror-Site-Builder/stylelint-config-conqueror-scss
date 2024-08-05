@@ -1,7 +1,7 @@
-# directories
+# Directories
 .husky
 
-# files
+# Files
 *.md
 pnpm-lock.yaml
 
@@ -10,11 +10,11 @@ pnpm-lock.yaml
 .ecrc
 .npmrc
 
-# configs
+# Configs
 .editorconfig
 .gitattributes
 
-# ignores
+# Ignores
 .gitignore
 .prettierignore
 .remarkignore
