@@ -7,6 +7,7 @@
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
     "outDir": "",
+    "rootDir": "src",
     "skipLibCheck": true,
     "target": "ESNext",
     "types": ["vitest"]
