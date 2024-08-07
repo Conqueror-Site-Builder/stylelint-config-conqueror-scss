@@ -5,14 +5,13 @@ on:
     branches:
       - main
     paths:
-      - package.json
       - src/**/*.ts
       - src/**/*.d.ts
   push:
     branches:
       - main
     paths:
-      - package.json
+      - src/**/*.ts
       - src/**/*.d.ts
 
 permissions:
