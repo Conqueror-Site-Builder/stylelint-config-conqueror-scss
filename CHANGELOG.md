@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.6.14](https://github.com/archoleat/stylelint-config-extended-scss/compare/v1.6.13...v1.6.14) (2024-08-08)
+
+### Code Refactoring
+
+* remove required `named-argument` ([#230](https://github.com/archoleat/stylelint-config-extended-scss/issues/230)) ([15cc6da](https://github.com/archoleat/stylelint-config-extended-scss/commit/15cc6da6dfddc17e800370e8b952ed0818301fb5))
+
 ## [1.6.13](https://github.com/archoleat/stylelint-config-extended-scss/compare/v1.6.12...v1.6.13) (2024-08-06)
 
 ### Code Refactoring
