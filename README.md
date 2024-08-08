@@ -252,16 +252,6 @@ This is a list of the lints turned on in this configuration, and what they do.
 - [`scss/at-each-key-value-single-line`](https://github.com/stylelint-scss/stylelint-scss/tree/master/src/rules/at-each-key-value-single-line):
   Each key value in the `@each` rule must be on a separate line.
 
-- [`scss/at-function-named-arguments`](https://github.com/stylelint-scss/stylelint-scss/tree/master/src/rules/at-function-named-arguments):
-  Require named parameters in **SCSS** function call rule.
-
-  > Ignore: `single-argument`.
-
-- [`scss/at-mixin-named-arguments`](https://github.com/stylelint-scss/stylelint-scss/tree/master/src/rules/at-mixin-named-arguments):
-  Require named parameters in **at-mixin** call rule.
-
-  > Ignore: `single-argument`.
-
 - [`scss/at-root-no-redundant`](https://github.com/stylelint-scss/stylelint-scss/tree/master/src/rules/at-root-no-redundant):
   Disallow redundant `@at-root` rule.
 
