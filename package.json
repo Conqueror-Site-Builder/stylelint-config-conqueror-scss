@@ -69,8 +69,7 @@
     "lint:formatting": "prettier . --check",
     "lint:md": "remark . --quiet --frail",
     "lint:ts": "eslint src/**/*.ts --fix",
-    "prettify": "prettier . --write",
-    "commit": "cz"
+    "prettify": "prettier . --write"
   },
   "peerDependencies": {
     "stylelint": "^14.0.0 || ^15.0.0 || ^16.0.0"
@@ -104,7 +103,6 @@
     "@typescript-eslint/parser": "^7.18.0",
     "@vitest/coverage-v8": "^2.0.5",
     "conventional-changelog-conventionalcommits": "^8.0.0",
-    "cz-conventional-changelog": "^3.3.0",
     "editorconfig-checker": "^5.1.8",
     "eslint": "^8.57.0",
     "eslint-config-airbnb-typescript": "^18.0.0",
@@ -116,7 +114,7 @@
     "git-pull-run": "^1.4.0",
     "globals": "^15.9.0",
     "husky": "^9.1.4",
-    "lint-staged": "^15.2.8",
+    "lint-staged": "^15.2.9",
     "prettier": "^3.3.3",
     "remark": "15.0.1",
     "remark-cli": "^12.0.1",
