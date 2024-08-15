@@ -68,7 +68,7 @@ yarn add -D @archoleat/stylelint-config-extended-scss
 > ```
 
 ```js
-// stylelint.config.js
+// stylelint.config.js or stylelint.config.ts
 import { defineConfig } from 'stylelint-define-config';
 
 export default defineConfig({
@@ -79,7 +79,7 @@ export default defineConfig({
 ### Extending the Config
 
 ```js
-// stylelint.config.js
+// stylelint.config.js or stylelint.config.ts
 import { defineConfig } from 'stylelint-define-config';
 
 export default defineConfig({
