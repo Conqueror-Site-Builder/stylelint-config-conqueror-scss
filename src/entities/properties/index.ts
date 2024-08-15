@@ -1,1 +1,1 @@
-export { propertiesOrder } from './order.ts';
+export { properties } from './properties.ts';

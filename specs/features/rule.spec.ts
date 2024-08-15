@@ -8,11 +8,11 @@ describe('Create Rule', () => {
 
   beforeEach(() => {
     const addRule = async (parameters: Parameters) => {
-      const { selector } = parameters;
+      const { selector, type } = parameters;
 
-      return createRule({ selector }).then((parameter) => {
-        expect(parameter.selector).equal(`&${selector}`);
-        expect(parameter.type).equal('rule');
+      return await createRule({ selector, type }).then((parameters) => {
+        expect(parameters.selector).equal(`&${selector}`);
+        expect(parameters.type).equal('rule');
       });
     };
 
@@ -20,26 +20,26 @@ describe('Create Rule', () => {
   });
 
   spec('create an object with (::pseudo-element)', async () => {
-    return rule('::pseudo-element');
+    return await rule({ selector: '::pseudo-element' });
   });
 
   spec('create an object with (:pseudo-class)', async () => {
-    return rule(':pseudo-class');
+    return await rule({ selector: ':pseudo-class' });
   });
 
   spec('create an object with (?\\[(.*)\\])', async () => {
-    return rule('?\\[(.*)\\]');
+    return await rule({ selector: '?\\[(.*)\\]' });
   });
 
   spec('create an object with (?\\.(.*))', async () => {
-    return rule('?\\.(.*)');
+    return await rule({ selector: '?\\.(.*)' });
   });
 
   spec('create an object with (--)', async () => {
-    return rule('--');
+    return await rule({ selector: '--' });
   });
 
   spec('create an object with (__)', async () => {
-    return rule('__');
+    return await rule({ selector: '__' });
   });
 });

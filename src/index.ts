@@ -1,5 +1,4 @@
-import { CSSRules, SCSSRules } from '#rules';
-import { plugins } from '#entities';
+import { CSSRules, SCSSRules, plugins, properties } from '#entities';
 
 export default {
   extends: ['stylelint-config-standard-scss', 'stylelint-prettier/recommended'],
@@ -11,9 +10,12 @@ export default {
     'stylelint-order',
     'stylelint-plugin-defensive-css',
     'stylelint-plugin-logical-css',
+    'stylelint-rem-over-px',
+    'stylelint-no-unsupported-browser-features',
   ],
   rules: {
     ...plugins,
+    ...properties,
     ...CSSRules,
     ...SCSSRules,
   },

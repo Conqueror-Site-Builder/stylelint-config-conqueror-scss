@@ -3,6 +3,7 @@
 
 # Files
 *.md
+browserslist
 pnpm-lock.yaml
 
 # *rc

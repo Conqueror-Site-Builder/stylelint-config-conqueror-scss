@@ -14,12 +14,12 @@ import type { Parameters } from './parameters.d.ts';
  */
 
 const createAtRule = async (parameters: Parameters) => {
-  const { name, hasBlock } = parameters;
+  const { name, hasBlock = false, type = 'at-rule' } = parameters;
 
   return {
     name,
     hasBlock,
-    type: 'at-rule',
+    type,
   };
 };
 

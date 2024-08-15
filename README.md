@@ -14,58 +14,18 @@
 
 ## Table of Contents
 
-- [This Config](#this-config)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Remove the Space Between Logical Groups](#remove-the-space-between-logical-groups)
-- [Rules](#rules)
+- [This Config](#this-config)
 - [Contributing](#contributing)
 - [License](#license)
-
-## This Config
-
-### Extends
-
-- Extends the [`stylelint-config-standard-scss` shared config](https://github.com/stylelint-scss/stylelint-config-standard-scss)
-  and configures it's rules for **SCSS**.
-
-- [`stylelint-prettier/recommended`](https://github.com/prettier/stylelint-prettier):
-  Runs **Prettier** to format **SCSS** code.
-
-### Plugins
-
-- [`stylelint-declaration-block-no-ignored-properties`](https://github.com/kristerkari/stylelint-declaration-block-no-ignored-properties):
-  Disallow property values that are ignored due to another
-  property value in the same rule.
-
-- [`stylelint-gamut`](https://github.com/fpetrakov/stylelint-gamut):
-  Throw warning if color goes out of **sRGB**
-  color space and is not wrapped in `@media (color-gamut: p3) {}`
-  or `@media (color-gamut: rec2020) {}`
-
-- [`stylelint-group-selectors`](https://github.com/ssivanatarajan/stylelint-group-selectors):
-  Identify the selectors, which can be grouped,
-  as they have same set of properties and values.
-
-- [`stylelint-high-performance-animation`](https://github.com/kristerkari/stylelint-high-performance-animation):
-  Enhances your animations.
-
-- [`stylelint-order`](https://github.com/hudochenkov/stylelint-order):
-  Sorts **over 400 properties** for enhanced clarity and maintainability.
-
-  > Properties are logically grouped and separated by a space.
-
-- [`stylelint-plugin-defensive-css`](https://github.com/yuschick/stylelint-plugin-defensive-css):
-  Enforcing defensive **CSS** best practices.
-
-- [`stylelint-plugin-logical-css`](https://github.com/yuschick/stylelint-plugin-logical-css):
-  Replace properties with logical alternatives.
 
 ## Installation
 
 ```shell
 # bun
-bun i -D @archoleat/commitlint-define-config
+bun i -D @archoleat/stylelint-config-extended-scss
 ```
 
 ```shell
@@ -87,6 +47,11 @@ yarn add -D @archoleat/stylelint-config-extended-scss
 
 > \[!TIP]
 > We recommend setting `stylelint-define-config` for property suggestions.
+>
+> ```shell
+> # bun
+> bun i -D stylelint-define-config
+> ```
 >
 > ```shell
 > # pnpm
@@ -168,46 +133,115 @@ export default defineConfig({
 }
 ```
 
-## Rules
+## This Config
+
+### Extends
+
+- Extends the [`stylelint-config-standard-scss` shared config](https://github.com/stylelint-scss/stylelint-config-standard-scss)
+  and configures it's rules for **SCSS**.
+
+- [`stylelint-prettier/recommended`](https://github.com/prettier/stylelint-prettier):
+  Runs **Prettier** to format **SCSS** code.
+
+### Plugins
+
+- [`stylelint-declaration-block-no-ignored-properties`](https://github.com/kristerkari/stylelint-declaration-block-no-ignored-properties):
+  Disallow property values that are ignored due to another
+  property value in the same rule.
+
+- [`stylelint-gamut`](https://github.com/fpetrakov/stylelint-gamut):
+  Throw warning if color goes out of **sRGB**
+  color space and is not wrapped in `@media (color-gamut: p3) {}`
+  or `@media (color-gamut: rec2020) {}`
+
+- [`stylelint-group-selectors`](https://github.com/ssivanatarajan/stylelint-group-selectors):
+  Identify the selectors, which can be grouped,
+  as they have same set of properties and values.
+
+- [`stylelint-high-performance-animation`](https://github.com/kristerkari/stylelint-high-performance-animation):
+  Enhances your animations.
+
+- [`stylelint-order`](https://github.com/hudochenkov/stylelint-order):
+  Sorts **over 400 properties** for enhanced clarity and maintainability.
+
+  > Properties are logically grouped and separated by a space.
+
+- [`stylelint-plugin-defensive-css`](https://github.com/yuschick/stylelint-plugin-defensive-css):
+  Enforcing defensive **CSS** best practices.
+
+- [`stylelint-plugin-logical-css`](https://github.com/yuschick/stylelint-plugin-logical-css):
+  Replace properties with logical alternatives.
+
+- [`stylelint-rem-over-px`](https://github.com/a-tokyo/stylelint-rem-over-px):
+  Enforce the usage of rem units over px units.
+
+  > Declaring the rule with default values is equivalent to:
+  ```json
+    // Declaring the rule with default values is equivalent to:
+    "rem-over-px/rem-over-px": [
+      true,
+      {
+        "ignore": "1px",
+        "ignoreFunctions": ["url"],
+        "ignoreAtRules": ["media"],
+        "fontSize": 16
+      }
+    ],
+  ```
+
+- [`stylelint-no-unsupported-browser-features`](https://github.com/RJWadley/stylelint-no-unsupported-browser-features):
+  Disallow features that aren't supported by your target browser audience.
+
+  > For this plugin, `browserslist` is already configured
+  > with the following options:
+  > `> 1.5%`
+  > `Firefox ESR`
+  > `last 2 versions`
+  > `not dead`
+
+  If you want to use your own config, then create a `browserslist`
+  file in your project's root.
+
+### Rules
 
 This is a list of the lints turned on in this configuration, and what they do.
 
-### CSS
+#### CSS
 
-#### At-rule
+##### At-rule
 
 - [`at-rule-disallowed-list`](https://stylelint.io/user-guide/rules/at-rule-disallowed-list):
   List of disallowed at-rules.
   - Disallow the use of `@debug`.
 
-#### Case
+##### Case
 
 - [`value-keyword-case`](https://stylelint.io/user-guide/rules/value-keyword-case):
   Lowercase for keywords values.
 
   > Ignore: `text-rendering`.
 
-#### Color
+##### Color
 
 - [`color-named`](https://stylelint.io/user-guide/rules/color-named):
   Colors must never be named.
 
-#### Declaration
+##### Declaration
 
 - [`declaration-no-important`](https://stylelint.io/user-guide/rules/declaration-no-important):
   Disallow `!important` within declarations.
 
-#### Descending
+##### Descending
 
 - [`no-descending-specificity`](https://stylelint.io/user-guide/rules/no-descending-specificity):
   Rule disabled.
 
-#### Function
+##### Function
 
 - [`function-url-no-scheme-relative`](https://stylelint.io/user-guide/rules/function-url-no-scheme-relative):
   Disallow scheme-relative **URLs**.
 
-#### Max & Min
+##### Max & Min
 
 - [`max-nesting-depth`](https://stylelint.io/user-guide/rules/max-nesting-depth):
   Limit the allowed nesting depth to `3`.
@@ -223,7 +257,7 @@ This is a list of the lints turned on in this configuration, and what they do.
 - [`selector-max-universal`](https://stylelint.io/user-guide/rules/selector-max-universal):
   Limit the allowed universal selector to `1`.
 
-#### Notation
+##### Notation
 
 - [`font-weight-notation`](https://stylelint.io/user-guide/rules/font-weight-notation):
   Numeric notation for font weights.
@@ -231,18 +265,18 @@ This is a list of the lints turned on in this configuration, and what they do.
 - [`keyframe-selector-notation`](https://stylelint.io/user-guide/rules/keyframe-selector-notation):
   Percentage notation for keyframe selectors.
 
-#### Pattern
+##### Pattern
 
 - [`selector-class-pattern`](https://stylelint.io/user-guide/rules/selector-class-pattern):
   **BEM** naming convention likely enforced, encouraging modularity,
   maintainability, and clarity in class naming.
 
-#### Selector
+##### Selector
 
 - [`selector-no-qualifying-type`](https://stylelint.io/user-guide/rules/selector-no-qualifying-type):
   Disallow qualifying a selector by type.
 
-#### Unknown
+##### Unknown
 
 - [`media-feature-name-value-no-unknown`](https://stylelint.io/user-guide/rules/media-feature-name-value-no-unknown):
   Disallow unknown values for media features.
@@ -250,9 +284,9 @@ This is a list of the lints turned on in this configuration, and what they do.
 - [`no-unknown-animations`](https://stylelint.io/user-guide/rules/no-unknown-animations):
   Disallow unknown animations.
 
-### SCSS
+#### SCSS
 
-#### SCSS At-rule
+##### SCSS At-rule
 
 - [`scss/at-each-key-value-single-line`](https://github.com/stylelint-scss/stylelint-scss/tree/master/src/rules/at-each-key-value-single-line):
   Each key value in the `@each` rule must be on a separate line.
@@ -263,7 +297,7 @@ This is a list of the lints turned on in this configuration, and what they do.
 - [`scss/at-use-no-redundant-alias`](https://github.com/stylelint-scss/stylelint-scss/tree/master/src/rules/at-use-no-redundant-alias):
   Disallow redundant `@at-root` rule.
 
-#### Comment
+##### Comment
 
 - [`scss/comment-no-loud`](https://github.com/stylelint-scss/stylelint-scss/tree/master/src/rules/comment-no-loud):
   Disallow `/*`-comments.
@@ -271,7 +305,7 @@ This is a list of the lints turned on in this configuration, and what they do.
 - [`scss/double-slash-comment-inline`](https://github.com/stylelint-scss/stylelint-scss/tree/master/src/rules/double-slash-comment-inline):
   Disallow `//`-comments to be inline comments.
 
-#### SCSS Declaration
+##### SCSS Declaration
 
 - [`scss/declaration-nested-properties`](https://github.com/stylelint-scss/stylelint-scss/tree/master/src/rules/declaration-nested-properties):
   Disallow properties with `-` in their names to be in a form
@@ -280,7 +314,7 @@ This is a list of the lints turned on in this configuration, and what they do.
 - [`scss/dimension-no-non-numeric-values`](https://github.com/stylelint-scss/stylelint-scss/tree/master/src/rules/dimension-no-non-numeric-values):
   Prevents the use of non-numeric values in dimensions.
 
-#### Dollar Variable
+##### Dollar Variable
 
 - [`scss/dollar-variable-empty-line-after`](https://github.com/stylelint-scss/stylelint-scss/tree/master/src/rules/scss/dollar-variable-empty-line-after):
   Require a newline after the `$`-variable declaration.
@@ -298,7 +332,7 @@ This is a list of the lints turned on in this configuration, and what they do.
 - [`scss/no-duplicate-dollar-variables`](https://github.com/stylelint-scss/stylelint-scss/tree/master/src/rules/no-duplicate-dollar-variables):
   Disallow duplicate dollar variables within a stylesheet.
 
-#### SCSS Function
+##### SCSS Function
 
 - [`scss/function-color-relative`](https://github.com/stylelint-scss/stylelint-scss/tree/master/src/rules/function-color-relative):
   Encourages the use of the `scale-color()` feature instead
@@ -312,27 +346,27 @@ This is a list of the lints turned on in this configuration, and what they do.
   - `saturate()`
   - `transparentize()`
 
-#### Import
+##### Import
 
 - [`scss/partial-no-import`](https://github.com/stylelint-scss/stylelint-scss/tree/master/src/rules/partial-no-import):
   Disallow non-CSS `@imports` in partial files.
 
-#### Maps
+##### Maps
 
 - [`scss/map-keys-quotes`](https://github.com/stylelint-scss/stylelint-scss/tree/master/src/rules/map-keys-quotes):
   Require quoted keys in **SASS** maps.
 
-#### Media
+##### Media
 
 - [`scss/media-feature-value-dollar-variable`](https://github.com/stylelint-scss/stylelint-scss/tree/master/src/rules/media-feature-value-dollar-variable):
   Require a media feature value be a `$`-variable.
 
-#### SCSS Selector
+##### SCSS Selector
 
 - [`scss/selector-no-redundant-nesting-selector`](https://github.com/stylelint-scss/stylelint-scss/tree/master/src/rules/selector-no-redundant-nesting-selector):
   Disallow redundant nesting selectors (`&`).
 
-#### SCSS Unknown
+##### SCSS Unknown
 
 - [`scss/property-no-unknown`](https://github.com/stylelint-scss/stylelint-scss/tree/master/src/rules/property-no-unknown):
   Disallow unknown properties.

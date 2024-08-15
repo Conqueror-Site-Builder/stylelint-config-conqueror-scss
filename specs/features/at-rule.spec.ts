@@ -8,12 +8,12 @@ describe('Create At Rule', () => {
 
   beforeEach(() => {
     const addAtRule = async (parameters: Parameters) => {
-      const { name, hasBlock } = parameters;
+      const { name, hasBlock, type } = parameters;
 
-      return createAtRule({ name, hasBlock }).then((parameter) => {
-        expect(parameter.name).equal(name);
-        expect(parameter.hasBlock).equal(hasBlock);
-        expect(parameter.type).equal('at-rule');
+      return await createAtRule({ name, hasBlock, type }).then((parameters) => {
+        expect(parameters.name).equal(name);
+        expect(parameters.hasBlock).equal(hasBlock);
+        expect(parameters.type).equal(type);
       });
     };
 
@@ -21,10 +21,10 @@ describe('Create At Rule', () => {
   });
 
   spec('create an object with (name: String, hasBlock: true)', async () => {
-    return atRule('test-rule', true);
+    return await atRule({ name: 'test-rule', hasBlock: true, type: 'at-rule' });
   });
 
   spec('create an object with (name: String, hasBlock: false)', async () => {
-    return atRule('test-rule', false);
+    return await atRule({ name: 'test-rule', hasBlock: false, type: 'at-rule' });
   });
 });

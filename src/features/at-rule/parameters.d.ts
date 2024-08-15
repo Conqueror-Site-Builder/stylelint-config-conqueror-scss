@@ -1,6 +1,7 @@
 type Parameters = {
   name: string;
-  hasBlock: boolean;
+  hasBlock?: boolean;
+  type?: 'at-rule';
 };
 
 export { Parameters };
