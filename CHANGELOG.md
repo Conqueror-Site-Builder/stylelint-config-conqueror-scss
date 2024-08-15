@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.6.15](https://github.com/archoleat/stylelint-config-extended-scss/compare/v1.6.14...v1.6.15) (2024-08-15)
+
+### Code Refactoring
+
+* add defineConfig ([#231](https://github.com/archoleat/stylelint-config-extended-scss/issues/231)) ([a3c1ab6](https://github.com/archoleat/stylelint-config-extended-scss/commit/a3c1ab6c924d242f0a6228adaffdef3e89c4052c))
+* small changes ([#232](https://github.com/archoleat/stylelint-config-extended-scss/issues/232)) ([0750a65](https://github.com/archoleat/stylelint-config-extended-scss/commit/0750a652c53bc16676620f88ed422d6b7eb1dfa6))
+* small changes ([#240](https://github.com/archoleat/stylelint-config-extended-scss/issues/240)) ([0aeff4d](https://github.com/archoleat/stylelint-config-extended-scss/commit/0aeff4d556aba52395c294bcddb45af36435befc))
+
 ## [1.6.14](https://github.com/archoleat/stylelint-config-extended-scss/compare/v1.6.13...v1.6.14) (2024-08-08)
 
 ### Code Refactoring
