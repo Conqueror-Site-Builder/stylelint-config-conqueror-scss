@@ -1,7 +1,11 @@
-import { propertiesOrder } from '#properties';
-
 const plugins = {
   'gamut/color-no-out-gamut-range': true,
+  'plugin/no-unsupported-browser-features': [
+    true,
+    {
+      severity: 'warning',
+    },
+  ],
   'plugin/stylelint-group-selectors': true,
   'plugin/declaration-block-no-ignored-properties': true,
   'plugin/no-low-performance-animation-properties': true,
@@ -19,7 +23,7 @@ const plugins = {
   ],
   'plugin/use-logical-properties-and-values': true,
   'plugin/use-logical-units': true,
-  ...propertiesOrder,
+  'rem-over-px/rem-over-px': true,
 };
 
 export { plugins };

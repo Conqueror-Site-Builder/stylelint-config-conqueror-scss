@@ -23,11 +23,11 @@ const limitedAvailabilityProperty = limitedAvailability.property;
 const nonStandardProperty = nonStandard.property;
 const warningProperty = warning.property;
 
-const propertiesOrder = {
+const properties = {
   'order/order': [
     'custom-properties',
     'dollar-variables',
-    await createAtRule({ name: 'include', hasBlock: false }),
+    await createAtRule({ name: 'include' }),
     'declarations',
     await createRule({ selector: '::selection' }),
     await createRule({ selector: '::backdrop' }),
@@ -117,21 +117,21 @@ const propertiesOrder = {
     await createRule({ selector: ':defined' }),
     await createRule({ selector: ':buffering' }),
     await createRule({ selector: ':placeholder-shown' }),
-    await createRule({ selector: ':right' }),
     await createRule({ selector: ':left' }),
+    await createRule({ selector: ':right' }),
     await createRule({ selector: ':host' }),
     await createRule({ selector: ':host-content' }),
-    await createRule({ selector: ':only-of-type' }),
     await createRule({ selector: ':first-of-type' }),
     await createRule({ selector: ':nth-of-type' }),
     await createRule({ selector: ':last-of-type' }),
     await createRule({ selector: ':nth-last-of-type' }),
+    await createRule({ selector: ':only-of-type' }),
     await createRule({ selector: ':only-child' }),
     await createRule({ selector: ':first' }),
     await createRule({ selector: ':first-child' }),
     await createRule({ selector: ':nth-child' }),
-    await createRule({ selector: ':last-child' }),
     await createRule({ selector: ':nth-last-child' }),
+    await createRule({ selector: ':last-child' }),
     await createRule({ selector: experimentalPseudoClass.targetWithin }),
     await createRule({ selector: experimentalPseudoClass.blank }),
     await createRule({ selector: ':default' }),
@@ -139,8 +139,8 @@ const propertiesOrder = {
     await createRule({ selector: ':disabled' }),
     await createRule({ selector: ':hover' }),
     await createRule({ selector: ':focus' }),
-    await createRule({ selector: ':focus-within' }),
     await createRule({ selector: ':focus-visible' }),
+    await createRule({ selector: ':focus-within' }),
     await createRule({ selector: ':active' }),
     await createRule({ selector: ':checked' }),
     await createRule({ selector: ':visited' }),
@@ -206,20 +206,6 @@ const propertiesOrder = {
           'orphans',
           'widows',
         ],
-      }),
-      await createLogicalGroup({
-        groupName: 'Actions',
-        properties: [
-          'cursor',
-          'pointer-events',
-          'touch-action',
-          'resize',
-          nonStandardProperty.zoom,
-        ],
-      }),
-      await createLogicalGroup({
-        groupName: 'User Actions',
-        properties: ['user-select', 'user-zoom'],
       }),
       await createLogicalGroup({
         groupName: 'Content',
@@ -709,14 +695,6 @@ const propertiesOrder = {
         ],
       }),
       await createLogicalGroup({
-        groupName: 'Math',
-        properties: ['math-depth', experimentalProperty.mathShift, 'math-style'],
-      }),
-      await createLogicalGroup({
-        groupName: 'SVG',
-        properties: ['fill', 'stroke', 'paint-order'],
-      }),
-      await createLogicalGroup({
         groupName: 'Color',
         properties: [
           'color-scheme',
@@ -811,6 +789,28 @@ const propertiesOrder = {
           experimentalProperty.view.transitionName,
         ],
       }),
+      await createLogicalGroup({
+        groupName: 'Actions',
+        properties: [
+          'cursor',
+          'pointer-events',
+          'touch-action',
+          'resize',
+          nonStandardProperty.zoom,
+        ],
+      }),
+      await createLogicalGroup({
+        groupName: 'User Actions',
+        properties: ['user-select', 'user-zoom'],
+      }),
+      await createLogicalGroup({
+        groupName: 'Math',
+        properties: ['math-depth', experimentalProperty.mathShift, 'math-style'],
+      }),
+      await createLogicalGroup({
+        groupName: 'SVG',
+        properties: ['fill', 'stroke', 'paint-order'],
+      }),
     ],
     {
       unspecified: 'bottomAlphabetical',
@@ -818,4 +818,4 @@ const propertiesOrder = {
   ],
 };
 
-export { propertiesOrder };
+export { properties };

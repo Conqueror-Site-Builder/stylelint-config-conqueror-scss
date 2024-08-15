@@ -10,11 +10,11 @@ import type { Parameters } from './parameters.d.ts';
  */
 
 const createRule = async (parameters: Parameters) => {
-  const { selector } = parameters;
+  const { selector, type = 'rule' } = parameters;
 
   return {
+    type,
     selector: `&${selector}`,
-    type: 'rule',
   };
 };
 
