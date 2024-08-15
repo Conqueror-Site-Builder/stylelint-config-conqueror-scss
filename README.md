@@ -16,7 +16,6 @@
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [Remove the Space Between Logical Groups](#remove-the-space-between-logical-groups)
 - [This Config](#this-config)
 - [Contributing](#contributing)
 - [License](#license)
@@ -92,7 +91,7 @@ export default defineConfig({
 });
 ```
 
-## Add the Space Between Logical Groups
+### Add the Space Between Logical Groups
 
 If you want to add spaces between logical groups,
 add this rule to your **Stylelint** config:
@@ -109,7 +108,7 @@ export default defineConfig({
 });
 ```
 
-### Before
+#### Before
 
 ```scss
 .popup {
@@ -120,7 +119,7 @@ export default defineConfig({
 }
 ```
 
-### After
+#### After
 
 ```scss
 .popup {
