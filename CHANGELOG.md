@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.7.0](https://github.com/archoleat/stylelint-config-extended-scss/compare/v1.6.15...v1.7.0) (2024-08-15)
+
+### Features
+
+* plugins ([#241](https://github.com/archoleat/stylelint-config-extended-scss/issues/241)) ([62d2740](https://github.com/archoleat/stylelint-config-extended-scss/commit/62d27403b06b93bcf5b40396e488ced718b9edac))
+
 ## [1.6.15](https://github.com/archoleat/stylelint-config-extended-scss/compare/v1.6.14...v1.6.15) (2024-08-15)
 
 ### Code Refactoring
