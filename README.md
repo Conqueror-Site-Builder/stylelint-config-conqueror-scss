@@ -35,21 +35,6 @@ bun i -D @archoleat/stylelint-config-extended-scss
 > # bun
 > bun i -D stylelint-define-config
 > ```
->
-> ```shell
-> # pnpm
-> pnpm i -D stylelint-define-config
-> ```
->
-> ```shell
-> # npm
-> npm i -D stylelint-define-config
-> ```
->
-> ```shell
-> # yarn
-> yarn add -D stylelint-define-config
-> ```
 
 ```js
 // stylelint.config.js or stylelint.config.ts
