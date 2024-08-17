@@ -23,23 +23,7 @@
 ## Installation
 
 ```shell
-# bun
 bun i -D @archoleat/stylelint-config-extended-scss
-```
-
-```shell
-# pnpm
-pnpm i -D @archoleat/stylelint-config-extended-scss
-```
-
-```shell
-# npm
-npm i -D @archoleat/stylelint-config-extended-scss
-```
-
-```shell
-# yarn
-yarn add -D @archoleat/stylelint-config-extended-scss
 ```
 
 ## Usage
