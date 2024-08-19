@@ -11,7 +11,7 @@
   "homepage": "https://github.com/archoleat/stylelint-config-extended-scss#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/archoleat/stylelint-config-extended-scss.git"
+    "url": "https://github.com/archoleat/stylelint-config-extended-scss.git"
   },
   "bugs": {
     "url": "https://github.com/archoleat/stylelint-config-extended-scss/issues"
@@ -36,14 +36,10 @@
     "stylelint-rem-over-px",
     "stylelint"
   ],
-  "packageManager": "pnpm@9.4.0",
+  "packageManager": "pnpm@9.7.0",
   "engines": {
     "node": ">=20.0.0",
     "pnpm": ">=9.0.0"
-  },
-  "volta": {
-    "node": "20.16.0",
-    "pnpm": "9.4.0"
   },
   "type": "module",
   "imports": {
@@ -84,7 +80,7 @@
     "stylelint-rem-over-px": "^1.0.1"
   },
   "devDependencies": {
-    "@archoleat/commitlint-define-config": "^1.0.9",
+    "@archoleat/commitlint-define-config": "^1.0.10",
     "@archoleat/eslint-flat-compatibility": "^1.1.7",
     "@archoleat/prettier-define-config": "^1.0.1",
     "@archoleat/semantic-release-define-config": "^1.1.14",
@@ -116,7 +112,7 @@
     "remark-preset-lint-consistent": "^6.0.0",
     "remark-preset-lint-markdown-style-guide": "^6.0.0",
     "remark-preset-lint-recommended": "^7.0.0",
-    "rollup": "^4.20.0",
+    "rollup": "^4.21.0",
     "rollup-plugin-esbuild": "^6.1.1",
     "semantic-release": "^24.1.0",
     "typescript": "^5.5.4",
