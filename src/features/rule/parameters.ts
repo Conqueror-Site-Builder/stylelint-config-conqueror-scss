@@ -3,4 +3,4 @@ type Parameters = {
   type?: 'rule';
 };
 
-export { Parameters };
+export type { Parameters };

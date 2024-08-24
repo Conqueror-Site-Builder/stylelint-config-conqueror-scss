@@ -43,10 +43,10 @@
   },
   "type": "module",
   "imports": {
-    "#at-rule-parameters": "./src/features/at-rule/parameters.d.ts",
+    "#at-rule-parameters": "./src/features/at-rule/parameters.ts",
     "#entities": "./src/entities/index.ts",
     "#features": "./src/features/index.ts",
-    "#rule-parameters": "./src/features/rule/parameters.d.ts",
+    "#rule-parameters": "./src/features/rule/parameters.ts",
     "#shared": "./src/shared/index.ts"
   },
   "exports": {

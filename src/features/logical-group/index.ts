@@ -1,4 +1,4 @@
-import type { Parameters } from './parameters.d.ts';
+import type { Parameters } from './parameters.ts';
 
 /**
  * The asynchronous function `createLogicalGroup` creates a logical group

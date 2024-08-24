@@ -4,4 +4,4 @@ type Parameters = {
   type?: 'at-rule';
 };
 
-export { Parameters };
+export type { Parameters };

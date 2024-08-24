@@ -3,4 +3,4 @@ type Parameters = {
   properties: string[];
 };
 
-export { Parameters };
+export type { Parameters };
