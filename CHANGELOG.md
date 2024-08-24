@@ -1,5 +1,24 @@
 # Changelog
 
+## [1.7.1](https://github.com/archoleat/stylelint-config-extended-scss/compare/v1.7.0...v1.7.1) (2024-08-24)
+
+### Bug Fixes
+
+* types ([#253](https://github.com/archoleat/stylelint-config-extended-scss/issues/253)) ([317da2c](https://github.com/archoleat/stylelint-config-extended-scss/commit/317da2c366cf8da6d7cf970287723e031afd3a33))
+
+### Code Refactoring
+
+* move scripts to ci ([#250](https://github.com/archoleat/stylelint-config-extended-scss/issues/250)) ([c2d6faa](https://github.com/archoleat/stylelint-config-extended-scss/commit/c2d6faa87762533da3f3abf1ddeb57fd38642781))
+* **prettierignore:** remove `.czrc` ([#252](https://github.com/archoleat/stylelint-config-extended-scss/issues/252)) ([48927ad](https://github.com/archoleat/stylelint-config-extended-scss/commit/48927ad1826b45d10e1bb27d6bd8c11804c0de2d))
+* **tsconfig:** remove `composite` option ([#244](https://github.com/archoleat/stylelint-config-extended-scss/issues/244)) ([425cb35](https://github.com/archoleat/stylelint-config-extended-scss/commit/425cb35a5010297395338ad552e31a497f1b10f5))
+
+### Documentation
+
+* **readme:** add comment ([#243](https://github.com/archoleat/stylelint-config-extended-scss/issues/243)) ([0d18328](https://github.com/archoleat/stylelint-config-extended-scss/commit/0d18328da5f779d1a5ec4f4af10db7487caf5201))
+* **readme:** remove extra scripts ([#245](https://github.com/archoleat/stylelint-config-extended-scss/issues/245)) ([604a8ff](https://github.com/archoleat/stylelint-config-extended-scss/commit/604a8ffb18768db5519be9df3669071d9ab89dc3))
+* **readme:** remove extra scripts ([#246](https://github.com/archoleat/stylelint-config-extended-scss/issues/246)) ([099e5fc](https://github.com/archoleat/stylelint-config-extended-scss/commit/099e5fc8b7447f8fd06d6b498ed0f6c6e0250e4a))
+* **readme:** rewrite toc ([#242](https://github.com/archoleat/stylelint-config-extended-scss/issues/242)) ([67f72ce](https://github.com/archoleat/stylelint-config-extended-scss/commit/67f72cef512b5d16a74125f17074fa21d34caaf6))
+
 ## [1.7.0](https://github.com/archoleat/stylelint-config-extended-scss/compare/v1.6.15...v1.7.0) (2024-08-15)
 
 ### Features
