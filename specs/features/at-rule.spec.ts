@@ -1,6 +1,6 @@
 import { beforeEach, describe, expect, test as spec } from 'vitest';
 
-import { createAtRule } from '#features';
+import { createAtRule } from '#features/at-rule/at-rule.ts';
 import type { Parameters } from '#at-rule-parameters';
 
 describe('Create At Rule', () => {

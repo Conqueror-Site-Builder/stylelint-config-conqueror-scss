@@ -1,6 +1,6 @@
 import { beforeEach, describe, expect, test as spec } from 'vitest';
 
-import { createRule } from '#features';
+import { createRule } from '#features/rule/rule.ts';
 import type { Parameters } from '#rule-parameters';
 
 describe('Create Rule', () => {
