@@ -7,16 +7,17 @@ import typescript from '@rollup/plugin-typescript';
 const sourceFolder = 'src';
 
 const fileFormat = 'es';
-const fileName = 'index';
+const entryFileName = 'app';
+const outputFileName = 'index';
 
-const indexFile = `${fileName}.ts`;
-const outputFile = `${fileName}.js`;
+const entryFile = `${entryFileName}.ts`;
+const outputFile = `${outputFileName}.js`;
 
 export default defineConfig([
   {
     external: ['@archoleat/reglib'],
     plugins: [typescript(), minify()],
-    input: `${sourceFolder}/${indexFile}`,
+    input: `${sourceFolder}/${entryFile}`,
     output: {
       file: outputFile,
       format: fileFormat,

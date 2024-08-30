@@ -1,6 +1,8 @@
 import { selectors } from '@archoleat/reglib';
 
-import { createAtRule, createLogicalGroup, createRule } from '#features';
+import { createAtRule } from '#features/at-rule/at-rule.ts';
+import { createLogicalGroup } from '#features/logical-group/logical-group.ts';
+import { createRule } from '#features/rule/rule.ts';
 
 import { deprecated } from './deprecated.ts';
 import { experimental } from './experimental.ts';

@@ -44,10 +44,10 @@
   "type": "module",
   "imports": {
     "#at-rule-parameters": "./src/features/at-rule/parameters.ts",
-    "#entities": "./src/entities/index.ts",
-    "#features": "./src/features/index.ts",
+    "#entities/*": "./src/entities/*",
+    "#features/*": "./src/features/*",
     "#rule-parameters": "./src/features/rule/parameters.ts",
-    "#shared": "./src/shared/index.ts"
+    "#shared/*": "./src/shared/*"
   },
   "exports": {
     ".": "./index.js"
