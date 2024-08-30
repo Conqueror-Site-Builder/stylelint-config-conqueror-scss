@@ -1,6 +1,6 @@
 import { describe, expect, test as spec } from 'vitest';
 
-import { createLogicalGroup } from '#features';
+import { createLogicalGroup } from '#features/logical-group/logical-group.ts';
 
 describe('Create Logical Group', () => {
   spec('create an object with (groupName: String, properties: [])', async () => {
