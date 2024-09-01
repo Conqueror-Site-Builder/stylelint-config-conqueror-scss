@@ -23,40 +23,19 @@
 ## Installation
 
 ```shell
-bun i -D @archoleat/stylelint-config-extended-scss
+bun i -D @archoleat/stylelint-config-extended-scss stylelint-define-config
 ```
 
 ## Usage
 
-> \[!TIP]
-> We recommend setting `stylelint-define-config` for property suggestions.
->
-> ```shell
-> # bun
-> bun i -D stylelint-define-config
-> ```
+Add the following code to the `stylelint.config.ts` or `stylelint.config.js`
+file:
 
 ```js
-// stylelint.config.js or stylelint.config.ts
 import { defineConfig } from 'stylelint-define-config';
 
 export default defineConfig({
   extends: '@archoleat/stylelint-config-extended-scss',
-});
-```
-
-### Extending the Config
-
-```js
-// stylelint.config.js or stylelint.config.ts
-import { defineConfig } from 'stylelint-define-config';
-
-export default defineConfig({
-  extends: '@archoleat/stylelint-config-extended-scss',
-  rules: {
-    'selector-max-compound-selectors': 4,
-    'value-no-vendor-prefix': false,
-  },
 });
 ```
 
@@ -66,7 +45,6 @@ If you want to add spaces between logical groups,
 add this rule to your **Stylelint** config:
 
 ```js
-// stylelint.config.js
 import { defineConfig } from 'stylelint-define-config';
 
 export default defineConfig({
@@ -81,10 +59,10 @@ export default defineConfig({
 
 ```scss
 .popup {
-  pointer-events: none;
   opacity: 0;
   position: fixed;
   inset: 0;
+  pointer-events: none;
 }
 ```
 
@@ -92,12 +70,12 @@ export default defineConfig({
 
 ```scss
 .popup {
-  pointer-events: none;
-
   opacity: 0;
 
   position: fixed;
   inset: 0;
+
+  pointer-events: none;
 }
 ```
 
@@ -145,7 +123,6 @@ export default defineConfig({
 
   > Declaring the rule with default values is equivalent to:
   ```json
-    // Declaring the rule with default values is equivalent to:
     "rem-over-px/rem-over-px": [
       true,
       {
@@ -179,25 +156,25 @@ This is a list of the lints turned on in this configuration, and what they do.
 ##### At-rule
 
 - [`at-rule-disallowed-list`](https://stylelint.io/user-guide/rules/at-rule-disallowed-list):
-  List of disallowed at-rules.
+  Rule enabled.
   - Disallow the use of `@debug`.
 
 ##### Case
 
 - [`value-keyword-case`](https://stylelint.io/user-guide/rules/value-keyword-case):
-  Lowercase for keywords values.
+  Rule enabled.
 
   > Ignore: `text-rendering`.
 
 ##### Color
 
 - [`color-named`](https://stylelint.io/user-guide/rules/color-named):
-  Colors must never be named.
+  Rule disabled.
 
 ##### Declaration
 
 - [`declaration-no-important`](https://stylelint.io/user-guide/rules/declaration-no-important):
-  Disallow `!important` within declarations.
+  Rule enabled.
 
 ##### Descending
 
@@ -207,104 +184,102 @@ This is a list of the lints turned on in this configuration, and what they do.
 ##### Function
 
 - [`function-url-no-scheme-relative`](https://stylelint.io/user-guide/rules/function-url-no-scheme-relative):
-  Disallow scheme-relative **URLs**.
+  Rule enabled.
 
 ##### Max & Min
 
 - [`max-nesting-depth`](https://stylelint.io/user-guide/rules/max-nesting-depth):
-  Limit the allowed nesting depth to `3`.
+  `3`.
 
-  > Ignore: `'blockless-at-rules'`.
+  > Ignore: `blockless-at-rules`.
 
 - [`selector-max-combinators`](https://stylelint.io/user-guide/rules/selector-max-combinators):
-  Limit the allowed combinators to `4`.
+  `4`.
 
 - [`selector-max-compound-selectors`](https://stylelint.io/user-guide/rules/selector-max-compound-selectors):
-  Limit the allowed compound selectors to `3`.
+  `3`.
 
 - [`selector-max-universal`](https://stylelint.io/user-guide/rules/selector-max-universal):
-  Limit the allowed universal selector to `1`.
+  `1`.
 
 ##### Notation
 
 - [`font-weight-notation`](https://stylelint.io/user-guide/rules/font-weight-notation):
-  Numeric notation for font weights.
+  Numeric.
 
 - [`keyframe-selector-notation`](https://stylelint.io/user-guide/rules/keyframe-selector-notation):
-  Percentage notation for keyframe selectors.
+  Percentage.
 
 ##### Pattern
 
 - [`selector-class-pattern`](https://stylelint.io/user-guide/rules/selector-class-pattern):
-  **BEM** naming convention likely enforced, encouraging modularity,
-  maintainability, and clarity in class naming.
+  **BEM** naming convention.
 
 ##### Selector
 
 - [`selector-no-qualifying-type`](https://stylelint.io/user-guide/rules/selector-no-qualifying-type):
-  Disallow qualifying a selector by type.
+  Rule enabled.
 
 ##### Unknown
 
 - [`media-feature-name-value-no-unknown`](https://stylelint.io/user-guide/rules/media-feature-name-value-no-unknown):
-  Disallow unknown values for media features.
+  Rule enabled.
 
 - [`no-unknown-animations`](https://stylelint.io/user-guide/rules/no-unknown-animations):
-  Disallow unknown animations.
+  Rule enabled.
 
 #### SCSS
 
 ##### SCSS At-rule
 
 - [`scss/at-each-key-value-single-line`](https://github.com/stylelint-scss/stylelint-scss/tree/master/src/rules/at-each-key-value-single-line):
-  Each key value in the `@each` rule must be on a separate line.
+  Rule enabled.
 
 - [`scss/at-root-no-redundant`](https://github.com/stylelint-scss/stylelint-scss/tree/master/src/rules/at-root-no-redundant):
-  Disallow redundant `@at-root` rule.
+  Rule enabled.
 
 - [`scss/at-use-no-redundant-alias`](https://github.com/stylelint-scss/stylelint-scss/tree/master/src/rules/at-use-no-redundant-alias):
-  Disallow redundant `@at-root` rule.
+  Rule enabled.
 
 ##### Comment
 
 - [`scss/comment-no-loud`](https://github.com/stylelint-scss/stylelint-scss/tree/master/src/rules/comment-no-loud):
-  Disallow `/*`-comments.
+  Rule enabled.
 
 - [`scss/double-slash-comment-inline`](https://github.com/stylelint-scss/stylelint-scss/tree/master/src/rules/double-slash-comment-inline):
-  Disallow `//`-comments to be inline comments.
+  Rule disabled.
 
 ##### SCSS Declaration
 
 - [`scss/declaration-nested-properties`](https://github.com/stylelint-scss/stylelint-scss/tree/master/src/rules/declaration-nested-properties):
-  Disallow properties with `-` in their names to be in a form
-  of a nested group.
+  Rule disabled.
 
 - [`scss/dimension-no-non-numeric-values`](https://github.com/stylelint-scss/stylelint-scss/tree/master/src/rules/dimension-no-non-numeric-values):
-  Prevents the use of non-numeric values in dimensions.
+  Rule enabled.
 
 ##### Dollar Variable
 
 - [`scss/dollar-variable-empty-line-after`](https://github.com/stylelint-scss/stylelint-scss/tree/master/src/rules/scss/dollar-variable-empty-line-after):
-  Require a newline after the `$`-variable declaration.
+  Rule enabled.
 
   > Expect: `last-nested`, `before-comment`, `before-dollar-variable`.
   >
   > Ignore: `before-comment`, `inside-single-line-block`.
 
 - [`scss/dollar-variable-colon-newline-after`](https://github.com/stylelint-scss/stylelint-scss/tree/master/src/rules/dollar-variable-colon-newline-after):
-  Require a newline after the colon in `$`-variable declarations.
+  Rule enabled.
 
 - [`scss/dollar-variable-no-namespaced-assignment`](https://github.com/stylelint-scss/stylelint-scss/tree/master/src/rules/dollar-variable-no-namespaced-assignment):
-  Disallow assignment to namespaced variables.
+  Rule enabled.
 
 - [`scss/no-duplicate-dollar-variables`](https://github.com/stylelint-scss/stylelint-scss/tree/master/src/rules/no-duplicate-dollar-variables):
-  Disallow duplicate dollar variables within a stylesheet.
+  Rule enabled.
 
 ##### SCSS Function
 
 - [`scss/function-color-relative`](https://github.com/stylelint-scss/stylelint-scss/tree/master/src/rules/function-color-relative):
-  Encourages the use of the `scale-color()` feature instead
-  of deprecated features:
+  Rule enabled.
+
   - `darken()`
   - `desaturate()`
   - `fade-in()`
@@ -317,28 +292,27 @@ This is a list of the lints turned on in this configuration, and what they do.
 ##### Import
 
 - [`scss/partial-no-import`](https://github.com/stylelint-scss/stylelint-scss/tree/master/src/rules/partial-no-import):
-  Disallow non-CSS `@imports` in partial files.
+  Rule enabled.
 
 ##### Maps
 
 - [`scss/map-keys-quotes`](https://github.com/stylelint-scss/stylelint-scss/tree/master/src/rules/map-keys-quotes):
-  Require quoted keys in **SASS** maps.
+  Rule enabled.
 
 ##### Media
 
 - [`scss/media-feature-value-dollar-variable`](https://github.com/stylelint-scss/stylelint-scss/tree/master/src/rules/media-feature-value-dollar-variable):
-  Require a media feature value be a `$`-variable.
+  Rule enabled.
 
 ##### SCSS Selector
 
 - [`scss/selector-no-redundant-nesting-selector`](https://github.com/stylelint-scss/stylelint-scss/tree/master/src/rules/selector-no-redundant-nesting-selector):
-  Disallow redundant nesting selectors (`&`).
+  Rule enabled.
 
 ##### SCSS Unknown
 
 - [`scss/property-no-unknown`](https://github.com/stylelint-scss/stylelint-scss/tree/master/src/rules/property-no-unknown):
-  Disallow unknown properties.
-  Should be used instead of **Stylelint**'s `property-no-unknown`.
+  Rule enabled.
 
 ## Contributing
 
