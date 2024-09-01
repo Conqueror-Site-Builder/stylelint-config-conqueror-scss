@@ -1,5 +1,21 @@
 # Changelog
 
+## [1.7.2](https://github.com/archoleat/stylelint-config-extended-scss/compare/v1.7.1...v1.7.2) (2024-09-01)
+
+### Bug Fixes
+
+* **eslint-config:** add `files` option ([#257](https://github.com/archoleat/stylelint-config-extended-scss/issues/257)) ([9be54c1](https://github.com/archoleat/stylelint-config-extended-scss/commit/9be54c1353e642b330bad7ca82c79f34b39c2ba3))
+
+### Code Refactoring
+
+* add comments ([#268](https://github.com/archoleat/stylelint-config-extended-scss/issues/268)) ([4300c69](https://github.com/archoleat/stylelint-config-extended-scss/commit/4300c69fd5c8a32c258cc110a0a88cc3f3ddaa4d))
+* eslint ([#256](https://github.com/archoleat/stylelint-config-extended-scss/issues/256)) ([106a609](https://github.com/archoleat/stylelint-config-extended-scss/commit/106a6090591948bbdd5f92b82276df7979ce7364))
+* remove index files ([#258](https://github.com/archoleat/stylelint-config-extended-scss/issues/258)) ([cd6b6e6](https://github.com/archoleat/stylelint-config-extended-scss/commit/cd6b6e668f710053c211cccc2e394386d7a6b64b))
+
+### Documentation
+
+* **readme:** update ([#266](https://github.com/archoleat/stylelint-config-extended-scss/issues/266)) ([8d40823](https://github.com/archoleat/stylelint-config-extended-scss/commit/8d40823eda855aedabc2b18dbd7efa801ef0cf77))
+
 ## [1.7.1](https://github.com/archoleat/stylelint-config-extended-scss/compare/v1.7.0...v1.7.1) (2024-08-24)
 
 ### Bug Fixes
