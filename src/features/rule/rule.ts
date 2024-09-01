@@ -1,19 +1,18 @@
 import type { Parameters } from './parameters.ts';
 
 /**
- * The asynchronous function `createRule` in TypeScript creates
- * a CSS rule with a specified selector.
+ * Creates a rule.
  *
- * @param {string} selector - The `selector` parameter in the `createRule`
- * function is a string that
- * represents the CSS selector for which a rule is being created.
+ * @param {string} selector - The css selector for the rule.
+ *
+ * @return {Object} - The created rule object with type 'rule'
+ * and modified selector.
  */
-
 const createRule = async (parameters: Parameters) => {
-  const { selector, type = 'rule' } = parameters;
+  const { selector } = parameters;
 
   return {
-    type,
+    type: 'rule',
     selector: `&${selector}`,
   };
 };

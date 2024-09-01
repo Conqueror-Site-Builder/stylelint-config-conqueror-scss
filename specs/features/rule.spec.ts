@@ -8,9 +8,9 @@ describe('Create Rule', () => {
 
   beforeEach(() => {
     const addRule = async (parameters: Parameters) => {
-      const { selector, type } = parameters;
+      const { selector } = parameters;
 
-      return await createRule({ selector, type }).then((parameters) => {
+      return await createRule({ selector }).then((parameters) => {
         expect(parameters.selector).equal(`&${selector}`);
         expect(parameters.type).equal('rule');
       });

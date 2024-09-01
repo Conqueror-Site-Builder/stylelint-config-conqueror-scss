@@ -1,19 +1,15 @@
 import type { Parameters } from './parameters.ts';
 
 /**
- * The asynchronous function `createLogicalGroup` creates a logical group
- * with specified properties and formatting rules.
+ * Creates a logical group.
  *
- * @param {string} groupName - The `groupName` parameter is a string that
- * represents the name of the logical group being created.
+ * @param {string} groupName - The name of the logical group.
  *
- * @param {string[]} properties - The `properties` parameter in the
- * `createLogicalGroup` function is an array that contains the properties
- * or items that you want to group together under a logical group
- * with the specified `groupName`. These properties can be of any type or
- * structure, depending on your specific use case.
+ * @param {Array} properties - The properties within the logical group.
+ *
+ * @return {Object} - The created logical group object with
+ * groupName, properties, emptyLineBefore, noEmptyLineBetween, and order.
  */
-
 const createLogicalGroup = async (parameters: Parameters) => {
   const { groupName, properties } = parameters;
 
