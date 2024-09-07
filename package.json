@@ -11,7 +11,7 @@
   "homepage": "https://github.com/archoleat/stylelint-config-extended-scss#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/archoleat/stylelint-config-extended-scss.git"
+    "url": "git+https://github.com/archoleat/stylelint-config-extended-scss.git"
   },
   "bugs": {
     "url": "https://github.com/archoleat/stylelint-config-extended-scss/issues"
