@@ -143,6 +143,7 @@ export default defineConfig({
   > `Firefox ESR`
   > `last 2 versions`
   > `not dead`
+  > `not op_mini all`
 
   If you want to use your own config, then create a `browserslist`
   file in your project's root.
