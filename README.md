@@ -276,6 +276,9 @@ This is a list of the lints turned on in this configuration, and what they do.
 - [`scss/no-duplicate-dollar-variables`](https://github.com/stylelint-scss/stylelint-scss/tree/master/src/rules/no-duplicate-dollar-variables):
   Rule enabled.
 
+- [`scss/no-global-function-names`](https://github.com/stylelint-scss/stylelint-scss/tree/master/src/rules/no-global-function-names):
+  Rule disabled.
+
 ##### SCSS Function
 
 - [`scss/function-color-relative`](https://github.com/stylelint-scss/stylelint-scss/tree/master/src/rules/function-color-relative):
