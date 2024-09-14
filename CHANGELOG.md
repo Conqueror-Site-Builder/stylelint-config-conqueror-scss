@@ -1,5 +1,16 @@
 # Changelog
 
+## [1.8.0](https://github.com/archoleat/stylelint-config-extended-scss/compare/v1.7.2...v1.8.0) (2024-09-14)
+
+### Features
+
+* add `scss/no-global-function-names` ([#271](https://github.com/archoleat/stylelint-config-extended-scss/issues/271)) ([f438ed3](https://github.com/archoleat/stylelint-config-extended-scss/commit/f438ed353daa0045a747945c3a6375d44f9036f3))
+
+### Code Refactoring
+
+* **package:** add `git+` ([#269](https://github.com/archoleat/stylelint-config-extended-scss/issues/269)) ([475dfdb](https://github.com/archoleat/stylelint-config-extended-scss/commit/475dfdbbeef0db58150e0e284d8b218d4a09b003))
+* **browserslist:** add `not op_mini all` option ([#270](https://github.com/archoleat/stylelint-config-extended-scss/issues/270)) ([268e0c7](https://github.com/archoleat/stylelint-config-extended-scss/commit/268e0c7d2dd43c12785609aacb26c1b255b63928))
+
 ## [1.7.2](https://github.com/archoleat/stylelint-config-extended-scss/compare/v1.7.1...v1.7.2) (2024-09-01)
 
 ### Bug Fixes
