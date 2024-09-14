@@ -137,7 +137,7 @@ export default defineConfig({
 - [`stylelint-no-unsupported-browser-features`](https://github.com/RJWadley/stylelint-no-unsupported-browser-features):
   Disallow features that aren't supported by your target browser audience.
 
-  > For this plugin, `browserslist` is already configured
+  > For this plugin, `.browserslistrc` is already configured
   > with the following options:
   > `> 1.5%`
   > `Firefox ESR`
@@ -145,7 +145,7 @@ export default defineConfig({
   > `not dead`
   > `not op_mini all`
 
-  If you want to use your own config, then create a `browserslist`
+  If you want to use your own config, then create a `.browserslistrc`
   file in your project's root.
 
 ### Rules
