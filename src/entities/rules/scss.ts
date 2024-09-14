@@ -19,6 +19,7 @@ const SCSSRules = {
   'scss/map-keys-quotes': 'always',
   'scss/media-feature-value-dollar-variable': 'always',
   'scss/no-duplicate-dollar-variables': true,
+  'scss/no-global-function-names': null,
   'scss/partial-no-import': true,
   'scss/property-no-unknown': true,
   'scss/selector-no-redundant-nesting-selector': true,
