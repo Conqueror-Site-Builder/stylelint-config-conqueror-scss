@@ -3,7 +3,7 @@ import { describe, expect, test as spec } from 'vitest';
 import { CSSRules } from '#app';
 
 describe('BEM Class Regex', async () => {
-  const BEMClassRegex = new RegExp(CSSRules['selector-class-pattern'][0] as string);
+  const BEMClassRegex = new RegExp(`${CSSRules['selector-class-pattern'][0]}`);
 
   spec('should block', async () => {
     expect('block').match(BEMClassRegex);
