@@ -1,8 +1,6 @@
 import { selectors } from '@archoleat/reglib';
 
-import { createAtRule } from '#features/at-rule/at-rule.ts';
-import { createLogicalGroup } from '#features/logical-group/logical-group.ts';
-import { createRule } from '#features/rule/rule.ts';
+import { createAtRule, createLogicalGroup, createRule } from '#features';
 
 import { deprecated } from './deprecated.ts';
 import { experimental } from './experimental.ts';
@@ -25,7 +23,7 @@ const limitedAvailabilityProperty = limitedAvailability.property;
 const nonStandardProperty = nonStandard.property;
 const warningProperty = warning.property;
 
-const properties = {
+const propertiesOrder = {
   'order/order': [
     'custom-properties',
     'dollar-variables',
@@ -820,4 +818,4 @@ const properties = {
   ],
 };
 
-export { properties };
+export { propertiesOrder };

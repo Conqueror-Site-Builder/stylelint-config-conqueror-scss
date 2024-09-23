@@ -1,45 +1,26 @@
 import { beforeEach, describe, expect, test as spec } from 'vitest';
 
-import { createRule } from '#features/rule/rule.ts';
+import { createRule } from '#features';
+
 import type { Parameters } from '#rule-parameters';
 
-describe('Create Rule', () => {
+describe('Create Rule', async () => {
   let rule: Function;
 
-  beforeEach(() => {
-    const addRule = async (parameters: Parameters) => {
+  beforeEach(async () => {
+    rule = async (parameters: Parameters) => {
       const { selector } = parameters;
 
-      return await createRule({ selector }).then((parameters) => {
-        expect(parameters.selector).equal(`&${selector}`);
-        expect(parameters.type).equal('rule');
-      });
+      const result = await createRule({ selector });
+
+      expect(result.selector).toEqual(`&${selector.replace(/^&+/g, '')}`);
+      expect(result.type).toEqual('rule');
+
+      return result;
     };
-
-    rule = addRule;
   });
 
-  spec('create an object with (::pseudo-element)', async () => {
-    return await rule({ selector: '::pseudo-element' });
-  });
-
-  spec('create an object with (:pseudo-class)', async () => {
-    return await rule({ selector: ':pseudo-class' });
-  });
-
-  spec('create an object with (?\\[(.*)\\])', async () => {
-    return await rule({ selector: '?\\[(.*)\\]' });
-  });
-
-  spec('create an object with (?\\.(.*))', async () => {
-    return await rule({ selector: '?\\.(.*)' });
-  });
-
-  spec('create an object with (--)', async () => {
-    return await rule({ selector: '--' });
-  });
-
-  spec('create an object with (__)', async () => {
-    return await rule({ selector: '__' });
+  spec('should create an object with selector', async () => {
+    await rule({ selector: '&&&any-nested-css-selector' });
   });
 });

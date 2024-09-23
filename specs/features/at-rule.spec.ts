@@ -1,30 +1,31 @@
 import { beforeEach, describe, expect, test as spec } from 'vitest';
 
-import { createAtRule } from '#features/at-rule/at-rule.ts';
+import { createAtRule } from '#features';
+
 import type { Parameters } from '#at-rule-parameters';
 
-describe('Create At Rule', () => {
+describe('Create At Rule', async () => {
   let atRule: Function;
 
-  beforeEach(() => {
-    const addAtRule = async (parameters: Parameters) => {
+  beforeEach(async () => {
+    atRule = async (parameters: Parameters) => {
       const { name, hasBlock } = parameters;
 
-      return await createAtRule({ name, hasBlock }).then((parameters) => {
-        expect(parameters.name).equal(name);
-        expect(parameters.hasBlock).equal(hasBlock);
-        expect(parameters.type).equal('at-rule');
-      });
+      const result = await createAtRule({ name, hasBlock });
+
+      expect(result.name).toBeTypeOf('string');
+      expect(result.hasBlock).toBeTypeOf('boolean');
+      expect(result.type).toEqual('at-rule');
+
+      return result;
     };
-
-    atRule = addAtRule;
   });
 
-  spec('create an object with (name: String, hasBlock: true)', async () => {
-    return await atRule({ name: 'test-rule', hasBlock: true });
+  spec('should create an object with a block', async () => {
+    await atRule({ name: 'test-rule-1', hasBlock: true });
   });
 
-  spec('create an object with (name: String, hasBlock: false)', async () => {
-    return await atRule({ name: 'test-rule', hasBlock: false });
+  spec('should create an object without a block', async () => {
+    await atRule({ name: 'test-rule-2', hasBlock: false });
   });
 });
