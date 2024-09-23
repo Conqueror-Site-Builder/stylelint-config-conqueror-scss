@@ -7,11 +7,10 @@ import typescript from '@rollup/plugin-typescript';
 const sourceFolder = 'src';
 
 const fileFormat = 'es';
-const entryFileName = 'app';
-const outputFileName = 'index';
+const fileName = 'index';
 
-const entryFile = `${entryFileName}.ts`;
-const outputFile = `${outputFileName}.js`;
+const entryFile = `${fileName}.ts`;
+const outputFile = `${fileName}.js`;
 
 export default defineConfig([
   {
