@@ -1,5 +1,20 @@
 # Changelog
 
+## [1.9.0](https://github.com/archoleat/stylelint-config-extended-scss/compare/v1.8.0...v1.9.0) (2024-09-23)
+
+### Features
+
+* add `funding.yaml` ([#274](https://github.com/archoleat/stylelint-config-extended-scss/issues/274)) ([951ab53](https://github.com/archoleat/stylelint-config-extended-scss/commit/951ab53535cbea1b3979af37f75bbf561bad47de))
+
+### Bug Fixes
+
+* browserslist ([#272](https://github.com/archoleat/stylelint-config-extended-scss/issues/272)) ([8ec9544](https://github.com/archoleat/stylelint-config-extended-scss/commit/8ec9544fbcfadacc29b28edf61184ccbfc60eae3))
+
+### Code Refactoring
+
+* architecture ([#275](https://github.com/archoleat/stylelint-config-extended-scss/issues/275)) ([14c6844](https://github.com/archoleat/stylelint-config-extended-scss/commit/14c684406c02d8812dd4ae70f6095d70b386a828))
+* **prettier:** remove json override ([#273](https://github.com/archoleat/stylelint-config-extended-scss/issues/273)) ([c17459c](https://github.com/archoleat/stylelint-config-extended-scss/commit/c17459c3af742ed7b8a58becbdcc1661fdb4be80))
+
 ## [1.8.0](https://github.com/archoleat/stylelint-config-extended-scss/compare/v1.7.2...v1.8.0) (2024-09-14)
 
 ### Features
