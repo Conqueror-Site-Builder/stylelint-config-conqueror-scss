@@ -2,86 +2,86 @@ import { describe, expect, test as spec } from 'vitest';
 
 import { CSSRules } from '#app';
 
-describe('BEM Class Regex', () => {
+describe('BEM Class Regex', async () => {
   const BEMClassRegex = new RegExp(CSSRules['selector-class-pattern'][0] as string);
 
-  spec('block', async () => {
+  spec('should block', async () => {
     expect('block').match(BEMClassRegex);
   });
 
-  spec('block-name', async () => {
+  spec('should block-name', async () => {
     expect('block-name').match(BEMClassRegex);
   });
 
-  spec('block-name-123', async () => {
+  spec('should block-name-123', async () => {
     expect('block-name-123').match(BEMClassRegex);
   });
 
-  spec('block--modifier', async () => {
+  spec('should block--modifier', async () => {
     expect('block--modifier').match(BEMClassRegex);
   });
 
-  spec('block-name--modifier-name', async () => {
+  spec('should block-name--modifier-name', async () => {
     expect('block-name--modifier-name').match(BEMClassRegex);
   });
 
-  spec('block-name--modifier', async () => {
+  spec('should block-name--modifier', async () => {
     expect('block-name--modifier').match(BEMClassRegex);
   });
 
-  spec('block--modifier-name', async () => {
+  spec('should block--modifier-name', async () => {
     expect('block--modifier-name').match(BEMClassRegex);
   });
 
-  spec('block__element', async () => {
+  spec('should block__element', async () => {
     expect('block__element').match(BEMClassRegex);
   });
 
-  spec('block-name__element-name', async () => {
+  spec('should block-name__element-name', async () => {
     expect('block-name__element-name').match(BEMClassRegex);
   });
 
-  spec('block-name__element', async () => {
+  spec('should block-name__element', async () => {
     expect('block-name__element').match(BEMClassRegex);
   });
 
-  spec('block__element-name', async () => {
+  spec('should block__element-name', async () => {
     expect('block__element-name').match(BEMClassRegex);
   });
 
-  spec('block__element--modifier', async () => {
+  spec('should block__element--modifier', async () => {
     expect('block__element--modifier').match(BEMClassRegex);
   });
 
-  spec('block-name__element-name--modifier-name', async () => {
+  spec('should block-name__element-name--modifier-name', async () => {
     expect('block-name__element-name--modifier-name').match(BEMClassRegex);
   });
 
-  spec('block-name__element-name--modifier', async () => {
+  spec('should block-name__element-name--modifier', async () => {
     expect('block-name__element-name--modifier').match(BEMClassRegex);
   });
 
-  spec('block-name__element--modifier-name', async () => {
+  spec('should block-name__element--modifier-name', async () => {
     expect('block-name__element--modifier-name').match(BEMClassRegex);
   });
 
-  spec('block__element-name--modifier-name', async () => {
+  spec('should block__element-name--modifier-name', async () => {
     expect('block__element-name--modifier-name').match(BEMClassRegex);
   });
 
-  spec('block__element_modifier', async () => {
+  spec('should block__element_modifier', async () => {
     expect('block__element_modifier').not.match(BEMClassRegex);
   });
 
-  spec('Block', async () => {
+  spec('should Block', async () => {
     expect('Block').not.match(BEMClassRegex);
   });
 
-  spec('BlockElement', async () => {
+  spec('should BlockElement', async () => {
     expect('BlockElement').not.match(BEMClassRegex);
   });
 
-  spec('123', async () => {
+  spec('should 123', async () => {
     expect('123').not.match(BEMClassRegex);
   });
 });
