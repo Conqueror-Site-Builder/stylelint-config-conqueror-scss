@@ -55,8 +55,8 @@ importers:
         specifier: ^1.0.11
         version: 1.0.11(@commitlint/cli@19.4.1(@types/node@22.5.2)(typescript@5.5.4))(@commitlint/config-conventional@19.4.1)(@commitlint/types@19.0.3)
       '@archoleat/eslint-flat-compatibility':
-        specifier: ^1.1.8
-        version: 1.1.8(eslint@8.57.0)
+        specifier: ^1.1.9
+        version: 1.1.9(eslint@8.57.0)
       '@archoleat/prettier-define-config':
         specifier: ^1.0.2
         version: 1.0.2(prettier@3.3.3)
@@ -177,8 +177,8 @@ packages:
       '@commitlint/config-conventional': ^19.0.0
       '@commitlint/types': ^19.0.0
 
-  '@archoleat/eslint-flat-compatibility@1.1.8':
-    resolution: {integrity: sha512-CDEEJKUmcNheJF/GsoBdMtiDNJI2k3WzAafH/Zlds6pAPjWpdciRS5XS4ZwRnl1p7U4cHYpku84UuLtrVr0MxA==}
+  '@archoleat/eslint-flat-compatibility@1.1.9':
+    resolution: {integrity: sha512-ML8MQynnbp5MkMLGPWld3jGqyuct7oDMTcS/zxnXKyxrO4ThxE2UmqGUcAABYufMDu4/w5++L0ldrV+4+eBeVQ==}
     engines: {node: '>=20.0.0', pnpm: '>=9.0.0'}
     peerDependencies:
       eslint: ^8.0.0 || ^9.0.0
@@ -4335,7 +4335,7 @@ snapshots:
       '@commitlint/config-conventional': 19.4.1
       '@commitlint/types': 19.0.3
 
-  '@archoleat/eslint-flat-compatibility@1.1.8(eslint@8.57.0)':
+  '@archoleat/eslint-flat-compatibility@1.1.9(eslint@8.57.0)':
     dependencies:
       '@eslint/eslintrc': 3.1.0
       eslint: 8.57.0
