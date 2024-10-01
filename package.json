@@ -115,7 +115,7 @@
     "remark-preset-lint-recommended": "^7.0.0",
     "rollup": "^4.21.2",
     "rollup-plugin-esbuild": "^6.1.1",
-    "semantic-release": "^24.1.0",
+    "semantic-release": "^24.1.2",
     "typescript": "^5.5.4",
     "vitest": "^2.0.5"
   }
