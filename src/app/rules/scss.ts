@@ -5,7 +5,6 @@ const SCSSRules = {
   'scss/comment-no-loud': true,
   'scss/declaration-nested-properties': 'never',
   'scss/dimension-no-non-numeric-values': true,
-  'scss/dollar-variable-colon-newline-after': 'always-multi-line',
   'scss/dollar-variable-empty-line-after': [
     'always',
     {
