@@ -13,16 +13,13 @@ const experimentalPseudoElementMozilla = experimental.pseudo.element.moz;
 const experimentalPseudoElementWebkit = experimental.pseudo.element.webkit;
 const nonStandardPseudoElementMozilla = nonStandard.pseudo.element.moz;
 const nonStandardPseudoElementWebkit = nonStandard.pseudo.element.webkit;
-
 const experimentalPseudoClass = experimental.pseudo.class;
 const nonStandardPseudoClassMozilla = nonStandard.pseudo.class.moz;
-
 const deprecatedProperty = deprecated.property;
 const experimentalProperty = experimental.property;
 const limitedAvailabilityProperty = limitedAvailability.property;
 const nonStandardProperty = nonStandard.property;
 const warningProperty = warning.property;
-
 const propertiesOrder = {
   'order/order': [
     'custom-properties',
