@@ -134,9 +134,6 @@ export default defineConfig({
     ],
   ```
 
-- [`stylelint-no-unsupported-browser-features`](https://github.com/RJWadley/stylelint-no-unsupported-browser-features):
-  Disallow features that aren't supported by your target browser audience.
-
 ### Rules
 
 This is a list of the lints turned on in this configuration, and what they do.

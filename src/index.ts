@@ -11,7 +11,6 @@ export default {
     'stylelint-plugin-defensive-css',
     'stylelint-plugin-logical-css',
     'stylelint-rem-over-px',
-    'stylelint-no-unsupported-browser-features',
   ],
   rules: {
     ...plugins,

@@ -1,11 +1,5 @@
 const plugins = {
   'gamut/color-no-out-gamut-range': true,
-  'plugin/no-unsupported-browser-features': [
-    true,
-    {
-      severity: 'warning',
-    },
-  ],
   'plugin/stylelint-group-selectors': true,
   'plugin/declaration-block-no-ignored-properties': true,
   'plugin/no-low-performance-animation-properties': true,
