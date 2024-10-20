@@ -111,6 +111,8 @@ export default defineConfig({
   Sorts **over 400 properties** for enhanced clarity and maintainability.
 
   > Properties are logically grouped and separated by a space.
+  > A space between groups will only appear if the group
+  > has 3 or more properties.
 
 - [`stylelint-plugin-defensive-css`](https://github.com/yuschick/stylelint-plugin-defensive-css):
   Enforcing defensive **CSS** best practices.
