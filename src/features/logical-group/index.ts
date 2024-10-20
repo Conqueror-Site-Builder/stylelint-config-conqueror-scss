@@ -6,7 +6,7 @@ const createLogicalGroup = async (parameters: Parameters) => {
   return {
     groupName,
     properties,
-    emptyLineBefore: 'always',
+    emptyLineBefore: 'threshold',
     noEmptyLineBetween: true,
     order: 'flexible',
   };

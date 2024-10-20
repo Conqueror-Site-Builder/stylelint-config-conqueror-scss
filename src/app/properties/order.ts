@@ -810,6 +810,7 @@ const propertiesOrder = {
       }),
     ],
     {
+      emptyLineBeforeUnspecified: 'threshold',
       unspecified: 'bottomAlphabetical',
     },
   ],
