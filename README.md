@@ -62,6 +62,7 @@ export default defineConfig({
   opacity: 0;
   position: fixed;
   inset: 0;
+  z-index: 1;
   pointer-events: none;
 }
 ```
@@ -74,6 +75,7 @@ export default defineConfig({
 
   position: fixed;
   inset: 0;
+  z-index: 1;
 
   pointer-events: none;
 }
