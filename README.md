@@ -140,7 +140,7 @@ export default defineConfig({
 
 ### Rules
 
-This is a list of the lints turned on in this configuration, and what they do.
+This is a list of the lints turned on in this configuration.
 
 #### CSS
 
