@@ -62,6 +62,7 @@ export default defineConfig({
   opacity: 0;
   position: fixed;
   inset: 0;
+  z-index: 1;
   pointer-events: none;
 }
 ```
@@ -74,6 +75,7 @@ export default defineConfig({
 
   position: fixed;
   inset: 0;
+  z-index: 1;
 
   pointer-events: none;
 }
@@ -111,6 +113,8 @@ export default defineConfig({
   Sorts **over 400 properties** for enhanced clarity and maintainability.
 
   > Properties are logically grouped and separated by a space.
+  > A space between groups will only appear if the group
+  > has 3 or more properties.
 
 - [`stylelint-plugin-defensive-css`](https://github.com/yuschick/stylelint-plugin-defensive-css):
   Enforcing defensive **CSS** best practices.
@@ -133,20 +137,6 @@ export default defineConfig({
       }
     ],
   ```
-
-- [`stylelint-no-unsupported-browser-features`](https://github.com/RJWadley/stylelint-no-unsupported-browser-features):
-  Disallow features that aren't supported by your target browser audience.
-
-  > For this plugin, `.browserslistrc` is already configured
-  > with the following options:
-  > `> 1.5%`
-  > `Firefox ESR`
-  > `last 2 versions`
-  > `not dead`
-  > `not op_mini all`
-
-  If you want to use your own config, then create a `.browserslistrc`
-  file in your project's root.
 
 ### Rules
 

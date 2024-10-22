@@ -1,7 +1,6 @@
 import { beforeEach, describe, expect, test as spec } from 'vitest';
 
 import { createAtRule } from '#features';
-
 import type { Parameters } from '#at-rule-parameters';
 
 describe('Create At Rule', async () => {
