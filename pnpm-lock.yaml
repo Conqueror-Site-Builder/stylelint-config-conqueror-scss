@@ -45,8 +45,8 @@ importers:
         specifier: ^5.0.2
         version: 5.0.2(prettier@3.3.3)(stylelint@16.10.0(typescript@5.6.3))
       stylelint-rem-over-px:
-        specifier: ^1.0.1
-        version: 1.0.1(stylelint@16.10.0(typescript@5.6.3))
+        specifier: ^1.0.2
+        version: 1.0.2(stylelint@16.10.0(typescript@5.6.3))
     devDependencies:
       '@archoleat/commitlint-define-config':
         specifier: ^1.1.0
@@ -180,6 +180,7 @@ packages:
   '@archoleat/eslint-flat-compatibility@1.2.0':
     resolution: {integrity: sha512-N7KSMy1AjbWW92Tw8rv9KtFevFvE91jwX+3Q0F+2ndFSZek9ozT5Vzry6Liy6SNlTjv/IXE1/Z98+GEdvo5Qtg==}
     engines: {node: '>=20.0.0', pnpm: '>=9.0.0'}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
     peerDependencies:
       eslint: ^8.0.0 || ^9.0.0
 
@@ -3830,8 +3831,8 @@ packages:
       prettier: '>=3.0.0'
       stylelint: '>=16.0.0'
 
-  stylelint-rem-over-px@1.0.1:
-    resolution: {integrity: sha512-gy6EgrETx11UI4mNrrFMMZ/7ixnC29l8wkqpfqjtH0JB7SUG4TOLh2v2s58NQdPP+/KEYeeWFbpSgGLpmBJyWg==}
+  stylelint-rem-over-px@1.0.2:
+    resolution: {integrity: sha512-7TowHma52Hm7skkE9lQZOZG80gWfAoemKkkX0hJdTxD1jr1f0cfR/u06VBgkbDUZSHNSkIOYwPfQ9XmtJdlFVQ==}
     peerDependencies:
       stylelint: '>= 8'
 
@@ -8745,7 +8746,7 @@ snapshots:
       prettier-linter-helpers: 1.0.0
       stylelint: 16.10.0(typescript@5.6.3)
 
-  stylelint-rem-over-px@1.0.1(stylelint@16.10.0(typescript@5.6.3)):
+  stylelint-rem-over-px@1.0.2(stylelint@16.10.0(typescript@5.6.3)):
     dependencies:
       postcss-value-parser: 4.2.0
       stylelint: 16.10.0(typescript@5.6.3)
