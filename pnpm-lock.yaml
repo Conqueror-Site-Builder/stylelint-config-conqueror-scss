@@ -52,8 +52,8 @@ importers:
         specifier: ^1.1.0
         version: 1.1.0(@commitlint/cli@19.5.0(@types/node@22.7.6)(typescript@5.6.3))(@commitlint/config-conventional@19.5.0)(@commitlint/types@19.5.0)
       '@archoleat/eslint-flat-compatibility':
-        specifier: ^1.2.0
-        version: 1.2.0(eslint@8.57.1)
+        specifier: ^1.2.1
+        version: 1.2.1(eslint@8.57.1)
       '@archoleat/prettier-define-config':
         specifier: ^1.1.0
         version: 1.1.0(prettier@3.3.3)
@@ -177,9 +177,10 @@ packages:
       '@commitlint/config-conventional': ^19.0.0
       '@commitlint/types': ^19.0.0
 
-  '@archoleat/eslint-flat-compatibility@1.2.0':
-    resolution: {integrity: sha512-N7KSMy1AjbWW92Tw8rv9KtFevFvE91jwX+3Q0F+2ndFSZek9ozT5Vzry6Liy6SNlTjv/IXE1/Z98+GEdvo5Qtg==}
+  '@archoleat/eslint-flat-compatibility@1.2.1':
+    resolution: {integrity: sha512-1WqnyVgPVadBAAULjEv4Ik02aXt7+KaBl/JNH4vCaN5vsL8NrRVeVyQ48c/Dc3MY6RSs52EyNsEywPHy0FR+ew==}
     engines: {node: '>=20.0.0', pnpm: '>=9.0.0'}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
     peerDependencies:
       eslint: ^8.0.0 || ^9.0.0
 
@@ -4320,7 +4321,7 @@ snapshots:
       '@commitlint/config-conventional': 19.5.0
       '@commitlint/types': 19.5.0
 
-  '@archoleat/eslint-flat-compatibility@1.2.0(eslint@8.57.1)':
+  '@archoleat/eslint-flat-compatibility@1.2.1(eslint@8.57.1)':
     dependencies:
       '@eslint/eslintrc': 3.1.0
       eslint: 8.57.1
