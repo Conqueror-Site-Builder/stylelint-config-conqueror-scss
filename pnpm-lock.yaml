@@ -17,9 +17,6 @@ importers:
       stylelint:
         specifier: ^16.10.0
         version: 16.10.0(typescript@5.6.3)
-      stylelint-config-recommended-scss:
-        specifier: ^14.1.0
-        version: 14.1.0(postcss@8.4.49)(stylelint@16.10.0(typescript@5.6.3))
       stylelint-config-standard-scss:
         specifier: ^13.1.0
         version: 13.1.0(postcss@8.4.49)(stylelint@16.10.0(typescript@5.6.3))
@@ -50,9 +47,6 @@ importers:
       stylelint-rem-over-px:
         specifier: ^1.0.2
         version: 1.0.2(stylelint@16.10.0(typescript@5.6.3))
-      stylelint-scss:
-        specifier: ^6.9.0
-        version: 6.9.0(stylelint@16.10.0(typescript@5.6.3))
     devDependencies:
       '@archoleat/commitlint-define-config':
         specifier: ^1.1.0
@@ -84,9 +78,6 @@ importers:
       '@semantic-release/git':
         specifier: ^10.0.1
         version: 10.0.1(semantic-release@24.2.0(typescript@5.6.3))
-      '@stylelint-types/stylelint-scss':
-        specifier: ^6.5.0
-        version: 6.5.0(stylelint-define-config@1.7.0(stylelint@16.10.0(typescript@5.6.3)))(stylelint@16.10.0(typescript@5.6.3))
       '@typescript-eslint/eslint-plugin':
         specifier: ^7.18.0
         version: 7.18.0(@typescript-eslint/parser@7.18.0(eslint@8.57.1)(typescript@5.6.3))(eslint@8.57.1)(typescript@5.6.3)
@@ -809,16 +800,6 @@ packages:
     resolution: {integrity: sha512-tlqY9xq5ukxTUZBmoOp+m61cqwQD5pHJtFY3Mn8CA8ps6yghLH/Hw8UPdqg4OLmFW3IFlcXnQNmo/dh8HzXYIQ==}
     engines: {node: '>=18'}
 
-  '@stylelint-types/stylelint-scss@6.5.0':
-    resolution: {integrity: sha512-G0JjA520unkSYrPmINZQnnqCZbOCzV8BYf0ZLOW6aCy4LiNOAewrn1gx4jOXrZuXKQ8wyzHEJWSdP5pi2aOy7w==}
-    engines: {node: '>=18.0.0', npm: '>=9.0.0', pnpm: '>=8.6.0'}
-    peerDependencies:
-      stylelint: '>=16.0.0'
-      stylelint-define-config: '>=1.0.0'
-    peerDependenciesMeta:
-      stylelint:
-        optional: true
-
   '@types/concat-stream@2.0.3':
     resolution: {integrity: sha512-3qe4oQAPNwVNwK4C9c8u+VJqv9kez+2MR4qJpoPFfXtgxxif1QbFusvXzK0/Wra2VX07smostI2VMmJNSpZjuQ==}
 
@@ -1397,9 +1378,6 @@ packages:
     resolution: {integrity: sha512-/Tb/JcjK111nNScGob5MNtsntNM1aCNUDipB/TkwZFhyDrrE47SOx/18wF2bbjgc3ZzCSKW1T5nt5EbFoAz/Vg==}
     engines: {node: '>=4'}
     hasBin: true
-
-  csstype@3.1.3:
-    resolution: {integrity: sha512-M1uQkMl8rQK/szD0LNhtqxIPLpimGm8sOBwU7lLnCpSbTyY3yeU1Vc7l4KT5zT4s/yOxHH5O7tIuuLOCnLADRw==}
 
   damerau-levenshtein@1.0.8:
     resolution: {integrity: sha512-sdQSFB7+llfUcQHUQO3+B8ERRj0Oa4w9POWMI/puGtuf7gFywGmkaLCElnudfTiKZV+NvHqL0ifzdrI8Ro7ESA==}
@@ -3826,12 +3804,6 @@ packages:
     peerDependencies:
       stylelint: ^7.0.0 || ^8.0.0 || ^9.0.0 || ^10.0.0 || ^11.0.0 || ^12.0.0 || ^13.0.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
 
-  stylelint-define-config@1.7.0:
-    resolution: {integrity: sha512-Ktb1xeqp0penQnFdW9ctlzJi2i3lGS86ImnDygW6APaoaCCTzzDLsAqky2aaZphve6oTEBj7j3w7P712CCgeMw==}
-    engines: {node: '>=18.0.0', npm: '>=9.0.0', pnpm: '>=8.6.0'}
-    peerDependencies:
-      stylelint: '>=16.0.0'
-
   stylelint-gamut@1.3.4:
     resolution: {integrity: sha512-mN/8BRPNGlKwf/lGrR9JjW9Abm6e7lCn7fiq4M6a4RxDCU/R6lSUI65R6cdo5BV14qf3GmrqNBAjmSujBVrHoA==}
     engines: {node: '>=16.0.0'}
@@ -4988,12 +4960,6 @@ snapshots:
 
   '@sindresorhus/merge-streams@4.0.0': {}
 
-  '@stylelint-types/stylelint-scss@6.5.0(stylelint-define-config@1.7.0(stylelint@16.10.0(typescript@5.6.3)))(stylelint@16.10.0(typescript@5.6.3))':
-    dependencies:
-      stylelint-define-config: 1.7.0(stylelint@16.10.0(typescript@5.6.3))
-    optionalDependencies:
-      stylelint: 16.10.0(typescript@5.6.3)
-
   '@types/concat-stream@2.0.3':
     dependencies:
       '@types/node': 22.9.0
@@ -5632,8 +5598,6 @@ snapshots:
       source-map-js: 1.2.1
 
   cssesc@3.0.0: {}
-
-  csstype@3.1.3: {}
 
   damerau-levenshtein@1.0.8: {}
 
@@ -8759,11 +8723,6 @@ snapshots:
 
   stylelint-declaration-block-no-ignored-properties@2.8.0(stylelint@16.10.0(typescript@5.6.3)):
     dependencies:
-      stylelint: 16.10.0(typescript@5.6.3)
-
-  stylelint-define-config@1.7.0(stylelint@16.10.0(typescript@5.6.3)):
-    dependencies:
-      csstype: 3.1.3
       stylelint: 16.10.0(typescript@5.6.3)
 
   stylelint-gamut@1.3.4(stylelint@16.10.0(typescript@5.6.3)):
