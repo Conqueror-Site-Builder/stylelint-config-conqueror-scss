@@ -1,5 +1,6 @@
 {
   "exclude": [
+    "config.yml",
     "CHANGELOG.md",
     "pnpm-lock.yaml",
     "README.md"

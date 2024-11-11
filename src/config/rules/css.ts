@@ -1,6 +1,6 @@
 import { selectors } from '@archoleat/reglib';
 
-import { messages } from '#shared';
+import { messages } from '#data';
 
 const BLOCK = selectors.bem.BLOCK_REGEX;
 const ELEMENT = selectors.bem.ELEMENT_REGEX;

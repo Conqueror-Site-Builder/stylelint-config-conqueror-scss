@@ -1,6 +1,6 @@
 import { beforeEach, describe, expect, test as spec } from 'vitest';
 
-import { createRule } from '#features';
+import { createRule } from '#utils';
 import type { Parameters } from '#rule-parameters';
 
 describe('Create Rule', async () => {
@@ -20,6 +20,6 @@ describe('Create Rule', async () => {
   });
 
   spec('should create an object with selector', async () => {
-    await rule({ selector: '&&&any-nested-css-selector' });
+    await rule({ selector: ':any-nested-css-selector' });
   });
 });
