@@ -1,6 +1,6 @@
 import { describe, expect, test as spec } from 'vitest';
 
-import { createLogicalGroup } from '#features';
+import { createLogicalGroup } from '#utils';
 
 describe('Create Logical Group', async () => {
   spec(

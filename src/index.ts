@@ -1,4 +1,4 @@
-import { CSSRules, plugins, propertiesOrder, SCSSRules } from '#app';
+import { CSSRules, plugins, propertiesOrder, SCSSRules } from '#config';
 
 export default {
   extends: ['stylelint-config-standard-scss', 'stylelint-prettier/recommended'],
