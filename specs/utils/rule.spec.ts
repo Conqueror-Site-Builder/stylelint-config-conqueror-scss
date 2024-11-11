@@ -20,6 +20,6 @@ describe('Create Rule', async () => {
   });
 
   spec('should create an object with selector', async () => {
-    await rule({ selector: '&&&any-nested-css-selector' });
+    await rule({ selector: ':any-nested-css-selector' });
   });
 });

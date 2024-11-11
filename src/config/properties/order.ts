@@ -2,7 +2,6 @@ import { selectors } from '@archoleat/reglib';
 
 import { createAtRule, createLogicalGroup, createRule } from '#utils';
 
-import { deprecated } from './deprecated.ts';
 import { experimental } from './experimental.ts';
 import { limitedAvailability } from './limited-availability.ts';
 import { nonStandard } from './non-standard.ts';
@@ -15,7 +14,6 @@ const nonStandardPseudoElementMozilla = nonStandard.pseudo.element.moz;
 const nonStandardPseudoElementWebkit = nonStandard.pseudo.element.webkit;
 const experimentalPseudoClass = experimental.pseudo.class;
 const nonStandardPseudoClassMozilla = nonStandard.pseudo.class.moz;
-const deprecatedProperty = deprecated.property;
 const experimentalProperty = experimental.property;
 const limitedAvailabilityProperty = limitedAvailability.property;
 const nonStandardProperty = nonStandard.property;
@@ -246,18 +244,12 @@ const propertiesOrder = {
           experimentalProperty.position.try,
           experimentalProperty.position.tryOrder,
           experimentalProperty.position.tryFallbacks,
-          deprecatedProperty.float,
-          deprecatedProperty.clear,
           'offset',
           'offset-position',
           'offset-path',
           'offset-distance',
           'offset-rotate',
           'offset-anchor',
-          deprecatedProperty.cy,
-          deprecatedProperty.cx,
-          deprecatedProperty.ry,
-          deprecatedProperty.rx,
           'inset',
           experimentalProperty.inset.area,
           'inset-block',
@@ -266,10 +258,6 @@ const propertiesOrder = {
           'inset-inline',
           'inset-inline-start',
           'inset-inline-end',
-          deprecatedProperty.top,
-          deprecatedProperty.right,
-          deprecatedProperty.bottom,
-          deprecatedProperty.left,
           'z-index',
         ],
       }),
@@ -319,10 +307,6 @@ const propertiesOrder = {
           'margin-inline',
           'margin-inline-start',
           'margin-inline-end',
-          deprecatedProperty.margin.top,
-          deprecatedProperty.margin.right,
-          deprecatedProperty.margin.bottom,
-          deprecatedProperty.margin.left,
           experimentalProperty.marginTrim,
         ],
       }),
@@ -362,26 +346,6 @@ const propertiesOrder = {
           'border-inline-end-width',
           'border-inline-end-style',
           'border-inline-end-color',
-          deprecatedProperty.borderTop,
-          deprecatedProperty.border.top.leftRadius,
-          deprecatedProperty.border.top.rightRadius,
-          deprecatedProperty.border.top.width,
-          deprecatedProperty.border.top.style,
-          deprecatedProperty.border.top.color,
-          deprecatedProperty.borderRight,
-          deprecatedProperty.border.right.width,
-          deprecatedProperty.border.right.style,
-          deprecatedProperty.border.right.color,
-          deprecatedProperty.borderBottom,
-          deprecatedProperty.border.bottom.leftRadius,
-          deprecatedProperty.border.bottom.rightRadius,
-          deprecatedProperty.border.bottom.width,
-          deprecatedProperty.border.bottom.style,
-          deprecatedProperty.border.bottom.color,
-          deprecatedProperty.borderLeft,
-          deprecatedProperty.border.left.width,
-          deprecatedProperty.border.left.style,
-          deprecatedProperty.border.left.color,
           'border-image',
           'border-image-source',
           'border-image-slice',
@@ -409,8 +373,6 @@ const propertiesOrder = {
           'contain-intrinsic-size',
           'contain-intrinsic-block-size',
           'contain-intrinsic-inline-size',
-          deprecatedProperty.contain.intrinsic.height,
-          deprecatedProperty.contain.intrinsic.width,
         ],
       }),
       await createLogicalGroup({
@@ -424,13 +386,6 @@ const propertiesOrder = {
           'min-inline-size',
           'max-inline-size',
           experimentalProperty.fieldSizing,
-          deprecatedProperty.r,
-          deprecatedProperty.height,
-          deprecatedProperty.min.height,
-          deprecatedProperty.max.height,
-          deprecatedProperty.width,
-          deprecatedProperty.min.width,
-          deprecatedProperty.max.width,
         ],
       }),
       await createLogicalGroup({
@@ -443,10 +398,6 @@ const propertiesOrder = {
           'padding-inline',
           'padding-inline-start',
           'padding-inline-end',
-          deprecatedProperty.padding.top,
-          deprecatedProperty.padding.right,
-          deprecatedProperty.padding.bottom,
-          deprecatedProperty.padding.left,
         ],
       }),
       await createLogicalGroup({
@@ -456,8 +407,6 @@ const propertiesOrder = {
           'overflow-clip-margin',
           'overflow-block',
           'overflow-inline',
-          deprecatedProperty.overflow.y,
-          deprecatedProperty.overflow.x,
           'overflow-wrap',
           'overflow-anchor',
         ],
@@ -468,8 +417,6 @@ const propertiesOrder = {
           'overscroll-behavior',
           'overscroll-behavior-block',
           'overscroll-behavior-inline',
-          deprecatedProperty.overscroll.behavior.y,
-          deprecatedProperty.overscroll.behavior.x,
         ],
       }),
       await createLogicalGroup({
@@ -482,10 +429,6 @@ const propertiesOrder = {
           'scroll-margin-inline',
           'scroll-margin-inline-start',
           'scroll-margin-inline-end',
-          deprecatedProperty.scroll.margin.top,
-          deprecatedProperty.scroll.margin.right,
-          deprecatedProperty.scroll.margin.bottom,
-          deprecatedProperty.scroll.margin.left,
           'scroll-padding',
           'scroll-padding-block',
           'scroll-padding-block-start',
@@ -493,10 +436,6 @@ const propertiesOrder = {
           'scroll-padding-inline',
           'scroll-padding-inline-start',
           'scroll-padding-inline-end',
-          deprecatedProperty.scroll.padding.top,
-          deprecatedProperty.scroll.padding.right,
-          deprecatedProperty.scroll.padding.bottom,
-          deprecatedProperty.scroll.padding.left,
           'scroll-snap-type',
           'scroll-snap-align',
           'scroll-snap-stop',
@@ -612,7 +551,6 @@ const propertiesOrder = {
           'line-height',
           experimentalProperty.lineHeightStep,
           'word-spacing',
-          deprecatedProperty.wordWrap,
           'word-break',
           experimentalProperty.initial.letter,
           experimentalProperty.initial.letterAlign,
@@ -811,6 +749,7 @@ const propertiesOrder = {
     ],
     {
       emptyLineBeforeUnspecified: 'threshold',
+      emptyLineMinimumPropertyThreshold: 3,
       unspecified: 'bottomAlphabetical',
     },
   ],
