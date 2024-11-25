@@ -36,6 +36,7 @@ export default defineFlatConfig([
     rules: {
       'simple-import-sort/imports': 'warn',
       'simple-import-sort/exports': 'warn',
+      'import/extensions': ['error', { ts: 'always' }],
       'import/exports-last': 'error',
       'import/group-exports': 'error',
       'import/no-commonjs': 'error',
