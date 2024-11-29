@@ -38,48 +38,6 @@ export default defineConfig({
 });
 ```
 
-### Add the Space Between Logical Groups
-
-If you want to add spaces between logical groups,
-add this rule to your **Stylelint** config:
-
-```js
-import { defineConfig } from 'stylelint-define-config';
-
-export default defineConfig({
-  extends: '@archoleat/stylelint-config-extended-scss',
-  rules: {
-    'declaration-empty-line-before': null,
-  },
-});
-```
-
-#### Before
-
-```scss
-.popup {
-  opacity: 0;
-  position: fixed;
-  inset: 0;
-  z-index: 1;
-  pointer-events: none;
-}
-```
-
-#### After
-
-```scss
-.popup {
-  opacity: 0;
-
-  position: fixed;
-  inset: 0;
-  z-index: 1;
-
-  pointer-events: none;
-}
-```
-
 ## This Config
 
 ### Extends
@@ -149,6 +107,9 @@ This is a list of the lints turned on in this configuration.
   Rule enabled.
   - Disallow the use of `@debug`.
 
+- [`at-rule-empty-line-before`](https://stylelint.io/user-guide/rules/at-rule-empty-line-before):
+  Rule enabled.
+
 ##### Case
 
 - [`value-keyword-case`](https://stylelint.io/user-guide/rules/value-keyword-case):
@@ -164,6 +125,9 @@ This is a list of the lints turned on in this configuration.
 ##### Declaration
 
 - [`declaration-no-important`](https://stylelint.io/user-guide/rules/declaration-no-important):
+  Rule enabled.
+
+- [`declaration-empty-line-before`](https://stylelint.io/user-guide/rules/declaration-empty-line-before):
   Rule enabled.
 
 ##### Descending

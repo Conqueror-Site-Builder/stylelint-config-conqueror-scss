@@ -10,6 +10,7 @@ const SCSSRules = {
     {
       except: ['last-nested', 'before-comment', 'before-dollar-variable'],
       ignore: ['before-comment', 'inside-single-line-block'],
+      severity: 'warning',
     },
   ],
   'scss/dollar-variable-no-namespaced-assignment': true,

@@ -14,8 +14,8 @@ export default {
   ],
   rules: {
     ...plugins,
-    ...propertiesOrder,
     ...CSSRules,
     ...SCSSRules,
+    ...propertiesOrder,
   },
 };
