@@ -8,8 +8,27 @@ const MODIFIER = selectors.bem.MODIFIER_REGEX;
 
 const CSSRules = {
   'at-rule-disallowed-list': ['debug'],
+  'at-rule-empty-line-before': [
+    'always',
+    {
+      ignore: [
+        'first-nested',
+        'blockless-after-same-name-blockless',
+        'after-comment',
+      ],
+      severity: 'warning',
+    },
+  ],
   'color-named': 'never',
   'declaration-no-important': true,
+  'declaration-empty-line-before': [
+    'always',
+    {
+      except: ['first-nested'],
+      ignore: ['after-declaration', 'after-comment', 'inside-single-line-block'],
+      severity: 'warning',
+    },
+  ],
   'font-weight-notation': 'numeric',
   'function-url-no-scheme-relative': true,
   'keyframe-selector-notation': 'percentage',

@@ -1,14 +1,14 @@
 import { describe, expect, test as spec } from 'vitest';
 
-import { createLogicalGroup } from '#utils';
+import { propertiesGroup } from '#utils';
 
-describe('Create Logical Group', async () => {
+describe('Create Properties Group', async () => {
   spec(
     'should create an object with (groupName: String, properties: [])',
     async () => {
       const properties = ['display', 'z-index'];
 
-      await createLogicalGroup({
+      await propertiesGroup({
         groupName: 'Test Group Name',
         properties,
       }).then((parameters) => {

@@ -1,6 +1,6 @@
 import { selectors } from '@archoleat/reglib';
 
-import { createAtRule, createLogicalGroup, createRule } from '#utils';
+import { createAtRule, createRule, propertiesGroup } from '#utils';
 
 import { experimental } from './experimental.ts';
 import { limitedAvailability } from './limited-availability.ts';
@@ -20,9 +20,13 @@ const nonStandardProperty = nonStandard.property;
 const warningProperty = warning.property;
 const propertiesOrder = {
   'order/order': [
-    'custom-properties',
+    await createAtRule({ name: 'forward' }),
+    await createAtRule({ name: 'use' }),
     'dollar-variables',
+    'custom-properties',
+    await createAtRule({ name: 'function' }),
     await createAtRule({ name: 'include' }),
+    await createAtRule({ name: 'extend' }),
     'declarations',
     await createRule({ selector: '::selection' }),
     await createRule({ selector: '::backdrop' }),
@@ -184,12 +188,12 @@ const propertiesOrder = {
     await createRule({ selector: selectors.child.CLASS_REGEX }),
     'rules',
     await createAtRule({ name: 'include', hasBlock: true }),
-    'at-rules',
+    await createAtRule({ name: 'media', hasBlock: true }),
   ],
   'order/properties-order': [
     [
-      await createLogicalGroup({ groupName: 'All', properties: ['all', 'page'] }),
-      await createLogicalGroup({
+      await propertiesGroup({ groupName: 'All', properties: ['all', 'page'] }),
+      await propertiesGroup({
         groupName: 'Print',
         properties: [
           'break-before',
@@ -202,15 +206,15 @@ const propertiesOrder = {
           'widows',
         ],
       }),
-      await createLogicalGroup({
+      await propertiesGroup({
         groupName: 'Content',
         properties: ['content', 'quotes'],
       }),
-      await createLogicalGroup({
+      await propertiesGroup({
         groupName: 'Counter',
         properties: ['counter-set', 'counter-increment', 'counter-reset'],
       }),
-      await createLogicalGroup({
+      await propertiesGroup({
         groupName: 'List',
         properties: [
           'list-style',
@@ -219,11 +223,11 @@ const propertiesOrder = {
           'list-style-image',
         ],
       }),
-      await createLogicalGroup({
+      await propertiesGroup({
         groupName: 'Marker',
         properties: ['marker', 'marker-start', 'marker-mid', 'marker-end'],
       }),
-      await createLogicalGroup({
+      await propertiesGroup({
         groupName: 'Display',
         properties: [
           'display',
@@ -235,7 +239,7 @@ const propertiesOrder = {
           experimentalProperty.contentVisibility,
         ],
       }),
-      await createLogicalGroup({
+      await propertiesGroup({
         groupName: 'Position',
         properties: [
           'position',
@@ -261,7 +265,7 @@ const propertiesOrder = {
           'z-index',
         ],
       }),
-      await createLogicalGroup({
+      await propertiesGroup({
         groupName: 'Outline',
         properties: [
           'outline',
@@ -271,11 +275,11 @@ const propertiesOrder = {
           'outline-offset',
         ],
       }),
-      await createLogicalGroup({
+      await propertiesGroup({
         groupName: 'Shape',
         properties: ['shape-outside', 'shape-margin', 'shape-image-threshold'],
       }),
-      await createLogicalGroup({
+      await propertiesGroup({
         groupName: 'Mask',
         properties: [
           'mask',
@@ -297,7 +301,7 @@ const propertiesOrder = {
           'mask-composite',
         ],
       }),
-      await createLogicalGroup({
+      await propertiesGroup({
         groupName: 'Margin',
         properties: [
           'margin',
@@ -310,7 +314,7 @@ const propertiesOrder = {
           experimentalProperty.marginTrim,
         ],
       }),
-      await createLogicalGroup({
+      await propertiesGroup({
         groupName: 'Border',
         properties: [
           'border',
@@ -354,19 +358,19 @@ const propertiesOrder = {
           'border-image-repeat',
         ],
       }),
-      await createLogicalGroup({
+      await propertiesGroup({
         groupName: 'Box',
         properties: ['box-sizing', 'box-decoration-break', 'box-shadow'],
       }),
-      await createLogicalGroup({
+      await propertiesGroup({
         groupName: 'Object',
         properties: ['object-fit', 'object-position'],
       }),
-      await createLogicalGroup({
+      await propertiesGroup({
         groupName: 'container',
         properties: ['container', 'container-name', 'container-type'],
       }),
-      await createLogicalGroup({
+      await propertiesGroup({
         groupName: 'Contain',
         properties: [
           'contain',
@@ -375,7 +379,7 @@ const propertiesOrder = {
           'contain-intrinsic-inline-size',
         ],
       }),
-      await createLogicalGroup({
+      await propertiesGroup({
         groupName: 'Size',
         properties: [
           'aspect-ratio',
@@ -388,7 +392,7 @@ const propertiesOrder = {
           experimentalProperty.fieldSizing,
         ],
       }),
-      await createLogicalGroup({
+      await propertiesGroup({
         groupName: 'Padding',
         properties: [
           'padding',
@@ -400,7 +404,7 @@ const propertiesOrder = {
           'padding-inline-end',
         ],
       }),
-      await createLogicalGroup({
+      await propertiesGroup({
         groupName: 'Overflow',
         properties: [
           'overflow',
@@ -411,7 +415,7 @@ const propertiesOrder = {
           'overflow-anchor',
         ],
       }),
-      await createLogicalGroup({
+      await propertiesGroup({
         groupName: 'Overscroll',
         properties: [
           'overscroll-behavior',
@@ -419,7 +423,7 @@ const propertiesOrder = {
           'overscroll-behavior-inline',
         ],
       }),
-      await createLogicalGroup({
+      await propertiesGroup({
         groupName: 'Scroll',
         properties: [
           'scroll-margin',
@@ -445,11 +449,11 @@ const propertiesOrder = {
           experimentalProperty.scroll.timelineAxis,
         ],
       }),
-      await createLogicalGroup({
+      await propertiesGroup({
         groupName: 'Scrollbar',
         properties: ['scrollbar-gutter', 'scrollbar-width', 'scrollbar-color'],
       }),
-      await createLogicalGroup({
+      await propertiesGroup({
         groupName: 'Columns',
         properties: [
           'columns',
@@ -463,7 +467,7 @@ const propertiesOrder = {
           'column-rule-color',
         ],
       }),
-      await createLogicalGroup({
+      await propertiesGroup({
         groupName: 'Grid',
         properties: [
           'grid',
@@ -487,7 +491,7 @@ const propertiesOrder = {
           experimentalProperty.masonryAutoFlow,
         ],
       }),
-      await createLogicalGroup({
+      await propertiesGroup({
         groupName: 'Flex',
         properties: [
           'flex',
@@ -500,7 +504,7 @@ const propertiesOrder = {
           'order',
         ],
       }),
-      await createLogicalGroup({
+      await propertiesGroup({
         groupName: 'Table',
         properties: [
           'table-layout',
@@ -511,7 +515,7 @@ const propertiesOrder = {
           'caption-side',
         ],
       }),
-      await createLogicalGroup({
+      await propertiesGroup({
         groupName: 'Alignment',
         properties: [
           'place-content',
@@ -527,7 +531,7 @@ const propertiesOrder = {
           'justify-self',
         ],
       }),
-      await createLogicalGroup({
+      await propertiesGroup({
         groupName: 'Image',
         properties: [
           'image-orientation',
@@ -535,7 +539,7 @@ const propertiesOrder = {
           experimentalProperty.imageResolution,
         ],
       }),
-      await createLogicalGroup({
+      await propertiesGroup({
         groupName: 'Typography',
         properties: [
           'unicode-bidi',
@@ -561,7 +565,7 @@ const propertiesOrder = {
           'hanging-punctuation',
         ],
       }),
-      await createLogicalGroup({
+      await propertiesGroup({
         groupName: 'Text',
         properties: [
           'text-overflow',
@@ -595,7 +599,7 @@ const propertiesOrder = {
           'text-underline-offset',
         ],
       }),
-      await createLogicalGroup({
+      await propertiesGroup({
         groupName: 'Font',
         properties: [
           'src',
@@ -629,7 +633,7 @@ const propertiesOrder = {
           'font-variation-settings',
         ],
       }),
-      await createLogicalGroup({
+      await propertiesGroup({
         groupName: 'Color',
         properties: [
           'color-scheme',
@@ -641,7 +645,7 @@ const propertiesOrder = {
           'print-color-adjust',
         ],
       }),
-      await createLogicalGroup({
+      await propertiesGroup({
         groupName: 'Background',
         properties: [
           'background',
@@ -658,7 +662,7 @@ const propertiesOrder = {
           'background-blend-mode',
         ],
       }),
-      await createLogicalGroup({
+      await propertiesGroup({
         groupName: 'Filter',
         properties: [
           experimentalProperty.overlay,
@@ -668,7 +672,7 @@ const propertiesOrder = {
           'clip-path',
         ],
       }),
-      await createLogicalGroup({
+      await propertiesGroup({
         groupName: 'Transform',
         properties: [
           'transform',
@@ -683,7 +687,7 @@ const propertiesOrder = {
           'perspective-origin',
         ],
       }),
-      await createLogicalGroup({
+      await propertiesGroup({
         groupName: 'Transition',
         properties: [
           'transition',
@@ -694,7 +698,7 @@ const propertiesOrder = {
           limitedAvailabilityProperty.transitionBehavior,
         ],
       }),
-      await createLogicalGroup({
+      await propertiesGroup({
         groupName: 'Animation',
         properties: [
           'animation',
@@ -714,7 +718,7 @@ const propertiesOrder = {
           experimentalProperty.animation.rangeEnd,
         ],
       }),
-      await createLogicalGroup({
+      await propertiesGroup({
         groupName: 'View Timeline',
         properties: [
           experimentalProperty.view.timeline,
@@ -724,7 +728,7 @@ const propertiesOrder = {
           experimentalProperty.view.transitionName,
         ],
       }),
-      await createLogicalGroup({
+      await propertiesGroup({
         groupName: 'Actions',
         properties: [
           'cursor',
@@ -734,22 +738,23 @@ const propertiesOrder = {
           nonStandardProperty.zoom,
         ],
       }),
-      await createLogicalGroup({
+      await propertiesGroup({
         groupName: 'User Actions',
         properties: ['user-select', 'user-zoom'],
       }),
-      await createLogicalGroup({
+      await propertiesGroup({
         groupName: 'Math',
         properties: ['math-depth', experimentalProperty.mathShift, 'math-style'],
       }),
-      await createLogicalGroup({
+      await propertiesGroup({
         groupName: 'SVG',
         properties: ['fill', 'stroke', 'paint-order'],
       }),
     ],
     {
-      emptyLineBeforeUnspecified: 'threshold',
-      emptyLineMinimumPropertyThreshold: 3,
+      severity: 'warning',
+      emptyLineBeforeUnspecified: 'always',
+      emptyLineMinimumPropertyThreshold: 5,
       unspecified: 'bottomAlphabetical',
     },
   ],
