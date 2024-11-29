@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.9.3](https://github.com/archoleat/stylelint-config-extended-scss/compare/v1.9.2...v1.9.3) (2024-11-29)
+
+### Bug Fixes
+
+* eslint ([#290](https://github.com/archoleat/stylelint-config-extended-scss/issues/290)) ([7b87aca](https://github.com/archoleat/stylelint-config-extended-scss/commit/7b87acaccacffc0d2536fd73bbb84e7dac2439a4))
+
+### Code Refactoring
+
+* eslint config ([#289](https://github.com/archoleat/stylelint-config-extended-scss/issues/289)) ([329c0ee](https://github.com/archoleat/stylelint-config-extended-scss/commit/329c0ee0c2dfb645383d6ba0a43539c72f579dc0))
+
 ## [1.9.2](https://github.com/archoleat/stylelint-config-extended-scss/compare/v1.9.1...v1.9.2) (2024-11-11)
 
 ### Code Refactoring
