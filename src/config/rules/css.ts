@@ -1,6 +1,6 @@
 import { selectors } from '@archoleat/reglib';
 
-import { messages } from '#data';
+import { messages } from '#data/messages.ts';
 
 const BLOCK = selectors.bem.BLOCK_REGEX;
 const ELEMENT = selectors.bem.ELEMENT_REGEX;

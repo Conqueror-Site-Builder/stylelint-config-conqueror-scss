@@ -42,11 +42,13 @@
   },
   "type": "module",
   "imports": {
-    "#config": "./src/config/index.ts",
-    "#at-rule-parameters": "./src/utils/at-rule/parameters.ts",
-    "#utils": "./src/utils/index.ts",
-    "#rule-parameters": "./src/utils/rule/parameters.ts",
-    "#data": "./src/data/index.ts"
+    "#config/*": "./src/config/*",
+    "#create-at-rule-parameters": "./src/utils/create-at-rule/parameters.ts",
+    "#create-rule-parameters": "./src/utils/create-rule/parameters.ts",
+    "#data/*": "./src/data/*",
+    "#properties/*": "./src/config/properties/*",
+    "#rules/*": "./src/config/rules/*",
+    "#utils/*": "./src/utils/*"
   },
   "exports": {
     ".": "./index.js"

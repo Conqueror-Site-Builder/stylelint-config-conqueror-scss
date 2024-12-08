@@ -1,7 +1,7 @@
 import { beforeEach, describe, expect, test as spec } from 'vitest';
 
-import { createRule } from '#utils';
-import type { Parameters } from '#rule-parameters';
+import { createRule } from '#utils/create-rule/create-rule.ts';
+import type { Parameters } from '#create-rule-parameters';
 
 describe('Create Rule', async () => {
   let rule: Function;
