@@ -1,6 +1,8 @@
 import { selectors } from '@archoleat/reglib';
 
-import { createAtRule, createRule, propertiesGroup } from '#utils';
+import { createAtRule } from '#utils/create-at-rule/create-at-rule.ts';
+import { createPropertiesGroup } from '#utils/create-properties-group/create-properties-group.ts';
+import { createRule } from '#utils/create-rule/create-rule.ts';
 
 import { experimental } from './experimental.ts';
 import { limitedAvailability } from './limited-availability.ts';
@@ -192,8 +194,8 @@ const propertiesOrder = {
   ],
   'order/properties-order': [
     [
-      await propertiesGroup({ groupName: 'All', properties: ['all', 'page'] }),
-      await propertiesGroup({
+      await createPropertiesGroup({ groupName: 'All', properties: ['all', 'page'] }),
+      await createPropertiesGroup({
         groupName: 'Print',
         properties: [
           'break-before',
@@ -206,15 +208,15 @@ const propertiesOrder = {
           'widows',
         ],
       }),
-      await propertiesGroup({
+      await createPropertiesGroup({
         groupName: 'Content',
         properties: ['content', 'quotes'],
       }),
-      await propertiesGroup({
+      await createPropertiesGroup({
         groupName: 'Counter',
         properties: ['counter-set', 'counter-increment', 'counter-reset'],
       }),
-      await propertiesGroup({
+      await createPropertiesGroup({
         groupName: 'List',
         properties: [
           'list-style',
@@ -223,11 +225,11 @@ const propertiesOrder = {
           'list-style-image',
         ],
       }),
-      await propertiesGroup({
+      await createPropertiesGroup({
         groupName: 'Marker',
         properties: ['marker', 'marker-start', 'marker-mid', 'marker-end'],
       }),
-      await propertiesGroup({
+      await createPropertiesGroup({
         groupName: 'Display',
         properties: [
           'display',
@@ -239,7 +241,7 @@ const propertiesOrder = {
           experimentalProperty.contentVisibility,
         ],
       }),
-      await propertiesGroup({
+      await createPropertiesGroup({
         groupName: 'Position',
         properties: [
           'position',
@@ -265,7 +267,7 @@ const propertiesOrder = {
           'z-index',
         ],
       }),
-      await propertiesGroup({
+      await createPropertiesGroup({
         groupName: 'Outline',
         properties: [
           'outline',
@@ -275,11 +277,11 @@ const propertiesOrder = {
           'outline-offset',
         ],
       }),
-      await propertiesGroup({
+      await createPropertiesGroup({
         groupName: 'Shape',
         properties: ['shape-outside', 'shape-margin', 'shape-image-threshold'],
       }),
-      await propertiesGroup({
+      await createPropertiesGroup({
         groupName: 'Mask',
         properties: [
           'mask',
@@ -301,7 +303,7 @@ const propertiesOrder = {
           'mask-composite',
         ],
       }),
-      await propertiesGroup({
+      await createPropertiesGroup({
         groupName: 'Margin',
         properties: [
           'margin',
@@ -314,7 +316,7 @@ const propertiesOrder = {
           experimentalProperty.marginTrim,
         ],
       }),
-      await propertiesGroup({
+      await createPropertiesGroup({
         groupName: 'Border',
         properties: [
           'border',
@@ -358,19 +360,19 @@ const propertiesOrder = {
           'border-image-repeat',
         ],
       }),
-      await propertiesGroup({
+      await createPropertiesGroup({
         groupName: 'Box',
         properties: ['box-sizing', 'box-decoration-break', 'box-shadow'],
       }),
-      await propertiesGroup({
+      await createPropertiesGroup({
         groupName: 'Object',
         properties: ['object-fit', 'object-position'],
       }),
-      await propertiesGroup({
+      await createPropertiesGroup({
         groupName: 'container',
         properties: ['container', 'container-name', 'container-type'],
       }),
-      await propertiesGroup({
+      await createPropertiesGroup({
         groupName: 'Contain',
         properties: [
           'contain',
@@ -379,7 +381,7 @@ const propertiesOrder = {
           'contain-intrinsic-inline-size',
         ],
       }),
-      await propertiesGroup({
+      await createPropertiesGroup({
         groupName: 'Size',
         properties: [
           'aspect-ratio',
@@ -392,7 +394,7 @@ const propertiesOrder = {
           experimentalProperty.fieldSizing,
         ],
       }),
-      await propertiesGroup({
+      await createPropertiesGroup({
         groupName: 'Padding',
         properties: [
           'padding',
@@ -404,7 +406,7 @@ const propertiesOrder = {
           'padding-inline-end',
         ],
       }),
-      await propertiesGroup({
+      await createPropertiesGroup({
         groupName: 'Overflow',
         properties: [
           'overflow',
@@ -415,7 +417,7 @@ const propertiesOrder = {
           'overflow-anchor',
         ],
       }),
-      await propertiesGroup({
+      await createPropertiesGroup({
         groupName: 'Overscroll',
         properties: [
           'overscroll-behavior',
@@ -423,7 +425,7 @@ const propertiesOrder = {
           'overscroll-behavior-inline',
         ],
       }),
-      await propertiesGroup({
+      await createPropertiesGroup({
         groupName: 'Scroll',
         properties: [
           'scroll-margin',
@@ -449,11 +451,11 @@ const propertiesOrder = {
           experimentalProperty.scroll.timelineAxis,
         ],
       }),
-      await propertiesGroup({
+      await createPropertiesGroup({
         groupName: 'Scrollbar',
         properties: ['scrollbar-gutter', 'scrollbar-width', 'scrollbar-color'],
       }),
-      await propertiesGroup({
+      await createPropertiesGroup({
         groupName: 'Columns',
         properties: [
           'columns',
@@ -467,7 +469,7 @@ const propertiesOrder = {
           'column-rule-color',
         ],
       }),
-      await propertiesGroup({
+      await createPropertiesGroup({
         groupName: 'Grid',
         properties: [
           'grid',
@@ -491,7 +493,7 @@ const propertiesOrder = {
           experimentalProperty.masonryAutoFlow,
         ],
       }),
-      await propertiesGroup({
+      await createPropertiesGroup({
         groupName: 'Flex',
         properties: [
           'flex',
@@ -504,7 +506,7 @@ const propertiesOrder = {
           'order',
         ],
       }),
-      await propertiesGroup({
+      await createPropertiesGroup({
         groupName: 'Table',
         properties: [
           'table-layout',
@@ -515,7 +517,7 @@ const propertiesOrder = {
           'caption-side',
         ],
       }),
-      await propertiesGroup({
+      await createPropertiesGroup({
         groupName: 'Alignment',
         properties: [
           'place-content',
@@ -531,7 +533,7 @@ const propertiesOrder = {
           'justify-self',
         ],
       }),
-      await propertiesGroup({
+      await createPropertiesGroup({
         groupName: 'Image',
         properties: [
           'image-orientation',
@@ -539,7 +541,7 @@ const propertiesOrder = {
           experimentalProperty.imageResolution,
         ],
       }),
-      await propertiesGroup({
+      await createPropertiesGroup({
         groupName: 'Typography',
         properties: [
           'unicode-bidi',
@@ -565,7 +567,7 @@ const propertiesOrder = {
           'hanging-punctuation',
         ],
       }),
-      await propertiesGroup({
+      await createPropertiesGroup({
         groupName: 'Text',
         properties: [
           'text-overflow',
@@ -599,7 +601,7 @@ const propertiesOrder = {
           'text-underline-offset',
         ],
       }),
-      await propertiesGroup({
+      await createPropertiesGroup({
         groupName: 'Font',
         properties: [
           'src',
@@ -633,7 +635,7 @@ const propertiesOrder = {
           'font-variation-settings',
         ],
       }),
-      await propertiesGroup({
+      await createPropertiesGroup({
         groupName: 'Color',
         properties: [
           'color-scheme',
@@ -645,7 +647,7 @@ const propertiesOrder = {
           'print-color-adjust',
         ],
       }),
-      await propertiesGroup({
+      await createPropertiesGroup({
         groupName: 'Background',
         properties: [
           'background',
@@ -662,7 +664,7 @@ const propertiesOrder = {
           'background-blend-mode',
         ],
       }),
-      await propertiesGroup({
+      await createPropertiesGroup({
         groupName: 'Filter',
         properties: [
           experimentalProperty.overlay,
@@ -672,7 +674,7 @@ const propertiesOrder = {
           'clip-path',
         ],
       }),
-      await propertiesGroup({
+      await createPropertiesGroup({
         groupName: 'Transform',
         properties: [
           'transform',
@@ -687,7 +689,7 @@ const propertiesOrder = {
           'perspective-origin',
         ],
       }),
-      await propertiesGroup({
+      await createPropertiesGroup({
         groupName: 'Transition',
         properties: [
           'transition',
@@ -698,7 +700,7 @@ const propertiesOrder = {
           limitedAvailabilityProperty.transitionBehavior,
         ],
       }),
-      await propertiesGroup({
+      await createPropertiesGroup({
         groupName: 'Animation',
         properties: [
           'animation',
@@ -718,7 +720,7 @@ const propertiesOrder = {
           experimentalProperty.animation.rangeEnd,
         ],
       }),
-      await propertiesGroup({
+      await createPropertiesGroup({
         groupName: 'View Timeline',
         properties: [
           experimentalProperty.view.timeline,
@@ -728,7 +730,7 @@ const propertiesOrder = {
           experimentalProperty.view.transitionName,
         ],
       }),
-      await propertiesGroup({
+      await createPropertiesGroup({
         groupName: 'Actions',
         properties: [
           'cursor',
@@ -738,15 +740,15 @@ const propertiesOrder = {
           nonStandardProperty.zoom,
         ],
       }),
-      await propertiesGroup({
+      await createPropertiesGroup({
         groupName: 'User Actions',
         properties: ['user-select', 'user-zoom'],
       }),
-      await propertiesGroup({
+      await createPropertiesGroup({
         groupName: 'Math',
         properties: ['math-depth', experimentalProperty.mathShift, 'math-style'],
       }),
-      await propertiesGroup({
+      await createPropertiesGroup({
         groupName: 'SVG',
         properties: ['fill', 'stroke', 'paint-order'],
       }),

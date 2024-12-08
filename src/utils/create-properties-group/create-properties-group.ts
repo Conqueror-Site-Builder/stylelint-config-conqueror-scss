@@ -1,6 +1,6 @@
 import type { Parameters } from './parameters.ts';
 
-const propertiesGroup = async (parameters: Parameters) => {
+const createPropertiesGroup = async (parameters: Parameters) => {
   const { groupName, properties } = parameters;
 
   return {
@@ -12,4 +12,4 @@ const propertiesGroup = async (parameters: Parameters) => {
   };
 };
 
-export { propertiesGroup };
+export { createPropertiesGroup };

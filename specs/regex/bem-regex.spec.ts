@@ -1,6 +1,6 @@
 import { describe, expect, test as spec } from 'vitest';
 
-import { CSSRules } from '#config';
+import { CSSRules } from '#rules/css.ts';
 
 describe('BEM Class Regex', async () => {
   const BEMClassRegex = new RegExp(`${CSSRules['selector-class-pattern'][0]}`);

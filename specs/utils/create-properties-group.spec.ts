@@ -1,6 +1,6 @@
 import { describe, expect, test as spec } from 'vitest';
 
-import { propertiesGroup } from '#utils';
+import { createPropertiesGroup } from '#utils/create-properties-group/create-properties-group.ts';
 
 describe('Create Properties Group', async () => {
   spec(
@@ -8,7 +8,7 @@ describe('Create Properties Group', async () => {
     async () => {
       const properties = ['display', 'z-index'];
 
-      await propertiesGroup({
+      await createPropertiesGroup({
         groupName: 'Test Group Name',
         properties,
       }).then((parameters) => {
