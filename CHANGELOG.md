@@ -1,5 +1,16 @@
 # Changelog
 
+## [1.10.1](https://github.com/archoleat/stylelint-config-extended-scss/compare/v1.10.0...v1.10.1) (2024-12-08)
+
+### Code Refactoring
+
+* small changes ([#298](https://github.com/archoleat/stylelint-config-extended-scss/issues/298)) ([c9a5cba](https://github.com/archoleat/stylelint-config-extended-scss/commit/c9a5cbaaf9a72cd741e86f07c10bfd2984adb919))
+* structure ([#299](https://github.com/archoleat/stylelint-config-extended-scss/issues/299)) ([29cab22](https://github.com/archoleat/stylelint-config-extended-scss/commit/29cab22fce10a04f1dbbf42b28722110f6b18c60))
+
+### Documentation
+
+* **readme:** remove extra badges ([#292](https://github.com/archoleat/stylelint-config-extended-scss/issues/292)) ([d5401de](https://github.com/archoleat/stylelint-config-extended-scss/commit/d5401ded9c653ca5b429a2354edffddf2ae153fb))
+
 ## [1.10.0](https://github.com/archoleat/stylelint-config-extended-scss/compare/v1.9.3...v1.10.0) (2024-11-29)
 
 ### Features
