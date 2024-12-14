@@ -1,0 +1,17 @@
+@custom-media --FOO;
+
+:root {
+  --FOO: 1px;
+}
+
+@keyframes FOO {
+  /* ... */
+}
+
+.FOO {
+  /* ... */
+}
+
+#FOO {
+  /* ... */
+}

@@ -7,7 +7,6 @@ import { createRule } from '#utils/create-rule/create-rule.ts';
 import { experimental } from './experimental.ts';
 import { limitedAvailability } from './limited-availability.ts';
 import { nonStandard } from './non-standard.ts';
-import { warning } from './warning.ts';
 
 const experimentalPseudoElement = experimental.pseudo.element;
 const experimentalPseudoElementMozilla = experimental.pseudo.element.moz;
@@ -19,7 +18,6 @@ const nonStandardPseudoClassMozilla = nonStandard.pseudo.class.moz;
 const experimentalProperty = experimental.property;
 const limitedAvailabilityProperty = limitedAvailability.property;
 const nonStandardProperty = nonStandard.property;
-const warningProperty = warning.property;
 const propertiesOrder = {
   'order/order': [
     await createAtRule({ name: 'forward' }),
@@ -201,9 +199,6 @@ const propertiesOrder = {
           'break-before',
           'break-inside',
           'break-after',
-          warningProperty.page.break.before,
-          warningProperty.page.break.inside,
-          warningProperty.page.break.after,
           'orphans',
           'widows',
         ],
@@ -547,7 +542,7 @@ const propertiesOrder = {
           'unicode-bidi',
           'unicode-range',
           'tab-size',
-          warningProperty.direction,
+          'direction',
           'writing-mode',
           'white-space',
           experimentalProperty.whiteSpaceCollapse,
@@ -697,7 +692,7 @@ const propertiesOrder = {
           'transition-duration',
           'transition-timing-function',
           'transition-delay',
-          limitedAvailabilityProperty.transitionBehavior,
+          'transition-behavior',
         ],
       }),
       await createPropertiesGroup({
