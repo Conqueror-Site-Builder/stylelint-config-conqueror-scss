@@ -4,7 +4,7 @@
     "config.yml",
     "pnpm-lock.yaml",
     "README.md",
-    "specs/utils/properties-group.spec.ts",
+    "specs/utils/create-properties-group.spec.ts",
     "src/config/properties/order.ts"
   ]
 }
