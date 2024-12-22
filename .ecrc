@@ -2,7 +2,6 @@
   "exclude": [
     "CHANGELOG.md",
     "config.yml",
-    "pnpm-lock.yaml",
     "README.md",
     "specs/utils/create-properties-group.spec.ts",
     "src/config/properties/order.ts"

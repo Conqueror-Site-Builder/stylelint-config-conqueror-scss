@@ -23,17 +23,11 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Set Up PNPM
-        uses: pnpm/action-setup@v4
-
-      - name: Set Up NodeJS
-        uses: actions/setup-node@v4
-        with:
-          cache: pnpm
-          node-version: lts/*
+      - name: Set Up Bun
+        uses: oven-sh/setup-bun@v2
 
       - name: Install Dependencies
-        run: pnpm i
+        run: bun i
 
       - name: Lint
-        run: pnpm remark . --quiet --frail
+        run: bun remark . --quiet --frail

@@ -1,4 +1,4 @@
-import { beforeEach, describe, expect, test as spec } from 'vitest';
+import { beforeEach, describe, expect, test as spec } from 'bun:test';
 
 import { createRule } from '#utils/create-rule/create-rule.ts';
 import type { Parameters } from '#create-rule-parameters';
