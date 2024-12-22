@@ -1,4 +1,4 @@
-import { beforeEach, describe, expect, test as spec } from 'vitest';
+import { beforeEach, describe, expect, test as spec } from 'bun:test';
 
 import { createAtRule } from '#utils/create-at-rule/create-at-rule.ts';
 import type { Parameters } from '#create-at-rule-parameters';
