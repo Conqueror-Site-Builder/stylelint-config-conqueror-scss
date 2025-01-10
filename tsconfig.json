@@ -13,7 +13,6 @@
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
     "rootDir": "src",
-    "types": ["vitest"],
     // Projects
     "disableReferencedProjectLoad": true,
     // Type Checking
