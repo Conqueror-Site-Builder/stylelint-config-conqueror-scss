@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.10.3](https://github.com/archoleat/stylelint-config-extended-scss/compare/v1.10.2...v1.10.3) (2025-01-11)
+
+### ⚠ BREAKING CHANGES
+
+* migrate to bun (#302)
+
+### Code Refactoring
+
+* migrate to bun ([#302](https://github.com/archoleat/stylelint-config-extended-scss/issues/302)) ([4be3e6b](https://github.com/archoleat/stylelint-config-extended-scss/commit/4be3e6b188359109b282bc00d39e8f8dcc8c93dd))
+* prettierignore ([a7d20d8](https://github.com/archoleat/stylelint-config-extended-scss/commit/a7d20d87265f5dca222702e65f115f9db1a6b4a8))
+* prettierignore ([#301](https://github.com/archoleat/stylelint-config-extended-scss/issues/301)) ([0694139](https://github.com/archoleat/stylelint-config-extended-scss/commit/0694139bf84f1d436624864a0045f5f55e648f0b))
+* tsconfig ([a3bff6e](https://github.com/archoleat/stylelint-config-extended-scss/commit/a3bff6ef4845372bad759d2ee85e44257441b264))
+
 ## [1.10.2](https://github.com/archoleat/stylelint-config-extended-scss/compare/v1.10.1...v1.10.2) (2024-12-15)
 
 ### Code Refactoring
