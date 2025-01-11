@@ -26,4 +26,4 @@ jobs:
         run: bun i
 
       - name: Lint
-        run: bun editorconfig-checker
+        run: bunx editorconfig-checker
