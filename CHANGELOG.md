@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.10.4](https://github.com/archoleat/stylelint-config-extended-scss/compare/v1.10.3...v1.10.4) (2025-01-11)
+
+### Bug Fixes
+
+* common ([#309](https://github.com/archoleat/stylelint-config-extended-scss/issues/309)) ([74c03cf](https://github.com/archoleat/stylelint-config-extended-scss/commit/74c03cf97e4584a30c312ebf64afb336a5920050))
+
 ## [1.10.3](https://github.com/archoleat/stylelint-config-extended-scss/compare/v1.10.2...v1.10.3) (2025-01-11)
 
 ### ⚠ BREAKING CHANGES
