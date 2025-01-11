@@ -42,7 +42,7 @@ const CSSRules = {
   'no-descending-specificity': null,
   'no-unknown-animations': true,
   'selector-class-pattern': [
-    `^${BLOCK}*${ELEMENT}?${MODIFIER}?$`,
+    `^(?:${BLOCK})(?:${ELEMENT})?(?:${MODIFIER})?$`,
     {
       message: messages.bem,
     },
