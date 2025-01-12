@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.10.5](https://github.com/archoleat/stylelint-config-extended-scss/compare/v1.10.4...v1.10.5) (2025-01-12)
+
+### Code Refactoring
+
+* split logical groups ([#312](https://github.com/archoleat/stylelint-config-extended-scss/issues/312)) ([3380f32](https://github.com/archoleat/stylelint-config-extended-scss/commit/3380f322dcc83e80915d0b02aa758c292cc8bf5f))
+
 ## [1.10.4](https://github.com/archoleat/stylelint-config-extended-scss/compare/v1.10.3...v1.10.4) (2025-01-11)
 
 ### Bug Fixes
