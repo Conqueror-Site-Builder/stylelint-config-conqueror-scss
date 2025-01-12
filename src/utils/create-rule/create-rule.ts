@@ -1,11 +1,11 @@
 import type { Parameters } from './parameters.ts';
 
 const createRule = async (parameters: Parameters) => {
-  const { selector } = parameters;
+  const { selector, isAmpersand = true } = parameters;
 
   return {
     type: 'rule',
-    selector: `&${selector}`,
+    selector: isAmpersand ? `&${selector}` : selector,
   };
 };
 
