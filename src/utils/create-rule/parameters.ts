@@ -1,5 +1,5 @@
 type Parameters = {
-  selector: string;
+  selector: string | RegExp;
   isAmpersand?: boolean;
 };
 

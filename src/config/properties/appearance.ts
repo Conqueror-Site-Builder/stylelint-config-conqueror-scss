@@ -15,6 +15,10 @@ const appearance = [
     ],
   }),
   await createPropertiesGroup({
+    groupName: 'Scrollbar',
+    properties: ['scrollbar-gutter', 'scrollbar-width', 'scrollbar-color'],
+  }),
+  await createPropertiesGroup({
     groupName: 'Mask',
     properties: [
       'mask',
