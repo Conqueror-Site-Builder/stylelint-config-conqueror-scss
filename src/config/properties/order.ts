@@ -1,13 +1,14 @@
 import { selectors } from '@archoleat/reglib';
 
 import { createAtRule } from '#utils/create-at-rule/create-at-rule.ts';
-import { createPropertiesGroup } from '#utils/create-properties-group/create-properties-group.ts';
 import { createRule } from '#utils/create-rule/create-rule.ts';
 
 import { appearance } from './appearance.ts';
 import { boxModel } from './box-model.ts';
+import { common } from './common.ts';
 import { content } from './content.ts';
 import { experimental } from './experimental.ts';
+import { image } from './image.ts';
 import { interaction } from './interaction.ts';
 import { layout } from './layout.ts';
 import { nonStandard } from './non-standard.ts';
@@ -23,11 +24,8 @@ const nonStandardPseudoElementMozilla = nonStandard.pseudo.element.moz;
 const nonStandardPseudoElementWebkit = nonStandard.pseudo.element.webkit;
 const experimentalPseudoClass = experimental.pseudo.class;
 const nonStandardPseudoClassMozilla = nonStandard.pseudo.class.moz;
-const experimentalProperty = experimental.property;
 const propertiesOrder = {
   'order/order': [
-    await createAtRule({ name: 'forward' }),
-    await createAtRule({ name: 'use' }),
     'dollar-variables',
     'custom-properties',
     await createAtRule({ name: 'function' }),
@@ -187,62 +185,52 @@ const propertiesOrder = {
     await createRule({ selector: nonStandardPseudoClassMozilla.userDisabled }),
     await createRule({ selector: nonStandardPseudoClassMozilla.windowInactive }),
     await createRule({
-      selector: selectors.nested.NESTED_ATTRIBUTE_REGEX,
-      isAmpersand: false,
+      selector: new RegExp(`^${selectors.nested.NESTED_ATTRIBUTE_REGEX}$`),
     }),
     await createRule({
-      selector: selectors.nested.ATTRIBUTE_REGEX,
-      isAmpersand: false,
+      selector: new RegExp(`^${selectors.nested.NESTED_ATTRIBUTE_SIBLING_REGEX}$`),
     }),
     await createRule({
-      selector: selectors.nested.NESTED_ATTRIBUTE_SIBLING_REGEX,
-      isAmpersand: false,
+      selector: new RegExp(`^${selectors.nested.NESTED_ATTRIBUTE_CHILD_REGEX}$`),
     }),
     await createRule({
-      selector: selectors.nested.NESTED_ATTRIBUTE_CHILD_REGEX,
-      isAmpersand: false,
+      selector: new RegExp(`^${selectors.nested.NESTED_CLASS_REGEX}$`),
     }),
     await createRule({
-      selector: selectors.child.ATTRIBUTE_SIBLING_REGEX,
-      isAmpersand: false,
+      selector: new RegExp(`^${selectors.nested.NESTED_CLASS_SIBLING_REGEX}$`),
     }),
     await createRule({
-      selector: selectors.child.ATTRIBUTE_CHILD_REGEX,
-      isAmpersand: false,
+      selector: new RegExp(`^${selectors.nested.NESTED_CLASS_CHILD_REGEX}$`),
     }),
     await createRule({
-      selector: selectors.nested.NESTED_CLASS_REGEX,
-      isAmpersand: false,
-    }),
-    await createRule({ selector: selectors.nested.CLASS_REGEX, isAmpersand: false }),
-    await createRule({
-      selector: selectors.nested.NESTED_CLASS_SIBLING_REGEX,
-      isAmpersand: false,
+      selector: new RegExp(`^${selectors.nested.MODIFIER_REGEX}$`),
     }),
     await createRule({
-      selector: selectors.nested.NESTED_CLASS_CHILD_REGEX,
-      isAmpersand: false,
+      selector: new RegExp(`^${selectors.nested.ELEMENT_REGEX}$`),
     }),
     await createRule({
-      selector: selectors.child.CLASS_SIBLING_REGEX,
-      isAmpersand: false,
+      selector: new RegExp(`^${selectors.nested.ATTRIBUTE_REGEX}$`),
     }),
     await createRule({
-      selector: selectors.child.CLASS_CHILD_REGEX,
-      isAmpersand: false,
+      selector: new RegExp(`^${selectors.child.ATTRIBUTE_SIBLING_REGEX}$`),
     }),
     await createRule({
-      selector: selectors.child.SIBLING_REGEX,
-      isAmpersand: false,
-    }),
-    await createRule({ selector: selectors.child.CHILD_REGEX, isAmpersand: false }),
-    await createRule({
-      selector: selectors.nested.MODIFIER_REGEX,
-      isAmpersand: false,
+      selector: new RegExp(`^${selectors.child.ATTRIBUTE_CHILD_REGEX}$`),
     }),
     await createRule({
-      selector: selectors.nested.ELEMENT_REGEX,
-      isAmpersand: false,
+      selector: new RegExp(`^${selectors.nested.CLASS_REGEX}$`),
+    }),
+    await createRule({
+      selector: new RegExp(`^${selectors.child.CLASS_SIBLING_REGEX}$`),
+    }),
+    await createRule({
+      selector: new RegExp(`^${selectors.child.CLASS_CHILD_REGEX}$`),
+    }),
+    await createRule({
+      selector: new RegExp(`^${selectors.child.SIBLING_REGEX}$`),
+    }),
+    await createRule({
+      selector: new RegExp(`^${selectors.child.CHILD_REGEX}$`),
     }),
     'rules',
     await createAtRule({ name: 'include', hasBlock: true }),
@@ -250,60 +238,17 @@ const propertiesOrder = {
   ],
   'order/properties-order': [
     [
-      await createPropertiesGroup({
-        groupName: 'Common',
-        properties: ['all', 'page'],
-      }),
-      await createPropertiesGroup({
-        groupName: 'Print',
-        properties: [
-          'break-before',
-          'break-inside',
-          'break-after',
-          'orphans',
-          'widows',
-        ],
-      }),
+      ...common,
       ...interaction,
       ...positioning,
-      ...layout,
-      ...boxModel,
-      ...typography,
       ...appearance,
+      ...content,
+      ...boxModel,
+      ...layout,
+      ...typography,
+      ...image,
       ...svg,
       ...transitions,
-      ...content,
-      await createPropertiesGroup({
-        groupName: 'Table',
-        properties: [
-          'table-layout',
-          'border-spacing',
-          'border-collapse',
-          'empty-cells',
-          'vertical-align',
-          'caption-side',
-        ],
-      }),
-      await createPropertiesGroup({
-        groupName: 'Object',
-        properties: ['object-fit', 'object-position'],
-      }),
-      await createPropertiesGroup({
-        groupName: 'Image',
-        properties: [
-          'image-orientation',
-          'image-rendering',
-          experimentalProperty.imageResolution,
-        ],
-      }),
-      await createPropertiesGroup({
-        groupName: 'Scrollbar',
-        properties: ['scrollbar-gutter', 'scrollbar-width', 'scrollbar-color'],
-      }),
-      await createPropertiesGroup({
-        groupName: 'Math',
-        properties: ['math-depth', experimentalProperty.mathShift, 'math-style'],
-      }),
     ],
     {
       severity: 'warning',

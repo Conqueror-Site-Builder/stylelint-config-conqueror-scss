@@ -81,6 +81,17 @@ const layout = [
     ],
   }),
   await createPropertiesGroup({
+    groupName: 'Table',
+    properties: [
+      'table-layout',
+      'border-spacing',
+      'border-collapse',
+      'empty-cells',
+      'vertical-align',
+      'caption-side',
+    ],
+  }),
+  await createPropertiesGroup({
     groupName: 'Alignment',
     properties: [
       'place-content',
