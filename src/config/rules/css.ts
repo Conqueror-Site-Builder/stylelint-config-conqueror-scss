@@ -1,10 +1,6 @@
-import { selectors } from '@archoleat/reglib';
+import { BLOCK_REGEX, ELEMENT_REGEX, MODIFIER_REGEX } from '@archoleat/reglib';
 
 import { messages } from '#data/messages.ts';
-
-const BLOCK = selectors.bem.BLOCK_REGEX;
-const ELEMENT = selectors.bem.ELEMENT_REGEX;
-const MODIFIER = selectors.bem.MODIFIER_REGEX;
 
 const CSSRules = {
   'at-rule-disallowed-list': ['debug'],
@@ -42,7 +38,7 @@ const CSSRules = {
   'no-descending-specificity': null,
   'no-unknown-animations': true,
   'selector-class-pattern': [
-    `^(?:${BLOCK})(?:${ELEMENT})?(?:${MODIFIER})?$`,
+    `^(?:${BLOCK_REGEX})(?:${ELEMENT_REGEX})?(?:${MODIFIER_REGEX})?$`,
     {
       message: messages.bem,
     },
