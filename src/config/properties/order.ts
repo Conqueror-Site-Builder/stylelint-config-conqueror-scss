@@ -185,52 +185,52 @@ const propertiesOrder = {
     await createRule({ selector: nonStandardPseudoClassMozilla.userDisabled }),
     await createRule({ selector: nonStandardPseudoClassMozilla.windowInactive }),
     await createRule({
-      selector: new RegExp(`^${selectors.nested.NESTED_ATTRIBUTE_REGEX}$`),
+      selector: new RegExp(`^${selectors.NESTED_ATTRIBUTE_REGEX}$`),
     }),
     await createRule({
-      selector: new RegExp(`^${selectors.nested.NESTED_ATTRIBUTE_SIBLING_REGEX}$`),
+      selector: new RegExp(`^${selectors.NESTED_ATTRIBUTE_SIBLING_REGEX}$`),
     }),
     await createRule({
-      selector: new RegExp(`^${selectors.nested.NESTED_ATTRIBUTE_CHILD_REGEX}$`),
+      selector: new RegExp(`^${selectors.NESTED_ATTRIBUTE_CHILD_REGEX}$`),
     }),
     await createRule({
-      selector: new RegExp(`^${selectors.nested.NESTED_CLASS_REGEX}$`),
+      selector: new RegExp(`^${selectors.NESTED_CLASS_REGEX}$`),
     }),
     await createRule({
-      selector: new RegExp(`^${selectors.nested.NESTED_CLASS_SIBLING_REGEX}$`),
+      selector: new RegExp(`^${selectors.NESTED_CLASS_SIBLING_REGEX}$`),
     }),
     await createRule({
-      selector: new RegExp(`^${selectors.nested.NESTED_CLASS_CHILD_REGEX}$`),
+      selector: new RegExp(`^${selectors.NESTED_CLASS_CHILD_REGEX}$`),
     }),
     await createRule({
-      selector: new RegExp(`^${selectors.nested.MODIFIER_REGEX}$`),
+      selector: new RegExp(`^&${selectors.MODIFIER_REGEX}$`),
     }),
     await createRule({
-      selector: new RegExp(`^${selectors.nested.ELEMENT_REGEX}$`),
+      selector: new RegExp(`^&${selectors.ELEMENT_REGEX}$`),
     }),
     await createRule({
-      selector: new RegExp(`^${selectors.nested.ATTRIBUTE_REGEX}$`),
+      selector: new RegExp(`^${selectors.ATTRIBUTE_REGEX}$`),
     }),
     await createRule({
-      selector: new RegExp(`^${selectors.child.ATTRIBUTE_SIBLING_REGEX}$`),
+      selector: new RegExp(`^${selectors.ATTRIBUTE_SIBLING_REGEX}$`),
     }),
     await createRule({
-      selector: new RegExp(`^${selectors.child.ATTRIBUTE_CHILD_REGEX}$`),
+      selector: new RegExp(`^${selectors.ATTRIBUTE_CHILD_REGEX}$`),
     }),
     await createRule({
-      selector: new RegExp(`^${selectors.nested.CLASS_REGEX}$`),
+      selector: new RegExp(`^${selectors.CLASS_REGEX}$`),
     }),
     await createRule({
-      selector: new RegExp(`^${selectors.child.CLASS_SIBLING_REGEX}$`),
+      selector: new RegExp(`^${selectors.CLASS_SIBLING_REGEX}$`),
     }),
     await createRule({
-      selector: new RegExp(`^${selectors.child.CLASS_CHILD_REGEX}$`),
+      selector: new RegExp(`^${selectors.CLASS_CHILD_REGEX}$`),
     }),
     await createRule({
-      selector: new RegExp(`^${selectors.child.SIBLING_REGEX}$`),
+      selector: new RegExp(`^${selectors.SIBLING_REGEX}$`),
     }),
     await createRule({
-      selector: new RegExp(`^${selectors.child.CHILD_REGEX}$`),
+      selector: new RegExp(`^${selectors.CHILD_REGEX}$`),
     }),
     'rules',
     await createAtRule({ name: 'include', hasBlock: true }),
