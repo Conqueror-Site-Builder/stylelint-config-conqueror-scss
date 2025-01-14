@@ -6,14 +6,14 @@ import {
   CLASS_CHILD_REGEX,
   CLASS_REGEX,
   CLASS_SIBLING_REGEX,
-  ELEMENT_REGEX,
-  MODIFIER_REGEX,
   NESTED_ATTRIBUTE_CHILD_REGEX,
   NESTED_ATTRIBUTE_REGEX,
   NESTED_ATTRIBUTE_SIBLING_REGEX,
   NESTED_CLASS_CHILD_REGEX,
   NESTED_CLASS_REGEX,
   NESTED_CLASS_SIBLING_REGEX,
+  NESTED_ELEMENT_REGEX,
+  NESTED_MODIFIER_REGEX,
   SIBLING_REGEX,
 } from '@archoleat/reglib';
 
@@ -220,10 +220,10 @@ const propertiesOrder = {
       selector: new RegExp(`^${NESTED_CLASS_CHILD_REGEX}$`),
     }),
     await createRule({
-      selector: new RegExp(`^${MODIFIER_REGEX}$`),
+      selector: new RegExp(`^${NESTED_MODIFIER_REGEX}$`),
     }),
     await createRule({
-      selector: new RegExp(`^${ELEMENT_REGEX}$`),
+      selector: new RegExp(`^${NESTED_ELEMENT_REGEX}$`),
     }),
     await createRule({
       selector: new RegExp(`^${ATTRIBUTE_REGEX}$`),
