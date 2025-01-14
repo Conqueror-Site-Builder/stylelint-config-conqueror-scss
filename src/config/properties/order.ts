@@ -188,13 +188,13 @@ const propertiesOrder = {
       selector: new RegExp(`^${selectors.nested.NESTED_ATTRIBUTE_REGEX}$`),
     }),
     await createRule({
-      selector: new RegExp(`^${selectors.nested.ATTRIBUTE_REGEX}$`),
-    }),
-    await createRule({
       selector: new RegExp(`^${selectors.nested.NESTED_ATTRIBUTE_SIBLING_REGEX}$`),
     }),
     await createRule({
       selector: new RegExp(`^${selectors.nested.NESTED_ATTRIBUTE_CHILD_REGEX}$`),
+    }),
+    await createRule({
+      selector: new RegExp(`^${selectors.nested.ATTRIBUTE_REGEX}$`),
     }),
     await createRule({
       selector: new RegExp(`^${selectors.child.ATTRIBUTE_SIBLING_REGEX}$`),
@@ -206,13 +206,13 @@ const propertiesOrder = {
       selector: new RegExp(`^${selectors.nested.NESTED_CLASS_REGEX}$`),
     }),
     await createRule({
-      selector: new RegExp(`^${selectors.nested.CLASS_REGEX}$`),
-    }),
-    await createRule({
       selector: new RegExp(`^${selectors.nested.NESTED_CLASS_SIBLING_REGEX}$`),
     }),
     await createRule({
       selector: new RegExp(`^${selectors.nested.NESTED_CLASS_CHILD_REGEX}$`),
+    }),
+    await createRule({
+      selector: new RegExp(`^${selectors.nested.CLASS_REGEX}$`),
     }),
     await createRule({
       selector: new RegExp(`^${selectors.child.CLASS_SIBLING_REGEX}$`),
