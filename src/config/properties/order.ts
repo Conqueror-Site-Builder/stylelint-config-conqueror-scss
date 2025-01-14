@@ -203,10 +203,10 @@ const propertiesOrder = {
       selector: new RegExp(`^${selectors.NESTED_CLASS_CHILD_REGEX}$`),
     }),
     await createRule({
-      selector: new RegExp(`^&${selectors.MODIFIER_REGEX}.+$`),
+      selector: new RegExp(`^${selectors.MODIFIER_REGEX}$`),
     }),
     await createRule({
-      selector: new RegExp(`^&${selectors.ELEMENT_REGEX}.+$`),
+      selector: new RegExp(`^${selectors.ELEMENT_REGEX}$`),
     }),
     await createRule({
       selector: new RegExp(`^${selectors.ATTRIBUTE_REGEX}$`),
