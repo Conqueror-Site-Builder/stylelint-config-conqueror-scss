@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.11.0](https://github.com/archoleat/stylelint-config-extended-scss/compare/v1.10.12...v1.11.0) (2025-01-15)
+
+### Features
+
+* svg properties ([#320](https://github.com/archoleat/stylelint-config-extended-scss/issues/320)) ([29ee1fb](https://github.com/archoleat/stylelint-config-extended-scss/commit/29ee1fb8c04ceb2a494cd3ca2c1bfa3f43d0b241))
+
 ## [1.10.12](https://github.com/archoleat/stylelint-config-extended-scss/compare/v1.10.11...v1.10.12) (2025-01-15)
 
 ### Code Refactoring
