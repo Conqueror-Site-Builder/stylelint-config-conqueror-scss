@@ -20,26 +20,27 @@ import {
 import { createAtRule } from '#utils/create-at-rule/create-at-rule.ts';
 import { createRule } from '#utils/create-rule/create-rule.ts';
 
-import { appearance } from './appearance.ts';
-import { boxModel } from './box-model.ts';
-import { common } from './common.ts';
-import { content } from './content.ts';
 import { experimental } from './experimental.ts';
-import { image } from './image.ts';
-import { interaction } from './interaction.ts';
-import { layout } from './layout.ts';
+import { appearance } from './groups/appearance.ts';
+import { boxModel } from './groups/box-model.ts';
+import { common } from './groups/common.ts';
+import { content } from './groups/content.ts';
+import { image } from './groups/image.ts';
+import { interaction } from './groups/interaction.ts';
+import { layout } from './groups/layout.ts';
+import { positioning } from './groups/positioning.ts';
+import { svg } from './groups/svg.ts';
+import { transitions } from './groups/transitions.ts';
+import { typography } from './groups/typography.ts';
+import { limitedAvailability } from './limited-availability.ts';
 import { nonStandard } from './non-standard.ts';
-import { positioning } from './positioning.ts';
-import { svg } from './svg.ts';
-import { transitions } from './transitions.ts';
-import { typography } from './typography.ts';
 
 const experimentalPseudoElement = experimental.pseudo.element;
-const experimentalPseudoElementMozilla = experimental.pseudo.element.moz;
 const experimentalPseudoElementWebkit = experimental.pseudo.element.webkit;
 const nonStandardPseudoElementMozilla = nonStandard.pseudo.element.moz;
 const nonStandardPseudoElementWebkit = nonStandard.pseudo.element.webkit;
 const experimentalPseudoClass = experimental.pseudo.class;
+const limitedAvailabilityPseudoElement = limitedAvailability.pseudo.element;
 const nonStandardPseudoClassMozilla = nonStandard.pseudo.class.moz;
 const propertiesOrder = {
   'order/order': [
@@ -63,23 +64,31 @@ const propertiesOrder = {
     await createRule({ selector: '::highlight' }),
     await createRule({ selector: '::part' }),
     await createRule({ selector: '::slotted' }),
-    await createRule({ selector: experimentalPseudoElement.targetText }),
-    await createRule({ selector: experimentalPseudoElement.error.spelling }),
-    await createRule({ selector: experimentalPseudoElement.error.grammar }),
-    await createRule({ selector: experimentalPseudoElement.viewTransition }),
-    await createRule({ selector: experimentalPseudoElement.view.transition.group }),
+    await createRule({ selector: '::target-text' }),
     await createRule({
-      selector: experimentalPseudoElement.view.transition.imagePair,
+      selector: limitedAvailabilityPseudoElement.error.spelling,
     }),
-    await createRule({ selector: experimentalPseudoElement.view.transition.old }),
-    await createRule({ selector: experimentalPseudoElement.view.transition.new }),
+    await createRule({ selector: limitedAvailabilityPseudoElement.error.grammar }),
     await createRule({
-      selector: experimentalPseudoElementWebkit.slider.runnableTrack,
+      selector: limitedAvailabilityPseudoElement.viewTransition,
+    }),
+    await createRule({
+      selector: limitedAvailabilityPseudoElement.view.transition.group,
+    }),
+    await createRule({
+      selector: limitedAvailabilityPseudoElement.view.transition.imagePair,
+    }),
+    await createRule({
+      selector: limitedAvailabilityPseudoElement.view.transition.old,
+    }),
+    await createRule({
+      selector: limitedAvailabilityPseudoElement.view.transition.new,
+    }),
+    await createRule({
+      selector: nonStandardPseudoElementWebkit.slider.runnableTrack,
     }),
     await createRule({ selector: experimentalPseudoElementWebkit.slider.thumb }),
-    await createRule({ selector: experimentalPseudoElementMozilla.focusInner }),
     await createRule({ selector: nonStandardPseudoElementWebkit.innerSpinButton }),
-    await createRule({ selector: nonStandardPseudoElementWebkit.meter.bar }),
     await createRule({
       selector: nonStandardPseudoElementWebkit.meter.value.evenLessGood,
     }),
@@ -108,16 +117,10 @@ const propertiesOrder = {
     await createRule({ selector: nonStandardPseudoElementMozilla.colorSwatch }),
     await createRule({ selector: nonStandardPseudoElementMozilla.list.bullet }),
     await createRule({ selector: nonStandardPseudoElementMozilla.list.number }),
-    await createRule({ selector: nonStandardPseudoElementMozilla.page }),
-    await createRule({ selector: nonStandardPseudoElementMozilla.pageSequence }),
-    await createRule({ selector: nonStandardPseudoElementMozilla.pageSequence }),
     await createRule({ selector: nonStandardPseudoElementMozilla.progressBar }),
     await createRule({ selector: nonStandardPseudoElementMozilla.range.track }),
     await createRule({ selector: nonStandardPseudoElementMozilla.range.progress }),
     await createRule({ selector: nonStandardPseudoElementMozilla.range.thumb }),
-    await createRule({
-      selector: nonStandardPseudoElementMozilla.scrolledPageSequence,
-    }),
     await createRule({ selector: ':root' }),
     await createRule({ selector: ':lang' }),
     await createRule({ selector: ':scope' }),
@@ -162,7 +165,7 @@ const propertiesOrder = {
     await createRule({ selector: ':placeholder-shown' }),
     await createRule({ selector: ':default' }),
     await createRule({ selector: ':past' }),
-    await createRule({ selector: ':current' }),
+    await createRule({ selector: experimentalPseudoClass.current }),
     await createRule({ selector: ':future' }),
     await createRule({ selector: ':playing' }),
     await createRule({ selector: ':paused' }),
@@ -176,18 +179,19 @@ const propertiesOrder = {
     await createRule({ selector: ':out-of-range' }),
     await createRule({ selector: ':empty' }),
     await createRule({ selector: ':target' }),
+    await createRule({ selector: experimentalPseudoElement.detailsContent }),
     await createRule({ selector: experimentalPseudoClass.targetWithin }),
     await createRule({ selector: ':any-link' }),
-    await createRule({ selector: ':local-link' }),
+    await createRule({ selector: experimentalPseudoClass.localLink }),
     await createRule({ selector: ':defined' }),
     await createRule({ selector: ':dir' }),
     await createRule({ selector: ':where' }),
     await createRule({ selector: ':is' }),
     await createRule({ selector: ':has' }),
+    await createRule({ selector: experimentalPseudoClass.hasSlotted }),
     await createRule({ selector: ':not' }),
     await createRule({ selector: experimentalPseudoClass.blank }),
-    await createRule({ selector: experimentalPseudoClass.state }),
-    await createRule({ selector: nonStandardPseudoClassMozilla.broken }),
+    await createRule({ selector: ':state' }),
     await createRule({ selector: nonStandardPseudoClassMozilla.dragOver }),
     await createRule({ selector: nonStandardPseudoClassMozilla.node.first }),
     await createRule({ selector: nonStandardPseudoClassMozilla.node.last }),

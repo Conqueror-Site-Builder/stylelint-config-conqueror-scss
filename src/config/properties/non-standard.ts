@@ -5,7 +5,6 @@ const nonStandard = {
         innerSpinButton: '::-webkit-inner-spin-button',
         scrollbar: '::-webkit-scrollbar',
         meter: {
-          bar: '::-webkit-meter-bar',
           innerElement: '::-webkit-meter-inner-element',
           value: {
             evenLessGood: '::-webkit-meter-even-less-good-value',
@@ -24,13 +23,14 @@ const nonStandard = {
             results: '::-webkit-search-results-button',
           },
         },
+        slider: {
+          runnableTrack: '::-webkit-slider-runnable-track',
+        },
       },
       moz: {
         colorSwatch: '::-moz-color-swatch',
-        page: '::-moz-page',
-        pageSequence: '::-moz-page-sequence',
+        focusInner: '::-moz-focus-inner',
         progressBar: '::-moz-progress-bar',
-        scrolledPageSequence: '::-moz-scrolled-page-sequence',
         meterBar: '::-moz-meter-bar',
         list: {
           bullet: '::-moz-list-bullet',
@@ -45,7 +45,6 @@ const nonStandard = {
     },
     class: {
       moz: {
-        broken: ':-moz-broken',
         dragOver: ':-moz-drag-over',
         loading: ':-moz-loading',
         localeDir: ':-moz-locale-dir',
@@ -68,7 +67,6 @@ const nonStandard = {
   },
   property: {
     font: { smooth: 'font-smooth' },
-    zoom: 'zoom',
   },
 };
 

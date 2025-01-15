@@ -1,20 +1,12 @@
 import { createPropertiesGroup } from '#utils/create-properties-group/create-properties-group.ts';
 
-import { experimental } from './experimental.ts';
-import { nonStandard } from './non-standard.ts';
+import { experimental } from '../experimental.ts';
 
 const experimentalProperty = experimental.property;
-const nonStandardProperty = nonStandard.property;
 const interaction = [
   await createPropertiesGroup({
     groupName: 'Actions',
-    properties: [
-      'cursor',
-      'pointer-events',
-      'touch-action',
-      'resize',
-      nonStandardProperty.zoom,
-    ],
+    properties: ['cursor', 'pointer-events', 'touch-action', 'resize', 'zoom'],
   }),
   await createPropertiesGroup({
     groupName: 'User Actions',

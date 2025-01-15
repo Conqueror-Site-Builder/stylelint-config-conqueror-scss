@@ -1,6 +1,6 @@
 import { createPropertiesGroup } from '#utils/create-properties-group/create-properties-group.ts';
 
-import { experimental } from './experimental.ts';
+import { experimental } from '../experimental.ts';
 
 const experimentalProperty = experimental.property;
 const appearance = [
@@ -48,6 +48,9 @@ const appearance = [
       'backdrop-filter',
       'mix-blend-mode',
       'clip-path',
+      'clip-rule',
+      'flood-color',
+      'flood-opacity',
     ],
   }),
   await createPropertiesGroup({
@@ -72,8 +75,10 @@ const appearance = [
     properties: [
       'color-scheme',
       'accent-color',
+      'lighting-color',
       'color',
       'color-interpolation',
+      'color-interpolation-filters',
       'caret-color',
       'forced-color-adjust',
       'print-color-adjust',

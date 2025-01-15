@@ -1,8 +1,8 @@
 import { createPropertiesGroup } from '#utils/create-properties-group/create-properties-group.ts';
 
-import { experimental } from './experimental.ts';
+import { limitedAvailability } from '../limited-availability.ts';
 
-const experimentalProperty = experimental.property;
+const limitedAvailabilityProperty = limitedAvailability.property;
 const layout = [
   await createPropertiesGroup({
     groupName: 'Display',
@@ -11,9 +11,9 @@ const layout = [
       'opacity',
       'isolation',
       'visibility',
+      'content-visibility',
       'backface-visibility',
       'appearance',
-      experimentalProperty.contentVisibility,
     ],
   }),
   await createPropertiesGroup({
@@ -63,7 +63,6 @@ const layout = [
       'gap',
       'column-gap',
       'row-gap',
-      experimentalProperty.masonryAutoFlow,
     ],
   }),
   await createPropertiesGroup({
@@ -94,14 +93,14 @@ const layout = [
   await createPropertiesGroup({
     groupName: 'Alignment',
     properties: [
+      'dominant-baseline',
+      limitedAvailabilityProperty.alignment.baseline,
       'place-content',
       'place-items',
       'place-self',
-      experimentalProperty.tracks.align,
       'align-content',
       'align-items',
       'align-self',
-      experimentalProperty.tracks.justify,
       'justify-content',
       'justify-items',
       'justify-self',
