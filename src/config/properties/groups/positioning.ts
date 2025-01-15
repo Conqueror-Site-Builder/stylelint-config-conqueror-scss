@@ -1,14 +1,17 @@
 import { createPropertiesGroup } from '#utils/create-properties-group/create-properties-group.ts';
 
-import { experimental } from './experimental.ts';
+import { experimental } from '../experimental.ts';
+import { limitedAvailability } from '../limited-availability.ts';
 
 const experimentalProperty = experimental.property;
+const limitedAvailabilityProperty = limitedAvailability.property;
 const positioning = [
   await createPropertiesGroup({
     groupName: 'Position',
     properties: [
       'position',
       experimentalProperty.position.anchor,
+      experimentalProperty.position.area,
       experimentalProperty.position.visibility,
       experimentalProperty.position.try,
       experimentalProperty.position.tryOrder,
@@ -20,7 +23,6 @@ const positioning = [
       'offset-rotate',
       'offset-anchor',
       'inset',
-      experimentalProperty.inset.area,
       'inset-block',
       'inset-block-start',
       'inset-block-end',
@@ -52,7 +54,7 @@ const positioning = [
       experimentalProperty.view.timelineName,
       experimentalProperty.view.timelineAxis,
       experimentalProperty.view.timelineInset,
-      experimentalProperty.view.transitionName,
+      limitedAvailabilityProperty.view.transitionName,
     ],
   }),
 ];

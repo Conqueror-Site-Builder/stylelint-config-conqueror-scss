@@ -1,6 +1,6 @@
 import { createPropertiesGroup } from '#utils/create-properties-group/create-properties-group.ts';
 
-import { experimental } from './experimental.ts';
+import { experimental } from '../experimental.ts';
 
 const experimentalProperty = experimental.property;
 const image = [

@@ -1,8 +1,8 @@
 import { createPropertiesGroup } from '#utils/create-properties-group/create-properties-group.ts';
 
-import { experimental } from './experimental.ts';
-import { limitedAvailability } from './limited-availability.ts';
-import { nonStandard } from './non-standard.ts';
+import { experimental } from '../experimental.ts';
+import { limitedAvailability } from '../limited-availability.ts';
+import { nonStandard } from '../non-standard.ts';
 
 const experimentalProperty = experimental.property;
 const limitedAvailabilityProperty = limitedAvailability.property;
@@ -27,7 +27,7 @@ const typography = [
       'font-language-override',
       'font-feature-settings',
       'font-synthesis',
-      limitedAvailabilityProperty.font.synthesisPosition,
+      experimentalProperty.font.synthesisPosition,
       'font-synthesis-weight',
       'font-synthesis-style',
       'font-synthesis-small-caps',
@@ -54,8 +54,8 @@ const typography = [
       'text-transform',
       'text-anchor',
       'text-wrap',
-      experimentalProperty.text.wrapMode,
-      experimentalProperty.text.wrapStyle,
+      'text-wrap-mode',
+      'text-wrap-style',
       experimentalProperty.text.spacingTrim,
       'text-align',
       'text-align-last',
@@ -85,16 +85,15 @@ const typography = [
       'direction',
       'writing-mode',
       'white-space',
-      experimentalProperty.whiteSpaceCollapse,
+      'white-space-collapse',
       'ruby-position',
-      experimentalProperty.rubyAlign,
+      'ruby-align',
       'line-break',
       'line-height',
       experimentalProperty.lineHeightStep,
       'word-spacing',
       'word-break',
-      experimentalProperty.initial.letter,
-      experimentalProperty.initial.letterAlign,
+      limitedAvailabilityProperty.initial.letter,
       'letter-spacing',
       'hyphens',
       'hyphenate-character',

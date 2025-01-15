@@ -3,7 +3,7 @@ import { createPropertiesGroup } from '#utils/create-properties-group/create-pro
 const svg = [
   await createPropertiesGroup({
     groupName: 'SVG',
-    properties: ['fill', 'stroke', 'paint-order'],
+    properties: ['fill', 'fill-opacity', 'fill-rule', 'stroke', 'paint-order'],
   }),
   await createPropertiesGroup({
     groupName: 'Marker',
@@ -11,7 +11,12 @@ const svg = [
   }),
   await createPropertiesGroup({
     groupName: 'Shape',
-    properties: ['shape-outside', 'shape-margin', 'shape-image-threshold'],
+    properties: [
+      'shape-rendering',
+      'shape-outside',
+      'shape-margin',
+      'shape-image-threshold',
+    ],
   }),
 ];
 
